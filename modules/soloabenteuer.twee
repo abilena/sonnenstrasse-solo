@@ -1,0 +1,117 @@
+﻿::Cover
+<title>Soloabenteuer<br>für einen Abenteurer</title>
+<center><i>von Leronia von Falkenberg</i></center>
+
+::Start
+<title>Soloabenteuer<br>für einen Abenteurer</title>
+<center><i>von <a target="blank" href="http://de.wiki-aventurica.de/wiki/Lena_Falkenhagen">Leronia von Falkenberg</a></i>
+
+Dein Abenteuer beginnt bei Abschnitt [[0]]</center>
+
+::0
+Du gehst eine sumpfige Straße entlang und kommst zu einer Abzweigung. Wählst du den rechten [[1]] oder den linken [[19]] Pfad? Oder wählst du den Holzweg? [[24]].
+
+::1
+Du hast den rechten Weg gewählt, wie jeder aufrechte Recke es tut. Du gelangst an ein einsam daliegendes Dorf. Kein Kind spielt auf den Straßen, kein Waschweib klatscht am Brunnen, kein Rollenspielautor nickt vor seinem Monitor ein. Was mag geschehen sein? Gehe zu Abschnitt [[10]].
+
+::2
+Du hast es so gewollt. Der linke Weg windet sich durch die Landschaft, durch Wiesen, Wälder, Felder und einen Hügel hinauf. Du kämpfst dich durch Orks, Oger, ordentliche Schwarzmagier und Oberbösewichte. Die Erfahrungspunkte reichen, um deine Eigenschaften und Werte so zu steigern, dass du dem Schwertkönig den Hintern versohlen könntest. Willst du weiter, den Berg hinauf? Gehe zu Abschnitt [[33]]. Oder lieber zurück ins Tal? Gehe zu Abschnitt [[0]].
+
+::3
+Willst du stehen bleiben [[14]], mit den Armen wedeln und weglaufen [[27]] oder dich beherzt in Deckung werfen? Gehe zu Abschnitt [[30]]. Du kannst auch deine Waffe ziehen und dich zum Kampf bereit machen [[32]].
+
+::4
+Du klopfst an eine der Türen, doch nichts regt sich. Der Duft von kalter Asche dringt an deine Nase. Möchtest du die Tür aufstoßen? Gehe zu Abschnitt [[6]]. Willst du weiter klopfen, bis jemand öffnet? Gehe zu Abschnitt [[7]]. Oder möchtest du ein anderes Haus versuchen? Gehe zu Abschnitt [[8]].
+
+::5
+//'Heda! Hallo!'// Schreist du. Du kommst dir schon ein wenig komisch dabei vor. Auf deine Rufe hin meldet sich niemand. Gehe zu Abschnitt [[3]].
+
+::6
+Du nimmst Anlauf und wirfst dich mit der Schulter gegen die Tür. Schmerz durchzuckt dich, als du auf das Holz aufprallst. Doch die Tür bleibt geschlossen. Willst du Anlauf nehmen und es mit der anderen Schulter noch einmal probieren? Gehe zu Abschnitt [[6]]. Oder willst du wieder auf die Straße treten? Gehe zu Abschnitt [[10]].
+
+::7
+Irgendwann muss doch jemand aufmachen! Du klopfst, hämmerst, klämmerst, hompfst. Doch alles bleibt stumm. Irgendwann — es muss sich wohl durch deine Klopferei ein Balken gelöst haben — trifft dich ein harter Gegenstand am Kopf. Gehe zu [[23]].
+
+::8
+Irgendjemand muss doch in diesem Dorf noch da sein! Also, neues Haus, neues Glück. Du suchst dir einen Vorgarten mit Gartenzwerg und gehst zur Tür. Gehe zu Abschnitt [[4]].
+
+::9
+Etwas schwingt sich in die Luft. Etwas beschreibt mit großen Schwingen eine Kehrtwendung. Etwas stürzt im Sturzflug auf dich nieder. Gehe zu Abschnitt [[3]].
+
+::10
+Willst du an einer Tür klopfen? Gehe zu Abschnitt [[4]]. Willst du durch das Dorf laufen und //'Heda! Hallo!'// schreien? Gehe zu Abschnitt [[5]]. Oder du machst dich auf in die Umgebung und fängst an zu suchen. Gehe zu Abschnitt [[20]]. Vielleicht interessiert dich das ja alles gar nicht, und du reist einfach weiter. Gehe zu Abschnitt [[13]].
+
+::11
+Du setzt dich an den Rand des Bootssteges und lässt die Beine im Wasser baumeln. Das Wasser ist kühl. Du bist ganz froh, dass du nicht hineingesprungen ist, denn dort unten bewegt sich ein quallenähnliches Ding, das sich manchmal in die Form einer Meerjungfrau verwandelt. Irgendwann langweilst du dich und ziehst deine Stiefel wieder an. Dann machst du dich auf den Weg. Gehe zu Abschnitt [[13]].
+
+::12
+Nimm einen sechsseitigen Würfel. Spucke darauf, wärme ihn gut an und schicke ein kurzes Gebet an Phex. Tanze auf einem Bein den Ententanz und huldige deinem PC. Fertig? Prima, es geht los. Jetzt denk dir eine Zahl zwischen 1 und 20 aus. Eine 1? Gehe zu Abschnitt [[31]]. 2-12? Gehe zu Abschnitt [[34]]. 13-19? Abschnitt [[18]]. 20? Abschnitt [[25]].
+
+::13
+Du lässt das Dorf hinter dir. Keine Ahnung, warum es menschenleer war. Oder was dort geschehen ist. Aber du kannst halt nicht jedes Problem lösen, das dir in der Welt begegnet. Die Menschheit ist so unselbständig. Gehe zu Abschnitt [[28]].
+
+::14
+Tante Harika hat immer gesagt //'abwarten und Gulmondtee trinken'//. Wird schon nicht so schlimm sein. Du wartest ab, was da wohl so kommt. Je näher der dunkle Schemen kommt, desto mulmiger wird dir. Aber du denkst an Tante Harika und bleibst, wo du bist. Erst als die Kreatur beinahe heran ist, das Maul öffnet und eine Flammenwolke herausschießt, registrierst du, worum es sich handelt. Ein Drache! Gehe zu Abschnitt [[21]].
+
+::15
+Du hast Gold, Gewänder, Sklaven. Die Welt liegt dir zu Füßen. Und du langweilst dich schrecklich. Manchmal stiehlst du dich verkleidet aus dem Palast, um wieder Abenteuer zu erleben, doch deine Leibgarde erwischt dich meist schon in der ersten Stunde. Die Pflichten eines Herrschers gestatten keine Pause. Du stirbst irgendwann mit grauen Haaren vor Langeweile.
+
+::16
+Die Welt liegt dir zu Füßen. Wer wäre besser geeignet als du, alles wieder in Ordnung zu bringen? Gehe zu Abschnitt [[35]]. Oder willst du lieber wieder ins Tal hinabsteigen, um herauszufinden, was mit den armen Leuten in dem Dorf passiert ist? Das sieht allerdings ganz schön steil aus. Vielleicht brichst du dir was. Gehe zu Abschnitt [[12]].
+
+::17
+In jedem Soloabenteuer gibt es einen unverlinkten Abschnitt. Sie haben ihn gerade gefunden. Notieren Sie sich 200 Abenteuerpunkte und fangen sie von vorne an.
+
+::18
+Du kraxelst durch die Berge und versuchst, einen Weg zurückzufinden. Am Anfang geht es ganz gut voran, dann kommst du zu einem Schild, das du nur von hinten siehst. Du musst es beim Aufstieg wohl übersehen haben. Du wunderst dich, wer das Schild hier aufgebaut hat, machst dir aber keine weiteren Gedanken darüber. Als du es umrundet hast, steht dort in großen Lettern (du brauchst keine Probe, um es zu lesen): POINT OF NO RETURN. Offensichtlich gibt es Mohas hier. Gehe zu [[31]].
+
+::19
+Du wählst den linken Pfad. Andere Leute bezeichnen diesen auch als schiefe Bahn. Kein aufrechter Recke wählt diesen Weg, denn er weiß, dass der Pfad in die Niederhöllen mit guten Absichten gepflastert ist. Daher bleibt er auf dem rechten Weg. Auch der Holzweg ist zu meiden, das lernt Klein-Alrike schon in der ersten Woche der Heldenschule. Also, möchtest du zurück zum rechten Weg? Gehe zu Abschnitt [[1]]. Auf den Holzweg? Gehe zu Abschnitt [[24]]. Oder beharrst du auf dem Weg der linken Hand? Gut, die Autoren haben dich gewarnt! Gehe zu Abschnitt [[2]].
+
+::20
+Du machst dich auf. Die Nacht macht eine Suche schwierig. Du stolperst über Stock und Stein, Balken und Gebein. Die Bewohner des Dorfes findest du trotzdem nicht. Gehe zu Abschnitt [[3]].
+
+::21
+Ein Drache! Er stürzt auf dich nieder und fackelt nicht lange (für das Wortspiel werde ich mich nicht entschuldigen). Zuerst brät er dich mit seinem Flammenstrahl, dann rammt er dich einfach in Grund und Boden. Und so ein Drache ist mächtig schwer. Gehe zu [[23]].
+
+::22
+Du trittst zu ihm auf den Gipfel des Berges und lachst böse. //'Teilen? Mit dir? Oh nein! Ich bin so weit gekommen, und nur noch du stehst mir im Wege! Stirb! Schurke!'// Du stößt Galotta in die Tiefe der Schlucht, dann herrscht Stille. Du bist allein. Gehe zu Abschnitt [[16]].
+
+::23
+Du bist tot. Ja, einfach so. Nein, darüber können wir nicht reden. Sorry Mann, du hattest die Wahl.
+
+::24
+Der Holzweg ist aus Holz. Wie der Name schon sagt. Die meisten Wege, die aus Holz sind, sind Bootsstege. So auch dieser. Willst du dich in ein Boot schwingen, das hier angebunden ist? Es trägt dich in Abschnitt [[26]] hinaus auf den Großen Fluss. Oder willst du lieber ein wenig schwimmen? Tu dies in Abschnitt [[29]]. Du kannst dich auch einfach hinsetzen und die Beine ins Wasser baumeln lassen. Gehe zu Abschnitt [[11]].
+
+::25
+Es ist mühsam, aber du schaffst es. Irgendwann bist du wieder im Tal. Gehe zu Abschnitt [[0]].
+
+::26
+Du trittst ins Boot und schnappst dir das Paddel. Die Strömung ist schnell und trägt dich in Abschnitt [[28]] aus dem Abenteuer.
+
+::27
+Du schreist, wedelst mit den Armen und läufst, die Straße hinunter und aus dem Dorf hinaus. Noch zwei Meilen weiter schreist du und läufst. Am nächsten Tag schreist du noch und läufst. Irgendwann kommst du — noch immer schreiend und laufend — in Gareth an. Gehe zu [[28]].
+
+::28
+Du hast den vagen Verdacht, dass du etwas verpasst hast, aber das Gefühl verfliegt irgendwann.
+
+::29
+Das Wasser ist eiskalt und lähmt dich innerhalb weniger Augenblicke. Du tauchst ein wenig, denn man kann wunderbar weit sehen. Als dir eine nackte Schwimmerin begegnet, erkennst du an dem Fischschwanz und den blauen Haaren innerhalb von wenigen Augenblicken, dass du eine Meerjungfrau vor dir hast. Was die wohl im Großen Fluss will? Du folgst ihr in die Tiefen und lebst glücklich bis ans Ende deiner Tage. Gehe zu Abschnitt [[28]].
+
+::30
+Mit einem Hechtsprung wirfst du dich hinter ein Fass. Geschafft! Du bist in Sicherheit. Aus deinem Versteck versuchst du zu ergründen, was das fliegende Ding nun eigentlich ist. Je näher der dunkle Schemen wird, desto mulmiger wird dir. Erst, als die Kreatur beinahe heran ist, das Maul öffnet und eine Flammenwolke herausschießt, registrierst du, worum es sich handelt. Ein Drache! Gehe zu Abschnitt [[21]].
+
+::31
+Auf der Spitze ist man immer allein, sagt ein altes maraskanisches Sprichwort. Zumindest gilt es für das Koschgebirge. Und so überrascht es dich, einen anderen Abenteurer zu treffen. Er sieht dich, zieht sein Schwert. //'Hah, Schurke, hab ich dich! So weit bist du gekommen, doch ich werde Kalif anstelle des Kalifen! Zieh!'// Und er greift dich an. Nach einem heftigen Schlagwechsel bist du ihm unterlegen, und er gibt dir den Gnadenstoß. Gehe zu [[23]].
+
+::32
+Du machst dich kampfbereit. Die Waffe gezogen, der Schild vom Rücken genommen. Der Arm in die Riemen am Schild gesteckt. Das Schild wieder abgelegt, die Armschienen aus dem Rucksack geholt. Der Rucksack wieder zugeschnürt. Die Waffe abgelegt. Die Armschienen festgezurrt. Der Arm in die Schildriemen gesteckt. Gerade, als du die Waffe wieder ergreifen willst, erhellt sich die Nacht um dich, und Feuer rast auf dich zu. Du wunderst dich noch, was dich trifft, während du zu Abschnitt [[21]] gehst.
+
+::33
+Der Hügelpfad verwandelt sich in einen Felsenpfad. Bald weicht links von dir die Landschaft einer steilen Abbruchkante. Hier begegnest du Galotta. //'Die Macht ist mit dir, Abenteurer!'// keucht er asthmatisch. //'Komm auf die dunkle Seite der Macht, und wir werden diese Welt zusammen regieren!'// Willst du mit Galotta teilen? Gehe zu Abschnitt [[2]] Oder willst du den Schurken bezwingen? Gehe zu Abschnitt [[22]].
+
+::34
+Du stürzt und brichst dir auf einem Absatz alle Knochen. Dort liegst du, bis die Geier kommen. Irgendwann breitet Boron seinen dunklen Schleier über dich. Gehe zu Abschnitt [[23]].
+
+::35
+Weltherrschaft. Das hast du doch immer gewollt, nicht wahr? Kalif anstelle des Kalifen werden. Kaiser anstelle Kaiser Hals. Schwarzmagier anstelle des Schwarzmagiers. Das Prinzip ist klar. Man töte den Bösewicht im Namen des Guten, und plötzlich stellt man fest, dass er bloß das Reich retten wollte und gute Gründe für sein Tun hatte. Regier mal eine Weile und stelle fest, wie es ist, die Krone zu tragen. Gar nicht so leicht, glaub mir, aber das hast du jetzt davon. Gib zu, eigentlich ist dein Name Answin, oder? Gehe zu [[15]].
