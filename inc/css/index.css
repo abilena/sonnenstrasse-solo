@@ -1,0 +1,234 @@
+
+.aventurien-solo-module {
+	position: relative;
+}
+
+.framed {
+}
+
+.content {
+    font: normal 13px/1.5 Arial, sans-serif;
+}
+
+.content .inner {
+}
+
+.content a {
+    font-weight: bold;
+    color: #000000;
+	text-decoration: none;
+}
+
+/**************************************************************************************/
+/*** login                                                                          ***/
+/**************************************************************************************/
+
+#aventurien-solo-login {
+    line-height: 26px;
+	padding: 2px 4px;
+}
+
+#aventurien-solo-login p,
+#aventurien-solo-register p,
+#aventurien-solo-activation p {
+	line-height: 12px;
+    font-size: 10px;
+}
+
+#aventurien-solo-login-error,
+#aventurien-solo-register-error {
+	color: red;
+}
+
+#aventurien-solo-login-error:empty,
+#aventurien-solo-register-error:empty {
+	display: none;
+}
+
+#aventurien-solo-login table, #aventurien-solo-register table {
+	border-spacing: 0px;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.aventurien-solo-login-label {
+	display: inline-block;
+    width: 70px;
+}
+
+#aventurien-solo-login input[type=text]:focus, #aventurien-solo-login input[type=password]:focus,
+#aventurien-solo-register input[type=text]:focus, #aventurien-solo-register input[type=password]:focus {
+	outline: none !important;
+	box-shadow: 0 0 0 30px #000 inset, 0 0 1px 1px rgba(30,140,190,.8) !important;
+	-webkit-box-shadow: 0 0 0 30px #000 inset, 0 0 1px 1px rgba(30,140,190,.8) !important;
+	-webkit-text-fill-color: #fff !important;
+}
+
+#aventurien-solo-login input[type=checkbox] {
+	vertical-align: middle;
+	margin-top: 0px;
+}
+
+#aventurien-solo-login input:-webkit-autofill,
+#aventurien-solo-register input:-webkit-autofill {
+	box-shadow: 0 0 0 30px #000 inset !important;
+	-webkit-box-shadow: 0 0 0 30px #000 inset !important;
+	-webkit-text-fill-color: #fff !important;
+}
+
+#aventurien-solo-login .aventurien-solo-login-input,
+#aventurien-solo-register .aventurien-solo-login-input {
+    width: 100%;
+    background: #000;
+	background-color: #000 !important;
+	color: #fff !important;
+    border: 1px solid #4b402e;
+    height: 18px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	text-indent: 4px;
+    /* padding: 0px 4px 0px 4px; */
+}
+
+#aventurien-solo-login, #aventurien-solo-register, #aventurien-solo-activation {
+    line-height: 26px;
+	padding-top: 2px;
+	padding-bottom: 10px;
+}
+
+#aventurien-solo-logout {
+    line-height: 26px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#aventurien-solo-login .aventurien-window-content-login {
+	margin-bottom: 10px;
+}
+
+#aventurien-window-solo-login > div { display: none; }
+.aventurien-window-solo-login > #aventurien-solo-login { display: block; }
+.aventurien-window-solo-register > #aventurien-solo-register { display: block; }
+.aventurien-window-solo-activation > #aventurien-solo-activation { display: block; }
+.aventurien-window-solo-logout > #aventurien-solo-logout { display: block; }
+
+/**************************************************************************************/
+/*** character panel                                                                ***/
+/**************************************************************************************/
+
+.aventurien-solo-character-panel {
+	display: inline;
+	height: 85px;
+}
+
+
+/**************************************************************************************/
+/*** user panel                                                                     ***/
+/**************************************************************************************/
+
+.aventurien-solo-user-panel {
+	display: inline-block;
+	float: right;
+}
+
+.aventurien-solo-user-panel span {
+	position: absolute;
+    top: 55px;
+    left: 100px;
+}
+
+/**************************************************************************************/
+/*** character selector                                                             ***/
+/**************************************************************************************/
+
+.aventurien-solo-character-toggle-backward, 
+.aventurien-solo-character-selector-list, 
+.aventurien-solo-character-toggle-forward, 
+.aventurien-solo-character-selector-item {
+	display: inline-block;
+}
+
+#aventurien-solo-character-selector ~ #aventurien-solo-character-name {
+	display: none;
+}
+
+#aventurien-solo-character-selector a:hover {
+    outline: 0;
+    border: none;
+    text-decoration: none;
+    background: 0 0;
+}
+
+#aventurien-solo-character-selector > .aventurien-solo-character-toggle-backward a::before {
+	color: #5CFF00;
+	content: "«";
+	font-size: 1em;
+    font-weight: normal;
+    margin-right: 4px;
+    text-shadow: 0 0 3px #5DF644;
+}
+
+#aventurien-solo-character-selector > .aventurien-solo-character-toggle-forward a::before {
+	color: #5CFF00;
+    content: "»";
+    font-size: 1em;
+    font-weight: normal;
+    margin-left: 4px;
+    text-shadow: 0 0 3px #5DF644;
+}
+
+/**************************************************************************************/
+/*** solo buttons                                                                   ***/
+/**************************************************************************************/
+
+#aventurien-solo-logout .aventurien-solo-buttons {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    line-height: 90px;
+}
+
+.aventurien-character-empty .aventurien-solo-buttons {
+	display: none;
+}
+
+/**************************************************************************************/
+/*** solo link tickbuttons                                                          ***/
+/**************************************************************************************/
+
+.aventurien-solo-module .aventurien-parchment-content .sonnenstrasse-solo-link {
+	display: inline-block;
+	white-space: nowrap;
+}
+
+.aventurien-solo-module .aventurien-parchment-content a {
+	white-space: nowrap;
+}
+
+.aventurien-solo-module .aventurien-parchment-content a::before {
+	content: "•";
+	color: transparent;
+	display: inline-block;
+	width: 11px;
+	background-image: url(../../../sonnenstrasse-base/img/tickbox.png);
+	background-size: 40px 14px;
+	background-position: -15px 0px;
+}
+
+.aventurien-solo-module .aventurien-parchment-content a:hover::before {
+	background-position: -28px 0px;
+}
+
+.aventurien-solo-module .aventurien-parchment-content sup, 
+.aventurien-solo-module .aventurien-parchment-content sub {
+	font-size: x-small;
+	vertical-align: baseline;
+	position: relative;
+	top: -0.4em;
+}
+
+.aventurien-solo-module .aventurien-parchment-content sub { 
+  top: 0.4em; 
+}
+

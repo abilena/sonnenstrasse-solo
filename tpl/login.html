@@ -1,0 +1,67 @@
+<div class="aventurien-container-block[@DisplayWide]">
+	<div class="aventurien-window">
+		<div class="aventurien-parchment-crest-auge"></div>
+		<div class="aventurien-window-top"></div>
+		<div class="aventurien-window-bottom"></div>
+		<div class="aventurien-window-inner">
+			<div class="aventurien-window-content">
+				<div id="aventurien-window-solo-login" class="aventurien-window-solo-[@DisplayLogin]">
+					<div id="aventurien-solo-login">
+						<div class="aventurien-window-title">Anmelden</div>
+						<div class="aventurien-window-content-login">
+							<p id="aventurien-solo-login-error"></p>
+							<table>
+								<tr><td><b>Benutzer:</b></td><td><input class="aventurien-solo-login-input" type="text" id="aventurien-solo-login-username"></input></td></tr>
+								<tr><td><b>Passwort:</b></td><td><input class="aventurien-solo-login-input" type="password" id="aventurien-solo-login-password"></input></td></tr>
+								<tr><td></td><td><a href="#" class="aventurien-solo-forgotten-link">Ich habe mein Passwort vergessen</a></td></tr>
+								<tr><td></td><td><input type="checkbox" id="aventurien-solo-login-remember">Angemeldet bleiben</input></td></tr>
+								<tr><td></td><td><input type="button" id="aventurien-solo-login-button" value="Anmelden" onclick="return login('[@PluginBaseUri]');"></input></td></tr>
+							</table>
+						</div>
+						<div class="aventurien-window-title">Registrieren</div>
+						<div class="aventurien-window-content-register-open">
+							<p>Du musst registriert sein, um dich für eine Solo-Abenteuer anmelden zu können. Die Registrierung ist in wenigen Augenblicken erledigt. Beachte bitte unsere Datenschutzrichtlinie bevor du dich registrierst.</p>
+							<div><a href="[@PluginBaseUri]/datenschutzerklaerung.php">Datenschutzrichtlinie</a></div>
+							<input type="button" id="aventurien-solo-register-open-button" value="Registrieren" onclick="return openPage('register');"></input>
+						</div>
+					</div>
+					<div id="aventurien-solo-register">
+						<div class="aventurien-window-title">Registrieren</div>
+						<div class="aventurien-window-content-register">
+							<p id="aventurien-solo-register-error"></p>
+							<table>
+								<tr><td><b>Benutzer:</b></td><td><input class="aventurien-solo-login-input" type="text" id="aventurien-solo-register-username"></input></td></tr>
+								<tr><td><b>Passwort:</b></td><td><input class="aventurien-solo-login-input" type="password" id="aventurien-solo-register-password"></input></td></tr>
+								<tr><td><b>E-Mail:</b></td><td><input class="aventurien-solo-login-input" type="text" id="aventurien-solo-register-email"></input></td></tr>
+							</table>
+							<input type="button" id="aventurien-solo-register-button" value="Registrieren" onclick="return register('[@PluginBaseUri]');"></input>
+							<input type="button" id="aventurien-solo-back-button" value="Zurück" onclick="return openPage('login');"></input>
+						</div>
+					</div>
+					<div id="aventurien-solo-activation">
+						<div class="aventurien-window-title">Aktivierung</div>
+						<div class="aventurien-window-content-activation">
+							<p>Ihr Benutzer ist nun registriert. Sie sollten eine E-Mail mit ihrer Aktivierung bekommen haben. Bitte öffnen sie die E-Mail und clicken sie auf den enthaltenen Aktivierungs-Link.</p>
+							<input type="button" id="aventurien-solo-back-button" value="Zurück" onclick="return openPage('login');"></input>
+						</div>
+					</div>
+					<div id="aventurien-solo-logout">
+						<div class="aventurien-solo-character-panel">[@CharacterPanel]</div>
+						<div class="aventurien-solo-user-panel">
+							<div class="aventurien-solo-menu" id="aventurien-solo-menu-user-logon">
+								<div class="aventurien-solo-menu-button"><a href="#" onclick="javascript:return showMenu(this)"><span>Klemens</span></a></div>
+								<div class="aventurien-solo-menu-quicklinks" style="visibility: hidden;">
+									<div class="aventurien-solo-menu-items">
+										<div id="aventurien-solo-menu-logout"><a class="ab-item" href="#" onclick="javascript:return showMenu(this, logout())">Abmelden</a></div>
+										<div id="aventurien-solo-menu-restart"><a class="ab-item" href="#" onclick="javascript:return showMenu(this, restart('[@PluginBaseUri]', '[@Module]'))">Abenteuer zurücksetzen</a></div>
+										<div id="aventurien-solo-menu-debug"><a class="ab-item" href="#" onclick="javascript:return showMenu(this, show_debugger())">Debug Variablen anzeigen</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

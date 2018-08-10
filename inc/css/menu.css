@@ -1,0 +1,193 @@
+
+.aventurien-solo-menu {
+	position: absolute;
+	right: 16px;
+	top: 29px;
+}
+
+#aventurien-solo-menu-character-selection {
+	right: 4px;
+	top: 29px;
+}
+
+.aventurien-solo-menu a, .aventurien-solo-menu a img, .aventurien-solo-menu a img:hover, .aventurien-solo-menu a:hover {
+    outline: 0;
+    border: none;
+    text-decoration: none;
+    background: 0 0;
+}
+
+.aventurien-solo-menu-button {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 16px;
+	height: 16px;
+	z-index: 10;
+	border: 1px solid #4b402e;
+    background-color: #000000;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.85);
+    border-radius: 2px;
+    text-align: left;
+}
+
+.aventurien-solo-user-panel .aventurien-solo-menu-button {
+	width: auto;
+	max-width: 100px;
+}
+
+.aventurien-solo-user-panel .aventurien-solo-menu-button a {
+	line-height: 14px;
+    display: block;
+}
+
+.aventurien-solo-user-panel .aventurien-solo-menu-button span {
+	position: unset;
+	top: unset;
+	left: unset;
+	margin: 0px 16px 0px 4px;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: middle;
+	font-size: 10px;
+}
+
+.aventurien-solo-menu-button a::before {
+    content: "\f140";
+    font: 400 12px/1.4 dashicons;
+	color: #f1bf44;
+	font-weight: bold;
+	position: absolute;
+    right: 3px;
+}
+
+.aventurien-solo-menu-quicklinks {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+	z-index: 10;
+	border: 1px solid #4b402e;
+    background-color: #000000;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.85);
+    border-radius: 2px;
+	text-align: left;
+}
+
+.aventurien-solo-menu-items {
+    color: #f1bf44;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    width: 100%;
+    z-index: 99999;
+    background: #000000;
+
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.aventurien-solo-menu-items a.ab-item {
+    color: #ccc;
+	display: block;
+	padding: 0px 5px 0px 16px;
+}
+
+.aventurien-solo-menu-items a, .aventurien-solo-menu-items a img, .aventurien-solo-menu-items a img:hover, .aventurien-solo-menu-items a:hover {
+    outline: 0;
+    border: none;
+    text-decoration: none;
+    background: 0 0;
+	white-space: nowrap;
+}
+
+.aventurien-solo-menu div div > div.hover > .ab-item, .aventurien-solo-menu div div > div > .ab-item:hover {
+    color: #f1bf44;
+}
+
+.aventurien-solo-menu-items a.ab-item::before {
+    font: 400 12px/1.4 dashicons;
+    position: absolute;
+    left: 0px;
+    speak: none;
+    padding: 0px 0px 0px 2px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: none!important;
+    margin-right: 6px;
+}
+
+#aventurien-solo-menu-logout .ab-item::before {
+    content: "\f110";
+}
+
+#aventurien-solo-menu-restart .ab-item::before {
+    content: "\f102";
+}
+
+#aventurien-solo-menu-debug .ab-item::before {
+    content: "\f107";
+}
+
+#aventurien-solo-menu-resize .ab-item::before {
+    content: "\f211";
+}
+
+#aventurien-solo-menu-create-hero .ab-item::before {
+	content: "\f483";
+}
+
+#aventurien-solo-menu-delete-hero .ab-item::before {
+	content: "\f158";
+}
+
+.aventurien-window-title > #aventurien-solo-menu-create-hero .ab-item::before {
+	content: "";
+}
+
+.framed #aventurien-solo-menu-resize {
+    display: block;
+}
+
+#aventurien-solo-menu-resize {
+    display: none;
+}
+
+
+#debug {
+	position: absolute;
+    top: 27px;
+	left: 14px;
+    width: 158px;
+    min-height: 36px;
+	z-index: 10;
+	border: 1px solid #4b402e;
+    background-color: #000000;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.85);
+    border-radius: 2px;
+    padding: 5px;
+    display: none;
+}
+
+#debug .aventurien-solo-debug-header, #debug .aventurien-solo-debug-variable {
+	height: 18px;
+	line-height: 18px;
+}
+
+#debug .aventurien-solo-debug-header {
+	font-weight: bold;
+}
+
+#debug .aventurien-solo-debug-variable-name {
+    display: inline-block;
+    width: 100px;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    float: left;
+}
+
+#debug .aventurien-solo-debug-variable-value {
+    display: inline-block;
+    float: left;
+}
