@@ -732,7 +732,7 @@ Da fährt mit einem Mal eine eisige Flut auf Euch herab — Gevatter Efferds Zor
 Schlagt flugs um nach [[188]]!
 
 ::107
-(21 HES 21 Hal.) Nun gut, Ihr altes Rotpuschel ... Dann lauft nur fort, wenn's Euch Freude macht! (if:$Geheimzahl==50)Wenn Ihr von Frau Yanis kömmt, dann eilt nunmehr ins Capitel [[270]](else:)Wenn Ihr von Arlan aus aufgebrochen seid, zurück ins Turneizelt ([[49]])(endif:), — schaut Euch da nach einer andern Weise um, ans Ziel zu gelangen!
+(21 HES 21 Hal.) Nun gut, Ihr altes Rotpuschel ... Dann lauft nur fort, wenn's Euch Freude macht! (if:$Von=="Yanis")Wenn Ihr von Frau Yanis kömmt, dann eilt nunmehr ins Capitel [[270]](else:)Wenn Ihr von Arlan aus aufgebrochen seid, zurück ins Turneizelt ([[49]]), — schaut Euch da nach einer andern Weise um, ans Ziel zu gelangen!(endif:)
 
 ::108
 ... der wünnigliche Äonen währt ([[187]]) ...
