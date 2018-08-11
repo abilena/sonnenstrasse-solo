@@ -265,7 +265,7 @@ das Schwerte schwingt und dunkle Mächte zwingt!
 Beschauet's Euch all, Ihr lieben Leut'!</i>
 
 ::13
-(21 HES 21 Hal.) &raquo;Warte getrost, Arlan, und glaub' an die Zwölfe, — ich bin alsbald zurück!&laquo; Ward Euch in diesem Abenteuer einmal eine Geheimzahl kundgefügt? Dann gehet nun zu dem Capitel, dessen Nummer derselben entspricht(if:$Geheimzahl==50) ([[50]])(endif:)! (Ansonsten eilt dahin zurück, wo Ihr hergekommen seid, alter Schummler ([[49]])!)
+(21 HES 21 Hal.) &raquo;Warte getrost, Arlan, und glaub' an die Zwölfe, — ich bin alsbald zurück!&laquo; Ward Euch in diesem Abenteuer einmal eine Geheimzahl kundgefügt? Dann gehet nun zu dem Capitel, dessen Nummer derselben entspricht(if:$Geheimzahl==50) ([[50]])(set:$Von to "Arlan")(endif:)! (Ansonsten eilt dahin zurück, wo Ihr hergekommen seid, alter Schummler ([[49]])!)
 
 ::14
 (22 HES 21 Hal.) Fortan seid Ihr Odilberts Gast. Ihr streift gemeinsam durch Gareth, harrt voller Spannung der Krönung des Reichs-Behüters Brin und — vor allem — seiner gerechten Gemahlin Emer!
@@ -283,8 +283,7 @@ Was immer Ihr Euch vorgenommen habt, tut's und eilt mit Eurer Gefährtin geschwi
 (27 HES 21 Hal.) Wiederum nun seid Ihr auf dem Greifenplatz, die Leute laufen emsig einher, stehen unter Ledertüchern in bunten Häuflein herum und freuen sich selbst an ihrem lustigen Treiben. Odilbert steuert zielstrebig auf einen Schanktisch zu, an dem Arlan schon scheu und treu auf euch wartet &raquo;Was kümmert mich denn die Turnei, das ist doch alles einerlei!&laquo; eröffnet der geschlagene Baron denn ein Gelage, bei dem er mehr und mehr beteuert, daß er die Niederlage ohne Schmach und Schand' ertragen könne und im nächsten Jahr zur Großen Turnei reiten und streiten werde wie kein zweiter! Rondrasancta! Der Abend weicht und verstreicht, und ihr feiert noch lang ([[156]]) ...
 
 ::18
-(21 HES 21 Hal.) Noch ein Augenblickchen, lieber Freund! Wollt Ihr mit Komteß Gilda allein über Gold und Silber plauschen (wenn Ihr von Yanis aus aufgebrochen seid)? Dann tretet in Capitel [[165]] ins Gemach der Baronin ein.
-Oder aber wollt Ihr vom Geschick Eures Freundes Odilbert in gerechtem Zorn und hilfloser Verzweiflung klagen? In diesem Fall ist Capitel [[60->60B]] das rechte!
+(21 HES 21 Hal.) Noch ein Augenblickchen, lieber Freund!(if:$Von=="Yanis") Wollt Ihr mit Komteß Gilda allein über Gold und Silber plauschen (wenn Ihr von Yanis aus aufgebrochen seid)? Dann tretet in Capitel [[165]] ins Gemach der Baronin ein.(else:) Wollt Ihr vom Geschick Eures Freundes Odilbert in gerechtem Zorn und hilfloser Verzweiflung klagen? In diesem Fall ist Capitel [[60->60B]] das rechte!(endif:)
 
 ::19
 (28 HES 21 Hal.) Einmal angenommen, Ihr hättet ins <i>Schwarze</i> getroffen, dann stünde das &raquo;S&laquo; für den Linken Zweig der arcanen Mysteria. Und das <i>ATTOLAGE</i> ... steht freilich — und da Ihr herumgekommen seid und allerlei Bardensänge kennt, ist's Euch offenbar — für den alten Feind des Kaisers und all derer von Gareth, den Magus <i>E. GALOTTA</i>, der einmal in Gareth den Scharlachkappentanz zu tanzen gezwungen ward und der seitdem alle Herrscher des Mittelreiches und alle ihre Getreuen unerbittlich haßt. — der Zweite Zug der Oger im Götterlauf der Gnade 10 war ein eindrucksvolles Fanal!
@@ -1305,6 +1304,7 @@ Meister Nemrod nun habe vor eingebildetem und gerechtem Zorne getobt und gewüte
 (Wenn Ihr nun bislang glaubet, daß aller Adel adlig sei, weil er <i>gut</i> ist, dann habt Ihr Euch gründlich getäuscht, — aber das ist ein Wissen, das jeder Aventurier so rasch als möglich wieder vergißt, und so solltet auch Ihr's denn halten, junger Freund.)
 &raquo;Und wie ist's trefflich angestellt, den Ritter Odilbert zu befreien?&laquo; fragt Ihr.
 Wenn Ihr glaubt, die pfiffige Frau Yanis wirklich zu mögen, dann erfahrt Ihr das in Capitel [[129]], andernfalls in Capitel [[9]].
+(set:$Von to "Yanis")
 
 ::192
 <h2>Der Morgen darnach:</h2>
