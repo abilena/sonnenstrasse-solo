@@ -148,19 +148,26 @@ function selectNextCharacter(baseUri, module)
 {
 	var sel = document.getElementById("aventurien-solo-character-selector");
 	var items = sel.getElementsByClassName("aventurien-solo-character-selector-item");
+	var selectedItem = null;
 	for (i = 0; i < items.length; i++)
 	{
 		var item = items[i];
 		if (item.style.display == "inline-block")
 		{
-			var next = item.nextElementSibling;
-			if (next == null)
-				next = item.parentNode.firstElementChild;
-			
-			if (next.dataset.hero != null)
-				selectCharacter(baseUri, module, next.dataset.hero);
+			selectedItem = item;
 		}
 	}
+	if (selectedItem == null)
+	{
+		selectedItem = items[0];
+	}
+	
+	var next = selectedItem.nextElementSibling;
+	if (next == null)
+		next = selectedItem.parentNode.firstElementChild;
+	
+	if (next.dataset.hero != null)
+		selectCharacter(baseUri, module, next.dataset.hero);
 }
 
 function selectCharacter(baseUri, module, hero)
