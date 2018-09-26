@@ -130,7 +130,7 @@ function aventurien_solo_db_get_hero($module, $user)
     $db_table_name = $wpdb->prefix . 'sonnenstrasse_solo_states';
     $hero_id = $wpdb->get_var("SELECT hero_id FROM $db_table_name WHERE module='$module' AND user='$user'");
 
-    if (!is_null($hero_id))
+    if (!empty($hero_id))
 	{
 		// make sure the character exists
 		
@@ -138,7 +138,7 @@ function aventurien_solo_db_get_hero($module, $user)
 		$hero_id = $wpdb->get_var("SELECT hero_id FROM $db_table_name WHERE hero_id='$hero_id'");
 	}
 	
-	if (is_null($hero_id))
+	if (empty($hero_id))
 	{
 		// try to switch to an existing character, if any
 		
