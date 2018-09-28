@@ -64,6 +64,48 @@ function showCharacterWindowContent(className)
 	return false;
 }
 
+function selectArchetype(element)
+{
+	var list = document.getElementById("aventurien-character-archetypes-list");
+	var prev_id = list.dataset.selected;
+	var prev_item = document.getElementById("aventurien-character-archetype-" + prev_id);
+	if (prev_item != null) prev_item.className = "aventurien-character-archetype";
+	
+	var next_id = element.dataset.id;
+	list.dataset.selected = next_id;
+	var next_item = document.getElementById("aventurien-character-archetype-" + next_id);
+	if (next_item != null) next_item.className = "aventurien-character-archetype selected";
+	
+	var create_button = document.getElementById("aventurien-character-creation-from-archetype");
+	if (create_button != null) create_button.disabled = (next_item == null);
+	
+	return false;
+}
+
+function createCharacterFromArchetype(baseUri, module)
+{
+	var list = document.getElementById("aventurien-character-archetypes-list");
+	var archetype = list.dataset.selected;
+	if (!archetype)
+		return;
+	
+	var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if ((this.readyState == 4) && (this.status == 200)) {
+			if (this.responseText.substring(0, 9) == "succeeded") {
+				window.location.reload(false);
+			} else {
+				document.getElementById("aventurien-character-archetypes-error").innerHTML = this.responseText;
+			}
+		}
+    };
+
+    xhttp.open("POST", baseUri + "/create-character-from-archetype.php", true);
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp.send("module=" + module + "&archetype=" + archetype);
+    return false;
+}
+
 function validateCharacter(e)
 {
 	var upload = document.getElementById("aventurien-character-creation-upload");

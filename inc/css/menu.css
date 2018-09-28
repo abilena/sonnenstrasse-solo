@@ -31,17 +31,17 @@
     text-align: left;
 }
 
-.aventurien-solo-user-panel .aventurien-solo-menu-button {
+.aventurien-window .aventurien-solo-menu-button {
 	width: auto;
 	max-width: 100px;
 }
 
-.aventurien-solo-user-panel .aventurien-solo-menu-button a {
+.aventurien-window .aventurien-solo-menu-button a {
 	line-height: 14px;
     display: block;
 }
 
-.aventurien-solo-user-panel .aventurien-solo-menu-button span {
+.aventurien-window .aventurien-solo-menu-button span {
 	position: unset;
 	top: unset;
 	left: unset;
@@ -136,6 +136,10 @@
 
 #aventurien-solo-menu-create-hero .ab-item::before {
 	content: "\f483";
+}
+
+#aventurien-solo-menu-import-hero .ab-item::before {
+	content: "\f317";
 }
 
 #aventurien-solo-menu-delete-hero .ab-item::before {
