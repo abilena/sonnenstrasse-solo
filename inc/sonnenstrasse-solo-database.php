@@ -126,6 +126,11 @@ function aventurien_solo_db_set_vars($module, $user, $vars)
 
 function aventurien_solo_db_get_hero($module, $user)
 {
+	if (empty($user))
+	{
+		return 0;
+	}
+
    	global $wpdb;
     $db_table_name = $wpdb->prefix . 'sonnenstrasse_solo_states';
     $hero_id = $wpdb->get_var("SELECT hero_id FROM $db_table_name WHERE module='$module' AND user='$user'");
