@@ -21,8 +21,14 @@ $module = $_POST['module'];
 $uploadedXml = $_FILES['xmlFile'];
 $uploadedImage = $_FILES['imgFile'];
 
+$portraitsDir = $path_local . "/../../uploads/portraits/";
+
+if (!file_exists($portraitsDir)) {
+    mkdir($portraitsDir, 0777, true);
+}
+
 $storedImageName = $solo_user->name . '.' . pathinfo($uploadedXml['name'], PATHINFO_FILENAME) . '.' . pathinfo($uploadedImage['name'], PATHINFO_EXTENSION);
-$storedImagePath = $path_local . "/../sonnenstrasse-character/portraits/" . $storedImageName;
+$storedImagePath = $portraitsDir . $storedImageName;
 
 move_uploaded_file($uploadedImage['tmp_name'], $storedImagePath);
 $uploaded_content = file_get_contents($_FILES['xmlFile']["tmp_name"]);
