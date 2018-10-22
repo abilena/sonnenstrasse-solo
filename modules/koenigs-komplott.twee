@@ -309,7 +309,7 @@ Ihr werdet dem König eine Nachricht schicken müssen: Könnt Ihr schreiben ([[1
 ::24
 Nach Baliho zurück dauert's gar nicht einmal lang; ein hilfsbereiter Schmied verweist Euch an den gelehrten Magister Waldfried von Donnerbach, einen überaus studierten Herrn, der Euch gegen das übliche Salär von zehn Goldstücken gern zwanzig Stündchen im Koboldischen erteilt. Anschließend — einen guten Mond später — dürft Ihr Euern Wert in Kobold'sch um einen Punkt heben und getrost Eurer Wege ziehen: ein frohgemutes Wandern!
 
-<center><i>[[ENDE]]</i></center>
+<center><i>[[ENDE]]</i>(set:$AP to 0)</center>
 
 ::25
 Ihr werdet lange leben, guter Freund, und gewißlich leidlich unbekümmert! Travia sei's gedankt, in Zeiten wie diesen tut Ihr daran gar gut (wer hingegen den Ork einen bösen Ork sein läßt, nun ja)!
@@ -370,7 +370,7 @@ Schreitet darnach zum letzten Male: Entweder zum Capitel [[171]] oder aber zu de
 &raquo;Nun habe ich doch fürwahr etwas erlebt&laquo;, meint Ihr. &raquo;Und mit der guten Götter Hilfe das Leben eines Königs bewahrt&laquo;, pflichtet Odilbert lächelnd bei. &raquo;Und eine Hochzeit herbeigeführt!&laquo; fällt ihm Gilda geschwind ins Wort &raquo;Falls Euch Euer Weg einmal an der Feste Bodrinstein vorbeiführt, dann müßt Ihr unbedingt hereinschauen!&laquo; — &raquo;Oh, auch mich müßt Ihr beizeiten einmal auf Burg Winsheym besuchen kommen, hört Ihr!&laquo; ruft da Odilbert und dräut mit dem Zeigefinger. — &raquo;Und mich auch!&laquo; flüstert Arlan und senkt schüchtern den Blick &raquo;Wau!&laquo; bellt Miska.
 
 <center><i>[[ENDE]]
-(nicht an der Stelle von 190 AP)</i></center>
+(nicht an der Stelle von 190 AP)</i>(set:$AP to 190)</center>
 
 ::34
 (22 HES 21 Hal.) &raquo;Wollet Ihr nicht ...&laquo; hebt Ihr an, als auf der Turneiwiese ein gewaltiger Lärm Euch aus Euern Gedanken reißt. &raquo;... und allein Ihr seid schuld, Kommandantin Baran, — und das vor Praios dem Herrn!&laquo; läßt sich eine erregte, aber gebieterische Stimme weithin vernehmen. &raquo;Oh nein, Euer Gnaden Jannerlo, ich habe nur getan, was man mir befohlen hat!&laquo; keift eine schrille Weiberstimme. &raquo;Aber Ihr hättet nicht ein solches ... solches Loch zu wählen brauchen, Kommandantin!&laquo; erwidert die Praios-Geweihte ungehalten, und legt dabei allen Abscheu in ihre Stimme, zu der sie fähig ist. — &raquo;Er galt — galt als ein ausgemachter Schurke, Ew. Gnaden!&laquo; schrillt die Kommandantin außer sich vor Fassung. &raquo;Aber er ist es nicht!&laquo; poltert die Geweihte! — &raquo;Ihr ... ich ... &laquo; kreischt die andere. — &raquo;Ruhig, meine Damen!&laquo; beruhigt eine dritte Frau die Streithennen. &raquo;Ihr geruhet alles Volk rundum zu wecken!&laquo;
@@ -559,7 +559,7 @@ Das verspricht Baron Odilbert gern. In Capitel [[196]] nimmt das Komplott seinen
 &raquo;Nun habe ich doch fürwahr etwas erlebt&laquo;, meint Ihr. &raquo;Und mit der guten Götter Hilfe das Leben eines Königs bewahrt&laquo;, pflichtet Odilbert lächelnd bei. &raquo;Ihr müßt mich beizeiten einmal. auf Burg Winsheym besuchen kommen, hört Ihr!&laquo; — &raquo;Und mich auch!&laquo; flüstert Arlan und senkt schüchtern den Blick. &raquo;Wau!&laquo; bellt Miska.
 
 <center><i>[[ENDE]]
-(nicht an der Stelle von 160 AP)</i></center>
+(nicht an der Stelle von 160 AP)</i>(set:$AP to 160)</center>
 
 ::68
 (21 HES 21 Hal.) &raquo;31&laquo; prangt's in schmiedeeisernen Ziffern auf dem schweren Eichentor, — wohinter, wie Ihr hofft, der Ritter Odilbert sein Gefangenendasein fristet. Aber nicht mehr lang, das ist gewißlich vor den Zwölfen!
@@ -844,7 +844,7 @@ Mittendrin in diesem unüberschaubaren, prächtigen Gewoge findet sich das Zelt 
 &raquo;Nun habe ich doch fürwahr etwas erlebt&laquo;, meint Ihr. &raquo;Und mit der guten Götter Hilfe das Leben eines Königs bewahrt&laquo;, pflichtet Odilbert lächelnd bei. &raquo;Ihr müßt mich beizeiten einmal auf Burg Winsheym besuchen kommen, hört Ihr!&laquo; — &raquo;Und mich auch!&laquo; flüstert Arlan und senkt schüchtern den Blick. &raquo;Wau!&laquo; bellt Miska.
 
 <center><i>[[ENDE]]
-(nicht an der Stelle von 130 AP)</i></center>
+(nicht an der Stelle von 130 AP)</i>(set:$AP to 130)</center>
 
 ::120
 (21 HES 21 Hal) &raquo;Meistens jedenfalls&laquo;, mault er resigniert und bestraft Euch fürder mit einem eisigen Schweigen ([[205]]).
@@ -936,7 +936,7 @@ Was nun, was nun? — Wollt Ihr einen letzten mutigen Versuch unternehmen, Seine
 <i>Nach Selem ist ein langer Weg, über Brück' und über Steg ...</i>
 Gute Reise, lieber Freund! Ihr werdet in den heiligen Selemer Hallen von der Ordens-Oberin überaus freundlich aufgenommen und an die Spitze einer dreiköpfigen Reisegruppe gestellt, die sich des verrückten Feenwesens annehmen soll. Eure nächsten Jahre verbringt Ihr auf der Suche nach dem Wildschwein-Biestinger im Menzheimer Wald, — als &raquo;der Irre vom Wald&laquo; geht Ihr selbst schließlich in den darpatschen Volksmund ein und verschafft Euch ein fortwährendes Andenken!
 
-<center><i>[[ENDE]]</i></center>
+<center><i>[[ENDE]]</i>(set:$AP to 0)</center>
 
 ::138
 (20 HES 21 Hal.) &raquo;Da erhob ich das Schwert und sprang vom Pferd, und auch der Drache sann auf Rache für mein kühnes und keckes Unterfangen, und wir stoben aufeinander zu, der Drache gierig
@@ -1185,7 +1185,7 @@ Die Biestinger und der Räuber sind nunmehr drauf und dran, sich mit dem Gepäck
 &raquo;Nun habe ich doch fürwahr etwas erlebt&laquo;, meint Ihr. &raquo;Und mit der <i>guten</i> Götter Hilfe das Leben eines Königs bewahrt&laquo;, pflichtet Odilbert lächelnd bei. &raquo;Ihr müßt mich beizeiten einmal auf Burg Winsheym besuchen kommen, hört Ihr!&laquo; — &raquo;Und mich auch!&laquo; flüstert Arlan und senkt schüchtern den Blick. &raquo;Wau!&laquo; bellt Miska.
 
 <center><i>[[ENDE]]
-(nicht an der Stelle von 100AP)</i></center>
+(nicht an der Stelle von 100 AP)</i>(set:$AP to 100)</center>
 
 ::172
 (28 HES 21 Hal.) &raquo;Wohin soll ich Euch denn führen&laquo;, fragt Eure Begleiterin schließlich, &raquo;Ihr habt Glück, daß der König augenblicklich im Staats-Rat weilt, denn andernfalls stünden allerorten Wachen und wir kämen schwerlich hinein (dafür gleichwohl um so eher hinaus).&laquo;
