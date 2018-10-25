@@ -163,7 +163,7 @@
 	position: absolute;
     top: 27px;
 	left: 14px;
-    width: 158px;
+    width: 282px;
     min-height: 36px;
 	z-index: 10;
 	border: 1px solid #4b402e;
@@ -194,4 +194,5 @@
 #debug .aventurien-solo-debug-variable-value {
     display: inline-block;
     float: left;
+	width: 180px;
 }
