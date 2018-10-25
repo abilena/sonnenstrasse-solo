@@ -69,6 +69,7 @@ function aventurien_solo_display($user, $hero_id, $module, $title, $last_pid, $p
     $passage_name = aventurien_solo_get_title($passage_text, $passage_name);
     $passage_text = aventurien_solo_do_replacements($passage_text, $module, $pid);
     $passage_text = aventurien_solo_command_text($passage_text);
+	$passage_text = aventurien_solo_command_unset($passage_text, ((!$last_pid) || ($last_pid == $pid)));
     $passage_text = aventurien_solo_command_set($passage_text, ((!$last_pid) || ($last_pid == $pid)));
     $passage_text = aventurien_solo_command_if($passage_text);
     $passage_text = aventurien_solo_var_replace($passage_text, "");
@@ -151,6 +152,28 @@ function aventurien_solo_var_replace($expression, $quotes)
     }
 
     return $expression;
+}
+
+function aventurien_solo_command_unset($passage_text, $reload)
+{
+    if (!$reload)
+    {
+        preg_match_all('/\(unset\:\s*\$(\w*)\s*\)/', $passage_text, $matches);
+
+        global $vars;
+        $count = count($matches[0]);
+
+        for ($i = 0; $i < $count; $i++) 
+        {
+            $variable = $matches[1][$i];
+			unset($vars["$variable"]);
+        }
+    }
+
+    // remove all set statements from the text
+    $passage_text = preg_replace('/\(unset\:(.*?)\)/', '', $passage_text);
+
+    return $passage_text;
 }
 
 function aventurien_solo_command_set($passage_text, $reload)
