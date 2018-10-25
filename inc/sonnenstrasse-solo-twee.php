@@ -8,7 +8,7 @@ function aventurien_solo_display($user, $hero_id, $module, $title, $last_pid, $p
     global $vars;
     $path_local = plugin_dir_path(__FILE__);
 	
-    $module_file = $path_local . "../modules/" . $module . ".twee";
+    $module_file = $path_local . "../modules/" . $module . "/module.twee";
     if (!file_exists($module_file))
     {
         $template = new Sonnenstrasse\Template($path_local . "../tpl/page.html");
@@ -246,7 +246,7 @@ function aventurien_solo_command_if($passage_text)
 function aventurien_solo_do_replacements($passage_text, $module, $pid)
 {
 	$baseUri = plugins_url() . "/sonnenstrasse-solo";
-	$passage_text = preg_replace('/\[\@ModulesUrl\]/', plugins_url() . '/sonnenstrasse-solo/modules', $passage_text);
+	$passage_text = preg_replace('/\[\@ModuleUrl\]/', plugins_url() . '/sonnenstrasse-solo/modules/' . $module, $passage_text);
 	$passage_text = preg_replace('/<title>(.*?)<\/title>/', '', $passage_text);
     $passage_text = preg_replace('/\'\'(.*?)\'\'/', '<strong>$1</strong>', $passage_text);
     $passage_text = preg_replace('/\/\/(.*?)\/\//', '<i>$1</i>', $passage_text);
