@@ -1,0 +1,1371 @@
+::Cover
+<title>Stunden der Entscheidung</title>
+<img src="[@ModuleUrl]/cover.jpg" width="100%">
+
+::Start
+<title>Stunden der Entscheidung</title>
+<center><i>von Jörg Raddatz und Heike Kamaris</i></center>
+
+<center>[[Vorbemerkung]]</center>
+
+::Vorbemerkung
+Wenn Ihr Held in diesem Abenteuer seine ersten Eindrücke sammelt, ist er noch recht verwirrt und weiß weder, wer er ist, noch, wo er sich befindet - und um Ihnen nicht diese Überraschung zu verderben, wollen wir hier auch nicht zu viel verraten. Statt dessen sei hier nur auf das kurze Heldendokument im Anhang hingewiesen, dem Sie bei Bedarf alle spielwichtigen Werte entnehmen können.
+Ein Hinweis noch zu den hier verwendeten Regeln: Bei Kämpfen wird häufig auf mögliche Bewußtlosigkeit des Helden oder seiner Gegner Bezug genommen - in diesem Fall geht es einfach um die optionale Sonderregel, nach der man jeweils beim Verlust von mehr als 15 LP durch einen Schlag eine (um den gerade erlittenen Schaden erschwerte) Probe auf seine Selbstbeherrschung machen muß, um nicht durch den Schock das Bewußtsein zu verlieren, daneben wird jeder Charakter ohnmächtig, sobald er nur noch 5 LP oder weniger hat.
+
+Aventurien ist ein gefährliches Land, und ohne Kämpfe kommt man manchmal nicht an sein Ziel - doch nun wünschen wir Ihnen viel Vergnügen mit diesem Abenteuer, das für Sie mit Abschnitt [[1]] beginnt.
+(set:$Versuche to 0)
+
+::1
+Erst Stille...
+Alles ist von Dunkelheit eingehüllt...
+Dann - urplötzlich - zerreißt ein unmenschlicher Schrei die Lautlosigkeit. Mühsam öffnen sich erschöpfte, das Sehen kaum noch gewohnte Augen und blicken in das grelle Licht, vor dem ein Schatten aufragt.
+Ein großer, ein gewaltiger Schatten ...
+Unter fahlweißer, fettglänzender Haut bewegen sich Muskeln wie flüssiges Eisen, als das Wesen - das Unwesen? -schnell immer größer und größer wird, mit einem wütenden und gierigen Schrei heranstürmt.
+Im Hintergrund splittert Holz...
+Bäume brechen wie Strohhalme, als sich das Geschöpf seinen
+Weg bahnt, in der Hand eine gewaltige Keule hoch erhoben...Doch auch in der eigenen Hand ruht ein großes Gewicht, und die schmerzenden Augen erblicken eine breite Waffe aus zwei blitzenden Schneidblättern an einem dicken Holm – eine Doppelaxt...
+Soll es zu einem Kampf gegen das Ungeheuer kommen ([[41]]), oder scheint rasche Flucht klüger zu sein ([[61]])?
+(set:$Waffe to "Raufen - TP 1W6+1")
+(set:$Ruestung to "Keine - RS 0, BE 0")
+(unset:$Von)
+(unset:$Haken)
+(unset:$ArenaSchluessel)
+(unset:$GrandeSchluessel)
+(unset:$Rubin)
+(unset:$Dietriche)
+(unset:$Kugel)
+(unset:$Brecheisen)
+(unset:$Brillantencollier)
+(unset:$Siegelring)
+(set:$Versuche to $Versuche+1)
+
+::2
+Das Kurzschwert liegt angenehm in der Hand und sollte es Euch ermöglichen, einem Gegner 1W6+6 Trefferpunkte zuzufügen.
+Weiter bei Abschnitt [[66]].
+(set:$Waffe to "Kurzschwert - TP 1W6+6")
+
+::3
+Ihr habt Euch entschieden, den Dreizack als Waffe zu verwenden. Wenn Ihr ihn führt, verursacht er 1W6+7 Trefferpunkte.
+Weiter bei Abschnitt [[66]].
+(set:$Waffe to "Dreizack - TP 1W6+7")
+
+::4
+(if:$GrandeSchluessel==1)Weiter bei Abschnitt [[110]].(else:)Weiter bei Abschnitt [[142]].(endif:)
+
+::5
+Ihr zieht das Tuch vorsichtig zur Seite und entdeckt ein ganzes Bündel Nachschlüssel. Eilig steckt Ihr sie ein. 
+Möchtet Ihr nun in die Kanalisation zurückkehren, so lest bitte bei [[219]] weiter. Falls Ihr aber auskundschaften wollt, wohin der Ausgang in der Höhlenwand führen mag, so ist Euer nächster Anlaufpunkt die Nummer [[235]]?
+(set:$Dietriche to 1)
+
+::6
+Wie gut, dass Ihr den Haken, an dem die Wurst hing, mitgenommen habt - damit könnt Ihr nun versuchen, das Schloss zu knacken. Als Dietrich ist der Eisenhaken zwar ein wenig grob, aber Euren geschickten Fingern wird es schon gelingen, ihn zurechtzubiegen. Sollte Euch die Schlösser-Knacken-Probe gelingen, so lest bei Abschnitt [[333]], ansonstent bei [[63]] weiter.
+
+::7
+Der Alte blickt in Eure Richtung: &raquo;Axmann? Das wird aber langsam Zeit. Ich hab auf dich gewartet, hier sind die Sachen, die du damals dabei hattest, als du hierher gebracht wurdest. Ach ja, du hast wohl noch jemanden, zu dem du zurückkehren kannst...&laquo; Der Mann reicht Euch Eure Rüstung (RS 7, BE 5) und Euer Familienerbstück, die Axt Adamant (2W6+9 TP). 
+Überglücklich bedankt Ihr Euch bei Eurem Helfer, der traurig der Wand etwas vom Schicksal seiner Lieben erzählt und dabei mit großen Zügen aus seinem Krug trinkt. Ihr hingegen begebt Euch nach Abschnitt [[97]].
+(set:$Waffe to "Felsspalter Adamant - TP 2W6+9")
+(set:$Ruestung to "Schuppenpanzer - RS 7, BE 5")
+
+::8
+Erschöpft, aber zufrieden mit Eurem Sieg und glücklich über die nahe Freiheit, stolpert Ihr die Treppe hinauf und gelangt an eine massive Tür. Mit zitternden Fingern durchsucht Ihr den Schlüsselbund und findet nach einer kurzen, Euch allerdings wie eine Ewigkeit vorkommenden Zeit, den passenden Schlüssel. Ihr steckt ihn ins Schloss, dreht um und hört das ersehnte Klicken. Die Tür öffnet sich, und Ihr taumelt hinaus.
+Weiter bei Abschnitt [[75]].
+
+::9
+Ein dumpfes Rumpeln ist zu hören, als Ihr eben an der Türe vorüber geschlichen seid. Erschreckt zuckt ihr zusammen, macht Euch zum unvermeidlichen Kampf bereit, doch dann wird Euch klar, dass Ihr nur den Stein gehört habt, der Euch vom Herzen fiel ...
+Langsam folgt Ihr dem düsteren Gang, der schließlich in der Westwand eine weitere Türe aufweist und weiter nach Süden verläuft. Wollt Ihr versuchen, die Türe zu öffnen ([[342]]), oder einfach weiter dem Gang nach Süden folgen ([[44]])?
+
+::10
+Ihr betretet die Kammer und entdeckt neben den Zutaten für den unvermeidlichen Reisbrei, einen Mehlsack, einen Strang Knoblauchzwiebeln, ein Fass Sauerkohl, mehrere Säcke mitgetrockneten Feuerbohnen und eine äußerst appetitanregend aussehende Hartwurst, die an einem Haken von der Decke baumelt.
+Wollt Ihr Euch diese Wurst, die erste seit einer Ewigkeit, zu Gemüte führen ([[45]]) oder befürchtet Ihr, dass auch diese mit Kräutern behandelt wurde, und geht statt dessen lieber zu der Türe in der Südwand ([[32]])?
+
+::11
+Bevor die überraschte Wache ihre Waffe ziehen kann, landet Ihr einen schmerzhaften Hieb in ihren Magen. Allerdings habt Ihr kaum die Möglichkeit, Euch über den gelungenen Treffer zu freuen, da schnell vier Wachmänner mit Knüppeln herbeieilen und auf Euch einschlagen, bis Euch das Bewusstsein schwindet. Lest weiter bei [[1]].
+
+::12
+Ihr befindet Euch in einem dunkel getäfelten Flur, vor Euch seht Ihr eine Treppe, die sowohl nach oben als auch in den Keller führt. Möchtet Ihr Euer Zimmer aufsuchen ([[227]]) oder lieber der Treppe nach unten folgen ([[254]])?
+
+::13
+Ihr stellt den Krug achtlos zur Seite und zieht Eure Waffe - diese Aktion erlaubt Eurem Gegner allerdings eine unparierbare Attacke ([[133]]).
+
+::14
+Nachdem Ihr die Türe vorsichtig hinter Euch geschlossen habt, steht Ihr auf einem nur spärlich erleuchteten Gang. Einige Pechfackeln werfen ihr fahles Licht auf eine eisenverstärkte Holztür im Osten ([[48]]), eine schmale Holztüre im Norden ([[181]]) sowie eine weitere im Süden ([[116]]). Der Schlafsaal befindet sich im Westen. Wohin wollt Ihr Euch nun wenden?
+
+::15
+Anscheinend hatte Euer Gegner einige schmutzige Tricks auf Lager, die Ihr noch nicht kanntet. Als Ihr zu Bewusstsein gelangt, befindet Ihr Euch jedenfalls in einem finsteren Loch, das nach den Hinterlassenschaften vieler Jahrgänge von Gefangenen stinkt; das einzige Licht fällt durch eine Türe mit einem vergitterten Fenster. In einer Ecke befindet sich ein fauliger Strohsack. Plötzlich öffnet sich die Türe, und eine Wächterin steckt Ihren Kopf hinein.
+Wollt Ihr sie angreifen ([[11]]) oder erst einmal abwarten, was sie vorhat ([[202]])?
+
+::16
+Mutig geht Ihr zum Kai und stellt Euch an den Rand des Hafenbeckens. Vom Schiff ertönt die Bitte, dass Ihr Euch zu erkennen geben mögt.
+Sagt Ihr Euren richtigen Namen ([[163]]), oder gebt Ihr einen anderen Namen an ([[187]])?
+
+::17
+Ihr geht den Gang weiter, vorbei an weiteren Gemälden, Stühlchen mit aufwendig verzierten Kissen, kleinen Tischchen mit silbernen Kerzenleuchtern und Ähnlichem, bis Ihr schließlich am Ende des Ganges vor einer einfachen Holztüre steht.
+Möchtet Ihr diese öffnen ([[120]]) oder lieber den Gang bei [[206]] zurückgehen?
+
+::18
+&raquo;Nun, wenn ich Euch damit nicht helfen kann, mein Herr, gibt es vielleicht einen anderen Wunsch, den ich Euch erfüllen könnte?&laquo;
+Wenn Ihr dies bejahen und Eure Sorgen vortragen wollt, so lest bitte bei Abschnitt [[194]] weiter. Ansonsten könnt Ihr Euch verabschieden und bei Abschnitt [[179]] nach einem neuen Schlupfwinkel suchen.
+
+::19
+&raquo;Angrosch ist mit den Tapferen!&laquo; - mit diesen beruhigenden Gedanken erhebt Ihr Euch leise von Eurer Lagerstatt und schleicht zur Tür des Schlafsaales. Ihr habt das Gefühl, dass das Pochen Eures Herzens so laut sei, dass ein jeder im Raume davon erwachen müsste, und fast scheint es, als ob einer der Schläfer etwas vernommen hat, denn er richtet sich schlaftrunken auf. Starr verharrt Ihr in der Bewegung. Wird der Kerl sich zu Euch umdrehen? Wird er womöglich ein hässliches Gebrüll ausstoßen, die anderen Schläfer aufwecken und die Wachen auf den Plan rufen? Weiter geht es bei [[184]].
+
+::20
+Ihr stellt Euch breitbeinig im Gang auf. Plötzlich kommt ein Sklavenwächter um die Ecke, in seinen Händen hält er einen Tonkrug. Als er Euch sieht, stutzt er einen Moment. Wollt Ihr die Gelegenheit nutzen und ihn angreifen ([[289]]) oder lieber erst einmal abwarten ([[272]])?
+
+::21
+Ob Ihr wohl je erfahren werdet, ob Ihr es geschafft hättet? Wohl kaum - denn am nächsten Tag wird bekannt gegeben, dass es am Abend zu einem Auftritt in der Arena kommen wird. Diese &quot;Überraschungen&quot; sollen dazu dienen, die Gladiatoren stets wachsam zu halten. Noch während Ihr über Eure Erfolgschancen nachdenkt, verschwimmt die Welt um Euch herum. Vermutlich wollte irgend jemand wieder ganz sicher gehen und hat Euch mit diesem angroschverfluchten Kraut die Sinne benebelt.
+Weiter geht es bei Abschnitt [[1]] ...
+
+::22
+Ihr hebt Eure Waffe und attackiert das Rudel Ratten - es handelt sich um insgesamt 14 Tiere.
+
+<i>Die Werte der Ratten sind wie folgt:</i>
+MU 12, AT 7, PA 0, TP 1 SP (Biss), RS 0, LE 6
+
+Bei einer gelungen Attacke fügt Euch die Ratte einen Schadenspunkt zu. Wenn Ihr die Ratten mit Eurer Waffe angreift, habt Ihr einen Attacke-malus von -3. Sobald Ihr zehn der Kreaturen getötet habt, fliehen die anderen. Solltet Ihr die Ratten besiegen, begebt Euch bitte nach Abschnitt [[236]]. Sollten die Ratten Euch überlegen sein, findet Ihr Euch bei Abschnitt [[328]] wieder.
+
+::23
+Tatsächlich gelingt es Euch, durch einige markige Worte die Unterwerfung der anderen einzufordern - und so könnt Ihr endlich Euren Hunger an drei, vier Schüsseln Reisbrei stillen, die Ihr anderen Sklaven fortgenommen habt. Wahrlich, so gebührt es einem König - wären da nur nicht die bohrenden, hasserfüllten Blicke der übrigen in Eurem Rücken, die Euch rasch lehren, was das höchste Gut des Herrschers ist: die Liebe seiner Untertanen.
+Weiter bei Abschnitt [[246]].
+
+::24
+An dem hell erleuchteten Gebäude schwingt ein Schild träge im Wind. Auf ihm ist ein mit schäumendem Bier gefüllter Krug abgebildet - fast vermögt ihr den herben Duft des Bräus zu riechen... Stimmen und Gelächter dringen auf die Straße. Als Ihr die Türe öffnet, verstummt das Stimmengewirr, und man starrt Euch entgegen: &raquo;Ich fasse es nicht,&laquo; ruft einer, &raquo;was willst du halbe Portion denn hier? Hat deine Mami dir überhaupt erlaubt, so lange aufzubleiben?&laquo; Auf diese Frechheit hin brechen die Schänkenbesucher in brüllendes Gelächter aus.
+Wollt Ihr dem Rüpel sagen wer Ihr seid ([[180]]) oder wollt Ihr ihm mit Euren Fäusten Manieren beibringen ([[205]])? Ihr könntet ihn natürlich auch ignorieren und zur Theke gehen ([[177]]) - vielleicht wollt Ihr diesen ungastlichen Ort aber auch verlassen ([[179]])?
+
+::25
+Um ihm den Krug zu entwinden, sollten Euch sowohl eine Körperkraft- wie auch eine Gewandtheitsprobe gelingen. Bei einem Erfolg könnt Ihr bei Abschnitt [[287]] erfahren, was als nächstes geschieht. Solltet Ihr eine oder beide der Proben nicht schaffen, lest bitte weiter bei [[270]].
+
+::26
+Angesichts dieser Umstände scheint es nur einen Ausweg zugeben: die Flucht, möglichst noch vor dem nächsten Kampf. Zwar ist ein solches Vorhaben höchst gefährlich, und viele Berichte erzählen vom grausigen Schicksal geflohener und wieder eingefangener Sklaven, doch - bei Angrosch! - Ihr seid ein König Eures Volkes und wollt noch viele Heldentaten erleben. Fast scheint es, als würden die schurkischen Al&apos;Anfaner auch Euer aller Nahrung mit Kräutern versetzen, die einem jeden Schwung und jede Entschlusskraft rauben. Erinnert Euch: Immerhin seid Ihr in die Stadt gekommen, um große, rühmenswerte Taten zu tun, nicht aber, um als &quot;Axmann&quot; den Ruf der Arena zu erhöhen (Weiter bei Abschnitt [[51]]).
+
+::27
+Ihr begebt Euch weiter in den Park, der von wirklich beachtlicher Schönheit ist. Farbenfrohe Orchideen werden von nicht minder prächtigen Schmetterlingen umflattert. Einige Wasserspeier lassen spritzende Fontänen in steinerne Becken strömen. Sehnsüchtig denkt Ihr an Eure Heimat, an das Blumenreiche Schatodor und Lorgolosch von den Brillanten, an die rauhe Schönheit der Insel Olrong und an die Kunstfertigkeit Eurer Untertanen, und wandert weiter, bis Ihr schließlich zu einer Mauer gelangt. In dieser Mauer befindet sich eine kleine Pforte - möchtet Ihr versuchen, sie zu öffnen ([[332]]), oder wieder zum Haus zurückkehren ([[260]])?
+
+::28
+&raquo;Keine Sorge, Freunde - wer wie Halb-Oger auf reine Brutalität baut, wird immer einmal einem Stärkeren unterliegen. Ich für meinen Teil will nur meinen Frieden haben.&laquo; Mit diesen Worten sind die Sorgen der Gladiatoren rasch zerstreut, und Ihr könnt Euch Eurem Mahl zuwenden.
+Weiter geht es bei Abschnitt [[246]].
+
+::29
+Was nützt es, für einen Klecks verdorbener Speise einen Kampf zu beginnen, denkt Ihr und reicht dem großen Tölpel stillschweigend die Butter. &raquo;Oho,&laquo; frohlockt Halb-Oger, &raquo;mal ein Zwerg, der Manieren hat. Na, dann wirst du noch oft so großzügig sein dürfen ...&laquo;
+Weiter bei Abschnitt [[100]].
+
+::30
+Ihr hebt das Weinglas in die Höhe und nehmt einen Schluck des süßen, aber durchaus wohlschmeckenden Getränks. Die Schöne lächelt Euch verführerisch an. &raquo;Nun, eine der Gaben der Göttin lernt Ihr gerade kennen, wie sieht es aus..? Möchtet Ihr auch die weiteren Segnungen der Herrin Rahja erfahren?&laquo;
+Wollt Ihr dies bejahen, so lest bitte bei [[218]], ansonsten bei Abschnitt [[18]] weiter.
+
+::31
+Neugierig schlendert Ihr durch den kleinen Saal, der mit allerlei Kostbarkeiten geschmückt ist, und entdeckt in der östlichen Ecke eine Türe, die in einen Park zu führen scheint. Wollt Ihr Euch den Park näher anschauen ([[132]]) oder lieber den Raum verlassen ([[260]])?
+
+::32
+Ein erstes Rütteln an der Türe zeigt Euch. dass sie verschlossen ist.
+Wollt ihr (if:$Haken==1)probieren mit dem Haken, an dem die Wurst hing, das Schloss zu knacken ([[6]])? Oder (endif:)versuchen die Tür mit Gewalt zu öffnen ([[340]])?
+(set:$Von to "Vorratskammer")
+
+::33
+Euer nächster Hieb raubt dem Mann den Atem, doch das einmalige Pfeifen hat offensichtlich schon genügt: Trampelnde Schritte verraten die Annäherung mehrerer Wachen. Kurz ehe ein tückischer Tritt des Sklavenwärters Euch von den Beinen reißt, seht Ihr noch, wie fünf oder sechs Männer und Frauen mit kurzen Knüppeln herankommen. Keuchend stößt der Sklavenwärter hervor: &raquo;Bringt dem kleinen Schwein Manieren bei - aber macht ihn nicht kaputt. dazu ist er zu kostbar..!&laquo;
+Dann fallen auch schon die Hiebe; dicht wie Hagel und schmerzhaft wie die Hufe einer trampelnden Rinderherde. Zwar könnt Ihr dem einen seinen Knüttel entreißen und damit zwei der Angreifer zu Boden schicken, doch schließlich siegt die Überzahl der Sklavenwächter ...
+Kurz ehe Ihr, auf dem harten Steinboden liegend, das Bewusstsein verliert, hört Ihr noch die Worte: &raquo;Das war&apos;s dann jawohl - haltet ihn bis zu seinem nächsten Kampf unter Kräutern..!&laquo;
+Weiter geht es bei Abschnitt [[1]] ...
+
+::34
+Die erschöpften Muskeln und müden Glieder fordern ihr Recht, und auch wenn der Boden aus hartem Stein ist – ein gutes, ein würdiges Bett -, ist rasch eine bequeme Haltung
+gefunden, und allmählich schweigt auch die seltsame Stimme der Erinnerungsfetzen im Kopf und gewährt dem müden Geist Entspannung - möge sie nach dem Schlafe laut und klarsprechen.
+Der Schlaf ist erholsam und traumlos und endet zu einer unbestimmbaren Stunde: Kein Licht dringt in die enge Kammer; und doch wirkt das eher beruhigend als erschreckend... 
+Weiter bei Abschnitt [[285]].
+
+::35
+In der kleinen, unbeleuchteten Kammer kehrt langsam und stockend die Erinnerung zurück - Axmann, das ist der Name eines gefeierten Gladiators. Doch dahinter verbirgt sich noch eine andere Identität ...
+Bilder von Kämpfen in einer Arena mischen sich mit kurzen Eindrücken von Pferden, von einem lauschigen Talkessel voller prächtiger Obstbäume und von einem schier unüberblickbaren Schatzhort - eine seltsame und vieldeutige Sammlung unzusammenhängender Erinnerungen.
+Ob es Sinn hat, das Gedächtnis durch stetes Grübeln zurückgewinnen zu wollen ([[59]])? Oder wäre nicht ein guter Schlummer besser, um die Gedanken zu sammeln ([[337]])?
+
+::36
+Ihr seid Euch nicht sicher, ob Ihr einen Fehler begangen habt, und stellt das Weinglas hastig ab. Nur kein Risiko eingehen, denkt Ihr Euch, als Ihr mit eiligen Schritten zurück auf die Straße rennt ([[179]]).
+
+::37
+Ihr steigt die ausgetretenen Stufen hinab in die Dunkelheit. Lediglich eine trübe Öllampe spendet etwas Licht. Schließlich gelangt Ihr in einen großen Raum dessen Wände mit Fässern vollgestellt sind. Auf einem Tischchen steht ein Krug mit Wein. Wollt Ihr den Wein mit nach oben nehmen ([[149]]), oder fühlt Ihr Euch nicht angesprochen und steigt die Treppe wieder hoch ([[117]])?
+
+::38
+Stolpernde Füße nähern sich dem blutigen Kopf, zitternde Finger heben ihn in die Höhe. Der blutrünstige Krawall und der Jubel werden noch lauter.
+Die Füße setzen sich in Bewegung, nehmen einen Weg am Fuße einer hohen Mauer entlang, diese aber krümmt sich stetig, schließt sich endlich zu einem großen Kreis; über siehinweg schallen die Stimmen und werden Dinge geworfen - Blumen, Tücher, Pergamentstücke - seltsam, doch keine direkte Gefahr...
+Nachdem die dritte Runde vollbracht ist, wird das Jubeln der Stimmen leiser, und die Hände des Schwarzgewandeten greifen zu: &raquo;Nun reicht&apos;s aber. Kannst wohl gar nicht genug bekommen..?&laquo;
+Weiter bei Abschnitt [[60]].
+
+::39
+Das Essen ist wirklich vorzüglich, obwohl die Menge sicher ausreichen würde, um zehn Angroschim (oder vier Hügelzwerge) zu sättigen. Der Dicke stopft mit wahrer Wonne die Köstlichkeiten in sich hinein. Schmatzend erzählt er Euch, wie sehr er Eure Kampferfolge in der Arena bewundert, dass er eine Dauerkarte für eine der vornehmsten Tribünen besitzt, dass er noch jeden Eurer Kämpfe gesehen hat, dass Ihr ihm Eure Kniffe beibringen müsstet und, dass er Euch all seinen Freunden vorstellen werde, die ihn sicher glühend beneiden würden, dass er einen derartig berühmten Helden bei sich beherbergen dürfte...
+Unter derartigem Geschnatter geht das Essen zu Ende.
+Weiter bei Abschnitt [[154]].
+
+::40
+Vor Euch liegt ein toter Säbelzahntiger. Das Fell wäre eine schöne Trophäe für Euer Kaminzimmer, aber leider habt Ihr nicht die Zeit, den Tiger abzuhäuten. Mit einem leichten Gefühl des Bedauerns setzt Ihr Euren Weg fort und hofft, dass niemand den Kampfeslärm gehört hat.
+Weiter bei Abschnitt [[139]].
+
+::41
+Die Axt erhebt sich scheinbar von alleine, wie von der Luft selbst geführt - oder von Muskeln, die sich besser an viele Kämpfe erinnern als der betäubte Verstand..? - und schlägt eine tiefe Wunde in die Brust des unachtsam herbeistürmenden Ungeheuers, das mit einem heiseren Aufbrüllen das Gleichgewicht verliert und zu Boden stürzt.
+Rufe, laute Rufe erschallen ringsumher!
+Ohne von bewussten Gedanken gelenkt zu sein, schwingen kräftige Arme erneut die Axt, trennen dem seltsam hilflos zappelnden Oger - ja genau, <i>Oger</i> ist sein Name..! – den schweren Kopf glatt von den Schultern und schleudern ihn fast sieben Schritt weit fort ...
+Nach kurzer Stille braust ein ohrenbetäubender Jubel durch die Luft, und immer wieder wird ein Name gerufen: &raquo;Ax-mann! Axmann!&laquo; Ein überraschend vertrauter Name, und doch ist dieser Name falsch..!
+Braunhäutige Männer huschen heran und zerren den Leichnam des Ogers davon. Ein starker, in schwarzes Zeug gehüllter Mann kommt herbei, ganz nahe heran - wie riecht er nachbilligem Schnaps und teuren Rauchkräutern..!, - und zischt: &raquo;Nun pack dir endlich den Kopf und schwenk ihn! Das ist dein Jubel!&laquo;
+Den Kopf des Ogers umherzeigen? Das klingt seltsam - scheint es richtig ([[336]]) oder falsch ([[60]])?
+
+::42
+Die doppelseitige Axt ist eine Waffe, mit der Ihr bereits einige Erfahrungen gesammelt habt, nicht zuletzt in der Arena. Im Kampf geführt, verursacht sie 2W6+7 Trefferpunkte.
+Weiter bei Abschnitt [[66]].
+(set:$Waffe to "Felsspalter - TP 2W6+7")
+
+::43
+Klar erkennend, wann es besser ist nachzugeben, leistet Ihr keinen Widerstand, als die Wachen Euch zum Schlafsaal zurückführen und Euch einen Trank einflößen. Während Euch langsam die Sinne schwinden, wisst Ihr genau, dass Euch irgendwann die Flucht gelingen wird. Bis dahin allerdings geht es bei Abschnitt [[1]] weiter.
+
+::44
+Ihr folgt dem Gang, der sich weiter nach Süden windet, und entdeckt in der östlichen Wand eine weitere Türe, durch die ein schwacher Lichtschein dringt. Der Gang führt weiter in südlicher Richtung.
+Wenn Ihr die Türe öffnen wollt, lest bitte bei [[65]] weiter, ansonsten führt Euch Euer Weg zu Abschnitt [[139]].
+
+::45
+Ihr könnt Euch im Rahmen Eurer geschwächten Gedächtniskraft nicht daran erinnern, dass je einer der Gladiatoren Wurst zum Essen erhielt, also wird sie auch wohl nicht mit Rauschkraut versetzt sein. Ihr nehmt Euch die schmackhafte Zwischenmahlzeit entschlossen - dabei löst sich allerdings auch der Haken aus der Decke.
+Um ihn noch aufzufangen, müßt Ihr eine Probe auf Eure Körperbeherrschung schaffen. Bei Erfolg könnt Ihr bei Abschnitt [[186]], bei Misserfolg bei Abschnitt [[312]] weiterlesen.
+
+::46
+Als Ihr diese Türe durchschritten habt, befindet Ihr Euch in einem weiteren Gang, der sich nach Süden fortsetzt. Durch eine einen Spalt breit geöffnete Tür in der Ostwand dringen dumpfe Stimmen - offensichtlich kommen sie aus einem Wachraum. Ihr solltet nun versuchen, so leise wie möglich an der Türe vorbei zu schleichen, damit man Euch drinnen nicht hört. Legt eine Schleichen-Probe ab und zählt bitte zusammen, welchen Malus Ihr noch hättet ausgleichen können, dann schaut bei Abschnitt [[313]] nach.
+
+::47
+Um auf den Steg zu gelangen, müßt Ihr eine Gewandtheits-probe +5 ablegen. Sollte die Probe erfolgreich sein, so lest bitte bei [[221]], ansonsten bei [[52]] weiter.
+
+::48
+Vorsichtig öffnet Ihr die schwere Tür und befindet Euch in einem kleinen Raum, der nur eine Bank sowie eine weitere östliche Tür enthält. So sehr Ihr Euch auch bemüht, diese Türe bleibt verschlossen. Schwach glaubt Ihr Euch zu erinnern, dass Ihr durch sie aus der Arena geführt wurdet. Entschlossen wendet Ihr Euch einem anderen Ausgang zu. Weiter bei Abschnitt [[14]].
+
+::49
+Vor Euch seht Ihr eine Herberge. Die Fensteröffnungen sind mit einfachen getrockneten Schweinsblasen verschlossen, in einer davon hängt ein noch recht neues Schild mit den Worten &quot;Aushilfe gesucht&quot;. Ihr hört drinnen Stimmen miteinander reden. Ihr öffnet die Türe und seht einen kleinen Raum vor Euch, in der Mitte des Raumes stehen zwei Tische. Einige Leute sitzen darum und würfeln. Als Ihr eintretet, blickt einer der Männer auf und spricht Euch an: &raquo;Nun, später Gast, was führt Euch hierher? Sucht Ihr ein Zimmer ([[261]]) oder vielleicht Arbeit ([[231]]); oder wollt Ihr nur einen Schluck trinken?&laquo;
+Möchtet Ihr eines seiner Angebote annehmen oder nach einem erfrischenden Bier das Haus lieber wieder verlassen ([[179]])?
+
+::50
+Die Zeit verrinnt nur langsam, und Eure Gedanken kreisen um Eure bevorstehende Flucht: &raquo;Wer mag wohl dieser Bewunderer sein?&laquo; - &raquo;... vielleicht ist es eine Falle ?&laquo; - &raquo;... und wenn der Schlafsaal abgeschlossen sein sollte ..?&laquo;
+Ihr lauscht auf die Atemzüge Eurer Gefährten, Eure Gedanken werden träge. Endlich schlummert Ihr ein, Euer brummelndes Schnarchen nach bester Zwergenart erfüllt den Schlafsaal, bis Ihr am nächsten Morgen in Abschnitt [[21]] erwacht.
+
+::51
+In diese Überlegungen platzt eines Tages ein Vorfall, der Euch mit neuer Hoffnung erfüllt: Der alte Mann an der Essensausgabe, der Euch seit dem ersten Tag die Treue gehalten hat, steckt Euch eine altbackene Semmel zu, mit den Worten: &raquo;Aber kaut vorsichtig, vielleicht steckt ja etwas drin - Splitter vom Mühlstein oder so...&laquo;
+Und wirklich findet Ihr etwas in dem Stück Brot: Eine kleine Nachricht mit dem Wortlaut: &raquo;Wenn Ihr befreit werden wollt, so kommt in der nächsten Nacht zum Südausgang. Eine Droschke erwartet Euch. Ein Bewunderer.&laquo;
+Wollt Ihr diese Gelegenheit nutzen ([[124]])? Ihr müsstet Euch dafür allerdings erst einmal zum Südausgang durchschlagen, und vielleicht ist das Risiko dafür ja auch zu hoch. Nein, nein, wer immer den Zettel geschrieben hat, er will Euch doch nur eine Falle stellen.
+Nicht mit Euch, Ihr wartet fein weiter ab ([[21]])?
+
+::52
+Mit einem lauten Platschen landet Ihr in der stinkenden Brühe. Ihr rudert mit den Armen in der Luft herum. Dann bemerkt Ihr, daß Ihr zumindestens hier den Boden berühren könnt.
+Als Ihr Euch aufrichtet, reicht Euch das Wasser zwar bis zum Hals, aber Ihr könnt Euch doch fortbewegen. Weiter bei Abschnitt [[243]].
+
+::53
+Nach Eurem werweißwievielten Schlagabtausch kommen endlich die Wachen heran und zerren Halb-Oger und Euch auseinander. Wütend und erschöpft starrt ihr einander an, und Halb-Oger knurrt: &raquo;Das wird dir noch leidtun, Zwergenbrut.&laquo; Der Sklavenaufseher entscheidet, dass ihr beide als Unruhestifter in Einzelzellen gesperrt werdet – selbstverständlich ohne Essen.
+Erst am nächsten Morgen öffnet sich für Euch die Tür, und Ihr könnt endlich eine Mahlzeit einnehmen.
+Weiter bei Abschnitt [[246]].
+
+::54
+Ihr öffnet vorsichtig die Türe und befindet Euch auf einem düsteren Flur. An den Wänden hängen einige Fackeln in rußig schwarzen Halterungen. Vor Euch seht Ihr zwei Türen. Nehmt ihr die Linke ([[232]])? Oder die Rechte ([[123]]).
+
+::55
+Als sich die Wolken in Eurem Kopf geklärt haben, steht der triumphierende Halb-Oger grinsend über Euch und spuckt Euch an. Dann meint er: &raquo;So, Bursch&apos;, jetzt hab ich dir Manieren eingebläut. Und wenn der gute Halb-Oger noch mal was haben will, dann heisst&apos;s aber &rsaquo;Jawohl, mein Herr und Meister&lsaquo;, verstanden..?&laquo;
+Mit einem bösartigen Tritt in die Rippen geht er davon zum Tisch - nicht ohne auch noch Euren Reisbrei mitzunehmen. Die Schmach der Niederlage trifft Euch allerdings auch weit tiefer als der Hunger...
+Weiter bei Abschnitt [[100]].
+
+::56
+Nach einer Stunden oder Tagen, wer weiß es so genau, erwacht Ihr auf rauem Steinboden. Eure derzeitige Lebensenergie beträgt 10 Punkte. Mühsam rappelt Ihr Euch auf und begebt Euch nach Abschnitt [[222]].
+
+::57
+Während im Hintergrund zusätzliche Wachen heranstolpern, lasst Ihr demonstrativ Eure Hände sinken. &raquo;Na was denn, Kleiner, wohl noch im Kampfesrausch, hm ..? Willst wohl den großen Mann markier&apos;n. Das schaffste doch nie, bei deinen sechs Spann, haha. Nun aber marsch zum Essen, oder soll&apos;n wir dich tragen, du Held..?&laquo;
+Argwöhnisch beäugt vom Sklavenwärter und seinen sechs neu dazugekommenen Kumpanen, macht Ihr Euch auf in den Speisesaal - denn tatsächlich nagt der Hunger schon kräftig in Eurem Magen.
+Weiter bei Abschnitt [[118]].
+
+::58
+Mit einem heiseren Lachen wendet sich der Mann an Euch: &raquo;Na, Axmann, du Held, willste nicht rauskommen zum Frühstücken? Wenn du nächstes Mal netter bist und nicht vor jedem Kampf deine Kräuter bräuchtest, könnteste auch nach deinen Kämpfen zu Abend essen...&laquo;
+Die Erwähnung von Essen lässt Euch Euren Hunger bewusst werden, und ohne den Rüpel weiter zu beachten, schreitet Ihr an ihm vorbei den Gang entlang, von dem Euch der Duft eines Frühstücks entgegenweht.
+Weiter bei [[118]].
+
+::59
+Der Zwang bringt keine neuen Erkenntnisse, stellt das bisher zurückgewonnene Wissen allenfalls erneut in Frage. Vielleicht, nein, vermutlich ist keine normale Vergesslichkeit schuld an solcher Verwirrung. Namen und Berichte von seltsamen Rauschkräutern steigen im Gedächtnis auf. Unter diesen Umständen scheint es wirklich das Klügste, die Wirkung der Droge einfach zu überschlafen.
+Weiter bei Abschnitt [[34]].
+
+::60
+Mit einem Schulterzucken, begleitet von einem grimmigen Lächeln, zerrt der schwarz gekleidete Mann an dem Arm, der den bluttriefenden Ogerkopf hält. In der Wand tut sich eine Tür auf, und die dort lauernde Dunkelheit umfängt wieder alles. Nur schwach wehen die Worte heran: &raquo;So, Bursche, jetzt schlaf erst mal deinen Rausch aus... deinen Blutrausch, haha!&laquo;
+Weiter bei [[35]].
+
+::61
+Nur protestierend bewegen sich müde Muskeln - nein, nicht müde, eher betäubt - und ohne klare gedankliche Lenkung wendet sich der Körper um; taumelt von der furchtbaren Kreatur fort. Wie bei einem Mechanismus werden die Gelenke bewegt, setzt sich ein Fuß vor den anderen.
+Doch schon scheint der Wald zu Ende, ragt eine hohe, steinerne Mauer empor.
+Und in der Luft erhebt sich Protest..!
+Das Knirschen und Splittern des Holzes zeugt vom Herannahen des Geschöpfes. Bald wird es da sein, seine Keule niedersausen lassen - einmal, mehrmals, bis sich kein Leben mehr regt - und dann seine Zähne in das noch warme Fleisch graben.
+Woher stammt dieses Wissen..?
+Die schwere Doppelaxt hat schon genügend Erschöpfung verursacht, so soll sie denn zumindest einen letzten Schlag gegen das Ungeheuer führen...
+Weiter bei Abschnitt [[41]].
+
+::62
+Ihr begebt Euch in den Euch zugewiesenen Raum. Er ist einfach, aber zweckmäßig eingerichtet. Das Bett sieht schmal, aber einigermaßen bequem aus. Müde lasst Ihr Euch hineinfallen, und nachdem Ihr ein wenig von Eurer Kraft zurückgewonnen habt, werdet Ihr bei Abschnitt [[225]] rüde geweckt.
+
+::63
+Schweren Herzens seht Ihr ein, dass Ihr keine Möglichkeit habt, die Türe zu öffnen, und folgt dem Gang nach [[44]].
+
+::64
+Ihr werft Euch gegen den Wärter und kämpft mit erbitterter Entschlossenheit, als sieben mit Knüppeln bewaffnete Wachen in den Raum stürmen. Ihr könnt Euch nicht um alle zugleich kümmern und merkt daher nur noch, wie Euch jemand von hinten etwas über den Schädel schlägt. &raquo;Wie unedel...&laquo; sind Eure letzten Gedanken...
+Als Ihr das nächste Mal wieder etwas von der Welt spürt, seid Ihr bei Abschnitt  [[282]].
+
+::65
+Vorsichtig öffnet Ihr die Türe und erblickt einen Mann, der im Schein einer Öllampe in einem Pergament liest. Ihr habt die Möglichkeit zu einem Überraschungsschlag, den er nicht parieren könnte. Wollt Ihr ihn angreifen, gelten für Euch die Kampfwerte entsprechend Eurer Bewaffnung. (Und Eure Kampferfahrung lehrt Euch, daß gut gezielte Schläge zwar riskanter sind, aber oft auch weit mehr Schaden anrichten.)
+Gelingt es Euch, beim ersten Schlag mehr als 15 Trefferpunkte zu verursachen, so lest bei Abschnitt [[85]], ansonsten bei [[228]] weiter.
+
+::66
+(if:$Von=="Vorratskammer")Weiter bei [[341]].(else:)Weiter bei [[44]].(endif:)
+
+::67
+Ist Euch die Gewandtheitsprobe gelungen, so lest bitte bei Abschnitt [[134]] weiter, ansonsten bei Abschnitt [[87]].
+
+::68
+Ihr werdet von einem Zupfen an Euren Bart- und Haupthaaren wach; außerdem liegt ein Geruch von einem schrecklich süßen Duftwasser in der Luft.
+Als Ihr die Augen öffnet, erblickt Ihr zwei Menschenfrauen, die gerade noch die letzten Locken in Euren Bart drehen. Mit einem Knurren richtet Ihr Euch auf. Die beiden springen kichernd zur Seite. Voller Entsetzen stellt Ihr fest, dass man Euch mit diesem scheußlichen Duftwasser eingesprüht hat.
+Auf einem Stuhl neben Eurer Schlafstätte liegen Eure Kleider. Mit einer Handbewegung scheucht Ihr die beiden albernen Frauen aus dem Zimmer und kleidet Euch erst einmal an. Das Wasser im Krug reicht gerade aus, um den schlimmsten Gestank abzuwischen. Ein Blick in den Spiegel zeigt Euch, dass Euer Bart gelockt und mit Schleifchen verziert wurde. Unter einigen Mühen gelingt es Euch, wenigstens die lächerlichen Schleifen zu entfernen. Auf der Nachricht von gestern Abend stand etwas von Frühstück, da Ihr keines erblicken könnt, verlasst Ihr den Raum und steht wieder in der Badekammer. Der Zuber ist nun ausgeleert, so dass Ihr mit dem Euch noch anhaftenden Geruch leben müsst.
+Ihr öffnet die Türe in der Ostwand und gelangt nach [[88]].
+
+::69
+Ihr geht entschlossen auf die Türe zu, hinter der - kaum zu vernehmen - auf einmal Schritte zu hören sind. Weiter bei Abschnitt [[157]]
+
+::70
+Ihr wartet eine Weile, doch die Frau macht keine Anstalten, den Raum zu verlassen - sie dreht Euch aber immerhin den Rücken zu. Weiter bei Abschnitt [[92]].
+
+::71
+Ihr beschließt, erst einmal das Bad zu beenden: Nachdem Ihr Euch hinreichend gereinigt und erquickt habt, steigt Ihr aus der Wanne und geht nach Abschnitt [[91]].
+
+::72
+&raquo;Nein meine Dame&laquo;, ruft Ihr, &raquo;ich bin zwar nicht Justan, sondern Orbal, doch fürchtet Euch nicht, denn ich könnte einer edlen Dame nichts zuleide tun!&laquo;
+Nach Euren Worten hört Ihr Schritte, und eine kräftige Frau erscheint in einem weißen Gewand. Sie beginnt Euch zu mustern. &raquo;Ich vor Euch zittern, pah. Seid froh, wenn ich Euch nichts tue, Ihr halbe Portion. Hat Euch mein nichtsnutziger Mann geschickt, damit ich Euch helfen soll, ihn aus der Kaschemme zu schleppen?&laquo;
+Offensichtlich hält Euch die Frau für einen Zechkumpanen Ihres Mannes. Wollt Ihr sie in dem Glauben lassen und ihr irgendeine Geschichte erzählen ([[291]]) oder ihr die Wahrheit gestehen ([[275]])?
+
+::73
+Ihr denkt Euch, dass es das Beste ist, erst einmal abzuwarten, was weiter geschieht, und macht es Euch auf dem Boden bequem. Weiter bei Abschnitt [[157]].
+
+::74
+Als Ihr Euch durch das Fass gezwängt habt, bemerkt Ihr verdutzt, dass es keinen Boden hat. Kaum habt Ihr diese Erkenntnis gewonnen, da stürzt Ihr auch schon in die Tiefe. Aus den Augenwinkeln könnt Ihr in der Wand Steigeisen erkennen. Dann verspürt Ihr den Aufprall, den Ihr zum Glück ein wenig abfangen könnt, so dass Ihr nur das Ergebnis von 4 Würfen mit dem W6 als Schadenspunkte erleidet. Sollte Euch das Bewusstsein verlassen, so lest bitte bei Abschnitt [[56]], sonst bei [[249]] weiter.
+
+::75
+Während Ihr in die Dunkelheit taumelt, drehen sich Eure Gedanken um Eure neu gewonnene Freiheit. Ihr blickt Euch um, könnt aber keine Kutsche erkennen, entweder seid Ihr oder aber Euer Bewunderer etwas zu spät dran. Wollt Ihr auf ihn warten ([[94]])? Vielleicht ist der Brief ja auch nur eine Falle gewesen ...
+Oder aber scheint es Euch sinnvoller, auf eigene Faust durch die nächtliche Stadt zu fliehen ([[141]])?
+
+::76
+&raquo;Alarm. Alarm - ich habe einen Flüchtling entdeckt!&laquo; – die Schreie gellen durch den Raum. Weiter bei Abschnitt [[104]].
+
+::77
+Entschlossen, dass nichts Euch bei Eurer Flucht behindern soll, stürzt Ihr Euch auf den Alten. Weiter bei Abschnitt [[228]].
+
+::78
+Auch diese Türe ist dank Eures Schlüssels ohne Probleme zu öffnen. In dem Raum befinden sich neben einigen Kleidungsstücken auch Rüstungsteile, die es Euch erlauben, Euren Rüstungsschutz auf 3 zu erhöhen. Zufrieden verlasst Ihr den Raum wieder und setzt Euren Weg bei [[97]] fort.
+(set:$Ruestung to "Lederrüstung - RS 3, BE 2")
+
+::79
+Während Ihr dem Gang weiter folgt, entdeckt Ihr auf einem Tisch einen Krug mit Wein - offensichtlich hat ihn jemand vor kurzem dort abgestellt.
+Wollt Ihr nun vorsichtig weitergehen ([[106]]) oder Euch irgendwo verbergen, um zu sehen, wem der Wein gehört ([[99]])?
+
+::80
+Ihr horcht an der Türe und, als Ihr nichts hört, öffnet Ihr sie vorsichtig. Vor Euch liegt ein Raum, in dem einige Requisiten für die Arena aufbewahrt werden: Kalkeimer, Wischlappen, Ziegelpulver gegen rutschige Blutflecken und Ähnliches. Da Ihr nichts von Interesse entdeckt, schließt Ihr die Tür wieder und befindet Euch erneut bei [[101]].
+
+::81
+Wie durch einen Nebel seht Ihr zwei Leute, die sich über Euch beugen. Euer ganzer Körper schmerzt. Einer der beiden scheint offensichtlich ein Medicus zu sein und er lächelt Euch aufmunternd zu - der andere, Ihr erkennt ihn als den Vorsteher der Arena, schaut Euch äußerst grimmig an: &raquo;Nun, Medicus, wie lange dauert es, bis er wieder kämpfen kann? Er kann froh sein, dass wir ihn noch retten konnten. Seinetwegen haben wir einen wertvollen Tiger verloren - den Verlust muss er bald wieder eingebracht haben.&laquo; Ein bösartiges Grinsen überzieht sein Gesicht: &raquo;Nun, so bald wird er keinen unerwünschten Schaden anrichten - haltet ihn aber bis zum nächsten Kampf unter entsprechenden Kräutern!&laquo;
+Nach endlosen Wochen auf der Krankenstation geht es für Euch schließlich bei Abschnitt [[1]] weiter.
+
+::82
+Eine hohe Freitreppe führt zu diesem kleinen, aber ansehnlichen Gebäude. An der rechten Seite des Eingangs steht die Statue einer schönen Menschenfrau, links die einer Stute. Ihr tretet durch das weitgeöffnete Portal in eine große Halle. In der Mitte des Raumes befindet sich ein Wasserbecken, in dem einige unbekleidete Menschen sitzen. In anderen Ecken des Raumes entdeckt Ihr vereinzelt Pärchen, die auf weichen Kissen sitzen und sich miteinander unterhalten. Während Ihr Euch noch umschaut, tritt eine junge Frau in dünnen roten, fast durchsichtigen Gewändern auf Euch zu: &raquo;Willkommen in einem der Häuser der Göttin, die diese Stadt zieren. Sagt, was ist Euer Begehr?&laquo;
+Wollt Ihr der jungen Frau Eure Geschichte erzählen und sie bitten, Euch zu verbergen ([[194]]), oder wollt Ihr lieber etwas mit Ihr plaudern ([[138]])? Wenn Ihr der Ansicht seid, dass Ihr Euch lieber nach einem anderen Versteck umschauen möchtet, dann lest bitte bei ([[179]]) weiter.
+
+::83
+Vorsichtig untersucht Ihr den Schlüsselbund, und auch für diese Türe findet sich daran der passende Schlüssel. Ihr steckt ihn in das Schloss, und mit einem leisen Klicken öffnet es sich. Ihr unterdrückt einen Fluch über die beim Öffnen leise knarrende Türe und gelangt nach [[101]].
+
+::84
+Mit Hilfe des Schlüssels gelingt es Euch problemlos, das Schloss zu öffnen, und auch der Riegel ist erstaunlich leichtgängig. Ihr zieht die Türe auf und steht vor einem dunklen Raum. Zuerst seht Ihr nur zwei leuchtende, grüngelbe Punkte, die schnell auf Euch zukommen, dann erkennt Ihr die geduckte, aber langgestreckte Gestalt eines ausgewachsenen Säbelzahntigers. Das Tier scheint Euch nicht zu mögen; vielleicht hat es aber auch gar nichts gegen Euch persönlich, sondern einfach nur Hunger ... Nun, wie dem auch sei, mit einem Sprung ist es heran und attackiert Euch!
+
+<i>Die Werte des Tigers:</i>
+MU 16, AT 15 (2 AT/KR), PA 7, TP 3W6+2 (Biss), RS 1, LE 40
+<i>Dieser Tiger wurde speziell auf Beißangriffe abgerichtet.</i>
+
+Solltet Ihr den Tiger innerhalb der ersten fünf Kampfrunden besiegen können, so lest bei [[40]] weiter. Sollte Eure Lebensenergie in den ersten zehn Kampfrunden unter 5 Lebenspunkte, fallen so geht es bei Abschnitt [[103]], ansonsten bei Abschnitt [[104]] weiter.
+
+::85
+Mit einem kräftigem gezielten Schlag habt Ihr den Wächter zumindest für einige Zeit in Borons Reich geschickt. Als Ihr Euch kurz umblickt, entdeckt Ihr an seinem Gürtel einen Schlüsselbund. Das Pergament stellt sich als ein Wettschein für den nächsten Arenakampf heraus, auf dem für den zwischen Euch und dem Halb-Oger stattfindenden Kampf letzterer als Sieger gesetzt wurde - ein weiterer Ansporn, diese ungastliche Stätte zu verlassen. Ihr nehmt den Schlüsselbund an Euch und entdeckt eine weitere, eisenverstärkte Tür in der Ostwand.
+Zwischenzeitlich bemerkt Ihr einen unangenehmen Geruch, der den Raum durchdringt. Wollt Ihr die Tür in der Ostwand untersuchen ([[105]]) oder den Raum verlassen, bevor eventuell Wachen auftauchen ([[139]])?
+(set:$ArenaSchluessel to 1)
+
+::86
+Ein Schmiedehammer ist zwar keine Waffe im eigentlichen Sinne, aber jeder richtige Zwerg kann damit umgehen. Daher ist es für Euch kein Problem, mit diesem schweren Werkzeug einem Feind einen Schaden von 1W6+10 Trefferpunkten zuzufügen.
+Weiter bei Abschnitt [[66]].
+(set:$Waffe to "Schmiedehammer - TP 1W6+10")
+
+::87
+Unter Aufbietung aller Disziplin lasst Ihr Euch von dem Dicken umarmen. &raquo;Mein lieber Freund,&laquo; säuselt er, &raquo;ich bin entzückt, dass Ihr es geschafft habt, zu mir zu kommen, aber ich bitte Euch, esst doch erstmal ein Häppchen...&laquo; Weiter bei Abschnitt [[39]].
+
+::88
+Ihr steht auf einem Gang, dessen Teppich derartig weich ist, dass Ihr bis über die Knöchel einsinkt. An den Wänden hängen in schweren vergoldeten Rahmen Bilder von reich geschmückten, wohlbeleibten Männern und schönen, leichtbekleideten Frauen.
+Während Ihr noch die Bilder betrachtet, kommt scheinbar aus dem Nichts ein kupferhäutiger Mann in einem schwarzen Anzug mit goldenen Knöpfen. Er verneigt sich vor Euch und bittet Euch, ihm zu folgen. Er führt Euch durch den Gang, an einer Reihe von Türen vorbei, hinter denen Ihr prunkvoll eingerichtete Räume erahnen könnt.
+Schließlich gelangt Ihr zu einer doppelflügeligen Türe, vor der er Euch bittet, einzutreten. Ihr drückt den Türgriff nach unten und schreitet nach [[211]].
+
+::89
+&raquo;Oh, wie leid tut es mir, dass ich Euch nicht mit Musik erfreuen kann - doch die Gegenwart einer solch klugen und gebildeten Dame raubt mir die Erinnerung an alle Lieder und lässt meine Fingern beben!&laquo; erklärt Ihr der Frau mit ernster Miene.
+&raquo;Wie schön gesagt von Euch - ich wünschte, mir würde noch jemand solche Komplimente machen! Doch will ich Euch, einen fahrenden Ritter auf hoher Queste, nicht länger aufhalten, sondern alles tun, um Euch Euren Weg zu erleichtern.&laquo;
+Weiter bei [[302]].
+
+::90
+Ihr öffnet die Türe und blickt in einen Raum mit einem bequem anmutenden Bett sowie einem Tisch, auf dem einige äußerst appetitlich aussehende Speisen aufgebaut sind. Ihr starrt erstmal eine Weile sprachlos in den Raum. Weiter bei Abschnitt [[157]]
+
+::91
+Ihr geht zu dem Tischchen und findet dort nicht nur weiche Tücher, mit denen Ihr Euch abreibt, sondern auch eine kurze Notiz: &raquo;Werter Freund. Ich hoffe, das Bad hat Euch gut getan. Ich habe Euch in Eurem Zimmer hinter der nördlichen Türe einen Mitternachtsimbiss hinstellen lassen. Ich wünsche Euch nun eine angenehme Nachtruhe; alles weitere beim Frühstück.&laquo;
+Ihr folgt nach kurzem Überlegen den Anweisungen und schlaft einen ruhigen und erfrischenden Schlaf (denkt auch an Eure Regeneration) bis Abschnitt [[68]].
+
+::92
+Ihr entkleidet Euch achselzuckend und steigt in die Wanne. Eure Zuschauerin scheint sehr höflich zu sein, denn sie enthält sich aller Bemerkungen und jeglichen Gelächters. Weiter bei Abschnitt [[152]].
+
+::93
+Das Bad sieht sehr verlockend aus, und so legt Ihr Eure nicht mehr besonders frische Kleidung ab und steigt in den Zuber. Das Wasser ist sehr wohltuend, und Eure müden Glieder entspannen sich. Während Ihr Euch wohlig räkelt und im Wasser über Euer weiteres Schicksal nachsinnt, öffnet sich die östliche Türe und ein kupferhäutiges Mädchen betritt den Raum. Eiligst rutscht Ihr tiefer in den Zuber. Weiter bei Abschnitt [[152]].
+
+::94
+Ihr macht es Euch im Schatten des verabredeten Treffpunkts bequem und bemerkt nun erst, als die Anspannung ein wenig von Euch weicht, wie müde Ihr eigentlich seid. Langsam beginnt Ihr einzuschlafen, als Ihr plötzlich spürt, wie Ihr von kräftigen Armen gepackt und hochgehoben werdet und man Euch in einen Sack steckt. Danach bekommt Ihr mit, dass Ihr irgendwohin abgelegt werdet und der Boden um Euch herum zu schwanken beginnt. Ihr versucht, gegen diese rüde Behandlung zu protestieren, aber keiner scheint Euch zu hören. Ihr hört das Getrappel von Hufen und schließt daraus, dass Ihr Euch in einer Kutsche befindet.
+Da Ihr ohnehin nichts anderes tun könnt, beschließt Ihr, in Abschnitt [[259]] erst einmal abzuwarten, was weiter geschieht.
+
+::95
+Ihr erwacht in einem Bett und fühlt die Schmerzen in Eurem gesamten Körper. Neben Euch steht grinsend Halb-Oger, daneben einige lachende Wächter - anscheinend ist Euer Feind zum Helden des Tages befördert worden. Insgeheim schwört Ihr Rache, als er Euch brutal den Mund aufdrückt und eine übelschmeckende Flüssigkeit hineingießt. Langsam schwinden Euch erneut die Sinne, und Ihr findet Euch bei Abschnitt [[1]] wieder.
+
+::96
+Der Halb-Oger steht erwartungsvoll grinsend vor Euch.
+
+<i>Seine Werte sind wie folgt:</i>
+MU 13, KK 21, AT 12, PA 8, TP 1W6+11 (Keule), RS 0, LE 40
+<i>Ausweichen: 6; Selbstbeherrschung: -4</i>
+<i>* Der Körperkraft-Bonus ist bereits eingerechnet.</i>
+
+Eure eigenen Werte entnehmt Ihr bitte dem Anhang unter Berücksichtigung eventueller Rüstungen oder Waffen. Solltet Ihr das Bewusstsein verlieren, bevor Ihr den Oger besiegt habt, so lest bei [[198]], ansonsten bei Abschnitt [[8]] weiter.
+
+::97
+Ihr könnt vor Euch eine Treppe erkennen, die nach oben führt- dies muss der Ausgang sein. Triumphierend und in Gedanken schon in der Freiheit, stapft Ihr auf sie zu, als Ihr hinter Euch ein Geräusch hört. Weiter bei Abschnitt [[226]].
+
+::98
+Links seht Ihr einen gemauerten Gang hinfortführen, bei einem schnellen Blick nach rechts ist eine Röhre zu sehen. Wollt Ihr der Röhre folgen, so lest bitte bei [[212]] weiter, entschließt Ihr Euch hingegen, dem gemauerten Gang nachzugehen, so schlagt bitte Abschnitt [[233]] auf.
+
+::99
+Ihr huscht hinter einen Vorhang und verharrt dort, bis eine Euch wohlbekannte Gestalt auftaucht: der Alte, der Euch auch die Nachricht überbrachte. Er trägt ein Bündel unter dem Arm. Wollt Ihr ihn angreifen ([[77]]) oder abwarten ([[7]])?
+
+::100
+Für die anderen ist die Lage eindeutig: Ihr seid im ständigen Streit um die Rangordnung unterlegen und müsst dafür die Folgen tragen - die Wachen lassen keinen Zweifel daran, dass sie jeden weiteren Widerstand hart und streng ahnden werden.
+In den nun folgenden Tagen erweist sich Halb-Oger als Euer persönlicher Tyrann: Nach Belieben nimmt er sich aus Eurem kargen Besitz, was ihm gefällt oder Euch irgendetwas zu bedeuten scheint. Neben Essen und Kleidung sind dies vor allem Übungswaffen; doch verlangt er auch allerlei erniedrigende Handreichungen. Noch hat er Euren Erbstein, das wertvollste Kleinod eines Angroschim, nicht entdeckt, doch Ihr wisst nicht, was geschehen würde, sollte er das Juwel einfordern: Vermutlich würden Er oder Ihr den folgenden Kampf nicht überleben und selbst als Sieger würdet Ihr zur Abschreckung sterben ...
+Weiter bei Abschnitt [[26]].
+
+::101
+Nachdem Ihr die Türe vorsichtig hinter Euch geschlossen habt, steht Ihr auf einem weiteren Gang, der allerdings besser beleuchtet ist. Nach Westen ([[80]]) und Osten ([[283]]) führen jeweils Türen fort. Wollt Ihr eine öffnen oder lieber dem Gang nach [[79]] folgen?
+
+::102
+Die Türe sieht sehr solide aus, und das Schloss scheint ordentliche Zwergenarbeit zu sein - eine Qualität, die Ihr im Moment allerdings wenig zu schätzen wisst. Da Ihr unter Zeitdruck steht, gibt es für Euch nur die Möglichkeit, die Türe einzurennen ([[240]]) oder umzukehren zu [[46]], um anschließend einen Raum zu durchsuchen, den Ihr möglicherweise übersehen oder ausgelassen habt.
+
+::103
+Unerbittlich schlägt die Bestie ihre Zähne immer wieder in Euren ungeschützten Leib. Ihr kämpft mit aller Kraft, aber die Schmerzen sind selbst für einen Zwerg zu viel. Nach einem weiteren Angriff hört ihr die Knochen in Eurem Waffenarm knirschen und schnell schwinden Euch die Sinne. Weiter bei Abschnitt [[81]].
+
+::104
+Eilig stürmen fünf Wachen mit gezogenen Waffen in den Raum. Wollt Ihr Euch ergeben ([[43]]) oder lieber um Eure Freiheit kämpfen ([[11]])?
+
+::105
+Die eisenverstärkte Türe ist verriegelt und außerdem mit einem Vorhängeschloss verschlossen. Ein kurzer Blick auf den Schlüsselbund zeigt Euch allerdings, dass der Schlüssel am Bund hängt. Ihr glaubt aber, hinter der Türe Geräusche zu hören, und es kommt Euch so vor, als ob der Geruch in der Nähe der Türe stärker sei. Wollt Ihr versuchen, die Türe zu öffnen ([[84]]), oder lieber den Raum direkt verlassen ([[139]])?
+
+::106
+Vorsichtig schleicht Ihr weiter und erblickt vor Euch eine weitere Türe in der Ostwand ([[78]]). Wollt Ihr sie öffnen oder nach [[97]] weitergehen?
+
+::107
+Dieses Haus ist ein sehr schlichtes Bauwerk. Ihr öffnet die einfache Holztüre. Als Ihr den in rotgelben Tönen gehaltenen Raum betretet, kommt Euch ein älterer Mann in Gewändern von ähnlich flammender Farbe entgegen und begrüßt Euch: &raquo;Möge das Feuer der Göttin über Euren Wegen wachen und Euch stets eine sichere Zuflucht schenken.
+Mitglieder Eures Volkes sind in diesem Hause seltene Gäste, aber dennoch ist ein jeder im Hause der gütigen Göttin willkommen. Mein Sohn, ich bin Bruder Traviso; sagt, was ist Euer Begehr, der Ihr zu so später Stunde kommt? Möchtet Ihr vielleicht zur Göttin beten oder möchtet Ihr nur etwas zu essen, mein Sohn?&laquo; Wollt Ihr ihm Eure Geschichte erzählen und ihn bitten, Euch zu verbergen, so lest bitte bei Abschnitt [[207]] weiter. Wenn Ihr der Ansicht seid, dass man Euch hier nicht weiterhelfen kann, so kehrt zurück nach [[179]].
+
+::108
+&raquo;Aber nein, meine Dame, ich hin kein Verbrecher. Ich bin Axmann, der berühmte Gladiator. Ich hin aus der Arena geflohen, und daher möchte ich Euch bitten, mich hier zu verbergen, bis ich gefahrlos diese Stadt verlassen kann&laquo;, erklärt Ihr der Dame.
+Sie lächelt Euch vielsagend an. &raquo;Warum habt Ihr das denn nicht gleich gesagt..? Bitte macht es Euch doch erst einmal bequem. Vielleicht möchtet Ihr etwas Wein? Aber bitte wartet doch hier auf mich, damit ich das Nötige veranlassen kann&laquo;. Die junge Frau steht auf, drängt Euch förmlich ein Glas Wein auf und verschwindet. Wollt Ihr warten, bis sie zurückkehrt ([[137]]), oder erscheint es Euch klüger, den Tempel zu verlassen ([[36]])?
+
+::109
+Mit einem gewaltigen Stoß werft Ihr Euch gegen die Türe. Es gibt einen sehr lauten Knall, doch noch hat das Schloss kaum Schaden genommen. Wollt Ihr - Eurer schmerzenden Schulter zuliebe - für diese Nacht auf weitere Ausbruchsversuche verzichten, um auf Eurer Zimmer zurückzukehren und etwas Schlaf zu finden? Dann geht es mit Abschnitt [[68]] weiter. Wollt Ihr hingegen auf das Fest zurückkehren, so geht bitte zu Abschnitt [[311]]. Wollt Ihr aber ein weiteres Mal Euer Glück an der Tür versuchen, so lest bei Abschnitt [[241]] weiter.
+
+::110
+Mit bangem Herzen steckt Ihr den Schlüssel in das Schloss – er hakt ein wenig, aber die Türe lässt sich öffnen. Vorsichtig schiebt Ihr die Türe auf. Vor Euch liegt das nächtliche Al&apos;Anfa. Mit der Gewissheit, Eurer Freiheit ein Stück näher gekommen zu sein, marschiert Ihr nach [[141]].
+
+::111
+Ihr schlüpft in Eure Kleidung, nehmt Eure Habseligkeiten und schleicht die Treppe hinunter. Vor der großen Türe in der Südwand verharrt Ihr. Weiter bei Abschnitt [[4]].
+
+::112
+&raquo;Nein, meine Dame, es tut mir wirklich leid, aber zur Zeit ist es mir nicht möglich, Euren Wünschen zu entsprechen&laquo;, erwidert Ihr.
+&raquo;Wirklich schade, mein Freund, aber vielleicht ein anderes Mal..?&laquo; Mit einem Lächeln wendet sich die Dame daraufhin dem Buffet zu.
+Möchtet Ihr ebenfalls etwas essen ([[343]]) oder lieber schauen, ob Ihr vielleicht dem Käfig entfliehen könnt ([[27]])?
+
+::113
+Der Diener begleitet Euch auf die geschmückte Veranda des Hauses. Bunte Lampions hängen in den Bäumen. Auf einer langen Tafel sind alle nur erdenklichen Köstlichkeiten aufgebaut. Gut zwei Dutzend Menschen, mit Juwelen behängt wie Früchte an einem Beilunker Apfelbaum, stehen herum und klatschen in die Hände, als Ihr auf die Veranda tretet.
+Der Dicke erscheint und wedelt theatralisch mit einem Seidentuch in der Luft: &raquo;Was ich jetzt zu sagen habe, muss natürlich unter uns bleiben, doch vertraue ich auf Eure Verschwiegenheit: Hier, meine teuren Freunde, präsentiere ich Euch Axmann, den tapferen Kämpfer: Schaut nur einmal diese Muskeln..!&laquo; Bei diesen Worten greift er Euch an den Oberarm, ganz wie ein Marktschreier, der auf die Qualität seiner Sklaven aufmerksam machen will. &raquo;Ich habe extra einige wilde Tiere bei Pokallos bestellt, damit unser Freund seine Talente unter Beweis stellen kann, doch leider kann es noch etwas dauern, bis sie hier eingetroffen sind. Aber zuerst sei einmal der Festschmaus eröffnet.&laquo;
+Nach dieser Rede begeben sich die Menschen zu der Speisetafel.
+Ernüchtert stellt Ihr fest, dass Euer &raquo;Bewunderer&laquo; Euch auch nur als Kämpfer vorführen will. Zugegebenermaßen ist dieses Haus ein bedeutend komfortablerer Aufenthaltsort als die Keller unter der Arena - aber auch ein goldener Käfig ist nicht anderes als ein Gefängnis. Selbst wenn ein derartiges Verlies einem Hügelzwerg durchaus gefallen könnte...
+Weiter geht es bei Abschnitt [[311]].
+
+::114
+Die Türe ist abgeschlossen, und so kehrt Ihr zu Abschnitt [[119]] zurück.
+
+::115
+Der Gang windet sich weiter. Ihr folgt ihm und seht an der linken Wand Steigeisen, die zu einer Holzluke führen. Möchtet Ihr hinaufklettern ([[242]]), oder wollt Ihr lieber weitergehen ([[219]])?
+
+::116
+Nachdem Ihr durch diese Türe getreten seid, befindet Ihr Euch in dem Speisesaal, der zu dieser Stunde noch trüber beleuchtet ist als bei den Mahlzeiten: Eine einzelne Stummelkerze blakt in einer Wandnische.
+Ihr entdeckt eine halb geöffnete Tür im Westen ([[136]]) und eine weitere Türe ([[46]]) am südlichen Ende des Raumes. Für welche der Türen werdet Ihr Euch entscheiden?
+
+::117
+Ihr steigt die Treppe wieder hinauf und begebt Euch zurück nach Abschnitt [[206]].
+
+::118
+Der &quot;Speisesaal&quot; entpuppt sich als düsteres, nur schwach von Tranfunzeln erleuchtetes Gewölbe irgendwo unter dem Rund der Arena. An zwei langen Tischen sitzen hier die Gladiatoren und Sklaven beisammen und warten auf ihr Morgenmahl: große Bottiche voller Reisgrütze mit dicken, glasigen Speckstücken - nun ja, ein hungriger Magen ist nicht wählerisch. Mit einem Grunzen drückt Euch der alte Mann, der die Grütze austeilt, ein zweites Schüsselchen mit streng riechender Butter in die Hand: &raquo;Hier, für unseren Sieger!&laquo;
+Kaum habt Ihr Platz genommen und überlegt, ob Ihr wirklich die fade Grütze mit der anscheinend ranzigen Butter &raquo;veredeln&laquo; sollt, als eine grobe Stimme in Eure wehmütigen Erinnerungen an zart gebratene Wachteln auf Perainblattsalat dringt: &raquo;He, Kerl, willst deine Butter wohl nicht..? Dann kann ich sie mir ja nehmen!&laquo;, und eine dunkle Pranke die Schüssel vom Tisch reißt.
+Aufblickend erkennt Ihr einen wohl zweieinhalb Schritt großen Hünen mit schmutzig grauer Haut und abstoßenden Gesichtszügen - &quot;Halboger&quot; nennen die anderen diesen Neuankömmling nur zum Teil im Scherz, und manchmal munkeln sie von dem Schwarzoger, der in den Sklavenpferchen zu seiner Mutter geführt worden war...
+Es sieht ganz so aus, als ob dieser Riese Euch an schierer Kraft weit überlegen wäre - doch vermutlich habt Ihr die größere Kampferfahrung.
+Wollt Ihr deshalb diesen Rüpel in seine Schranken weisen, um weiteren Schikanen ein klaren Riegel vorzuschieben ([[130]]) oder lieber doch als der Klügere nachgeben und die zerlassene Butter abtreten ([[29]])?
+
+::119
+Ihr seht vor Euch einen Raum im Norden ([[191]]) und eine weitere Türe in der Westwand ([[114]]). Wohin wollt Ihr Euch wenden?
+
+::120
+Die Holztüre lässt sich unter Knarren öffnen. Ihr hört eine Stimme hinter Euch: &raquo;Wenn du in den Keller gehst, Hogar, bring den Wein mit hoch.&laquo; Ihr wundert Euch nur einen Augenblick lang - offensichtlich verwechselt man Euch mit jemand anderem, wohl einem Dienstboten.
+Vor Euch führt eine steinerne Treppe nach unten in einen Keller. Möchtet Ihr hinuntersteigen ([[37]]) oder lieber bei [[206]] wieder umkehren?
+
+::121
+Das war wohl weniger entzückend - die Laute ist alt und ziemlich verstimmt. Eure Finger sind nicht mehr an dünne Saiten gewohnt, und die richtigen Takte scheinen aus Eurem Gedächtnis entschwunden. Die Miene der Frau umwölkt sich, und wenn Ihr nicht ihren Argwohn heraufbeschwören wollt, solltet Ihr vielleicht einige passende Worte finden.
+Legt dazu bitte eine Betören-Probe ab - gelingt sie Euch, könnt Ihr bei Abschnitt [[89]] weiterlesen, anderenfalls bei [[326]].
+
+::122
+Erstaunlicherweise ist die Türe sehr leichtgängig und öffnet sich absolut lautlos. Ihr seht vor Euch einen schweren Samtvorhang. Möchtet Ihr ihn beiseite schieben ([[160]]) oder noch einen Moment hinter dem Vorhang verharren ([[318]])?
+
+::123
+Ihr öffnet die Türe und erblickt einen prächtigen Raum, der über und über mit Kostbarkeiten gefüllt ist: Goldene Schätze stapeln sich auf dem Boden und an den Wänden fast einen Schritt hoch: Münzen, Ringe, Ketten, Statuetten, Pokale, Essgeschirr, Schmuck und viel, viel mehr - vermutlich weit mehr, als je ein einzelner Zwerg besessen hat. Bitte überprüft Eure Goldgier (eine GG-Probe -5).
+Solltet Ihr widerstehen können, so lest bitte bei Abschnitt [[314]] weiter. Falls Euch Eure Goldgier übermannen sollte, könnt Ihr im Abschnitt [[256]] Eure Taschen füllen.
+
+::124
+Ungeduldig wartet Ihr, bis der Abend zu Ende geht und die allgemeine Nachtruhe verkündet wird. Von Eurem Strohlager im gemeinschaftlichen Schlafsaal aus horcht Ihr auf das allmähliche Verstummen der Stimmen, bis niemand mehr redet und allgemeines gleichmäßiges Atmen vom Schlaf der übrigen Gladiatoren kündet. Die Fackeln sind gelöscht, und die lichtlose Dunkelheit ist für jeden Menschen ein undurchdringliches Hindernis - doch die an Lichtmangel gewöhnten Sinne der Angroschim erlauben Euch die Orientierung auch in dieser Finsternis.
+Wollt Ihr Euch nun erheben und den Schlafsaal verlassen ([[19]]), oder erscheint es Euch sicherer, noch eine Stunde zu warten ([[50]])?
+
+::125
+Hinter den Büschen hört Ihr Stimmen. Wollt Ihr Euch verbergen, bis sich die Stimmen entfernt haben, so schlagt bitte [[279]] auf. Wollt Ihr der möglichen Gefahr lieber ins Auge schauen, ist Euer nächstes Ziel die Nummer [[295]].
+
+::126
+Schnell huscht Ihr in die Zelle und kauert Euch zwischen die erstaunten Gefangenen. &raquo;Psst, eine Wache kommt!&laquo; raunt Ihr ihnen zu. Draußen hört Ihr die erstaunte Stimme eines Wächters: &raquo;Na, wer hat denn hier vergessen, die Türe zu schließen. Na, dank Boron, seid ihr Waldaffen so tumb, dass ihr es nicht einmal bemerkt habt.&laquo; Der Wächter öffnet die Zelle, in seiner Hand hat er einen großen Tonkrug. &raquo;So, jetzt werdet Ihr alle schön artig eure Medizin nehmen und morgen früh werdet Ihr dann brav zum Herrn Boron gehen.&laquo;
+Wollt Ihr den Wächter angreifen ([[289]]) oder lieber heimlich die Fesseln der Gefangenen lösen ([[244]])?
+
+::127
+Ihr öffnet die Türe und seht vor Euch einen Raum mit Regalen, auf denen allerlei Bücher stehen. Bequem aussehende Polster laden zum Verweilen ein.
+Möchtet Ihr vielleicht ein wenig lesen ([[204]]) oder den Raum in Richtung Abschnitt [[206]] wieder verlassen?
+
+::128
+Der Sklavenwächter beginnt, &raquo;Alarm, Alarm, Sklavenaufstand&laquo; zu brüllen. In der Ferne hört Ihr Stiefel über Steinboden rennen. Ihr könntet es vielleicht schaffen, mit einem gewagten Sprung aus der Zelle zu flüchten und zurück in die Kanalisation zu gelangen.
+Wenn Ihr beschließt, es zu versuchen, könnt Ihr dies bei [[267]] tuen. Wenn Ihr hingegen kämpfen wollt, lest bitte bei [[64]] weiter.
+
+::129
+Die Türe lässt sich problemlos öffnen. Vor Euch liegt eine große Küche, in der ein gutes Dutzend Leute damit beschäftigt ist, in großen Töpfen herumzurühren und Speisen anzurichten. Als Ihr eintretet, blickt einer der Köche auf: &raquo;Falls Ihr noch Hunger habt, bedient Euch.&laquo; Mit diesen Worten deutet er auf einen Arbeitstisch, auf dem noch einige gebratene Fleischstücke liegen. Ihr nehmt Euch eine Hühnerkeule und verlasst die Küche wieder. Draußen auf dem Gang könnt Ihr Euch entscheiden, ob Ihr bis ans Ende des Ganges gehen ([[17]]), den Gang in die andere Richtung ([[206]]) oder bei Abschnitt [[153]] auf Euer Zimmer gehen wollt.
+
+::130
+&raquo;Keineswegs ist die Butter für Euch gedacht, mein Herr. Und nun verfügt Euch anderenorts, damit ich in Ruhe speisen kann!&laquo;
+Halb-Oger knurrt nur - verstanden hat er wohl nur die in Euren Worten liegende Herausforderung. Mit einem raschen Schwung hebt er Euch zu einer schnell freiwerdenden Stelle zwischen den beiden Tischen, die für derlei Auseinandersetzungen üblich ist. Die Wachen am Rande des Gewölbes verlagern leicht ihr Gewicht - eingreifen werden sie aber erst, wenn einer der Gegner schwer verletzt zu werden droht...
+Gekämpft wird nach den Regeln für Waffenlosen Kampf. Eure eigenen Kampfwerte findet Ihr im Anhang.
+
+<i>Wie Werte Halb-Ogers sind:</i>
+MU 13, KK 21, AT 12, PA 8, TP 1W6+3 TP(A) (Raufen), RS 0, LE 40
+<i>Selbstbeherrschung: -4; Ausweichen: 6</i>
+
+Solltet Ihr während der ersten zwanzig Kampfrunden das Bewusstsein verlieren, geht es bei [[55]] weiter. Geht Halb-Oger in dieser Zeit zu Boden, so schlagt Abschnitt [[143]] auf. Nach Ablauf dieser Zeit greifen die Wachen ein ([[53]]).
+
+::131
+Ihr steht auf dem prächtigen Gang, der sich nach Norden ([[159]]) und Süden ([[206]]) fortsetzt. In welche Richtung werdet Ihr gehen?
+
+::132
+Ihr betretet einen großzügig angelegten Park. Zu Eurer Rechten befinden sich einige Stühle und Tische, welche anscheinend für den Empfang am Nachmittag vorbereitet werden. Eifrige Dienstboten huschen geschäftig hin und her, beachten Euch aber nicht. Möchtet Ihr tiefer in den Park hineingehen ([[27]]) oder lieber wieder ins Haus zurückkehren ([[260]])?
+
+::133
+Nachdem der Wärter über den ersten Schreck hinaus ist, greift er nach dem Streitkolben an seiner Seite.
+
+<i>Seine Kampfwerte sind wie folgt:</i>
+MU 13, KK 14, AT 12, PA 8, TP: 1W6+4 (Streitkolben), RS 0, LE 40
+<i>Selbstbeherrschung: 0; Ausweichen: 6</i>
+
+Solltet Ihr den Wächter besiegen, schlagt bitte Abschnitt [[266]] auf. Solltet Ihr hingegen das Bewusstsein verlieren, findet Ihr Euch bei [[282]] wieder.
+
+::134
+Mit einem geschickten Schritt zur Seite gelingt es Euch, der Umarmung zu entkommen. &raquo;Ach ja&laquo;, säuselt der Feiste, &raquo;Ihr Zwerge seid ja nicht so überschwänglich veranlagt wie wir heißblütigen Menschen. Aber lasst uns doch erst einmal eine Kleinigkeit essen...&laquo;
+Weiter bei Abschnitt [[39]].
+
+::135
+Es dauert eine geraume Zeit, bis die Schöne - Ihr Name ist übrigens Rana - mit einem schon älteren Mann zurückkehrt. &raquo;Nun, Bruder Raschomon, ich habe hier jemanden, der zum Glauben an die Göttin bekehrt werden möchte. Übernimmst du bitte so lange meine Tempelwache?&laquo;
+Der Mann nickt und Rana führt Euch in einen Raum, der von einem riesigen Bett ausgefüllt wird. In den folgenden Stunden lernt Ihr die Segnungen der Göttin kennen und begebt Euch danach ein wenig müder, aber weiser zurück nach Abschnitt [[179]].
+
+::136
+Ihr lugt vorsichtig durch die halb geöffnete Türe und schaut in eine Vorratskammer - ein durchaus erfreulicher Anblick. Möchtet Ihr den Raum betreten und Euch umsehen ([[10]]) oder Euch lieber der Türe in der Südwand zuwenden ([[46]])?
+
+::137
+Ihr macht es Euch in den weichen Polstern bequem. Der Wein schmeckt vorzüglich, und Ihr seid rundum mit der Welt zufrieden. Nach einiger Zeit kehrt die freundliche junge Frau mit fünf gar nicht so freundlich aussehenden, bewaffneten Männern zurück und deutet mit den Worten - &raquo;Das ist der flüchtige Sklave, er hat es mir selber erzählt&laquo; - auf Euch.
+Die Männer packen Euch und legen Euch Ketten um Eure Handgelenke: &raquo;Vielen Dank für Eure Mithilfe, Schwester Rana. Der Tempel wird bestimmt eine gute Belohnung erhalten.&laquo; Danach wendet der Wachmann sich Euch zu: &raquo;Los, Bursche, beweg dich!&laquo;
+Man führt Euch eiligst durch die Straßen zurück zu der Arena. Dort werdet Ihr für euren Ungehorsam schwer bestraft und kommt erst bei Abschnitt [[1]] wieder zu Euch.
+
+::138
+&raquo;Nun, ich glaube, ich würde mich gerne ein wenig mir Euch unterhalten.&laquo; erklärt Ihr der jungen Frau.
+Sie lächelt Euch freundlich an. &raquo;Wartet einen Moment, ich sehe zu, dass wir etwas von der Gabe der Göttin zu trinken bekommen.&laquo; Sie winkt einer anderen Frau zu, die Euch zwei Gläser Wein bringt.
+Die junge Dame scheint zu erwarten, dass Ihr von dem Wein trinkt. Nehmt Ihr das Glas? Dann lest bitte Abschnitt [[30]], ansonsten geht es bei Abschnitt [[303]] weiter.
+
+::139
+Ihr steht auf dem Gang, der sich nach Süden und damit Eurem Ziel entgegen schlängelt. Nach einiger Zeit befindet sich vor Euch eine Tür mit Eisenbeschlägen. Wollt ihr (if:$ArenaSchluessel==1)nachsehen ([[83]]) ob einer der Schlüssel auf dem gefundenen Schlüsselbund passt? Oder (endif:)die Tür untersuchen ob ihr einen Weg findet sie zu öffnen ([[102]]).
+
+::140
+Mit einem Satz springt Ihr aus dem Zuber. Ohne einen Gedanken daran zu verschwenden, dass Ihr tropfnass seid, reißt die Türe auf und versinkt erstmal bis zu den Knöcheln in einem weichen Teppich. Die junge Frau dreht sich verständnislos nach Euch um. &raquo;Was wollt Ihr mit meinen Kleidern anfangen?&laquo; ruft Ihr empört.
+&raquo;Ich Kleider waschen, Ihr schlafen, und morgen früh bring ich Euch zurück&laquo;, stammelt die verwirrte Menschenfrau.
+Beschämt über Eure Ungeduld kehrt Ihr in das Badezimmer zurück. Weiter bei Abschnitt [[91]].
+
+::141
+Orbal befindet sich nun irgendwo in Al&apos;Anfa.
+Weiter geht es bei Abschnitt [[179]].
+
+::142
+So sehr ihr Euch auch bemüht, die Türe ist verschlossen. Wollt Ihr versuchen, sie mit Eurer gewaltigen Kraft einzurennen, so lest bitte bei Abschnitt [[109]] weiter. Vielleicht scheint es Euch ja auch klüger, das Ganze zu überschlafen, dann ist Eure nächste Station der Abschnitt [[68]].
+
+::143
+Vor Euch liegt der riesige Halb-Oger und atmet nur noch unregelmäßig. Ohne weitere Mühe setzt Ihr Euch und verzehrt Eure Mahlzeit, während die Wachen den Bewusstlosen zu seiner Unterkunft schleppen. Mit Ehrfurcht und ein wenig Sorge betrachten Euch die anderen Sklaven. Wollt Ihr die Gelegenheit nutzen, eine Art Führungsposition – zumindest unter den Gladiatoren - zu beanspruchen ([[23]]) oder Eure aufgeregten Leidensgenossen beruhigen, dass es Euch nur darum geht, Eurerseits in Frieden gelassen zu werden ([[28]])?
+
+::144
+Ihr hört eine verschlafene Frauenstimme rufen. &raquo;Justan, bist du das?&laquo; Wie wollt Ihr reagieren? Wollt Ihr versuchen, zu flüchten ([[193]]) oder Euch zu erkennen geben ([[72]])?
+
+::145
+Nachdem ihr Euch vergewissert habt, dass Euch keiner beobachtet, raunt Ihr der Dame zu: &raquo;Dann müsstet Ihr mir aber schon auf mein Zimmer folgen, denn ich trage meine Waffe bei einem derartigen Empfang natürlich nicht offen mit mir herum.&laquo; Die Schöne folgt Euch auf Euer Zimmer, wo Ihr eine angenehme Zeit verbringt. Nach einiger Zeit strahlt Euch die Menschin an und erklärt, dass sie dies all Ihren Freundinnen erzählen würde, die sie sicher glühend beneiden werden und verlässt Euer Zimmer. Möchtet Ihr versuchen, ein wenig Schlaf zu finden ([[68]]), oder wollt Ihr ebenfalls den Raum verlassen und schauen, ob Ihr einen Ausweg aus dem Haus finden könnt ([[111]])?
+
+::146
+Gemeinsam greift ihr den Wächter an. Die befreiten Sklaven haben einen Hruruzat-Attackewert von 14 und verursachen mit ihren Schlägen 1W6 Trefferpunkte. Gelingt es Euch gemeinsam, dem Wärter in den ersten beiden Kampfrunden 20 Trefferpunkte zuzufügen, lest bitte bei [[156]], ansonsten bei [[270]] weiter.
+
+::147
+Nach Euren gewaltigen Hieben reißt der Wächter den Mund zu einem Schrei auf. Verdattert streckt er seine Arme von sich und hält Euch damit ungewollt den Tonkrug hin. Ihr greift nach dem Krug. Möchtet Ihr dem Wächter etwas daraus einflößen ([[269]]) oder weiter auf den Mann einschlagen ([[13]])?
+
+::148
+Ihr steht wieder auf dem Gang - möchtet Ihr Euch bei Abschnitt [[114]] noch weiter umschauen, auf Euer Zimmer zurückkehren ([[153]]) oder wieder nach [[131]] hinuntersteigen?
+
+::149
+Als Ihr den Weinkrug aufnehmt, seht Ihr dahinter einen Schlüssel liegen. Ihr steckt ihn ein - vielleicht öffnet er ja die Tür zu einem interessanten Raum wie einer Schatzkammer... - und steigt die Treppe hinauf. Ihr gebt den Wein in der Küche ab, wo man Euch erstaunt dankt. Um Euch noch ein wenig auszuruhen, begebt Ihr Euch dann bei Abschnitt [[153]] auf Euer Zimmer.
+(set:$GrandeSchluessel to 1)
+
+::150
+Ihr schreckt zusammen, als Euch jemand an der Schulter berührt. Neben Euch entdeckt Ihr einen Diener in Livree. &raquo;Es ist Zeit für den Empfang, wenn Ihr mir bitte folgen würdet.&laquo; Der Diener begleitet Euch nach Abschnitt [[113]].
+
+::151
+Als Ihr dem Gang weiter folgt, kommt. Ihr an einer Treppe vorbei ([[196]]). Der Gang führt allerdings weiter, und Ihr könnt am südlichen Ende eine massive Türe erkennen. Möchtet Ihr die Treppe hinaufsteigen oder lieber die Türe untersuchen ([[316]])?
+Vielleicht möchtet Ihr auch bei Abschnitt [[159]] den Gang in die andere Richtung erkunden?
+
+::152
+Die junge Menschenfrau nickt Euch freundlich zu, nimmt Eure Kleidung und verlässt den Raum, bevor Ihr auch nur protestieren könnt.
+Ihr könntet eilig aus der Wanne springen und Ihr hinterher eilen ([[140]]) oder Euer Bad in Ruhe beenden ([[71]]).
+
+::153
+Ihr begebt Euch, vorbei an den Gemälden und prunkvollen Räumen, zurück auf Euer Zimmer. Dort überlegt Ihr, was Ihr nun weiter tun sollt, um zu Euren Untertanen und vor allem zu Eurer angetrauten Tirza zurückzukehren - wie muss sie sich um Euch sorgen! &raquo;Wie lange mögt Ihr wohl schon fort sein..?&laquo; Über diesem Gedanken schlummert Ihr langsam ein und erwacht bei Abschnitt [[150]].
+
+::154
+Nach dem Essen erklärt der Mensch, dass er erschöpft sei und sich ausruhen müsse. Aber man werde sich am späten Nachmittag zu einem großen Empfang wiedersehen. &raquo;Und falls Ihr Euch auch ausruhen wolltet, was Euch nach den erlebten und erlittenen Strapazen nur wohl anstände, so könntet Ihr Euch ja auf Euer Zimmer zurückziehen.&laquo;
+Mit diesen Worten verlässt der Dicke das Zimmer und lässt Euch in dem Raum allein. Möchtet Ihr Euch noch ein wenig umschauen ([[31]]) oder den Raum verlassen ([[260]])?
+
+::155
+Gato Waltich heißt Euch herzlich an Bord willkommen. Erbittet Euch, ihm zu erzählen, wie Ihr an das Wissen über den geplanten Überfall gekommen seid und erfährt dabei auch Eure Geschichte. &raquo;Nun&laquo;, sagt er, &raquo;ich verdanke Euch vermutlich mein Leben - Ihr seid eine Zierde des stolzen Angrosch-volkes, und meine Wünsche sind mit Euch. Ich kann Euch zwar nicht aus der Stadt bringen, aber ich glaube, dass die Zahl 49 Euch Glück bringen könnte - schließlich zählt Euer Volk ja sieben mal sieben Stämme.&laquo;
+Mit diesen ominösen Worten verabschiedet sich der Kaufmann von Euch. Auf einigen Umwegen gelangt Ihr zurück in das Stadtinnere an den Abschnitt [[179]].
+
+::156
+Während der verwundete Wärter Euch mit weit aufgerissenen Augen anstarrt, gelingt es Euch, ihm nach Anweisungen der Mohas etwas aus dem Tonkrug einzuflößen, woraufhin er vor Euch zusammenbricht. Weiter bei Abschnitt [[321]].
+
+::157
+Plötzlich öffnet sich die Türe in der Ostwand, und eine kupferhäutige Menschenfrau betritt den Raum. Sie blickt Euch erstaunt an und sagt dann etwas in einer Sprache, die Ihr nicht versteht. Da sie dabei auf den Zuber deutet, kann man zu Recht vermuten, dass sie Euch sagen will, dass Ihr baden sollt. Sie bleibt stehen und scheint zu erwarten, dass Ihr Euch auszieht und in die Wanne steigt. Wollt Ihr dies tun, so lest bei [[92]], ansonsten bei [[70]] weiter.
+
+::158
+Mit behenden Schritten steigt Ihr die Treppe hinauf. Vor Euch erblickt Ihr eine eherne Türe. Möchtet Ihr versuchen, sie zu öffnen ([[122]]) oder lieber bei [[233]] wieder in die Kanalisation zurückkehren?
+
+::159
+Ihr folgt dem prachtvoll mit Gemälden, Wandbehängen und Teppichen ausgestatteten Flur in Richtung Norden. In der Ostwand befindet sich eine weitere Türe ([[129]]), der Gang selbst führt weiter nach Norden fort ([[17]]). Möchtet Ihr die Türe öffnen, dem Gang folgen oder auf Euer Zimmer zurückkehren ([[153]])?
+
+::160
+Vor Euch liegt ein kleiner Raum, der nur von einigen schwarzen Kerzen erleuchtet wird. Einige Kissen laden zum Verweilen ein. Inder Mitte des Raumes steht ein kleiner Altar von der schwarzen Farbe der tiefsten Nacht - nein, schwärzer noch, denn fehlt ihm doch das Funkeln auch nur eines einzigen Lichtes ...
+Während Ihr noch den Raum studiert, öffnet sich die Türe und zwei schwarz gekleidete Menschenmänner treten in den Raum. Als sie Euch erblicken schreit einer auf: &raquo;Das darf doch nicht wahr sein - da ist dieser kleine Dieb schon wieder. Das letzte Mal war er in der Schatzkammer, und nun wagt er es tatsächlich, in unsere geheiligten Räume einzudringen. WACHEN! ! !&laquo;
+Ihr habt Eure Verblüffung noch nicht überwunden, als auch schon einige Tempelwachen hereinstürzen und Euch packen. Man schleppt Euch davon und flößt Euch eine Übelkeit erregende Flüssigkeit ein. Danach wandert Ihr nach [[1]].
+
+::161
+Mit laut pochendem Herzen steht Ihr stocksteif hinter dem stickigen Vorhang. Zwei Männer sprechen in einer krächzenden Sprache miteinander. Sie scheinen sich hinzusetzen. Staub dringt in Eure Nase, Ihr verspürt das Bedürfnis zu niesen. Mit letzter Kraft gelingt es Euch, den Niesreiz zu unterdrücken. Immer noch könnt Ihr hören, wie die Leute sich in Ihrer kehligen Sprache unterhalten, einer Sprache, die Euch teils an die Zunge der Tulamiden, aber eher noch an das Gekrächze eines Raben erinnert. Viel bekommt Ihr von dem Gespräch nicht mit - nur dass die beiden sich über einen Gegenstand unterhalten, den sie die &quot;Kugel der Zwietracht&quot; nennen und den sie &quot;als Versöhnungsgeschenk und Zeichen des guten Willens&quot; dem Puniner Boronkult zukommen lassen wollen. Beide scheinen dies für einen guten Witz zu halten, denn sie beginnen doch tatsächlich, ganz kurze heisere Geräusche von sich zu geben, die entfernt an ein Kichern erinnern.
+So viel Ihr mitbekommt, soll dieser Gegenstand im Laufe des Tages auf die Reise gehen. Nach einiger Zeit, in der Ihr glaubt, an Eurem Niesreiz ersticken zu müssen, hört Ihr, wie sie aufstehen und den Raum verlassen. Mit letzter Kraft zieht Ihr den Vorhang zur Seite und atmet durch. Ihr erblickt vor Euch einen dunkel gehaltenen Raum. Auf einem kleinen Altar liegt auf einem Samtkissen eine goldene, überaus fein gearbeitete Kugel - offensichtlich der Gegenstand, um den sich das Gespräch drehte.
+Möchtet Ihr die Kugel an Euch nehmen und wieder zurück in die Kanalisation flüchten ([[162->162A]]), oder wollt Ihr Euch statt dessen weiter im Tempel umschauen, so könnt Ihr dies bei [[317]] tun.
+
+::162A
+<title>162</title>Ihr nehmt die Kugel an Euch und flüchtet zu Abschnitt [[233]] in die Kanalisation.
+(set:$Kugel to 1)
+
+::162
+Mit einem raschen Griff packt Ihr die Kugel und verlasst den Raum bei [[54]].
+(set:$Kugel to 1)
+
+::163
+Ihr ruft hinüber: &raquo;Mein Name ist Orbal, Sohn des Orim!&laquo;
+Der Kaufmann ruft Euch zu, Ihr mögt an Bord kommen.
+Weiter bei Abschnitt [[155]].
+
+::164
+Ihr nehmt Eure Beine in die Hand, und nach einer ganzen Reihe von falschen Abzweigungen - zweimal lauft Ihr beinahe Stadtwachen in die Hände - gelang Ihr schließlich zurück nach Abschnitt [[179]].
+
+::165
+Der Kaufmann kommt über die Schiffsplanke auf den Kai. Er sieht Euch und lächelt Euch an: &raquo;Ah, Ihr müsst Pokallos sein.&laquo; Während er Euch seine Hand entgegenstreckt, erstirbt sein Lächeln und er greift an seine Brust - aus der auf einmal der nachtschwarze Griff eines Wurfdolches herausragt. Fassungslos blickt Ihr auf die Waffe, als scheinbar aus dem Nichts ein Haufen Wachen auftauchen. Eure Begleiter sind natürlich nirgendwo zu sehen. Die Wachen stürmen auf Euch zu: &raquo;Das kleine Dreckstück hat einen ehrenwerten Gast unserer schönen Stadt umgebracht.&laquo; Bitte lest bei Abschnitt [[201]] weiter.
+
+::166
+Ihr springt nach vorne und versucht, die Frau zur Seite zu schubsen. Der Wächter schaut Euch einen Augenblick verdutzt an und umklammert den Krug. Weiter bei Abschnitt [[248]].
+
+::167
+Die Männer scheinen Euch nicht entdeckt zu haben. Voller Erleichterung wartet Ihr, bis das Schiff anlegt und eine Planke an Land geschoben wird. Ihr erblickt einen elegant gekleideten Mann. &raquo;Bleibt an Bord, Meister Waltich, hier lauert eine Falle auf Euch&laquo;, ruft Ihr. Was daraufhin geschieht, könnt Ihr in Abschnitt [[188]] nachlesen.
+
+::168
+Ihr stellt Euch auf den Kai und wartet auf das herannahende Schiff. Es legt an, und ein Steg wird an den Kai gelegt. Ihr erblickt einen reich gekleideten Mann, der schnell von Bord geht. Ihr öffnet Euren Mund, um ihm eine Warnung zuzurufen, als Euch die Sinne schwinden. Weiter bei Abschnitt [[1]].
+
+::169
+&raquo;Ich bin weder ein Spion, noch arbeite ich mit Verbrechern wie Euch zusammen&laquo;, erklärt Ihr stolz. &raquo;Dann stirb!&laquo;, ruft einer der Männer und stürmt auf Euch zu, gleichzeitig mit einem zweiten. Die beiden schaffen es mit schier unglaublicher Gewandtheit, einen Zusammenprall zu vermeiden, sind aber dennoch für einen Moment abgelenkt. Ihr nutzt die Chance, vermutlich Eure einzige, und rennt vorbei an den Kisten und Säcken. Um ein Haar wäret Ihr gestolpert, aber Ihr erreicht mit letzter Mühe den Ausgang. Vor der Halle erblickt Ihr einige Wachen, auf die Ihr zu hastet - nur fort von diesen Meuchlern! Weiter bei Abschnitt [[201]].
+
+::170
+&raquo;Na gut - wenn für mich genügend dabei herausspringt&laquo;, erklärt Ihr den Gestalten. &raquo;Pah, du Angeber.&laquo; wirft einer höhnisch ein: &raquo;Du hast gar keine Wahl, und wenn du dich geschickt anstellt wirst du vielleicht sogar ohne allzu große Qualen zu Boron gelangen.&laquo; Die Aussicht kann Euch zwar nicht begeistern, aber für das Erste bleibt Euch gar nichts anderes übrig, als die sieben Menschen nach [[195]] zu begleiten.
+
+::171
+Um aus der Halle zu schleichen, müsste Euch eine um 8 Punkte erschwerte Probe auf Euer Schleich-Talent gelingen. Falls Ihr dies schafft lest bitte bei Abschnitt [[229]] weiter - ansonsten ist der Abschnitt [[199]] Euer nächster Anlaufpunkt.
+
+::172
+Da Euch kaum etwas anderes übrig bleibt, folgt Ihr der Wache in einen großen Raum, in dem sich noch einige andere Wachen aufhalten. Weiter bei Abschnitt [[201]].
+
+::173
+Ihr greift in die Tasche und umfasst den Stein, den der Dicke Euch schenkte. Ihr gebt ihn der Wächterin mit den Worten: &raquo;Hier, reicht das für Eure Augen?&laquo;
+Die Wachfrau grinst Euch an und sagt: &raquo;Ich glaube, ich begutachte den Stein einmal, dabei kann ich Euch leider nicht im Auge behalten - aber Ihr würdet so etwas doch nicht ausnutzen?&laquo;
+Rasch huscht Ihr an der Frau vorbei nach [[179]].
+
+::174
+Ihr schaut den Wirt gleichmütig an: &raquo;Ich glaube nicht, dass wir uns kennen. Für mich sieht ein Mensch wie der andere aus und - mit Verlaub gesagt - ich denke, Euch wird es mit uns Angroschim nicht anders gehen.&laquo;
+&raquo;Da mögt Ihr recht haben ...&laquo;, nickt der Wirt und wendet sich einem anderen Kunden zu.
+Erleichtert, dass dieser riskante Moment vorüber ist, hebt Ihr Euren Krug und nehmt einen langen, erfrischenden Schluck. Es ist zwar kein Ferdoker, oder - besser noch - Beilunker, aber es stillt den Durst und verleiht neue Kräfte.
+Wollt Ihr Euch noch einen weiteren Humpen bestellen ([[308]]) oder lieber wieder hinausgehen ([[329]])?
+
+::175
+Während Ihr noch aufeinander einschlagt, öffnet sich die Türe, und eine Gruppe bewaffneter Wachen stürmt in die Schankstube. Schnell stürzen sie sich zwischen Euch. Nun, so viel Feind ist zu viel der Ehr, und angesichts der Überzahl lasst ihr Eure Waffe sinken. Weiter bei Abschnitt [[201]].
+
+::176
+Nach einigen Schlägen liegt Euer Gegner vor Euch auf dem Boden. Der Wirt kommt empört angelaufen, in der Hand einen schweren Knüppel, und fragt, wer seine zerbrochenen Stühle bezahlen werde. Geschrei nach den Stadtwachen wird laut. Ihr kommt zu dem Entschluss, dass es klüger sei, ganz rasch zu verschwinden und hastet nach Abschnitt [[179]].
+
+::177
+Ohne auf diese unwürdigen Menschen zu achten, begebt Ihr Euch zur Theke. Ihr bemüht Euch, Euch würdevoll aufzurichten, leider reichen Eure Augen trotzdem nur bis zur Thekenkante - was Euer Auftreten fürwahr etwas abschwächt. &raquo;Guter Herr Wirt, ich hätte gerne einen Krug von Eurem besten Bier, bringt Ihr ihn nur rasch hervor!&laquo;
+Der Wirt stellt Euch einen Krug schäumendes Bier vor die Nase. Dann schaut er Euch prüfend an. &raquo;He, kenn&apos; ich dich nicht von irgendwo her?&laquo; Wollt Ihr ihm sagen, wer Ihr seid und ihn vielleicht um Unterschlupf ([[203]]) bitten, oder wollt Ihr ihm antworten, dass er Euch kaum kennen kann ([[174]])?
+
+::178
+&raquo;Ich nannte Euch einen stinkenden Flohsack, aber ich vergaß anzumerken, dass Ihr offensichtlich überdies auch noch taub seid.&laquo; Der Mensch springt wütend auf - nach Abschnitt [[205]].
+
+::179
+Ihr steht auf den Straßen des nächtlichen AI&apos;Anfa&apos;s. Dort herrscht immer noch etwas Verkehr, Ihr glaubt aber, dass es sicherer ist, Euch bis zum Morgen irgendwo zu verbergen, sodass Ihr Euch nach einem geeigneten, offenstehenden Gebäude umschaut.
+Solche Häuser, in die Ihr Euch zu dieser Nachtzeit flüchten könnt, tragen auf dem Stadtplan Nummern. Wenn Ihr Euch entschieden habt, wohin Ihr gehen wollt, so schlagt bitte den Abschnitt mit der entsprechenden Nummer auf.
+Schlagen Sie dazu bitte den Stadtplan in der Heftmitte auf. Die Arena ist mit A, die Villa mit V gekennzeichnet.
+
+([[24]]) Wirtshaus
+([[49]]) Herberge
+([[82]]) Tempel der Schönen Göttin
+([[107]]) Tempel der Gütigen Göttin
+([[200]]) Lagerhaus am Hafen
+
+<img src="[@ModuleUrl]/stadtplan.png" width="100%">
+
+::180
+&raquo;Was glaubt Ihr eigentlich, wen Ihr vor Euch habt?&laquo; brüllt Ihr den Kerl an. &raquo;Ich bin König Orbal, behandelt mich gefälligst mit Respekt, Ihr stinkender Flohsack!&laquo;. Der Mensch richtet sich auf: &raquo;Wie hast du Ratte mich genannt..? Wiederhole das noch mal, falls du dich traust!&laquo;
+Wollt Ihr die Beleidigung wiederholen ([[178]]), oder möchtet Ihr ganz schnell den Rückzug nach [[179]] antreten?
+
+::181
+Ein kurzer Blick hinter diese Türe enthüllt eine übelriechende Latrine. Da dies wohl kaum ein Fluchtweg sein kann, beziehungsweise, da Ihr Euch in einem Soloabenteuer befindet, das für Leser von gehobener Lebensart geschrieben wurde und darum auf unappetitliche Fluchtwege weitgehend verzichtet, wendet Ihr Eure Aufmerksamkeit einem anderen Ausgang zu. Weiter bei Abschnitt [[14]].
+
+::182
+Ihr entschließt Euch, die Gastfreundschaft des Tempels anzunehmen.
+In den kommenden Tagen und Wochen lernt Ihr viel über die Göttin Travia. Das Leben im Tempel ist zwar sehr eintönig, aber nachdem die Tage zu Wochen und die Wochen zu Monaten geworden sind, habt Ihr Euch daran gewöhnt. So vergehen die Jahre. Ihr denkt nur noch sehr selten an Eure Heimat, denn als Laienbruder des Traviakultes fühlt Ihr Euch dem Tempel in Al&apos;Anfa verbunden und denen, die sich hierhin flüchten.
+Vielleicht werdet Ihr Euer Volk einmal wiedersehen. Aber das ist eine andere Geschichte ...
+
+<center><i>[[ENDE]]</i>(set:$AP to 0)</center>
+
+::183
+Ihr schaut Euch ausgiebig im Raum um. In den Schränken befinden sich Zeremonialgegenstände, Roben, Räuchergefäße und ähnliche Dinge.
+Als Ihr Euch gerade tief über eine Truhe beugt, um ihren Inhalt zu untersuchen, öffnet sich die Türe, und jemand betritt den Raum. Ihr hört, wie der Neuankömmling heranspringt und gleichzeitig nach den Wachen ruft, er habe einen Eindringling erwischt. Dann senkt sich der Truhendeckel nieder und hört Ihr nichts mehr. Weiter bei Abschnitt [[1]].
+
+::184
+Nach einer Ewigkeit, wie es Euch scheint, dreht sich der Bursche auf die Seite und schläft weiter. Sicherheitshalber wartet Ihr noch einen Moment, bis seine regelmäßigen Atemzüge verraten, dass er wieder fest eingeschlafen ist. Eilig hastet Ihr zur Tür und öffnet sie so vorsichtig wie möglich. Weiter bei Abschnitt [[14]].
+
+::185
+Ihr betrachtet die vergitterten Türen und seht, dass es sich um Zellen handelt, die mit verschiedenen Lebewesen vollgestopft sind - offensichtlich befindet Ihr Euch in einer Art Gefängnis. Als man Euch aus der Zelle heraus entdeckt, humpelt eine zerlumpte Gestalt an die Türe und flüstert: &raquo;Du bist doch keiner von denen - bitte hilf uns!&laquo;
+Wollt Ihr versuchen, nach einer Möglichkeit zu suchen, wie Ihr die Gefangenen befreien könnt ([[290]]) oder wollt Ihr lieber in die Kanalisation zurückkehren ([[273]])?
+
+::186
+Geschafft - noch ehe der Drahthaken auf den Boden fällt, habt Ihr ihn gepackt und in Eure Tasche gesteckt. Man weiß ja nie, wozu so etwas gut sein könnte...
+Nun kommt Ihr auch dazu, die Wurst zu verspeisen, die Euch köstlich mundet. Dann schreitet Ihr zu der anderen Türe.
+Weiter bei Abschnitt [[46]].
+(set:$Haken to 1)
+
+::187
+&raquo;Mein Name ist Gubra.&laquo; Der Mann bittet Euch an Bord, wo er Euch herzlich dankt und Euch eine Belohnung von zwanzig Dublonen überreicht. Danach begebt Ihr Euch wieder in die Stadt, wo Ihr Euch bei Abschnitt [[179]] weiter umschaut.
+
+::188
+Ihr hört, wie die Mörder unter Fluchen davonrennen. Wollt Ihr es ihnen gleich tun ([[164]]) oder zum Kai gellen und mit dem Kaufmann reden ([[16]])?
+
+::189
+Die Kugel ist zwar sehr schön gearbeitet, aber Geschenke stiehlt man nicht - mit diesem frommen Gedanken wendet Ihr Euch ab und geht nach Abschnitt [[315]].
+
+::190
+&raquo;Vorsicht, das ist eine Falle!&laquo; ruft Ihr. Ihr seht noch, wie der Kaufmann zurückweicht, als Euch auch schon die Sinne schwinden und Ihr in einen endlosen Schacht stürzt bis zu Abschnitt [[1]].
+
+::191
+Ihr kommt in ein mit Kissen vollgestopftes Zimmer, in dem der Dicke auf einem Divan liegt und in einer Schmuckkiste wühlt. Bei Eurem Eintreten blickt er auf. &raquo;Ah, lieber Freund kommt doch ein wenig näher. Schaut, ich habe hier einen Anhänger, der wunderbar zu Euren braunen Augen passen würde.&laquo; Mit diesen Worten hält er Euch einen von Diamanten umfassten Rubin entgegen, der bestimmt seine hundert Dukaten wert sein mag. Ob er Euch stellt, ist eher zweifelhaft, doch im Haarschmuck Eurer Tirza sähe er gewiss bewundernswert aus. Ihr steckt ihn dankend ein.
+&raquo;Aber nun lasst mich bitte noch ein wenig ausruhen, mein Freund, wir sehen uns dann ja zum Empfang.&laquo;
+Mit diesen Worten werdet Ihr aus dem Zimmer komplimentiert. Weiter bei Abschnitt [[148]].
+(set:$Rubin to 1)
+
+::192
+Ihr entdeckt einen Haufen Seile, hinter dem Ihr Euch recht gut verstecken könnt. Ihr hört über Euch etwas leise knacken, scheinbar eine der vielen streunenden Hafenkatzen - in diesem Fall aber vermutlich die Mörder, die auf dem Dach lauern. Werden sie Euch entdecken...? Nun. bei Abschnitt [[167]] werdet Ihr es erfahren.
+
+::193
+Ihr beschließt, Euer Heil in der Flucht zu suchen. Mit einem gewagten Satz springt Ihr zu der Türe und reißt den Riegel zur Seite. Ihr hört, wie sich in der Zimmer jemand aus dem Bett bewegt, als Ihr gerade die Türe öffnet. Bitte würfelt nun einmal mit einem W6: Bei einer geraden Zahl lest bitte bei Abschnitt [[292]], bei einer ungeraden bei [[276]] weiter.
+
+::194
+&raquo;Nun, ich habe ein Problem: Ich benötige ein Versteck&laquo;, erklärt Ihr der jungen Frau.
+Ihr Gesicht verdunkelt sich: &raquo;Wir bieten flüchtigen Verbrechern keinen Unterschlupf&laquo;, erklärt sie, &raquo;es ist dies doch nicht einer der Tempel der Travia. Ihr solltet lieber verschwinden, bevor ich die Wachen rufe.&laquo;
+Wollt Ihr dem Rat folgen und den Tempel schnell wieder verlassen, so lest bitte Abschnitt [[179]]. Wenn Ihr hingegen dableiben und erst erklären wollt, dass Ihr kein Verbrecher, sondern ein entlaufener Gladiator seid, so könnt Ihr in Abschnitt [[108]] lesen, was dann geschieht...
+
+::195
+Ihr geht auf einer Reihe von verschlungenen Pfaden, bis Ihr schließlich den Al&apos;Anfaner Hafen erreicht. Um diese Stunde sieht man hier keine lebende Seele. Während des ganzen Weges haben Eure Begleiter weder untereinander noch mit Euch ein Wort gewechselt. Selbst Ihre Schritte sind kaum hörbar. Wäre nicht die ganze Zeit diese leichte Dolchspitze in Eurem Nacken zu spüren gewesen, so könntet Ihr glauben, dass Ihr alleine wäret. Im Hafen angekommen stößt man Euch auf den Kai, wo bereits die Lichter des ankommenden Schiffes deutlich zu sehen sind. Einer der Männer spricht Euch an. &raquo;Du stellst dich hierhin, und wenn der Waltich kommt, sprich ihn an und sage, du wärest gekommen, um die Lieferung in Empfang zu nehmen. Und unterstehe dich, ein falsches Wort zu sagen - dann würdest du wünschen, nie geboren zu sein.&laquo; Weiter bei Abschnitt [[264]].
+
+::196
+Ihr steigt die Treppe hinauf und seht vor Euch, im Westen, die Tür Eures Zimmers. Wollt Ihr dort hineingehen, um Euch etwas auszuruhen ([[153]]) oder aber dem Gang weiter nach Norden ([[119]]) folgen?
+
+::197
+Mit einem lauten Aufschrei stürzt Ihr Euch auf den vordersten Meuchler. Nach der ersten Schrecksekunde springen die Männer auf. Es gelingt Euch auch durchaus, einen Schlag zu landen, bevor es vor Euren Augen schwarz wird und Ihr zu Abschnitt [[1]] geschleudert werdet.
+
+::198
+Unerbittlich schlagt Ihr auf Euren Gegner ein, und dieser scheint zwar angeschlagen zu sein, aber er holt immer noch einmal zu einem weiteren vernichtenden Schlag aus. Während Euch das Blut in die Augen tropft, schwinden Euch langsam die Sinne. Weiter bei Abschnitt [[95]].
+
+::199
+Es hat den Anschein, dass Ihr lauter aufgetreten seid, als Ihr beabsichtigt hattet. Blitzschnell springen schwarze Schatten hinter einer Kiste hervor, und binnen weniger Herzschläge fühlt Ihr einen Dolch an Eurer Kehle. &raquo;Na los, vorwärts!&laquo; Ihr werdet in die Mitte der Kisten geschoben und eine der Personen hält die Lampe neben Euer Gesicht. &raquo;Na, was haben wir denn hier für einen Spion ..? Nun, wenn du schon zugehört hast, wirst du uns eben helfen. Es ist sowieso besser, wenn ein Außenstehender als Mörder entlarvt wird.&laquo;
+Willigt Ihr ein, so lest bitte bei [[170]] weiter, wenn Ihr dieses Ansinnen empört von Euch weisen wollt, blättert bitte weiter zum Abschnitt [[309]].
+
+::200
+Ihr steht vor einem großen Gebäude, das überraschenderweise keine Fenster hat. Durch einen Spalt in der Holztüre dringt Licht. Vorsichtig öffnet Ihr die Türe. Ihr hört gedämpftes Murmeln im Raum. Wollt Ihr in das Zimmer eindringen ([[307]]) oder lieber nach [[179]] zurückkehren?
+
+::201
+Ihr hört eine triumphierende Stimme sagen: &raquo;Schaut mal, wen wir hier haben: Den Axmann, der aus der Arena entflohene Zwerg. Na - wenn das kein Glücksfall ist!&laquo; Man legt Euch Ketten an, und dann spürt Ihr nur noch, wie man Euch von hinten etwas über den Schädel schlägt. Bitte lest bei Abschnitt [[1]] weiter.
+
+::202
+Die Wächterin grinst Euch an. &raquo;Tja - eigentlich müsste ich Euch nun zum Sklavenmarkt schaffen - und für mich gibt&apos;s keinen roten Heller. Aber vielleicht habt Ihr etwas, das Ihr mir gehen könnt, damit ich Euch aus den Augen verliere.&laquo;
+Besitzt Ihr etwas, das gut zu ihren braunen Augen passt?
+Wollt Ihr (if:$Rubin==1)versuchen die Wachfrau mit dem Rubin zu bestechen? Oder (endif:) die Wachfrau überraschend angreifen ([[11]]) – oder lasst Ihr Euch gar abführen ([[172]])?
+
+::203
+Ihr flüstert dem Wirt Euren Namen zu und fragt, ob er Euch verbergen würde. Darauf könnt Ihr goldene Punkte vergnügt in seinen Augen tanzen sehen, als er wissen will: &raquo;Einen Flüchtigen verstecken, das ist riskant und aufwendig. Habt Ihr fünfzig Dukaten, die Ihr mir für meine Mühen zahlen könnt?&laquo; Diese Frage müsst Ihr verneinen, und so erklärt Euch der Wirt mit einem Schulterzucken: &raquo;Nun, nehmt es nicht persönlich, aber diese Herren dahinten werden mir dies als Belohnung zahlen, wenn ich Euch an sie ausliefere&laquo;. Bei seinen Worten dreht Ihr Euch eiligst um, um zu fliehen, doch Ihr merkt nur noch, wie Euch etwas am Hinterkopf trifft, dann wird es auch schon dunkel um Euch, und Ihr fallt und fallt - bis zu Abschnitt [[1]].
+
+::204
+Ihr ergreift eines der Bücher und lasst Euch in den Polstern niedersinken. Das Buch ist äußerst spannend geschrieben und berichtet von edlen Helden und ihren Damen. Ihr lest bis zum Abschnitt [[150]].
+
+::205
+Mit einem raschen Schritt stürmt Ihr auf den ungehobelten Kerl zu und holt mit Eurer Waffe aus. Es entbrennt ein Kampf.
+
+<i>Seine Werte sind wie folgt:</i>
+MU 16, KK 18, AT 12, PA 10, TP 1W6+1 TP(A) (Raufen), RS 0, LE 40
+<i>Selbstbeherrschung: 2; Ausweichen: 4</i>
+
+Sollte Euer Gegner in den ersten drei Kampfrunden das Bewusstsein oder gar sein Leben verlieren, so lest bitte bei [[176]] weiter. Sollte hingegen Euch dieses Schicksal vor der fünften Kampfrunde widerfahren, so lest bitte bei [[15]] weiter. Falls der Kampf bis zur fünften Kampfrunde dauert, begebt Euch bitte zu Abschnitt [[175]].
+
+::206
+Ihr folgt dem Gang nach Süden. Neben dem Porträt eines älteren Mannes, der dem Feisten etwas ähnelt, erblickt Ihr eine Türe in der westlichen Wand ([[127]]). Der Flur geht weiter nach Süden ([[151]]). Wollt Ihr schauen, was sich hinter der Türe verbirgt, den Gang weiter erkunden oder Euer Zimmer aufsuchen ([[153]])?
+
+::207
+Der Höflichkeit halber sprecht Ihr zuerst ein Gebet. Danach erzählt Ihr Bruder Traviso Eure Geschichte. Der Geweihte versinkt für kurze Zeit in Gedanken und antwortet dann, dass er Euch vielleicht irgendwann einmal aus der Stadt bringen könnte, dass Ihr bis dahin aber gerne Zuflucht im Tempel haben könntet.
+Wollt Ihr sein Angebot annehmen, so lest bitte bei Abschnitt [[182]] weiter, wenn Ihr hingegen dankend ablehnen möchtet, verabschiedet Ihr Euch und kehrt zurück nach [[179]].
+
+::208
+Angrosch ist mit Euch - zumindest soweit man das über die Gewährung eine Seereise sagen kann - und Ihr findet in Mirham angenehm schnell ein Schiff, das Richtung Beilunk fährt und dessen Kapitän keine Fragen stellt - nicht einmal an einen in abgerissene Lumpen gehüllten Zwerg, der unbedingt eine Seefahrt machen will...
+Diese Fahrt ist zwar nicht angenehm für Euren empfindlichen Magen, doch immerhin geht sie rasch voran - und wenn Ihr Euch nicht in Eurer Koje vergrabt, hört Ihr ermutigende Hinweise auf Euer Vorankommen: Schon sind Selem und die Echsensümpfe passiert, in Thalusa wird kurz Zwischenstation gemacht, in Khunchom ebenfalls - das Gebiet der gefürchteten Schwarzen Galeeren habt Ihr damit weit hinter Euch gelassen.
+(if:$Kugel==1)Führt Ihr eigentlich eine Trophäe in Kugelform mit Euch? Wenn ja, so lest bitte bei Abschnitt [[299]] weiter.(else:)Ihr setzt die Fahrt bei [[323]] fort.(endif:)
+
+::209
+An dem Bündel Dietriche befindet sich einer, der es Euch ermöglicht, das Gitter aufzusperren. Ihr schiebt es zur Seite und seht um Euch herum Gestrüpp. Weiter bei Abschnitt [[125]].
+
+::210
+Um unbemerkt zu der verriegelten Türe zu gelangen, solltet Ihr eine um vier Punkte erschwerte Probe auf Euer Schleich-Talent ablegen. Gelingt sie Euch, so begeht Euch bitte zu Abschnitt [[278]], ansonsten könnt Ihr bei [[294]] nachschauen, was weiter geschieht.
+
+::211
+Ihr erblickt vor Euch einen großen Saal, dessen Prunk durchaus dem Thronsaal eines niederrangigen Zwergenherrschers würdig wäre - ja, selbst Euer eigener in Lorgolosch ist nur um geringes prächtiger.
+In der Mitte des Raumes befindet sich eine große Tafel mit allerlei Köstlichkeiten, Ihr glaubt sogar ein Spanferkel zu erblicken. Am Ende der Tafel seht Ihr einen unglaublich feisten Menschenmann, auf geschmackloseste Weise mit Edelsteinen behangen, die am zierlichen Hals einer Zwergen-Schönheit eine Wohltat für die Augen wären - bei diesem Fettkloß wirken sie allerdings lediglich grotesk. Als er Euch erblickt, fangen seine Schweinsäuglein an zu strahlen, und seine vier Kinne zittern vor Begeisterung. &raquo;Liebster Freund, da seid Ihr ja!&laquo;, ruft er aus und steht mühevoll auf, die Arme weit ausgebreitet; anscheinend will er Euch an seinen massigen Leib drücken.
+Wollt Ihr Euch dies gefallen lassen ([[87]]) oder versuchen, mit einer Gewandtheitsprobe auszuweichen ([[67]])?
+
+::212
+Ihr folgt der Röhre, die immer enger zu werden scheint. Schließlich gelangt Ihr an ein Gitter. An einer Stelle ist eine Öffnung zu sehen.
+Wollt ihr (if:$Dietriche==1)probieren das Schloss mit dem das Gitter versperrt ist mit den Dietrichen zu knacken ([[209]])? Alternativ könntet ihr (endif:)(if:$Brecheisen==1)mit dem Brecheisen ans Werk gehen ([[297]])? Oder lieber (endif:)gewaltsam das Gitter öffnen ([[281]])?
+
+::213
+Erneut erweist Euch der Wursthaken gute Dienste. Mit einem kaum vernehmbaren Klicken öffnet sich das Schloss. Vorsichtig schiebt Ihr die Türe auf - und steht in der Diele eines Hauses. Am Ende der Diele ist eine verriegelte Holztüre zu sehen, ansonsten könnt Ihr zu Eurer Rechten ein weiteres Zimmer entdecken. Wollt Ihr zu der Holztüre schleichen, so blättert bitte zu [[210]], wenn es Euch hingegen interessiert, was sich hinter der anderen Türe befindet, so wird Eure Neugier bei Abschnitt [[258]] befriedigt.
+
+::214
+Der Gang endet schließlich in einer Höhle. An den Wänden stehen verschlossene Kisten, auf einer davon liegt ein Tuch über einem anscheinend etwa handgroßen Gegenstand. Wollt Ihr Euch das Tuch näher betrachten ([[5]]) oder lieber zurückkehren nach [[115]]? Vielleicht wollt Ihr auch nachsehen, wohin die Öffnung in der Höhlenwand führt ([[235]])?
+
+::215
+Tapfer versucht Ihr, nicht auf die wimmelnden Körper zu achten und gelangt an den Ratten vorbei nach [[236]].
+
+::216
+Ihr hebt die knarrende Luke in die Höhe. Über Euch erblickt Ihr einen schmalen Raum. Als Ihr durch die Luke klettert, könnt Ihr erkennen, dass es sich anscheinend um eine Art Werkstatt handelt. Ihr seht einen Amboss und darauf einen Hammer, allerdings könnt Ihr keine Esse erkennen. Eine Treppe führt nach oben. Möchtet Ihr der Treppe folgen ([[237]]), Euch ein wenig weiter im Raum umschauen ([[265]]) oder bei Abschnitt [[238]] zurück ins Wasser klettern?
+
+::217
+Als Ihr zu Euch kommt, erblickt Ihr ein zahnloses Gesicht über Euch. Ihr bemerkt einen Dolch an Eurer Kehle. Eine alte Menschenfrau funkelt Euch böse an: &raquo;Eigentlich müsste ich Euch die Kehle durchschneiden, weil Ihr meinen Gorgi so schrecklich zugerichtet habt. Aber der Arenabesitzer hat auf Eure Ergreifung eine beachtliche Summe ausgesetzt. Er will Euch zwar lebend haben, aber das heißt ja nicht, dass ich Euch nicht trotzdem für das Schicksal meines Hundes bestrafen kann.&laquo;
+Sie versetzt Euch einige schmerzhafte Tritte in den Magen, und Eure ohnehin getrübten Sinne verdunkeln sich erneut. Weiter bei Abschnitt [[1]].
+
+::218
+&raquo;Oh, ich würde nur zu gerne die Segnungen der Göttin kennenlernen&laquo;, sagt Ihr zu der Priesterin. Nun lächelt sie Euch an: &raquo;Dann wartet bitte einen Moment, ich werde Bruder Raschomon Bescheid sagen.&laquo; Sie erhebt sich und lässt Euch allein.
+Möchtet Ihr auf diesen Bruder Raschomon warten, dann lest bitte bei Abschnitt [[135]] weiter. Wollt Ihr Euch lieber wieder aus dem Tempel fortbegeben, geht bitte zu Abschnitt [[36]].
+
+::219
+Als Ihr weiter durch das faulige Wasser watet, seht Ihr Euch auf einmal einem Rudel Ratten gegenüber. Wollt Ihr versuchen, sie zu ignorieren ([[215]]) oder sie angreifen ([[22]])?
+
+::220
+Als Ihr die Stufen hochsteigt, gelangt Ihr in einen trockenen Gang, der aufwärts zu führen scheint. Ihr folgt ihm, bis Ihr plötzlich irgendwo vor Euch ein Knurren zu hören glaubt. Wollt Ihr trotzdem weitergehen ([[288]]) oder lieber schnell zurück nach [[115]] flüchten?
+
+::221
+Vorsichtig balanciert Ihr weiter. Ihr kommt einige Schritt weit, vorsichtig einen Fuß vor den anderen setzend, immer wieder an der Wand nach Griffstellen tastend, Eure ganze Aufmerksamkeit auf den schmalen Steg vor und unter Euch gerichtet. Knurrend stellt Ihr fest, daß diese Art der Fortbewegung einfach zu anstrengend ist. Daher beschließt Ihr unter heftigen Flüchen, Euch in die Mitte des Ganges im Dreckwasser zu bewegen - es soll schließlich keiner denken, daß alle Angroschim Nichtschwimmer sind! Weiter bei Abschnitt [[52]].
+
+::222
+Vor Euch erstreckt sich ein schmaler, aus sehr rauen Felsbrocken gemauerter Gang. Die Luft ist abgestanden und riecht unangenehm. Doch zumindest bei Höflichkeitsbesuchen im Amboßgebirge habt Ihr schon manchen noch übler riechenden Stollen erblickt - und ein Geheimgang ergibt nur Sinn, wenn er irgendwohin führt. Mit diesen beruhigenden Gedanken geht Ihr weiter nach Abschnitt [[247]].
+
+::223
+Um dem Wirt keine Schwierigkeiten zu bereiten, eilt Ihr zu dem Euch beschriebenen Geheimgang. Ihr seht, dass an der Hinterseite des Fasses ein schmaler Durchgang verborgen ist. Weiter bei Abschnitt [[253]].
+
+::224
+Mit einer schnellen Bewegung gelingt es Euch, Euch auf dem schmalen Innenrand des Fasses abzufangen, denn unter Euch gähnt ein tiefes Loch - das war knapp! Ihr schaut Euch das Loch näher an und seht, dass eiserne Steigringe in die Wände getrieben wurden. Sie sind - für Eure Körpermaße - sehr weit auseinander angebracht, aber man muss das Beste aus der Situation machen.
+Insgesamt gibt es sieben dieser Ringe. Um von dem einen auf den nächsten zu gelangen, muss Euch eine Gewandtheitsprobe gelingen.
+Wenn Euch alle sieben Proben gelingen, lest bitte bei [[250]] weiter.
+Bei einem Misslingen einer GE-Probe könnt Ihr Euch noch mit Hilfe Eurer Muskelkraft festzuhalten versuchen (KK-Probe),ansonsten stürzt Ihr in die Tiefe und erleidet dann das Ergebnis so vieler Würfe mit dem W6 Schaden, wie noch Steigringe vor Euch lagen. Verliert Ihr dabei das Bewusstsein, so geht es bei [[56]], anderenfalls bei Abschnitt [[249]] weiter.
+
+::225
+Viel zu früh klopft es an die Türe Eures Zimmers. Vor Euch steht der Wirt: &raquo;Los, los, nicht den ganzen schönen Morgen verschlafen, ich habe Arbeit für Euch.&laquo;
+Müde erhebt Ihr Euch. Der Mann führt Euch in einen Innenhof, wo Unmengen von Feuerholz darauf warten, kleingeschlagen zu werden. &raquo;Danach habe ich noch einige Körbe Flickwäsche für Euch&laquo;, erfahrt Ihr von dem Wirt. Also packt Ihr Euch die Axt und beginnt mit der Arbeit. Stunden später werdet Ihr in einen Raum gebracht, wo Berge von zerrissenen Wäschestücken liegen - und nachdem Ihr diese geflickt habt und glaubt, nicht einen Finger mehr rühren zu können, sollt Ihr auch noch zerschlagenes Mobiliar wieder herrichten.
+Als Ihr am Abend erschöpft vor einem Becher Wein sitzt fragt Euch der Wirt, was einen Zwerg nach Al&apos;Anfa treibt. Möchtet Ihr ihm wahrheitsgemäß Eure Erlebnisse berichten ([[320]]) oder erzählt Ihr ihm lieber irgendeine Lügengeschichte ([[252]])?
+
+::226
+&raquo;Dacht&apos; ich mir doch, dat du Ratte was ausbrütest. Na, wie gut, dat Halb-Oger dir gefolgt is&apos; - die wer&apos;n mich reich belohnen.&laquo; Grinsend steht Euer Feind vor Euch und schwingt eine nagelgespickte Keule. Es sieht ganz so aus, als ob Ihr ihn entweder bekämpfen und schnell zum Schweigen bringen müsst - oder aber zulassen, dass er Euch verrät.
+Wollt Ihr den Kampf aufnehmen, so lest bei Abschnitt [[96]] weiter; ansonsten geht es zu Abschnitt [[76]].
+
+::227
+Ihr begeht Euch auf Euer Zimmer. Die Einrichtung ist einfach, aber zweckmäßig, ganz wie es Euch gefallen könnte, wenn Ihr ein Erzzwerg wärt ... Die Aufregungen der letzten Tage waren ein wenig viel für Euch, und Ihr schlaft bis in die Abendstunden - ein erholsamer Schlaf, in dem Ihr einen Teil der verlorenen Kraft zurückgewinnt. Wollt Ihr noch eine weitere Nacht hier verbringen ([[306]]) oder bei Abschnitt [[179]] nach einem Ausweg aus der Stadt suchen?
+
+::228
+Nachdem Ihr den ersten Schlag gelandet habt, greift der Mann zu seiner Waffe und ruft gleichzeitig Alarm. Ihr könnt den Kampf noch eine Weile fortsetzen, ohne überragende Erfolge zu erzielen - als plötzlich, wenn auch nicht unerwartet, Schritte auf dem Gang laut werden. Weiter bei Abschnitt [[104]].
+
+::229
+Nach einigen kurzen Momenten der Suche findet Ihr den Weg zum Hafen. Um diese Nachtzeit sind hier außer ein paar betrunkenen Matrosen und streunenden Katzen keine Anzeichen von Leben zu sehen.
+Eine innere Stimme sagt Euch, dass die kaum zu bemerkenden Lichter des hereinkommenden Schiffes die des Herrn Gato Waltich sein müssten. Wollt Ihr Euch verstecken ([[192]]) oder offen auf das Schiff warten ([[168]])?
+
+::230
+Rasch erhebt Ihr Euch und greift den Sklavenwärter an - mit bloßen Fäusten, denn irgendwann hat man Euch während Eures Schlafes die Doppelaxt fortgenommen. Ohne seine Augen von Euch zu wenden, weicht der Mann Eurem ersten Schlag aus, setzt eine kleine Pfeife an seine Lippen und lässt ein schrilles Trillern ertönen. Wollt Ihr mit dem Kampf fortfahren ([[33]]) oder lieber nachgeben, um das Schlimmste zu vermeiden ([[57]])?
+
+::231
+&raquo;Nun, es kommt natürlich auf die Art der Arbeit an, aber generell wäre ich nicht abgeneigt.&laquo; antwortet Ihr.
+&raquo;Oh, ich könnte einen Hausdiener gebrauchen.&laquo; erklärt Euch der Wirt. &raquo;Drei Taler die Woche; Kost und Logis frei. Na, was sagt Ihr?&laquo;
+Wenn Ihr die Arbeit annehmen möchtet, so lest bitte bei Abschnitt [[255]] weiter. Falls Ihr Euch doch lieber weiter umschauen möchtet, bedankt Ihr Euch höflich und kehrt zurück nach [[179]].
+
+::232
+Vor Euch erstreckt sich ein Raum, in dem einige Kisten und Schränke an den Wänden stehen. An einem Haken hängt eine schwarze Robe. In der Westwand ist eine weitere Türe. Wollt Ihr Euch weiter in dem Raum umschauen ([[183]]) oder die Türe öffnen ([[315]])? Vielleicht wollt Ihr auch auf dem Flur nachschauen, wohin Euch die Türe ([[123]]) nebenan führt.
+
+::233
+Der gemauerte Gang führt Euch an einer Treppe vorbei. Möchtet Ihr schauen, wo diese Treppe hinführt, könnt Ihr dies bei [[296]] tun. Falls Ihr hingegen dem Gang weiter folgen möchtet, lest bitte Abschnitt [[280]]. Wenn Ihr zurück zu der Kreuzung gehen möchtet - diese liegt bei Abschnitt [[98]].
+
+::234
+Dummerweise habt Ihr keine Ahnung, wie Ihr die Türe ohne passendes Werkzeug öffnen sollt. Sie einzurennen, erscheint Euch eher unklug und so steigt Ihr bei [[219]] wieder in das Abwasser.
+
+::235
+Mit einem schnellen Schritt tretet Ihr durch die Öffnung ins Freie. Vor Euch erblickt Ihr eine Wasserfläche und einige bewaffnete Stadtwachen, die zwei Männer in Schach halten. Dummerweise blicken ein paar der Wachen in Eure Richtung. Näheres könnt Ihr bei Abschnitt [[201]] erfahren.
+
+::236
+Langsam sinkt der Wasserspiegel, so dass Ihr besser vorankommt. Nach einigen weiteren Schritten kommt Ihr an eine Kreuzung. Weiter bei Abschnitt [[98]].
+
+::237
+Leise steigt Ihr auf der Treppe nach oben. Vor Euch befindet sich eine hölzerne Türe. Ein kurzes Rütteln an ihr zeigt Euch, dass sie verschlossen ist. Wollt ihr (if:$Haken==1)probieren das Schloss mit dem Haken aus der Arena zu knacken ([[213]])? Oder (endif:)die Tür untersuchen ([[234]]) um vielleicht einen Weg zu finden sie zu öffnen?
+
+::238
+Mit einem Klatschen landet Ihr wieder im Wasser und folgt dem Gang weiter nach [[219]].
+
+::239
+Der tote Hund liegt zu Euren Füßen. Wollt Ihr herausfinden, wo er herkam ([[214]]) oder lieber nach [[115]] zurückkehren?
+
+::240
+Mit einem kräftigen Stoß rammt Ihr Eure Schulter gegen die Türe. Es gibt einen lauten Krach, den leider auch die Wächter gehört haben; die Türe hingegen sieht unbeeindruckt aus. Noch ehe Ihr Eure schmerzende Schulter dazu bewegen könnt, sich ein weiteres Mal gegen das dicke Holz zu werfen, erscheinen mehrere Bewaffnete mit Laternen hinter Euch. &raquo;Nun, schaut Euch mal diesen Burschen an. Dachtest wohl, du könntest so einfach entwischen. Los, mach den Mund auf!&laquo;
+Eine der Wachen hält Euch fest, und eine andere kippt Euch eine scheußliche Flüssigkeit in den Mund. Dann verschwimmt Eure Sicht ... Als Ihr wieder zu Euch kommt, steht Ihr bei Abschnitt [[1]].
+
+::241
+Ein weiteres Mal prallt Eure Schulter an die Tür, die sich nun fast öffnet - doch es gab auch diesmal ein so lautes Geräusch, dass es nicht weiter verwunderlich ist, dass einige Augenblicke später eine ganze Reihe Leute erscheinen, während Ihr noch Eure Schulter reibt.
+Vorneweg hastet der Dicke, der Euch besorgt zuruft: &raquo;Was ist geschehen..? Etwa ein Unhold, ein Einbrecher, den Ihr abwehren musstet ..? Seid Ihr gar verletzt, teurer Freund? Rasch, kommt herbei und lasst Euch anschauen!&laquo;
+Wollt Ihr lieber zu Eurem &raquo;Gastgeber&laquo; gehen und damit alle Fluchtversuche für eine Weile zurückstellen ([[330]]) oder aber versuchen, die Tür doch noch aufzubekommen? ([[257]])
+
+::242
+Um die Luke zu öffnen, solltet Ihr eine Körperkraftprobe ablegen: Gelingt sie Euch, so lest bei [[216]] weiter, misslingt sie hingegen, dann begebt Euch bitte zu Abschnitt [[238]].
+
+::243
+Mühsam bewegt Ihr Euch in der übelriechenden Brühe weiter, wüste Beschimpfungen gegen die Herren Al&apos;Anfas ausstoßend - allmählich seht Ihr gewiss so aus, wie sich Klein-Alrik einen Zwerg vorstellt. Immer wieder sind Löcher in der Decke sichtbar, durch die Unrat hinunterfällt, dem Ihr aber zum Glück meistens ausweichen könnt. Nach einiger Zeit seht Ihr, dass nach rechts einige Stufen in einen etwas höher gelegenen Gang führen. Möchtet Ihr diesem Tunnel folgen ([[220]]) oder wollt Ihr weiter den Haupttunnel bei [[115]] entlanggehen?
+
+::244
+Während der Wärter die Gefangenen verspottet, habt Ihr zweien von ihnen bereits die Fesseln gelöst. Der Wächter entkorkt den Tonkrug und greift nach einer braunhäutigen Frau, um Ihr etwas aus dem Krug einzuflößen. Wollt Ihr das verhindern, so könnt Ihr dies bei Abschnitt [[166]] versuchen. Wollt Ihr hingegen weitere Fesseln lösen, begebt Euch bitte zu [[271]].
+
+::245
+Eure Schritte waren wohl doch lauter, als Ihr geglaubt habt. Die Türe öffnet sich vollständig, und Ihr erblickt fünf bewaffnete Männer, die vor Euch stehen, in ihrer Mitte den Sklavenaufseher.
+&raquo;Na, wenn haben wir denn hier? Die Latrine wirst du hier wohl nicht gesucht haben. Du wolltest wohl an die Waffen, Bürschchen. Los, bringt ihn zurück!&laquo; Die Wachen zögern noch einen Augenblick - wollt Ihr sie mit bloßen Händen angreifen ([[11]]) oder Euch ergehen ([[43]])?
+
+::246
+In den folgenden Tagen genießt Ihr unter den Sklaven großen Respekt, und manche sind sogar direkt bemüht, Euch einige Gefallen zu tun - doch die Erinnerung an Eure Ausdauer und Kampfkraft verblasst allmählich, der aus der Demütigung geborene Hass aber bleibt bestehen: Wann immer Ihr Halb-Oger erblickt, bemerkt Ihr seine glühenden Blicke. Allmählich schart der Hüne auch diejenigen um sich, die sich von Euch gekränkt fühlen, und bald scheint seine Anhängerschaft weit größer als die, auf die Ihr zählen könnt.
+Vorerst sind es noch kleine Unannehmlichkeiten, die Euch widerfahren: Bei den Übungskämpfen sind die Riemen Eurer Rüstungen defekt, oder eine Waffe ist verschwunden, bei den Mahlzeiten findet sich Unrat oder Ungeziefer in Eurer Speise. Eines Tages vermisst Halb-Oger unter lautem Geschrei ein Amulett, dass sich schließlich unter Eurem Strohsack findet - und nur angesichts Eures hohen Wertes für die Kämpfe werdet Ihr mit <i>nur</i> einigen Tagen Dunkelhaft bei Brackwasser bestraft. Weiter bei Abschnitt [[26]].
+
+::247
+Ihr kommt an eine große, runde Öffnung. Um durch sie hindurch zu gelangen müsst Ihr kriechen. Nach einiger Zeit erreicht Ihr das Ende dieser Röhre und seht vor Euch einen weiteren Gang. In der Mitte dieses zweiten Ganges plätschert ein übelriechendes Gewässer - offensichtlich seid Ihr irgendwie in die Kloaken der Stadt Al&apos;Anfa geraten (dabei hatten wir uns doch vorgenommen, unappetitliche Fluchtwege zu vermeiden!). Nun denn, sei es, wie es sei, an der linken Gangseite verläuft ein etwa ein Spann breiter Steg direkt über der Oberfläche des stinkenden Abwassers. Wollt Ihr versuchen, auf diesem Steg zu laufen, so lest bitte Abschnitt [[47]],wollt Ihr dagegen einfach in der übelriechenden Brühe vorwärts stapfen und dabei auf die Al&apos;Anfaner fluchen, so geht es bei Abschnitt [[52]] weiter.
+
+::248
+Da der Wächter nicht mit einem Angriff rechnet und keine Waffe in der Hand hält, versucht er nur, Eure Hiebe mit den bloßen Armen abzuwehren - für Euch heißt das, Ihr könnt die ersten beiden Attacken ohne Gegenwehr durchführen. Solltet Ihr Eurem Gegner in den ersten beiden Kampfrunden mehr als 20 Schadenspunkte zufügen, lest bitte den Abschnitt ([[147]]),ansonsten geht der Kampf im Abschnitt ([[133]]) weiter.
+
+::249
+&raquo;Autsch, das hat weh getan!&laquo;, denkt Ihr Euch, als Ihr mühsam wieder auf Eure Füße kommt. Nachdem Ihr Euch vergewissert habt, dass Ihr zwar Prellungen und blaue Flecken davongetragen habt, ansonsten aber noch vollständig seid, geht Ihr weiter nach Abschnitt [[222]].
+
+::250
+Mit zitternden Knien, aber ansonsten wohlbehalten, seid Ihr auf dem Boden des Ganges angekommen. Ein Blick nach oben zeigt Euch, dass Ihr hier nur unter überaus großen Mühen wieder hochklettern könntet, also wendet Ihr Euch nach Abschnitt [[222]].
+
+::251
+Ihr seid ja schließlich ein Brillantzwerg und wisst, was sich einer Dame gegenüber gehört ... Und so lächelt Ihr zurück und erwidert, dass Ihr für eine edle Dame immer etwas Zeit hättet. Die Schöne lächelt Euch verschwörerisch zu und flüstert in Euer Ohr: &raquo;Wisst Ihr, ich bin mit einem fürchterlich alten und langweiligen Kaufmann verheiratet und habe wahre Wunderdinge von Eurem Volke gehört. Zudem - soweit ich weiß, gibt es keine Halbzwerge, oder ..? Wir hätten also keinen Skandal zu befürchten, und da kam mir der Gedanke, dass Ihr mir doch einmal Eure Waffen zeigen könntet ...&laquo; Wollt Ihr der Dame Ihren Wunsch erfüllen ([[145]]) oder diesen entrüstet von Euch weisen ([[112]])?
+
+::252
+Ihr erzählt dem Mann irgendeine Geschichte von Geschäftsreisen, Handelsrouten und ähnlichem - und trinkt dabei noch einige Becher Wein. Am Ende seid Ihr beide betrunken und Ihr schwankt in Euer Zimmer. Weiter bei Abschnitt [[62]].
+
+::253
+Unter einigen Mühen zwängt Ihr Euch durch den engen Durchgang. Jetzt solltet Ihr Eure Gewandtheit überprüfen. Gelingt Euch diese Probe, so lest bitte Abschnitt [[224]], ansonsten geht es bei [[74]] weiter.
+
+::254
+Neugierig folgt Ihr der Treppe nach unten. Ihr gelangt in einen großen Raum, der mit allerlei Vorräten gefüllt ist. In der hinteren Ecke des Raumes steht ein eigenartig aussehendes Fass. Wollt Ihr es Euch näher ansehen ([[338]]) oder wieder in den Flur zurückkehren ([[12]])?
+
+::255
+&raquo;Euer Angebot klingt verlockend, guter Mann. Wann kann ich anfangen?&laquo;
+&raquo;Sofort, aber begebt Euch erst einmal zur Ruhe, damit Ihr morgen ausgeruht seid.&laquo; Der Wirt nimmt einen Schlüssel von der Wand. &raquo;Ihr könnt in den ersten Stock gehen und dort das Zimmer am Ende des Ganges nehmen.&laquo; Weiter bei [[62]].
+
+::256
+So viel wunderschönes Gold, und hier liegt es nur nutzlos herum. Ihr öffnet Eure Taschen und schaufelt hinein, so viel Ihr vermögt. Voller Wonne wälzt Ihr Euch in den Münzen und Edelsteinen herum, werft Dukaten und Dublonen empor und lasst sie auf Euch niederprasseln. Fast bringt Ihr Verständnis für die Erzfeinde Eures Volkes auf, denn Ihr fühlt Euch bald selbst wie ein alter Drache auf seinem Hort. In Eurer Begeisterung hört Ihr leider nicht, wie sich die Türe öffnet und jemand den Raum betritt. Auch sein Entsetzensschrei lässt Euch kalt. Noch lange, nachdem Euch die Wachen davongeschleppt haben, seid Ihr Euch sicher, dass es all den Ärger wert war, einmal in einem solchen Schatzhort zu wühlen. Weiter bei Abschnitt [[1]].
+
+::257
+Um die schwere Tür mit einem Mal aus den Angeln zudrücken, ist eine um 4 Punkte erschwerte Probe auf Eure Körperkraft nötig.
+Bei einem Erfolg lest Ihr bitte bei Abschnitt [[332]] weiter, bei einem Scheitern bei [[310]].
+
+::258
+Leise nähert Ihr Euch der Türe am Ende des Flurs. Hinter ihr sind Atemgeräusche zu hören. Möchtet Ihr die Tür öffnen ([[277]]) oder Euch lieber zu der verriegelten Türe begeben ([[210]])?
+
+::259
+Nach geraumer Zeit hört das Hufgetrappel auf, und Ihr vernehmt, wie eine Türe geöffnet wird. Dann werdet Ihr auch schon wieder hochgehoben und davongetragen. Hinter Euch scheint sich eine Türe zu schließen. Ihr habt das Gefühl, dass es aufwärts geht, seid Euch aber nicht sicher, zumal Euch recht schwindelig ist.
+Dann öffnet sich erneut eine Türe, Ihr werdet abgesetzt, und es lösen geschickte Hände den Knoten um den Sack, ohne diesen selbst von Euch abzustreifen; kurz darauf schließt sich die Türe wieder.
+Mühsam krabbelt Ihr aus dem Sack und schaut Euch um. Ihr befindet Euch in einem Raum, in dessen Mitte ein großer, mit dampfendem und wohlduftendem Wasser gefüllter Badezuber steht. Auf einem Beistelltischchen liegen einige große Tücher sowie ein Stück Seife.
+In der Nord- ([[90]]) und Ostwand ([[69]]) befinden sich Türen. Ihr habt seit einer Ewigkeit kein Bad mehr genossen. Wollt Ihr die Gelegenheit nutzen ([[93]]) oder lieber abwarten ([[73]]), oder wollt Ihr Euch einer der Türen zuwenden?
+
+::260
+Ihr befindet Euch auf dem prächtig verzierten Flur. Wollt Ihr Euch zu Eurem Zimmer begehen ([[153]]) oder Euch lieber noch etwas im Haus umschauen ([[131]])?
+
+::261
+&raquo;Ja, ich hätte gerne ein Zimmer.&laquo; bestätigt Ihr die Frage des Wirtes.
+&raquo;Hm - wisst Ihr schon, wie lange Ihr bleiben werdet?&laquo;
+&raquo;Nein, das kommt ganz darauf an, wie die Geschäfte laufen.&laquo; antwortet Ihr ihm.
+&raquo;Na denn, viel Glück!&laquo; Er gibt Euch einen Schlüssel: &raquo;Geht einfach durch die Tür dort, wenn Ihr die Treppe hoch kommt, die zweite Türe links.&laquo;
+Weiter bei Abschnitt [[12]].
+
+::262
+&raquo;Nein danke&laquo;, lehnt Ihr ab und erklärt: &raquo;Ich glaube, ich flüchte lieber alleine durch die Kanalisation.&laquo;
+&raquo;Gut, wie Ihr meint - aber seid vorsichtig. Die Wächter erwähnten mal irgendetwas davon, dass es zwar einen Ausweg aus der Kanalisation gebe, aber dass ein bestimmter Flüchtling so dumm gewesen sei, stattdessen die Totengeister zu behelligen ... Er soll von ihnen bitter bestraft worden sein. Na ja, vielleicht ist das auch nur ein Ammenmärchen, um die Gefangenen einzuschüchtern. Habt nochmals Dank und viel Glück - möge Phex über Euren Wegen wachen!&laquo; wünscht er Euch, als Ihr Euch verabschiedet und in verschiedene Richtungen die Flucht antretet.
+Der Fuchsgott ist auch dem Volk der Brillantzwerge bekannt, und so schreitet Ihr, durch den Segen beruhigt und gestärkt, vorwärts nach Abschnitt [[233]].
+
+::263
+Ihr folgt dem Mann durch einige verwinkelte Gänge und gelangt schließlich an eine glatte Wand - sollte das hier das Ende Eurer Flucht sein?! Ihr beginnt, an der Weisheit zu zweifeln, die Euch diesem Menschen folgen ließ... Allerdings, die übrigen Gefangenen setzten anscheinend großes Vertrauen in ihn. In diesem Augenblick murmelt er etwas und drückt leicht gegen einen Steinquader, woraufhin ein Geheimgang sichtbar wird. &raquo;Beeilt Euch&laquo;, raunt er Euch zu - eine Aufforderung, der alle nur zu gerne folgen.
+Nachdem alte in den Gang geschlüpft sind, verschließt er den verborgenen Durchgang wieder. Während Ihr durch weitere Gänge lauft, um schließlich in der Nähe eines Hauses ins Freie zu gelangen, erfahrt Ihr etwas über Euren Führer: Dass sein Gott ihm aufgetragen habe, etwas im Borontempel zu besorgen und dass er alle Pläne schon in der Tasche gehabt habe, um dann unweit der Reliquienkammer des Tempels ergriffen zu werden. Aber Phex habe ihn wohl doch nicht verlassen und Euch geschickt, und irgendwann würde er es erneut versuchen..!
+Wie eigentümlich bekannt und vertraut Euch die Geschichte doch vorkommt... Während Ihr noch über das merkwürdige Schicksal Eures Leidensgenossen nachsinnt, gelangt Ihr in ein Haus, das anscheinend ebenfalls einem Anhänger des Fuchsgottes gehört. Dort werdet Ihr versorgt und im Laufe der nächsten Nacht aus der Stadt geschmuggelt. Die von Euch befreiten Mohas bieten Euch an. als großer Held mit in den Regenwald zu kommen - doch das lehnt Ihr dankend ab, da Ihr in Eure Heimat zurückkehren wollt.
+Weiter geht es bei Abschnitt [[300]].
+
+::264
+Während sich das Schiff Euch nähert, überlegt Ihr, ob Ihr versuchen sollt, dem Mann eine Warnung zuzurufen. Wollt Ihr dies tun, dann lest bitte bei [[190]] weiter. Wenn Ihr dagegen, schon um Euer eigenes Leben zu retten, mitspielen wollt, dann schlagt bitte Abschnitt [[165]] auf.
+
+::265
+Als Ihr den Raum näher betrachtet, gelangt Ihr zu dem Schluss, dass hier wohl nur Gerümpel gelagert wird. In einer Ecke könnt Ihr eine Brechstange entdecken. Wenn Ihr wollt, könnt Ihr Euch entscheiden, sie mitzunehmen ([[265->265A]]). Oder möchtet Ihr gleich die Treppe hinaufgehen ([[237]]) oder bei ([[219]]) wieder zurückkehren in den Abwasserkanal?
+
+::265A
+<title>265</title>Ihr steckt die Brechstange ein, man weiss ja nie wofür sowas noch nützlich sein könnte. Möchtet Ihr nun die Treppe hinaufgehen ([[237]]) oder bei ([[219]]) wieder zurückkehren in den Abwasserkanal?
+(set:$Brecheisen to 1)
+
+::266
+Ihr habt es geschafft: Der Wächter liegt vor Euren Füßen. Ober nun tot oder nur bewusstlos ist, vermögt Ihr so rasch nicht zu sagen. Die bereits befreiten Gefangenen umringen Euch. Weiter bei Abschnitt [[321]].
+
+::267
+Für dieses Unterfangen muss Euch schon eine um 6 Punkte erschwerte Probe auf Eure Gewandtheit glücken. Wenn Ihr es schafft, lest bei Abschnitt [[301]] weiter, anderenfalls gleitet Ihr aus, erleidet 1W6 SP durch den Sturz und müsst bei [[324]] fortfahren.
+
+::268
+Aus dem Krug steigt ein Euch nicht unbekannter Geruch von Kräutern auf, wie sie auch in der Arena Verwendung fanden. Unangenehmerweise fühlt Ihr Euch alleine von dem Geruch schon etwas benebelt. Weiter bei [[128]].
+
+::269
+Der Mann ist derartig verblüfft, dass er keine Gegenwehr leistet, als Ihr den Krug nehmt und an seine Lippen setzt. Nachdem die ersten Schlucke seine Kehle hinunter gelaufen sind, bricht er vor Euren Füßen zusammen. Sicherheitshalber schüttet Ihr noch ein wenig nach ([[321]]).
+
+::270
+Der Wächter blickt einen kurzen Moment erstaunt, gibt den Krug aber nicht frei. Weiter bei [[128]].
+
+::271
+Weitere zwei Sklaven sind von ihren Fesseln befreit, als Ihr aus den Augenwinkeln seht, wie die Frau ohnmächtig wird und zu Boden fällt. Der Wächter wendet sich nun einem anderen Opfer zu. Die vier befreiten Sklaven scheinen unschlüssig zu sein, was sie nun machen sollen. Wollt Ihr mit ihrer Hilfe den Sklavenwächter attackieren ([[146]]) oder die ausgezehrten Gestalten schonen und ihn alleine angreifen ([[248]])? Vielleicht wollt Ihr aber auch weitere Gefangene befreien ([[284]])?
+
+::272
+Als Ihr nicht reagiert, grinst der Wächter: &raquo;Na, jetzt kommen die Leute schon freiwillig zu uns. So ist es brav. Nun leg&apos; noch schön deine Waffen nieder und komm zu mir.&laquo; Wenn Ihr seiner Aufforderung nachkommen wollt, könnt Ihr dies bei [[286]] tun. Wenn ihr ihn hingegen nun doch angreifen möchtet, so wendet Euch bitte Abschnitt [[334]] zu.
+
+::273
+Jeder ist seines Glückes Schmied, denkt Ihr bei Euch, ich kann mich nicht auch noch um gefangene Menschen kümmern. Ihr seht noch einen Augenblick lang die bettelnden Augen vor Euch und befindet Euch wieder bei Abschnitt [[296]].
+
+::274
+&raquo;Jetzt oder nie!&laquo; denkt Ihr, als Ihr aus dem Gebüsch tretet. Ihr erblickt vor Euch eine schmale Straße und in Eurem Rücken die Stadtmauer Al&apos;Anfas. Eilig macht Ihr Euch auf den Weg in die Freiheit, nach Abschnitt [[300]].
+
+::275
+&raquo;Nun meine teure Dame, ich bin mitnichten ein Trinkgefährte Eures edlen Herrn Gemahls ...&laquo;, setzt Ihr an.
+&raquo;Pah, edler Gemahl, ein verdammter Herumtreiber ist das.&laquo; fährt Euch die Frau über den Mund.
+Irritiert blickt Ihr auf: &raquo;Nun, wie ich Euch erklären möchte, mein Name ist Orbal. Bei meinem Volke hin ich ein König, aber in dieser Stadt nur ein entlaufener Sklave, der nichts mehr will, als in seine Heimat zurückzukehren, und daher komme ich hierher in Euer Haus zu Euch, großmütige Dame, und bitte Euch um Hilfe.&laquo; Sie schaut Euch zweifelnd an.
+Dann lächelt sie versonnen. &raquo;Ihr seid der König der Brillantzwerge - sagt einmal, stimmt es, was man von Eurem Volk erzählt?&laquo; Vermutlich spielt die Menschenfrau auf die legendären Zwergenschätze an - und so hebt Ihr an, ihr zu erklären, dass Ihr Euch sicher erkenntlich zeigen würdet, wenn sie Euch behilflich sei. &raquo;Aber nein, das meine ich doch nicht, Eure Majestät, seid so gut und folgt mir einmal in mein Zimmer. Wenn es Euch recht ist, könnt Ihr mir dann Eure Künste zeigen.&laquo; Weiter bei Abschnitt [[305]].
+
+::276
+Ihr reißt die Türe auf und springt auf die Straße, geradewegs in die Arme einer patrouillierenden Stadtwache. &raquo;Gemach, gemach, Bursche!&laquo; sagt deren Anführer. &raquo;Was hast du es denn so eilig?&laquo; Weiter geht es mit Abschnitt [[201]].
+
+::277
+Mit einem laut vernehmbaren Quietschen öffnet sich die Türe, die nun folgenden Ereignisse könnt Ihr in Abschnitt [[144]] nachlesen.
+
+::278
+Ihr öffnet die Türe und befindet Euch auf einem Gang. Links und rechts könnt Ihr vergitterte Türen sehen. Möchtet Ihr herausfinden, was es mit diesen Türen auf sich hat ([[185]]), oder lieber bei [[296]] eine andere Entscheidung treffen?
+
+::279
+Ihr kauert Euch hinter den Büschen zusammen. Nach einiger Zeit entfernen sich Schritte. Wollt Ihr weiter warten ([[293]]) oder aus Eurem Versteck hervorkriechen ([[274]])?
+
+::280
+Ihr folgt dem düsteren Gang, der sich stetig nach oben windet, bis Ihr schließlich vor einer hölzernen Türe steht.
+Ihr tretet ein und befindet Euch in einem muffigen Gewölbe. Der Raum ist sehr dunkel und nur dank der Tatsache, dass Ihr ein Recke aus dem ruhmvollen Volk der Angroschim seid, könnt Ihr überhaupt etwas erkennen. Um Euch herum stehen große Steinquader im Weg und Ihr glaubt, in einer Ecke einen Aufgang zu erspähen. Möchtet Ihr Euch weiter umschauen ([[319]]) oder nach Abschnitt [[233]] zurückkehren? Vielleicht wollt Ihr aber auch herausfinden, was es mit dem Aufgang auf sich hat ([[158]])?
+
+::281
+Das Gitter versperrt Euch den Weg in die Freiheit – doch davon lässt sich ein Zwerg nicht aufhalten! ihr nehmt Anlauf und werft Euch dagegen. Mit einem lauten Krachen bricht das Gitter aus der Mauer. Ihr krabbelt aus dem Loch, zwängt Euch durch dichtes Gestrüpp und erblickt vor Euch sechs Stadtwachen ([[201]]).
+
+::282
+Nach und nach erwacht Ihr und hört Stimmen im Raum: &raquo;Nun, dann werden wir ihn auch dem Herren opfern. Schneidet ihm die Kehle durch!&laquo; Ihr seht, wie sich jemand über Euch beugt und einen Moment stutzt. &raquo;Ich glaube, das ist der aus der Arena geflohene Zwerg.&laquo; Ein anderer schaut Euch an: &raquo;Stimmt - lasst ihn am Leben und schafft ihn zur Arena!&laquo; Weiter geht es mit Abschnitt [[1]].
+
+::283
+Nach dem Öffnen dieser Türe zeigt sich Euch ein Raum, in dem Fackeln, Seile und dergleichen aufbewahrt werden. Zur Sicherheit nehmt Ihr Euch ein zehn Meter langes Seil und eine Fackel mit, bevor Ihr zu [[101]] zurückkehrt.
+
+::284
+Ihr befreit noch einen weiteren Gefangenen, derweil werden die bereits Entfesselten unruhig. Dies bemerkt der Wächter ([[128]]).
+
+::285
+Nach und nach stellen sich immer mehr Gedächtnissplitter ein - Erinnerungen an einen kühnen Plan, an eine Seefahrt und die schwache, aber stets spürbare Furcht vor dieser Fahrt, an die Ankunft in einer fremden, riesigen Stadt.
+Plötzlich fügen sich alle Gedanken und Erinnerungen zu einem vollständigen Bild zusammen: Ihr seid König Orbal, der König der Brillantzwerge. In Lorgolosch in den Beilunker Bergen steht Euer Thron. Und dort entwarft Ihr auch Euren kühnen Plan, der die Macht eines Götterkultes herausforderte: Dass Ihr nach Al&apos;Anfa, in die Pestbeule des Südens, reisen und ein Schmuckstück vom größten Hort dieser reichen Stadt nehmen würdet - vom Tempelhort des Boronkultes...
+Doch es kam anders, und Ihr wisst nicht, ob durch Götterwillen oder Verräter, durch eigenen Übermut und durch mangelnde Vorsicht. Düstere Erinnerungen an den Gründer und Vater Eures Stammes drängen sich Euch auf, doch Ihr wischt sie beiseite.
+Wie dem auch sei, Ihr wurdet gefangen genommen, ohne erkannt zu werden - und so steckte man Euch einfach als den zwergischen Gladiator Axmann in die Arena Al&apos;Anfas, wo Ihr wohl schon viele Gegner besiegt habt - doch noch immer muss man Euch unter den Einfluss benebelnder Kräuter zwingen, damit Ihr die anderen Gladiatoren bekämpft und tötet, geht es doch all diesen armen Kerlen mehr als miserabel - genauso wie Euch.
+In Eure Überlegungen platzt das Geräusch eines Schlüssels, der in ein Schloss gesteckt wird - nicht an der Stelle, wo man Euch zuvor hineingestoßen hatte, sondern seitlich davon. Dann schwingt auch schon die Tür auf, und eine Flut grellen Lichts fällt in Euer Gesicht. Nur die Erfahrung vieler Jahre erlaubt es Euch, die Gestalt des Mannes hinter der Laterne zuerkennen. Wollt Ihr ihn überraschend angreifen, um Euch den Weg in die Freiheit zu erkämpfen ([[230]]), oder lieber warten, was nun mit Euch geschehen soll ([[58]])?
+
+::286
+Hypnotisiert wie ein Kaninchen von einer Schlange legt Ihr Eure Waffen auf den Boden. Der Mann deutet Euch an, dass Ihr zu ihm kommen sollt. Auch dieser Aufforderung kommt Ihr widerstandslos nach. Zur Belohnung gibt Euch der Mann einen Schluck aus dem Tonkrug zu trinken. Eure Glieder werden schwer, Ihr seid müde und wollt Euch ausruhen. Bitte lest bei [[1]] weiter.
+
+::287
+Ihr haltet den Krug in Euren Händen. Wollt Ihr den Wächter nun direkt angreifen ([[13]]) - dazu müsstet Ihr aber erst den Krug abstellen und Eure Waffe ziehen - oder wollt Ihr den Krug untersuchen ([[268]])?
+
+::288
+Als Ihr dem nach oben führenden Gang weiter folgt, seht Ihr Euch einer knurrenden Bestie gegenüber. Es scheint sich um einen kampferprobten Wachhund zu handeln. Mit gesträubtem Nackenfell und gefletschten weißgelben Zähnen stürzt er sich auf Euch - es bleibt Euch nicht anderes übrig, als gegen die Bestie zu kämpfen.
+
+<i>Ihre Werte sind wie folgt:</i>
+MU 12, AT 13, PA 5, TP 1W6+2 (Biss), RS 0, LE 25
+<i>Ausweichen: 2</i>
+
+Sollte Euch während des Kampfes das Bewusstsein verlassen, so lest bitte bei Abschnitt [[217]], ansonsten bei [[239]] weiter.
+
+::289
+Mit einem Schrei stürzt Ihr Euch auf den verblüfften Wächter. Wollt Ihr ihm den Krug entwinden ([[25]]) oder ihn direkt mit Eurer Waffe angreifen ([[248]])?
+
+::290
+Ihr untersucht die Türe und bemerkt, dass man sie zwar von außen, anscheinend aber nicht von innen zu öffnen vermag. Mit ein wenig Geschick habt Ihr die Türe gerade geöffnet, als Ihr irgendwo auf dem Gang Schritte vernehmt. Wollt Ihr versuchen, in die nun offene Zelle zu flüchten ([[126]]), oder Euch im Abschnitt [[20]] einem eventuellen Kampf stellen?
+
+::291
+&raquo;Ja also, Euer Mann meinte, ich soll Euch aufsuchen und Euch sagen, dass es etwas später werden könnte, damit Ihr Euch keine Sorgen macht...&laquo;
+&raquo;Ich mache mir keine Sorgen!&laquo; brüllt sie Euch an. &raquo;Sagt diesem nichtsnutzigen Hallodri, dass er entweder umgehend nach Hause kommt - oder er kann von nun an ganz fortbleiben! Ich bereue heute noch den Tag, an dem ich mit ihm die Gans getrieben habe! Und nun packt Euch fort!&laquo; ([[304]])
+
+::292
+Ihr öffnet die Türe und rennt hinaus in die Straßen Al&apos;Anfas. Keuchend hastet Ihr um Winkel und Ecken, bis Ihr Euch schließlich an einem Euch bekannten Ort wiederfindet ([[179]]).
+
+::293
+Ihr beschließt, noch eine Weile im Verborgenen zu bleiben. Das Warten macht Euch allerdings schläfrig, und bald träumt Ihr von Freiheit und Abenteuern.
+Plötzlich werdet Ihr rüde geweckt. Ihr bemerkt, dass man Euch Ketten anlegen will. Sechs Kerle stehen um Euch herum. Einer grinst Euch höhnisch an.
+&raquo;Wie kann man nur so blöde sein, sich vor der Stadtmauer schlafen zu legen. Aber Ihr konntet Euch wohl nicht von uns trennen. Nun, mir soll es recht sein. In der Arena wird man mir ein schönes Lösegeld für Euch zahlen. Aber nun schlaft ruhig weiter.&laquo; Etwas Hartes trifft Euren Hinterkopf, und alles verschwimmt vor Euren Augen. Als Ihr wieder zu Euch kommt, befindet Ihr Euch bei Abschnitt [[1]].
+
+::294
+Dummerweise quietscht der Fußboden, als Ihr zu der Türe schleichen wollt. Bei Abschnitt [[144]] erfahrt Ihr, wie es weiter geht.
+
+::295
+Ihr stakst durch das Gebüsch und stellt zwei Dinge fest: Die erfreuliche Neuigkeit ist, dass Ihr Euch vor der Al&apos;Anfaner Stadtmauer befindet. Die schlechte Neuigkeit ist die, dass Ihr geradewegs in eine Versammlung herumstehender Stadtwachen platzt. Einer blickt auf, als Ihr ins Freie tretet. Gelangweilt meint er zu seinen Kollegen:
+&raquo;Schaut mal, wieder jemand, der etwas zu verbergen hat und nicht wie ein normaler Sterblicher das Tor benutzen kann.&laquo; Bitte lest weiter bei Abschnitt [[201]].
+
+::296
+Die gemauerte Treppe führt Euch vor eine hölzerne Türe. Möchtet Ihr diese öffnen, schlagt bitte [[278]] auf. Wenn Ihr hingegen wieder hinuntergehen möchtet, könnt ihr bei Abschnitt [[233]] weiterlesen.
+
+::297
+Ihr setzt das Brecheisen an einer Stelle des Gitters an. Mit einem leichten Knirschen öffnet sich das Hindernis. Als Ihr hindurch gekrochen seid, seht Ihr vor Euch einige Büsche. Bitte lest bei [[125]] weiter.
+
+::298
+Über Eure heimliche Rückkehr in Euer Reich und zu Eurer Frau ließe sich gewiss ein eigenes Epos verfassen(if:$Brillantencollier==1) - doch es sei genug damit gesagt, dass die Freude in den Augen Eurer Angebeteten heller strahlt als die Juwelen, die Ihr ihr mitgebracht habt(endif:). Euer eigenes Herz wird aber auch von der Freude erhellt, das Blühen Eures Reiches zu sehen: Der noch so jugendlich wirkende Omgrasch scheint wirklich Talent für derartige Dinge zu haben... Weiter bei Abschnitt [[335]].
+
+::299
+Viel versteht Ihr ja nicht von der Seemannskunst - doch selbst Euch fällt auf, wenn die Matrosen offen Befehle verweigern und dem Kapitän und den Offizieren gegenüber ungehorsam sind. Doch erst als es zur offenen Meuterei kommt, seht Ihr einen Zusammenhang mit der goldenen Kugel der Zwietracht - doch nun ist es zu spät: Mit dem Kapitän und den überlebenden Offizieren werdet Ihr in einer überladenen Nussschale von Bord gejagt. Doch viel Freude werden die Meuterer auch nicht haben, denn sie haben auch die Kugel mit sich - als Lösegeld hattet Ihr sie herausgeben müssen...
+Vorerst aber heißt es, sicher das Land zu erreichen, und nachdem Ihr schließlich an der maraskanischen Küste gelandet seid und Euch in einen Stützpunkt der Armee durchgeschlagen habt, findet Ihr tatsächlich ein Schiff, das Euch nach Beilunk bringt - nur knapp acht Monde hat diese Irrfahrt gedauert ... Weiter bei Abschnitt [[331]].
+
+::300
+Nachdem Ihr eine Weile lang nur aus der direkten Umgebung Al&apos;Anfas fortgelaufen seid, legt ihr Euch erst einmal einige Zeit zur Ruhe. In den folgenden Tagen ruht Ihr bei Tag und lauft bei Nacht, und Eure zwergische Konstitution leistet Euch dabei gute Dienste. In dieser Zeit reift auch Euer Plan heran: Ihr wollt in Mirham ein Schiff besteigen, denn diese Stadt ist nahe genug, dass Ihr sie noch erreichen könnt, andererseits aber doch so weit entfernt von Al&apos;Anfa, dass man dort gewiss nicht gezielt nach Euch sucht. Weiter bei Abschnitt [[208]].
+
+::301
+Mit einem geschickten Sprung hüpft Ihr vorbei an dem verdutzten Wärter, rennt auf den Gang öffnet die Türe und flieht die Treppe hinunter. In wilder Flucht huscht ihr durch die Kanalisation. Als Ihr sicher seid, dass Euch niemand mehr folgt, seid Ihr bei Punkt [[219]].
+
+::302
+&raquo;Oh, Majestät, wie glücklich bin ich, dass Ihr mir eine Visite abgestattet habt, und nie werde ich Euer Erscheinen vergessen. Und da Ihr ganz offenbar nicht mit Eures Degen Macht, sondern inkognito durch List und Geschick Euren Weg verfolgt, so kann ich Euch sagen: Wenn Ihr hinunter in die Kanalisation geht, gibt es dort ein Gitter. Sobald Ihr dieses geöffnet habt, seid Ihr außerhalb der Stadtmauer.&raquo; Sie küsst Euch auf die Stirn. &raquo;Viel Glück, Majestät, und vergesst Eure ergebene Yrralilia Hunkeldorn nicht!&laquo;
+Voller Dankbarkeit für diese romantische Seele in einer Stadt von Verbrechern steigt Ihr wieder hinab in die Dunkelheit und setzt Euren Weg durch das Wasser bei Abschnitt [[219]] fort.
+
+::303
+&raquo;Nein danke, ich trinke keinen Alkohol&laquo;, erklärt Ihr der Dame. &raquo;Ein Zwerg, der keinen Alkohol trinkt? Das kommt mir aber unter allen Geschöpfen Deres am seltsamsten vor, merkwürdiger noch als die fliegende Maus und der Hund der See. Sagt. habt Ihr etwas zu verbergen..?&laquo;. Sie schaut Euch prüfend an.
+Möchtet Ihr ihr nun Eure Geschichte erzählen, so könnt Ihr dies bei Abschnitt [[194]] tun. Oder wollt Ihr Euch lieber schnell verabschieden und den Tempel verlassen? Dann geht es für Euch bei [[36]] weiter.
+
+::304
+Mit diesen Worten schiebt Euch die Dame äußerst energisch zur Vordertür, entriegelt diese und schubst Euch in die Nacht. Ihr verspürt ein wenig Mitleid mit dem unglücklichen Ehemann und denkt wehmütig an Eure sanfte Tirza. Nach einem kurzen Augenblick schüttelt Ihr Eure trüben Gedanken ab und schlendert wachsam weiter, bis ihr bei Abschnitt [[179]] einen bekannten Straßenzug erblickt.
+
+::305
+Im Zimmer der Frau angekommen, wedelt sie Euch mit einem dünnen Pergamentheftchen vor der Nase, wie sie zu Hunderten in Beilunk und anderen großen Städten gedruckt werden - der Titel dieses Werkes lautet: &raquo;Reichsgräfin Gissa und ihr Kavalier.&laquo; Die aufgeregte Frau meint: &raquo;König Orbal der Kühne, das seid doch gewiss Ihr..? Dann ist der Kavalier Gamallo Euer getreuer Vasall! Dann könnt Ihr gewiss auch so gut Laute spielen wie er!&laquo;
+Während Ihr noch kurz an Gamallo, diesen windigen Heiratsschwindler, denkt, drückt Euch die Frau auch schon eine Laute in Hand und fordert Euch auf: &raquo;Ach, Majestät, seid so gut und spielt mir ein Ständchen!&laquo;
+Es sieht ganz danach aus, als sei überraschend Euer Musizier-Talent gefordert - und wenn Ihr gut genug spielt, um die Frau zu entzücken (eine Probe+4 sollte dazu schon gelingen!), geht es bei Abschnitt [[327]] weiter, anderenfalls bei [[121]].
+
+::306
+Ausgeruht steigt Ihr hinab in die Empfangskammer der Herberge. Der Wirt begrüßt Euch: &raquo;Nun, einen guten Morgen wünsche ich Euch, oder sollte ich besser guten Abend sagen? Gut geschlafen, der Herr? Wenn Ihr einen kleinen Imbiss wollt, so sagt es nur.&laquo;
+Dankbar bestellt Ihr ein kleines Nachtmahl, und als ein Teller mit Brot und Käse sowie eine dampfende Schüssel Gemüsebrühe vor Euch steht, merkt Ihr erst, wie hungrig Ihr seid. Nachdem Ihr alles verspeist habt, bedankt Ihr Euch beim Wirt und verlasst den Raum in Richtung Abschnitt [[12]].
+
+::307
+Vorsichtig begeht Ihr Euch tiefer in das Gebäude - offensichtlich ein fast leerstehendes Lagerhaus: Seine Inneres, ein einziges großes Gewölbe, ist fast leer, nur an den Wänden sind einige wenige Kisten und Säcke aufgestapelt.
+Mit großem Geschick dringt Ihr tiefer in das Lagerhaus ein. Schließlich lugt Ihr hinter einer Kiste hervor. In der Mitte zwischen diesen Kisten sitzen sieben schwarz gekleidete Gestalten wie Verschwörer tuschelnd beisammen. Das trübe Licht einer Öllampe taucht die ganze Szene in ein gespenstisches Licht. Die dunklen Gestalten reden sehr leise und es kostet Euch Eure gesamte Aufmerksamkeit, um Ihren Worten zu lauschen. &raquo;Heute Nacht, um die vierte Stunde nach Mitternacht, kommt im Hafen die Barke des Kaufmanns Gato Waltich an. Wie Ihr wisst, hat er seine Gründe, mit seiner Fracht nicht am helllichten Tage einzulaufen. Was aber viel wichtiger ist: Er wird alleine von Bord gehen, da er sogar ohne seine Leibwächter reist. Pokallos hat uns tausend Dublonen geboten, wenn Waltich den Sonnenaufgang nicht erlebt.
+Ihr wisst, dass dieser Auftrag sehr wichtig ist. Wir werden uns auf dem Dach der Hafenmeisterei verbergen und dann hinter ihn springen und den Auftrag beenden.&laquo;
+Gebannt hört Ihr den Plänen der Meuchler zu. Der Name der Beilunker Kaufmannsfamilie Waltich ist Euch keineswegs unbekannt, und soweit Ihr wisst, hat sie auch eine Seitenlinie, die in Al&apos;Anfa lebt. Wollt Ihr versuchen, die Halle zu verlassen, um Waltich zu warnen ([[171]]) - oder wollt Ihr den Überfall vereiteln, indem Ihr die Bande angreift ([[197]])?
+
+::308
+Wenn ein Krug schon so kräftigend wirkt, wie wird es da erst mit zweien sein - oder gar dreien... Zudem kann es Euch nur nützen, eine Weile in dieser Schänke unterzutauchen. Mit diesen Gedanken ordert Ihr schnell ein weiteres Bier und genießt den kühlen Gerstensaft.
+Das Bier ist allerdings auch das weitaus beste an der Schänke- die Besucher lassen doch einigermaßen zu wünschen über.
+Vor allem der Rüpel, der schon Euch beleidigt hat, sucht offensichtlich Streit. Nach einiger Zeit hat er damit auch Erfolg und eine stämmige Fuhrfrau geht auf ihn los - offensichtlich, um ihm die Prügel zu versetzen, die er schon lange verdient hat. Wollt Ihr dieses Schauspiel genießen ([[325]]) oder lieber schnell die Kneipe verlassen, ehe der Streit ausartet ([[329]])?
+
+::309
+&raquo;Was glaubt Ihr eigentlich, wen Ihr vor Euch habt?&laquo; schreit Ihr empört. &raquo;Einen elenden kleinen Spion!&laquo; lautet die Antwort. Wollt Ihr Eurem Ärger Luft machen ([[197]]) oder wollt Ihr weiter diskutieren ([[169]])?
+
+::310
+Tja - das war wohl doch zu viel für Euren geschundenen Körper. Der Dicke schaut Euch erst verblüfft und dann feindselig an: &raquo;So dankt Ihr mir also meine Gastfreundschaft, indem Ihr sie mit Füßen tretet? Ihr wolltet also einfach davonlaufen? Es gefällt Euch wohl nicht bei mir?&laquo; Sein beleidigter Gesichtsausdruck ändert sich und spiegelt plötzlich Erleichterung und Freude wieder: &raquo;Aber ich kann Euch ja immer noch in der Arena kämpfen sehen, und dort wird man mir für einen entlaufenen Gladiatoren auch gewiss ein beachtliches Lösegeld zahlen ...&laquo; Während er noch redet, versetzt Euch jemand einen harten Schlag aufs Haupt, so dass Ihr das Bewusstsein verliert. Bitte lest bei Abschnitt [[1]] weiter.
+
+::311
+Die meisten Menschen sind mit den Delikatessen beschäftigt und schenken Euch keine Aufmerksamkeit. Nur eine Dame schaut Euch verträumt an und fragt Euch mit einem leichten Lächeln, ob Ihr etwas Zeit für sie übrig hättet. Wollt Ihr dies bejahen, so lest bei [[251]], ansonsten bei Abschnitt [[112]] weiter.
+
+::312
+Na, da wart Ihr entschieden zu langsam! Zwar könnt Ihr es vermeiden, daß sich der Haken in Eure Schulter - oder gar Euren Kopf - bohrt, aber Ihr schafft es nicht, ihn aufzufangen: Mit einem Klirren prallt der Eisenhaken auf den Boden!
+Vorsichtig lauscht Ihr, ob sich Stimmen oder Schritte nähern- doch als nach einigen Minuten immer noch kein neugieriger Wachmann seine Nase in die Kammer steckt, entspannt Ihr Euch ein wenig und verspeist hastig die duftende Hartwurst. Trotz der Eile bemerkt Ihr, wie gut sie nach vielen Wochen des Reisbreis schmeckt.
+Um keine auffälligen Spuren zu hinterlassen, hebt Ihr auch den Haken auf und steckt ihn ein; dann schreitet Ihr zu der anderen Türe ([[46]]).
+(set:$Haken to 1)
+
+::313
+Auch wenn die Wächter miteinander schwatzen, so sind sie doch erstaunlich aufmerksam: Eine Schleich-Probe+8 müsst Ihr schon geschafft haben, sonst wird man Eurer gewahr! Ist Euch die Probe gelungen, lest bei Abschnitt [[9]] weiter, ansonsten bei [[245]].
+
+::314
+Während Ihr mannhaft die Schätze bewundert, kommt Euch der Gedanke, dass es doch eine gute Idee wäre, diese Kugel der Zwietracht unter all den Schätzen zu verbergen. Hier wird sie bestimmt keiner suchen. Ach, und was für ein herrlicher Gedanke, dass diese intriganten Priester von ihren eigenen Waffen geschlagen werden! Eiligst wühlt Ihr nach einem sicheren Versteck. Nachdem Ihr alles wieder gut zusammengelegt habt, haben sich einige Edelsteine in Eure Taschen verirrt- darunter ein wunderbares Brillantencollier für Eure Gemahlin und ein schmucker Siegelring für Euch -, aber das fällt bestimmt keinem auf. Leise horcht Ihr an der Türe und als Ihr sicher seid, dass niemand draußen steht, tretet Ihr den Rückzug an. Schließlich befindet Ihr Euch erneut in der Kanalisation bei Abschnitt [[233]].
+(set:$Brillantencollier to 1)
+(set:$Siegelring to 1)
+
+::315
+Ihr gelangt auf einen düsteren Flur. Leider wart Ihr wohl etwas zu voreilig, denn die beiden Männer stehen noch immer da. Als Ihr hinaus tretet, blicken sie auf. Ihr bemerkt, wie einer von ihnen die Stirn runzelt: &raquo;Ein Spion! WACHEN, herbei!! Packt ihn!!!&laquo; Auf seinen Ruf hin erscheinen in Windeseile eine Reihe von Tempelwachen, die Euch ergreifen und eine übelriechende Flüssigkeit einflößen.
+Weiter bei Abschnitt [[1]].
+
+::316
+Die massive Tür ist abgeschlossen und ohne Schlüssel kaum zu öffnen. Enttäuscht wendet Ihr Euch ab und kehrt zurück nach Abschnitt [[151]].
+
+::317
+Nehmt Ihr die Kugel mit ([[162]]) oder lasst Ihr sie liegen ([[189]])?
+
+::318
+Wie gut, dass Ihr Euch entschlossen habt, hinter dem Vorhang zu verweilen: Denn wenige Augenblicke später vernehmt Ihr, wie sich eine Türe öffnet, hört die Schritte von mindestens zwei Personen, die den Raum betreten, und wie sich eine Türe schließt. Mit schweißfeuchten Handflächen stellt Ihr Euch die Frage, was wohl geschehen mag, wenn man Euch hinter dem Vorhang ertappt ([[161]]).
+
+::319
+Ihr nähert Euch einem der Steinquader. Vorsichtig streicht Ihr mit Euren Fingern über den Rand und bemerkt, dass sich Vertiefungen an einer Seite des Quaders befinden. Es scheint, dass es sich um Kusliker Zeichen handelt: Eure Finger ertasten ein B, ein A, weiter führt Ihr euren Finger durch ein L. – dann ist ein kurzer Zwischenraum ohne Zeichen.
+Eure Finger begeben sich weiter zu einem H, einem O, dann folgt ein N, des weiteren ein A und ein K - Bal Honak, der frühere Patriarch Al&apos;Anfas! Mit großer Wahrscheinlichkeit steht Ihr an seinem Sarkophag...
+Aber wenn dies ein Sarkophag ist, würde es bedeuten, dass Ihr irgendwo in den Katakomben eines Borontempels wäret. Eines Borontempels..? Gewiss ist es der große Borontempel, das Vaterhaus des Al&apos;Anfaner Kultes, unter dem Ihr Euch aufhaltet und wo Ihr vielleicht Euer ursprüngliches Ziel doch noch erreichen könnt. Wollt Ihr den schon erspähten Aufgang untersuchen, ob es sich bei ihm um einen Zugang zum Tempel handelt, so könnt Ihr dies bei [[158]] tun. Scheut Ihr hingegen das vermutlich tollkühne Risiko und wollt lieber zurückkehren in die Kanalisation, so führt der Weg dorthin über Abschnitt [[233]].
+
+::320
+Ihr beschließt, dem Wirt Euer Vertrauen zu schenken und erzählt ihm die lange Geschichte. Nachdem Ihr geendet habt, sind zwei Krüge Wein geleert. Der Mann schaut Euch lange schweigend an: &raquo;Nun mein Freund, ich danke Euch für das Vertrauen, das Ihr mir geschenkt habt. Wenn man Euch in meinem Hause entdeckt, kann mir das große Schwierigkeiten bringen. Soweit ich weiß, hat der Vorbesitzer dieser Herberge irgendeinen Geheimgang im Keller anlegen lassen, der Zugang liegt in einem Fass in der Ecke des Kellers. Ich habe allerdings keine Ahnung, wo er hinführt. Ich möchte Euch aber auf jeden Fall bitten, mein Haus umgehend zu verlassen - entweder durch diesen Geheimgang ([[223]]) oder durch die Vordertüre ([[179]]), wenn Euch das sicherer vorkommt; aber bitte, geht nun.&laquo;
+Nachdem Ihr Euch bedankt und verabschiedet habt, müsst Ihr Euch für einen der vorgeschlagenen Wege entscheiden.
+
+::321
+Die Sklaven beginnen, aufgeregt durcheinander zu reden. Ihr beruhigt sie erst einmal und löst ihre Fesseln. Einer der Gefangenen - offensichtlich ein Nordländer, kein Waldmensch wie die übrigen - erzählt Euch, dass er Freunde in Al&apos;Anfa hat, die ihm aus der Stadt helfen würden. Er bietet Euch an, mit ihm und den restlichen Gefangenen zu fliehen.
+Wollt Ihr darauf eingehen ([[263]]) oder Eure Flucht bei Abschnitt ([[262]]) alleine fortsetzen?
+
+::322
+Um keinen öffentlichen Aufruhr zu verursachen, reist Ihr inkognito nach Lorgolosch. An die richtigen Pässe und Passwörter erinnert Ihr Euch noch - Ihr habt sie ja zum Teil selber festgesetzt. In Schatodor angelangt, trefft Ihr Euch zuerst mit Eurer Frau, dann mit Eurem Sohn und der Matriarchin. Und während Eure Gemahlin nur überglücklich ist, ist Euer Sohn zwar auch froh - doch die Aussicht, wieder abzudanken, will ihm nicht recht schmecken. Und von der alten Matriarchin Ingrascha - oh weh, da bekommt Ihr etwas zu hören: Von &quot;Pflichtvergessenheit&quot; und &quot;Tollkühnheit&quot; ist da die Rede, von &quot;leichtfertiger Verschleuderung der Krone&quot; und ähnlichem. Gewiss, Ihr hättet das Recht, den Thron einzufordern, doch gegen solchen - für das Volk von Lorgolosch nur gut gemeinten Widerstand - erscheint Euch das eher sinnlos. Weiter bei Abschnitt [[335]].
+
+::323
+Die Fahrt verläuft ruhig und ohne Störungen - wenn man von einem kurzen Scharmützel mit Seeräubern vor Jergan einmal absieht. Doch als Ihr endlich in Beilunk wieder festen Boden betretet, dankt Ihr doch dem Herrn Angrosch aus tiefster Seele, dass er Euch sicher zurück geleitet hat. Weiter bei Abschnitt [[331]].
+
+::324
+Zu spät - um nicht noch größeren Schaden zu erleiden, musstet Ihr Euch vorzeitig auf den Boden werfen. Der erste Hieb des Wächters geht dadurch allerdings daneben, und Ihr schöpft schwache Hoffnung: Vielleicht könnt Ihr ja doch durch einen kühnen Angriff Erfolg haben?
+Weiter geht es bei Abschnitt [[64]].
+
+::325
+Unter lauten Fluchen prügeln sich die beiden Streitenden, umringt von den schaulustigen Zechern. Der Wirt ist derlei Auftritte anscheinend schon gewöhnt und schickt eine Schankmaid nach draußen, ehe er selbst einen Knüppel packt und auf die Kämpfenden zustapft. In diesem Moment allerdings wird ein Pokal Wein in Eure Richtung geschleudert, dessen Inhalt Euer Gesicht benäßt. Wollt Ihr schnell entschlüpfen und auf die Straße gehen ([[179]]) oder reicht es Euch nun, und Ihr beschließt, auch mal ein wenig mitzumischen ([[175]])?
+
+::326
+&raquo;Äh, ich bin halt schon ein wenig erschöpft, und die Finger sind recht klamm... Ach, wenn ich Euch so sehe, fange ich an zu zittern, ich meine, ich ...&laquo; bringt Ihr stockend hervor. Das Gesicht der Frau wechselt von bewölkt zu stürmisch: &raquo;Was redest du da, du Tropf - du stinkender Betrüger willst der edle König Orbal sein? Dass ich dir stotterndem Narren geglaubt habe, und dich gar in meine Kammer gebeten! Peinlich ist das, zu peinlich... Nun aber genug, pack dich!&laquo; Weiter geht es bei Abschnitt [[304]].
+
+::327
+Fast zu Eurem Erstaunen schlagt Ihr die Laute so gut und klangvoll wie daheim in den Hallen von Schatodor - die lange Leidenszeit hat Euren Fertigkeiten nicht geschadet, und entzückende Akkorde und Harmonie füllen den kleinen Raum. Ihr seht, wie Tränen in die Augen der Frau steigen, als würde sie an lang verflossene Tage romantischer Liebe denken. Als Ihr geendet habt, wischt sie sich verstohlen die Augen und dankt Euch. Weiter bei Abschnitt [[302]].
+
+::328
+Von einem Rudel Ratten besiegt - ein Schicksal, das daheim auch keiner erfahren darf ... Mit diesem Gedanken verliert Ihr endgültig das Bewusstsein. Ihr kommt noch ein weiteres Mal zu Euch, als Ihr brutal an Deck eines kleinen Bootes gehievt werdet und einige verkommene Gestalten sich voller Freude über diesen kostbaren &raquo;Fang&laquo; unterhalten. Dann gleitet Ihr abermals davon ins Reich Borons und kommt erst bei Anschnitt [[1]] wieder zu Euch.
+
+::329
+Nun, das Bräu hier ist wirklich lobenswert, doch andererseits sollte man auch nicht zu lange verweilen - Ihr zahlt Euer Bier und verlasst die Schänke zum Abschnitt [[179]].
+
+::330
+Mit plumpen Fingern betastet der Dicke Eure Schulter, während herbeigerufene Diener erst die Tür in Ordnung bringen und Euch dann allen Protesten zum Trotz in Euer Zimmer tragen - &raquo;damit Ihr Euch von diesen Strapazen ausruhen könnt. Für morgen könnt Ihr Euch auf noch einen Empfang freuen, wo diese Heldentat gewiss nicht zu kurz kommen wird.&laquo; ([[68]])
+
+::331
+Der Weg von Beilunk ins heimatliche Schatodor ist fast ein Spaziergang im Vergleich zu den durchlebten Strapazen. Doch inzwischen habt Ihr Nachrichten aus Eurem reichen Schatodor erfahren - beruhigend und beunruhigend zugleich: Wie es scheint, hat man Euch dort für tot erklärt, und Euer Sohn Omgrasch hat den Thron bestiegen, ein noch junger, aber schon hochgelobter König.
+Wie wollt Ihr Euch da verhalten? Selbstverständlich wollt Ihr Eure geliebte Frau begrüßen, das blumenreiche Tal von Schatodor sehen, den Duft seiner Erde riechen und den Sonnenaufgang über den Gipfeln genießen - aber wollt Ihr wirklich nach so langer Zeit Euren Thron wieder einfordern ([[322]])? Oder erscheint es Euch nicht besser, ja weiser, Eurem Sohn die Herrschaft zu überlassen und künftig als Abenteurer durch die Lande zu ziehen ([[298]])?
+
+::332
+Mit lautem Krachen springt die Tür endlich auf - Euer Weg in die Freiheit steht offen. Eilig springt Ihr über die am Boden liegende Tür hinweg und lauft ins Dunkle; hinter Euch erschallen die Stimmen des überraschten Dicken und seiner Begleiter. Zum Glück scheint Euch niemand zu verfolgen, so dass Ihr nach einigen Augenblicken erschöpft, aber vorläufig sicher bei Abschnitt [[141]] angelangt seid.
+
+::333
+Gute Arbeit: Mit einem leisen Knacken öffnet sich das Schloss, und Ihr schiebt die Türe auf. Vor Euch liegt ein kleiner Raum, in dem einige zerbrochene Waffen verstreut sind. Außerdem seht Ihr einen Amboss sowie einige Übungswaffen.
+Bei diesen Übungswaffen handelt es sich um einen Dreizack ([[3]]), eine doppelseitige Axt ([[42]]) sowie um ein Kurzschwert ([[2]]). Neben dem Amboss ([[339]]) entdeckt Ihr noch einen Schmiedehammer ([[86]]).
+Eine dieser Waffen bringt Euch bei der Flucht sicherlich Vorteile nur müsst Ihr Euch für eine entscheiden.
+
+::334
+Ihr springt nach vorne, auf den Wächter zu. Bitte lest bei Abschnitt [[248]] weiter.
+
+::335
+Aus diesem Grund einigt Ihr Euch mit Eurer Familie darauf, dass Ihr gar nicht offiziell wieder unter die Lebenden zurückkehrt, sondern einfach von Zeit zu Zeit nach Lorgolosch kommt, um die Freuden von Heim und Familie zu genießen - in der übrigen Zeit reist Ihr unerkannt und unter anderem Namen durch Aventurien, um Abenteuer zu erleben, gegen große Feinde zu kämpfen, den Schwachen zu helfen und den Ruhm Eures (neuen) Namens zu mehren - wer weiß, vielleicht kehrt Ihr ja auch einmal in den Regenwald zurück, um die Mohas in ihrem Kampf gegen die Al&apos;Anfaner Sklavenjäger zu unterstützen..?
+
+<center><i>[[ENDE]]</i>(set:$AP to 1000)</center>
+
+::336
+Man blättert froh, man blättert heiter - bei [[38]] geht es weiter.
+
+::337
+Weiter bei [[34]]!
+
+::338
+Vorsichtig pirscht Ihr Euch an das eigenartige Fass heran. Und dann bemerkt Ihr auch, was Euch so seltsam vorkam: Von der Hinterseite des Fasses fehlen einige Bretter, was einen sehr merkwürdigen Schattenfall verursachte. Der durch diese Lücke entstandene Durchgang ist zwar schmal, aber Ihr könntet Euch hineinzwängen. Falls Ihr es versuchen wollt, schlagt bitte Abschnitt [[253]] auf. Wenn Ihr hingegen - jetzt, wo Eure Neugier gestillt ist - das Fass Fass sein lassen wollt, steigt Ihr wieder hoch nach Abschnitt [[12]].
+
+::339
+Bravo, Euer Hoheit, eine originelle Idee! Der Amboss bleibt fortan Euer treuer Begleiter. Auch als man Euch einfängt und schnurstracks den Noioniten übergebt, wagt niemand, Euch von Eurem Beutestück zu trennen. An jedem Abend nehmt Ihr das Eisentrumm mit ins Bett, am Morgen erhält es seinen Ehrenplatz neben Euch am Frühstückstisch.
+Senkt Euren Klugheitswert permanent um 7 Punkte, verdreifacht diese Zahl und verwendet sie für die - extra für Euch neukreierte - Eigenschaft &quot;Frohsinn&quot;. Schließlich muss es ja einen Grund haben, dass Eure neuen Freunde Euch den &quot;Lachenden Herrn vom Amboss&quot; nennen.
+Übrigens, man munkelt, das Abenteuer &quot;Auf der Suche nach einem Kaiser&quot; enthielte eine längere noionitische Passage: Wäre das nichts für Euch?
+Schnell schaut ihr euch in Abschnitt [[333]] erneut in der Waffenkammer um bevor ihr bemerkt werdet.
+
+::340
+Die Türe will sich nicht öffnen lassen. Das ist ärgerlich! Weiter bei [[341]].
+
+::341
+Ihr geht zurück in den Speisesaal, verlasst diesen durch eine Tür in der Südwand und befindet Euch nun in Abschnitt [[46]].
+
+::342
+Ein erstes Rütteln an der Türe zeigt Euch, dass sie verschlossen ist. (if:$Haken==1)Wollt ihr probieren das Schloss mit dem Haken aus der Arena zu knacken ([[6]])? Andernfalls (else:)Es (endif:)bleibt euch nur einen anderen Weg zu nehmen ([[44]]).
+(set:$Von to "Gang")
+
+::343
+Obwohl ihr am Vortag schon kräftig geschlemmt habt, langt Ihr noch einmal herzhaft zu. Irgendwann endet das Fest mit dem gemeinschaftlichen Gesang der Al&apos;Anfa-Hymne, und Ihr werdet auf Euer Zimmer geleitet. Wollt Ihr versuchen, den Bauch voll vom guten Essen, ein wenig Schlaf zu finden ([[68]]), oder macht Ihr Euch leise auf, um dem Haus den Rücken zukehren ([[111]])?
+
+::ENDE
+Und Sie, lieber Leser, können Orbal in seiner neuen Identität gerne als eigenen Helden führen, wenn Sie an diesem Charakter Freude gefunden haben.
+(if:$AP==1000)Durch seine in diesem Abenteuer beschriebenen Taten hat sich König Orbal 1000 Abenteuerpunkte verdient - viel, aber nicht zu viel für die gelungene Flucht aus al&apos;anfanischer Sklaverei; dadurch hat er genau so viele AP, wie er zum Erreichen der 16. Stufe braucht.
+(endif:)(Hinweise auf seine Werte finden Sie ja bekannterweise in seinem Charakterblatt im Anhang 1, die übrigen Talente können Sie gerne nach eigenen Vorstellungen ausgestalten.)
+
