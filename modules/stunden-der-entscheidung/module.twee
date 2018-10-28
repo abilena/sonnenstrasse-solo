@@ -1259,6 +1259,7 @@ Auch wenn die Wächter miteinander schwatzen, so sind sie doch erstaunlich aufme
 
 ::314
 Während Ihr mannhaft die Schätze bewundert, kommt Euch der Gedanke, dass es doch eine gute Idee wäre, diese Kugel der Zwietracht unter all den Schätzen zu verbergen. Hier wird sie bestimmt keiner suchen. Ach, und was für ein herrlicher Gedanke, dass diese intriganten Priester von ihren eigenen Waffen geschlagen werden! Eiligst wühlt Ihr nach einem sicheren Versteck. Nachdem Ihr alles wieder gut zusammengelegt habt, haben sich einige Edelsteine in Eure Taschen verirrt- darunter ein wunderbares Brillantencollier für Eure Gemahlin und ein schmucker Siegelring für Euch -, aber das fällt bestimmt keinem auf. Leise horcht Ihr an der Türe und als Ihr sicher seid, dass niemand draußen steht, tretet Ihr den Rückzug an. Schließlich befindet Ihr Euch erneut in der Kanalisation bei Abschnitt [[233]].
+(unset:$Kugel)
 (set:$Brillantencollier to 1)
 (set:$Siegelring to 1)
 
