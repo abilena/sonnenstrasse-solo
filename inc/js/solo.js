@@ -248,8 +248,6 @@ function deleteCharacter(baseUri, module, hero)
 
 function select(baseUri, module, pid, name)
 {
-    event.preventDefault();
-
     var debug = document.getElementById('debug');
     var debug_visible = (debug.style.display == "block");
 
