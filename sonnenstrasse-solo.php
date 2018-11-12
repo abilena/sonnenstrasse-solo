@@ -46,6 +46,8 @@ function aventurien_solo_css_and_js() {
     wp_enqueue_style('aventurien_solo_css');
     wp_register_style('aventurien_solo_menu_css', plugins_url('inc/css/menu.css', __FILE__));
     wp_enqueue_style('aventurien_solo_menu_css');
+    wp_register_style('aventurien_solo_overview_css', plugins_url('inc/css/overview.css', __FILE__));
+    wp_enqueue_style('aventurien_solo_overview_css');
     wp_register_script('aventurien_solo_js', plugins_url('inc/js/solo.js', __FILE__));
     wp_enqueue_script('aventurien_solo_js');
     wp_enqueue_style('dashicons');
@@ -119,6 +121,29 @@ function aventurien_solo_html($module, $title)
 	$output .= '</div>';
 
 	return $output;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 'aventurien-solo-overview' Shortcode
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+add_shortcode ('aventurien-solo-overview', 'aventurien_solo_overview_shortcode');
+
+function aventurien_solo_overview_shortcode($atts, $content) {
+
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
+
+	if (!isset($content) || !$content) {
+		$content = get_the_title();
+	}
+
+	extract(shortcode_atts(array(
+		'module' => 'sample',
+        'style' => 'default'
+	), $atts));
+
+	return aventurien_solo_display_overview();
 }
 
 

@@ -1,0 +1,31 @@
+
+.aventurien-solo-overview table {
+	font: normal 12px/1.5 Arial, sans-serif;
+    color: #a99877;
+    text-shadow: 1px 1px black;
+	table-layout: fixed;
+	min-width: 285px;
+	border-spacing: 0;
+    border-collapse: collapse;
+	margin: 8px;
+}
+
+.aventurien-solo-overview-module-name {
+    color: #fff;
+	font-weight: bold;
+}
+
+.aventurien-solo-overview-module-player-name {
+	width: 100%;
+}
+
+.aventurien-solo-overview-module-player-status {
+	width: 100px;
+	min-width: 100px;
+}
+
+.aventurien-solo-overview-module-player-ap {
+	width: 50px;
+	min-width: 50px;
+	text-align: right;
+}
