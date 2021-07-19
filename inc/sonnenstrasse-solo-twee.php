@@ -67,6 +67,7 @@ function aventurien_solo_display($user, $hero_id, $module, $title, $last_pid, $p
     $passage_text = $passage_xml[0];
 
     $passage_name = aventurien_solo_get_title($passage_text, $passage_name);
+    $passage_text = aventurien_solo_command_php($passage_text);
     $passage_text = aventurien_solo_do_replacements($passage_text, $module, $pid);
     $passage_text = aventurien_solo_command_text($passage_text);
 	$passage_text = aventurien_solo_command_unset($passage_text, ((!$last_pid) || ($last_pid == $pid)));
@@ -112,6 +113,27 @@ function aventurien_solo_get_title($passage_text, $passage_name)
 	return $passage_name;
 }
 
+function aventurien_solo_command_php($passage_text)
+{
+    preg_match_all('/\(php\:\)(.*?)\(endphp\:\)/s', $passage_text, $matches);
+
+    global $vars;
+
+    $count = count($matches[0]);
+    for ($i = 0; $i < $count; $i++) 
+    {
+        $phpcode = $matches[0][$i];
+        $content = $matches[1][$i];
+
+        // evaluate the set statement
+        $result = eval($content);
+
+		$passage_text = str_replace($phpcode, $result, $passage_text);
+    }
+
+    return $passage_text;
+}
+
 function aventurien_solo_command_text($passage_text)
 {
     $passage_text = preg_replace('/\(text\:\s*(.*?)\s*\)/', '"$1"', $passage_text);
@@ -143,7 +165,11 @@ function aventurien_solo_var_replace($expression, $quotes)
         $variable = $matches[1][$i];
         $value = aventurien_solo_get_var($variable);
 
-        if (!is_numeric($value))
+		if (is_null($value))
+		{
+			$value = 0;
+		}
+		else if (!is_numeric($value))
         {
             $value = $quotes . $value . $quotes;
         }
@@ -205,7 +231,7 @@ function aventurien_solo_command_set($passage_text, $reload)
 
 function aventurien_solo_command_if($passage_text)
 {
-    preg_match_all('/\(if\:\s*(.*?)\s*\)(.*?)\(endif\:\)/', $passage_text, $matches);
+    preg_match_all('/\(if\:\s*(.*?)\s*\)(.*?)\(endif\:\)/s', $passage_text, $matches);
 
     global $vars;
 
@@ -219,7 +245,7 @@ function aventurien_solo_command_if($passage_text)
         $else_text = "";
         $result = "";
 
-        if (preg_match('/(.*?)\(else\:\)(.*)/', $content, $content_matches))
+        if (preg_match('/(.*?)\(else\:\)(.*)/s', $content, $content_matches))
         {
             $if_text = $content_matches[1];
             $else_text = $content_matches[2];

@@ -1,4 +1,6 @@
 
+@import url("../../../sonnenstrasse-base/inc/sonnenstrasse-base-variables.css");
+
 .aventurien-solo-menu {
 	position: absolute;
 	right: 16px;
@@ -53,12 +55,18 @@
     display: inline-block;
     vertical-align: middle;
 	font-size: 10px;
+    color: var(--baseColor);
+}
+
+.aventurien-window .aventurien-solo-menu-button:hover span,
+.aventurien-window .aventurien-solo-menu-button:hover a::before {
+    color: var(--hoverColor);
 }
 
 .aventurien-solo-menu-button a::before {
     content: "\f140";
     font: 400 12px/1.4 dashicons;
-	color: #f1bf44;
+	color: var(--baseColor);
 	font-weight: bold;
 	position: absolute;
     right: 3px;
@@ -89,7 +97,7 @@
 }
 
 .aventurien-solo-menu-items a.ab-item {
-    color: #ccc;
+    color: var(--baseColor);
 	display: block;
 	padding: 0px 5px 0px 16px;
 }
@@ -103,7 +111,7 @@
 }
 
 .aventurien-solo-menu div div > div.hover > .ab-item, .aventurien-solo-menu div div > div > .ab-item:hover {
-    color: #f1bf44;
+    color: var(--hoverColor);
 }
 
 .aventurien-solo-menu-items a.ab-item::before {
@@ -161,17 +169,37 @@
 
 #debug {
 	position: absolute;
-    top: 27px;
+	top: 27px;
 	left: 14px;
-    width: 282px;
-    min-height: 36px;
+	bottom: 40px;
+	width: 282px;
+	min-height: 36px;
 	z-index: 10;
 	border: 1px solid #4b402e;
-    background-color: #000000;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.85);
-    border-radius: 2px;
-    padding: 5px;
-    display: none;
+	background-color: #000000;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.85);
+	border-radius: 2px;
+	padding: 5px;
+	display: none;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding-right: 8px;
+}
+
+#debug::-webkit-scrollbar {
+	background-color: #1B1B1B;
+	width: 5px;
+}
+
+#debug::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	-moz-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+#debug::-webkit-scrollbar-thumb {
+	background-color: #ffffff;
+	outline: 1px solid slategrey;
 }
 
 #debug .aventurien-solo-debug-header, #debug .aventurien-solo-debug-variable {
@@ -185,7 +213,7 @@
 
 #debug .aventurien-solo-debug-variable-name {
     display: inline-block;
-    width: 100px;
+    width: 200px;
     text-overflow: ellipsis;
     overflow-x: hidden;
     float: left;
@@ -194,5 +222,5 @@
 #debug .aventurien-solo-debug-variable-value {
     display: inline-block;
     float: left;
-	width: 180px;
+	width: 75px;
 }

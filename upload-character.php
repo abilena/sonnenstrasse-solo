@@ -31,7 +31,7 @@ $storedImageName = $solo_user->name . '.' . pathinfo($uploadedXml['name'], PATHI
 $storedImagePath = $portraitsDir . $storedImageName;
 
 move_uploaded_file($uploadedImage['tmp_name'], $storedImagePath);
-$uploaded_content = file_get_contents($_FILES['xmlFile']["tmp_name"]);
+$uploaded_content = file_get_contents($uploadedXml["tmp_name"]);
 
 echo(rp_character_upload_hero($uploaded_content, $solo_user, $storedImageName, $module));
 

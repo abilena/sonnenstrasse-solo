@@ -117,7 +117,10 @@ function aventurien_solo_db_get_vars($module, $user)
 
     $json = $wpdb->get_var("SELECT vars FROM $db_table_name WHERE module='$module' AND user='$user'");
     
-    return is_null($json) ? array() : json_decode($json, true);
+	$vars = is_null($json) ? array() : json_decode($json, true); 
+	ksort($vars);
+	
+    return $vars;
 }
 
 function aventurien_solo_db_set_vars($module, $user, $vars)

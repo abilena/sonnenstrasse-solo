@@ -11,8 +11,8 @@ function login(baseUri)
 	
 	var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
-        if ((this.readyState == 4) && (this.status == 200)) {
-			if (this.responseText.substring(0, 9) == "succeeded") {
+        if (this.readyState == 4) {
+			if ((this.status == 200) && (this.responseText.substring(0, 9) == "succeeded")) {
 				window.location.reload(false);
 			} else {
 				document.getElementById("aventurien-solo-login-error").innerHTML = this.responseText;
@@ -33,8 +33,8 @@ function register(baseUri)
 	
 	var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
-        if ((this.readyState == 4) && (this.status == 200)) {
-			if (this.responseText.substring(0, 9) == "succeeded") {
+        if (this.readyState == 4) {
+			if ((this.status == 200) && (this.responseText.substring(0, 9) == "succeeded")) {
 				openPage('activation');
 			} else {
 				document.getElementById("aventurien-solo-register-error").innerHTML = this.responseText;
@@ -56,13 +56,6 @@ function openPage(page)
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Hero Selection
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-function showCharacterWindowContent(className)
-{
-	var characterWindow = document.getElementById("aventurien-character-window");
-	characterWindow.className = "aventurien-character-window-" + className;
-	return false;
-}
 
 function selectArchetype(element)
 {
@@ -91,8 +84,8 @@ function createCharacterFromArchetype(baseUri, module)
 	
 	var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
-        if ((this.readyState == 4) && (this.status == 200)) {
-			if (this.responseText.substring(0, 9) == "succeeded") {
+        if (this.readyState == 4) {
+			if ((this.status == 200) && (this.responseText.substring(0, 9) == "succeeded")) {
 				window.location.reload(false);
 			} else {
 				document.getElementById("aventurien-character-archetypes-error").innerHTML = this.responseText;
@@ -146,11 +139,13 @@ function uploadCharacter(baseUri, module)
 	
 	var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
-        if ((this.readyState == 4) && (this.status == 200)) {
-			if (this.responseText.substring(0, 9) == "succeeded") {
+        if (this.readyState == 4) {
+			if ((this.status == 200) && (this.responseText.substring(0, 9) == "succeeded")) {
 				window.location.reload(false);
 			} else {
-				document.getElementById("aventurien-character-creation-error").innerHTML = this.responseText;
+				var errorText = this.responseText;
+				if (errorText.includes("<!DOCTYPE html>")) { errorText = errorText.substr(0, errorText.indexOf("<!DOCTYPE html>")); }
+				document.getElementById("aventurien-character-creation-error").innerHTML = errorText;
 			}
 		}
     };
@@ -231,9 +226,11 @@ function deleteCharacter(baseUri, module, hero)
 {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
-        if ((this.readyState == 4) && (this.status == 200)) {
-            window.location.reload(false);
-        }
+        if (this.readyState == 4) {
+			if ((this.status == 200) && (this.responseText.substring(0, 9) == "succeeded")) {
+				window.location.reload(false);
+			}
+		}
     };
 
     xhttp.open("POST", baseUri + "/delete-character.php", true);
@@ -253,19 +250,21 @@ function select(baseUri, module, pid, name)
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-			if (pid <= 2)
-			{
-				window.location.reload(false);
-			}
-			else
-			{
-				removeNode("aventurien-solo-menu-character-selection");
-				removeNode("aventurien-solo-character-selector");
-				var div = document.getElementById("aventurien-solo-module-" + module);
-				div.innerHTML = this.responseText;
-				div.scrollIntoView(true);
-				window.scrollBy(0, -50);
+        if (this.readyState == 4) {
+			if ((this.status == 200)) {
+				if (pid <= 2)
+				{
+					window.location.reload(false);
+				}
+				else
+				{
+					removeNode("aventurien-solo-menu-character-selection");
+					removeNode("aventurien-solo-character-selector");
+					var div = document.getElementById("aventurien-solo-module-" + module);
+					div.innerHTML = this.responseText;
+					div.scrollIntoView(true);
+					window.scrollBy(0, -50);
+				}
 			}
         }
     };
@@ -348,13 +347,3 @@ window.onload = function (e) {
     }
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Character Sheet
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-function selectCharacterSheetTab(tabName)
-{
-	var characterSheet = document.getElementById("aventurien-character-sheet-container");
-	characterSheet.className = "aventurien-character-sheet-tabs-selected-" + tabName;
-	return false;
-}
