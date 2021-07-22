@@ -128,7 +128,7 @@ $AP AP
 	--><div data-achieved="(if:$Erfolg_Geheimgang_Morello==1)true(else:)false(endif:)" data-name="Das Handelshaus Morello"></div><!--
 	--><div data-achieved="(if:$Erfolg_Moench==1)true(else:)false(endif:)" data-name="Der verrückte Mönch"></div><!--
 	--><div data-achieved="(if:$Erfolg_Haus_Achaz==1)true(else:)false(endif:)" data-name="Das Haus des Achaz-Zauberers"></div><!--
-	--><div data-achieved="(if:$Erfolg_Piratenschiff==1)true(else:)false(endif:)" data-name="Das Piratenschiff"></div><!--
+	--><div data-achieved="(if:$Erfolg_Piratenschiff>=1)true(else:)false(endif:)" data-name="Das Piratenschiff"></div><!--
 	--><div data-achieved="(if:$Erfolg_Thorga==1)true(else:)false(endif:)" data-name="Die Piraten- kapitänin Thorga"></div><!--
 	--><div data-achieved="(if:$Erfolg_Thorwaler_Spiel==1)true(else:)false(endif:)" data-name="Schiff, Kapitän, Mannschaft"></div><!--
 	--><div data-achieved="(if:$Erfolg_Bornlaender==1)true(else:)false(endif:)" data-name="Die bornländischen Seemänner"></div><!--
@@ -332,7 +332,7 @@ Weiter bei [[1185]].
 ::721
 Du gehst die Perlmuttstraße, die Straße der Goldschmiede und Perlensticker hinunter, weißt aber nicht, wohin du dich wenden sollst. Du grüßt einen alten Mann, der sich aus dem Fenster seines Ladens lehnt, und fragst ihn, wo du den Zauberer Praioziber finden kannst. Zunächst ist der Ladenbesitzer misstrauisch, aber bald taut er auf und zeigt dir den Weg. Kurz darauf verirrst du dich wieder, aber eine rotwangige Frau bringt dich wieder auf den richtigen Weg. Jeder scheint hier zu wissen, wo Praioziber wohnt. Schließlich gelangst du an eine weiße Pagode mit rot gebrannten Schindeln Nahe der südlichen Stadtmauer.
 Praioziber, der kleinwüchsige, glatzköpfige Maraskaner mit weißen Pupillen ist in eine graue Magierrobe gehüllt und werkelt in seinem Garten herum, als du den Weg herunterkommst. Als du näher kommst erkennst du ihn. Seine Haut ist weiß wie Alabaster und von rosa Schlieren und rissigen Falten durchzogen.
-Er erkennt dich erst nicht, aber als du dich ihm vorstellst erinnert er sich an dich und was für ein eifriger Novize du warst.
+Er erkennt dich erst nicht, aber als du dich ihm vorstellst erinnert er sich an dich und was für ein eifriger Scholar du warst.
 Du erzählst von einen Abenteuern und schließlich von der Geschichte die dich zu ihm führt. Er lächelt und fragt, warum du glaubst, in dem unerforschten Dschungel dein Ziel erreichen zu können. Wenn du ihm vom <i>Beutel des Zauberpfades</i> erzählst, geht es weiter bei [[1004]]. Willst du es lieber geheimhalten, weiter bei [[69]].
 
 <img src="[@ModuleUrl]/pagode.png" width="255"> 
@@ -651,7 +651,7 @@ Weiter bei [[1364]].
 (set:$Auftrag_Frenchira to "bekannt")
 
 ::18
-Die <i>Waffenschmiede Garalors</i> befindet sich im Stadtzentrum und als du sie erreichst kommt dir der alte Meister bereits lachend entgegen. &raquo;Bruderschwester! Wie sehr freut es meint Herz dich wiederzusehen!&laquo; Bald schon sitzt ihr bei einem Tee in seinem Haus und erzählt euch gegenseitig was sich in den vergangenen Jahren zugetragen hat. Du berichtest von deinen Abenteuern und Garalor erzählt dir, dass seine Nichte Mahabjida, die du zusammen mit deinen Freunden, vor einigen Jahren gerettet habt, nun als reisende Geschichtenerzählerin oder Laienpredigerin durch das Land zieht um die Menschen an die Schönheit der Welt zu erinnern.
+Die <i>Waffenschmiede Garalors</i> befindet sich im Stadtzentrum und als du sie erreichst kommt dir der alte Meister bereits lachend entgegen. &raquo;Bruderschwester! Wie sehr freut es mein Herz dich wiederzusehen!&laquo; Bald schon sitzt ihr bei einem Tee in seinem Haus und erzählt euch gegenseitig was sich in den vergangenen Jahren zugetragen hat. Du berichtest von deinen Abenteuern und Garalor erzählt dir, dass seine Nichte Mahabjida, die du zusammen mit deinen Freunden, vor einigen Jahren gerettet habt, nun als reisende Geschichtenerzählerin oder Laienpredigerin durch das Land zieht um die Menschen an die Schönheit der Welt zu erinnern.
 Garalor selbst ist jedoch alt geworden und arbeitet nun weniger, nur hier und da nimmt er noch vereinzelt Aufträge an wenn die Bezahlung außerordentlich gut und der Auftraggeber von edler Gesinnung ist. (if:$Erfolg_Tuzakmesser==1)Wenn du möchtest kannst du ihm die Klinge des untoten Buskurs zeigen (weiter bei [[576]]).(endif:)
 Nachdem du mit ihm bis in die Abendstunden geplaudert hast verabschiedet ihr euch von einander. Du verlässt die Schmiede und wanderst weiter durch das <i>Abudijianak</i>. Weiter bei [[1364]].
 
@@ -2460,7 +2460,7 @@ Anmerkung: Durch den Abschluss eines Darlehens erwirbt der Held den Nachteil Sch
 Du gehst am gemauerten Hafendamm entlang, der ins Meer hinausragt und an dessen Ende der Leuchtturm steht.
 Auf halbem Weg hat eine zweimastige Schivone festgemacht.
 
-(if:$Erfolg_Piratenschiff==0)Verwunderlich ist, dass das Schiff von Al'Anfanischer Bauart, von einer blauen Flagge geziert wird die einen silbernen Delphin zeigt der über einen goldenen Säbel springt - das Perricumer Wappen.
+(if:$Erfolg_Piratenschiff!=2)Verwunderlich ist, dass das Schiff von Al'Anfanischer Bauart, von einer blauen Flagge geziert wird die einen silbernen Delphin zeigt der über einen goldenen Säbel springt - das Perricumer Wappen.
 Noch seltsamer ist jedoch, dass du Thorwaler an Deck siehst.
 
 Willst du auf den Hafendamm hinauslaufen und dir das Schiff genauer ansehen? Weiter bei [[1298]].
@@ -2475,7 +2475,7 @@ Weiter bei [[556]].
 Du näherst dich dem großen Hochseeschiff, kannst jedoch nicht viel erkennen da es hoch über den Hafendamm hinausragt.
 Vom Bug des Schiffes hängt eine Strickleiter herunter. Seitlich führt außerdem eine schmale Gangway hinauf. Möchtest du über die Strickleiter an Bord klettern, geht es weiter bei [[2]]. Ziehst du es vor, den Weg über die Gangway zu nehmen, weiter bei [[473]].
 
-(set:$Erfolg_Piratenschiff to 1)
+(set:$Erfolg_Piratenschiff to 2)
 
 ::2
 Als du das obere Ende der Strickleiter erreichst, wirfst du einen Blick über die Reeling, um die Lage auf Deck zu peilen. Rund um die beiden hoch in die Luft aufragenden Masten liegen überall Holzkisten, Fässer und aufgerollte Taue. Am Ende der Gangway steht ein Matrose auf Posten. In der Mitte des Decks befindet sich eine kleine Kabine, deren Tür offen steht, so dass du siehst, dass von dort aus Stufen unter Deck führen. Möchtest du die Holzkisten oder Fässer genauer untersuchen, dann musst du es erst mit dem Wachposten aufnehmen (weiter bei [[88]]). Willst du dich lieber an die Kabine heranschleichen und die Treppen hinuntergehen, weiter bei [[502]].
@@ -3017,7 +3017,7 @@ Möchtest du diesen Kristall auswählen [[228]] oder bei [[$Kristall_Auswahl]] e
 
 ::149
 Der Heilungs-Kristall scheint einen starken Heilzauber zu beinhalten.
-Wenn du diesen Kristall über den Verlauf einer Regenerationsphase auf dich selbst anwendest, stellt er alle verlorenen Lebenspunkte wieder her und du erhältst 3W6+25 LeP üder den Grundwert hinaus.
+Wenn du diesen Kristall über den Verlauf einer Regenerationsphase auf dich selbst anwendest, stellt er alle verlorenen Lebenspunkte wieder her und du erhältst 3W6+25 LeP über den Grundwert hinaus.
 Eine magische Analyse zeigt dir eine Kristallomantische Thesis die grob dem BALSAM SALABUNDE entspricht.
 
 Möchtest du diesen Kristall auswählen [[1375]] oder bei [[$Kristall_Auswahl]] eine andere Wahl treffen?
@@ -3185,7 +3185,7 @@ Wohin willst du gehen:
 (set:$Visit_Jeskajan to 1)
 
 ::607
-In der Dorfschenke "Yasyscha's Dadja" sitzen Fischer, Bauern und andere Dorfleute. Sie betrachten dich misstrauisch, wagen es jedoch nicht dich anzusprechen. Während du bei einem Teller frischem Fisch und einer Tasse Grüntee die Beine unter dem Tisch ausstreckst überlegst du welche Herausforderungen der Ewigen Wald wohl für dich bereithält.
+In der Dorfschenke "Yasyscha's Dadja" sitzen Fischer, Bauern und andere Dorfleute. Sie betrachten dich misstrauisch, wagen es jedoch nicht dich anzusprechen. Während du bei einem Teller frischem Fisch und einer Tasse Grüntee die Beine unter dem Tisch ausstreckst überlegst du welche Herausforderungen der Ewige Wald wohl für dich bereithält.
 
 (if:$Auftrag_Praioziber=="angenommen")Dem Zauberer Praioziber hast du zugesichert für ihn nach dem Axorda-König zu suchen. Dieser Pflanzenkönig ist vermutlich ein gewaltiger Urwaldriese, hat eine breite Krone, dunkle, tief zerklüftete Rinde, harte grüne Blätter mit gelbem Rand, auffällige safrangelbe Kätzchen und rote Beeren. Eine dieser Beeren sollte Praioziber genügen.
 (endif:)(if:$Auftrag_Amateragoran=="angenommen")Für den finsteren Magier Amateragoran sollst du nach den Hüterinnen suchen, finsteren Zauberinnen die mittels ihrer magischen Mindoriumamulette Macht über die Tiere des Waldes erlangen. Amateragoran will diese Amulette, je mehr davon desto besser.
@@ -3370,7 +3370,7 @@ Weiter bei [[1069]].
 (set:$Kristall_Magiewiderstand to $Kristall_Magiewiderstand-1)
 
 ::536
-Du aktivierst den Heilungs-Kristall und spürst wie du von heilender, magischer Kraft durchströmt wirst. Der Kristall heilt alle deine Wunden und gibt dir alle verlorenen Lebenspunkte zurück. Du heilst sogar 3W6+25 LeP üder den Grundwert hinaus.
+Du aktivierst den Heilungs-Kristall und spürst wie du von heilender, magischer Kraft durchströmt wirst. Der Kristall heilt alle deine Wunden und gibt dir alle verlorenen Lebenspunkte zurück. Du heilst sogar 3W6+25 LeP über den Grundwert hinaus.
 
 Weiter bei [[1069]].
 
