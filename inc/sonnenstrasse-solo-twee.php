@@ -63,8 +63,16 @@ function aventurien_solo_display($user, $hero_id, $module, $title, $last_pid, $p
         $vars = aventurien_solo_db_get_vars($module, $user);
     }
 
-    $passage_name = $passage_xml->attributes()['name'];
-    $passage_text = $passage_xml[0];
+    $passage_name = strval($passage_xml->attributes()['name']);
+    $passage_text = strval($passage_xml[0]);
+
+	$passage_last = @$vars['_passage_last'];
+	$vars['_passage_last'] = $passage_name;
+	if ($passage_last != $passage_name)
+	{
+		$passage_path = strval(@$vars['_passage_path']);
+		$vars['_passage_path'] = $passage_path . (empty($passage_path) ? "" : "-") . $passage_name;
+	}
 
     $passage_name = aventurien_solo_get_title($passage_text, $passage_name);
     $passage_text = aventurien_solo_command_php($passage_text);
@@ -86,10 +94,13 @@ function aventurien_solo_display($user, $hero_id, $module, $title, $last_pid, $p
     $debug_html = "";
     foreach ($vars as $var_name => $var_value)
     {
-        $template_debug = new Sonnenstrasse\Template($path_local . "../tpl/debug.html");
-        $template_debug->set("Name", $var_name);
-        $template_debug->set("Value", $var_value);
-        $debug_html .= $template_debug->output();
+		if (substr($var_name, 0, 1) !== "_")
+		{
+			$template_debug = new Sonnenstrasse\Template($path_local . "../tpl/debug.html");
+			$template_debug->set("Name", $var_name);
+			$template_debug->set("Value", $var_value);
+			$debug_html .= $template_debug->output();
+		}
     }
 
     $template = new Sonnenstrasse\Template($path_local . "../tpl/page.html");
