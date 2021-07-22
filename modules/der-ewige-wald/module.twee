@@ -169,7 +169,7 @@ Dein erster Anlaufpunkt in der Stadt ist das Haus deiner Zieheltern, das sich in
 Als dir auch auf mehrfaches klopfen niemand öffnet fragst du bei den Nachbarn nach und erfährst, dass dein Ziehvater, Endoran, sich derzeit in Jergan aufhält. Als Lorchajalamjiar, also Gelehrter Konzeptzeichner im Schiffsbau, der im Dienste reicher Schiffsbaumeister Skizzen von zu bauenden Lorchas erstellt, war er schon damals aufgrund seiner profunden Kenntnis dieser maraskanischen Schiffsform ständig mit Arbeit überhäuft und hatte nur selten Zeit für seine Kinder.
 Yohaijian, der leiblichen Sohn deiner Zieheltern, mit dem du und dein Bruder Elgoran viel Zeit verbrachten, hat geheiratet und ist vor mehreren Jahren ausgezogen, wohnt aber angeblich noch in der Stadt.
 
-Du überlegst einen Augenblick und entschließt dich euer damaliges Stammlokal, die Tavern'uuzak 'Perlgrund' zu besuchen.
+Du überlegst einen Augenblick und entschließt dich euer damaliges Stammlokal, die Tavern'uuzak 'Perlengrund' zu besuchen.
 Verwirrende Gassen führen scheinbar sinn- und ziellos durch das Amul'uuzak, das 'Labyrinth', wie man den ärmeren Stadtteil bezeichnet in dem sich das Lokal befindet. Durch die unübersichtliche Bauweise bleiben dem unkundigen Blick viele Hinterhöfe und kleine Plätze verborgen. Lärm und Gedränge, hektische Betriebsamkeit, ein Nebeneinander von reich und arm und von Zugezogenen und Alteingesessenen prägen diesen größten der drei Stadtteile Sinodas.
  
 Als du gegen Abend die gut besuchte Taverne betrittst triffst du dort auf Yohaijian und einige deiner alte Freunde. Ihr trinkt gemeinsam ein paar Becher Rum. Ob der Wiedersehensfreude leistet ihr euch eine Flasche <i>Offenbarung der Zwillinge</i>, das Nationalgetränk. Als du ihnen von deiner Absicht erzählst, das Vimbatja zu erkunden, sind deine Freunde sprachlos. Sie drängen sich um dich und schieben die abgenutzten Bänke zurück, um Platz zu schaffen. Im <i>Ewigen Wald</i>, erzählen sie dir, liegen die Knochen vieler, die das gleiche vorhatten wie du. Er ist nicht nur unwegsam, voller gefährlicher giftiger Pflanzen und Tiere, Zufluchtsort von allem möglichen lichtscheuen Gesindel und bösartigen Wesen, sondern vor einem Götterlauf hat auch eine Gruppe von finsteren Zauberinnen, die sich selbst die <i>Hüterinnen</i> nennen, auf den <i>Ewigen Wald</i> Anspruch erhoben. Eine von ihnen – eine große, schwarzhaarige Maraskanerin, die von zwei furchterregenden Marasken begleitet wurde – hat letzte Woche in einem Dorf am Rande des <i>Vimbatja</i> mehrere Bauern ermordet.
@@ -677,7 +677,7 @@ Da sich seit deiner Zeit in der Stadt viel verändert hat, musst auch du dir ein
 - Du fragst nach dem Laden des Kerzenziehers Majidan? Weiter bei [[1237]](endif:)(if:$Geruecht_Achaz==="bekannt")
 - Du lässt dir den Weg in die Feuerbuschgasse beschreiben? Weiter bei [[176]](endif:)(if:$Geruecht_Neunaugenplatz==="bekannt")
 - Du suchst jemanden der dir Beschreiben kann wie du zum Neunaugenplatz gelangst? Weiter bei [[705]](endif:)
-- Du gehst zur Tavern'uuzak 'Perlgrund' um Yohaijian zu treffen? Weiter bei [[290]]
+- Du gehst zur Tavern'uuzak 'Perlengrund' um Yohaijian zu treffen? Weiter bei [[290]]
 - Keines davon? Bei [[38]] zum Stadtzentrum zurückkehren.
 
 ::1351
