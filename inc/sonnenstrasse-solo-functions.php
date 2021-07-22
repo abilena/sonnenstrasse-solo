@@ -51,8 +51,10 @@ function aventurien_solo_display_overview()
 		foreach ($module->states as $module_player)
 		{
 			$vars = json_decode($module_player->vars);
+			$module_player->last = (empty(@$vars->_passage_last) ? "" : " (" . $vars->_passage_last . ")");
+			$module_player->path = strval(@$vars->_passage_path);
 			$module_player->ap = (empty(@$vars->AP) ? "" : $vars->AP . " AP");
-			$module_player->status = (($module_player->pid <= 1) ? "" : (($module_player->ap == 0) ? "Spielt Abenteuer" : "Abgeschlossen"));
+			$module_player->status = (($module_player->pid <= 1) ? "" : (($module_player->ap == 0) ? ("Spielt Abenteuer".$module_player->last) : "Abgeschlossen"));
 			$template_module_player = new Sonnenstrasse\Template($path_local . "../tpl/overview-module-player.html");
 			$template_module_player->setObject($module_player);
 			$template_module_player->set("User", ucwords(str_replace("Anonymous-", "", $module_player->user)));
