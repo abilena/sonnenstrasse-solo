@@ -4639,7 +4639,7 @@ Weiter bei [[1101]].
 Du fliegst auf das weite Perlenmeer hinaus. Der mächtige Siral, der aus nordöstlicher Richtung feuchte Luft vom Meer heranbläst, weht dir entgegen und erschwert dein Vorankommen. Plötzlich entdeckst du einen ausgewachsenen Perldrachen der dir folgt. Er hat in einer höheren Luftlage unbemerkt hinter dir aufgeschlossen, einer idealen Position für einen schnellen Sturzflug bei dem er seine geringere Höchstgeschwindigkeit durch den Überraschungsmoment wettmachen kann. Erst einmal in den Nahkampf gezwungen bist du dem Drachen aufgrund seiner überragenden Kampfkraft völlig unterlegen. Wirst du
 
 - es auf einen Luftkampf ankommen lassen. Du bist auch als Tier nicht wehrlos. Weiter bei [[150]]
-- selbst in den Sturzflug gehen, nach Westen abdrehen und deine höhere Geschwindigkeit nutzen um deinem Verfolger zu entgehen. Weiter bei [[2880004]]
+- selbst in den Sturzflug gehen, nach Westen abdrehen und deine höhere Geschwindigkeit nutzen um das Ufer und damit den schützenden Dschungel zu erreichen wo der große Drache dir nicht folgen kann. Weiter bei [[1101]]
 
 ::150
 Wenig später kommt es wie du vorausgesehen hast. Der Perldrache legt die Flügel an und kommt im Sturzflug auf dich zugeschossen. Seinem ersten Angriff kannst du ausweichen, doch dann entbrennt ein gefährlicher Nahkampf in dem du eindeutig unterlegen bist.
@@ -5327,6 +5327,8 @@ Die einzige Richtung die nicht tiefer in das Wasser führt ist die aus der du ge
 - die Amulette der Hüterinnen? (if:$Auftrag_Amateragoran=="angenommen")Weiter bei [[539]](endif:)
 - die Suche nach einem Weg von Jeskajan nach Rashagan? (if:$Auftrag_Frenchira=="angenommen")Weiter bei [[282]](endif:)
 - die Suche nach der Lebenden Lichtung? Weiter bei [[1079]]
+
+Wenn du dich von der Hüterin der Frösche verabschieden möchtest, kannst du dies tun und ihre Lichtung in Richtung Westen wieder verlassen, weiter bei [[743]].
 
 ::1079
 Die Hüterin der Frösche kniet sich auf der Platform hin, beugt sich nach unten und schöpft eine Handvoll Wasser. Erstaunlicherweise rinnt es nicht zwischen ihren Fingern hindurch, sondern bleibt in ihren Händen, in denen sie es zu einer Kristallkugel formt; sie starrt eine Weile hinein und murmelt vor sich hin. Dann wirft sie die Kristallkugel zurück ins Wasser. &raquo;Das Herz des Dschungels, das du suchst, befindet sich in einem unzugänglichen Tal im Nordosten. Zu Fuß ist es unmöglich ihn zu erreichen und er wird von uralten, tödlichen Kreaturen bewohnt&laquo;, erklärt sie dir, &raquo;Und hüte dich vor meinen Schwestern, die anderen Hüterinnen; sie sind nicht alle freundlich. Und sei liebenswürdig zu dem Riesen.&laquo; Mit diesen Worten wendet sie sich ab und verschwindet in ihrer Hütte.
@@ -6523,6 +6525,8 @@ Deine Fragen hängen natürlich von deinem Auftrag ab. Ist es
 - die Amulette der Hüterinnen? (if:$Auftrag_Amateragoran=="angenommen")Weiter bei [[710]](endif:)
 - die Suche nach einem Weg von Jeskajan nach Rashagan? (if:$Auftrag_Frenchira=="angenommen")Weiter bei [[574]](endif:)
 - die Suche nach der Lebenden Lichtung? Weiter bei [[940]]
+
+Wenn du dich von der Hüterin der Vögel verabschieden möchtest, kannst du dies tun und ihre Lichtung in Richtung Osten wieder verlassen, weiter bei [[1352]].
 
 ::940
 Deine Menschenkenntnis sagt dir, dass die Hüterin der Vögel eine aufrichtige, gute Zauberin ist. Du erzählst von der Lebenden Lichtung und bittest sie um ihre Hilfe. Sie klatscht fröhlich in die Hände, und für einen Augenblick sieht sie aus wie ein junges Mädchen. &raquo;Gibt es diesen Ort wirklich?&laquo; Sie ist überglücklich, denn sie weiß, daß ein Heiligtum des Humus über große Heilkraft verfügt der viel Leid lindern kann. Sie gibt dir einen Zaubertrank, der dir 5W6+6 Astralpunkte zurückgibt wenn du ihn trinkst. Dann bedeutet sie dir, leise zu sein. Sie streckt die Hand aus, und mehrere kleine Vögel fliegen zu ihr. Eine Weile spricht sie mit ihnen. Dann sagt sie: &raquo;Du hast vielleicht recht! Es gibt einen Ort von urtümlicher Naturkraft am Grund eines riesigen, unzugänglichen Tals weit im Osten, jenseits des Flusses Jirbogyn.&laquo;
@@ -10248,7 +10252,7 @@ Der erste Achaz-Kristallomant zaubert einen CORPOFRIGO KÄLTESCHOCK (4 Aktionen,
 Der zweite Achaz-Kristallomant zaubert einen BLITZ DICH FIND (4 Aktion, KL/IN/GE +MR mit 24 ZfP).
 Gelingt ein Zauber nicht, so erkennt der Achaz-Kristallomant dies bereits nach der ersten Aktion und wiederholt den Zauber.
 
-Während der ersten 2 Aktionen kannst du dich noch entscheiden zu fliehen, weiter bei [[1490035]].
+Während der ersten 2 Aktionen kannst du dich noch entscheiden zu fliehen, weiter bei [[1209]].
 Wenn du noch einen Furcht-Kristall besitzt kannst du versuchen mit ihm die Marus in die Flucht zu schlagen(if:$Kristall_Furcht>0), weiter bei [[549]](endif:).
 Wenn du siegst, geht es weiter bei [[554]].
 
