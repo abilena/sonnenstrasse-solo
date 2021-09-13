@@ -36,12 +36,34 @@
 	right: inherit;
 	margin-top: 3px;
 	margin-right: 20px;
-	padding: 0 3px;
+	padding-left: 3px;
+	padding-right: 8px;
+	padding-top: 3px;
+	padding-bottom: 3px;
 	display: none;
 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 	font-size: 10px;
     font-weight: 400;
     line-height: 16px;
+	max-height: 80px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.aventurien-solo-overview-module-player-path::-webkit-scrollbar {
+	background-color: #1B1B1B;
+	width: 5px;
+}
+
+.aventurien-solo-overview-module-player-path::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	-moz-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.aventurien-solo-overview-module-player-path::-webkit-scrollbar-thumb {
+	background-color: #ffffff;
+	outline: 1px solid slategrey;
 }
 
 .aventurien-solo-overview-module-player-name:hover .aventurien-solo-overview-module-player-path {
