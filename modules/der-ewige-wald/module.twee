@@ -384,12 +384,15 @@ Weiter bei (if:$Erfolg_Axorda_Beere==1)[[614]](else:)[[62]](endif:).
 <img src="[@ModuleUrl]/pagode.png" width="255"> 
 
 ::62
-Leider hast du keine Beeren, um sie ihm zu geben. Du erklärst, was im Vimbatja passiert ist. Praioziber macht ein langes Gesicht. &raquo;Nun, ich bin überzeugt, daß du dein Bestes gegeben hast&laquo;, sagt er. Als du ihn so niedergeschlagen siehst, bietest du ihm an, zurückzugehen und es erneut zu versuchen, aber er will nichts davon hören. &raquo;Die Gefahr&laquo;, sagt er, &raquo;ist zu groß. Du hast getan, was du konntest.&laquo; 
+Leider hast du keine Beeren, um sie ihm zu geben. Du erklärst, was im Vimbatja passiert ist. Praioziber macht ein langes Gesicht. &raquo;Nun, ich bin überzeugt, dass du dein Bestes gegeben hast&laquo;, sagt er. Als du ihn so niedergeschlagen siehst, bietest du ihm an, zurückzugehen und es erneut zu versuchen, aber er will nichts davon hören. &raquo;Die Gefahr&laquo;, sagt er, &raquo;ist zu groß. Du hast getan, was du konntest.&laquo;
 
 Du verbeugst dich und kehrst auf die Straßen Sinodas zurück. Weiter bei [[374]].
 
+(unset:$Erfolg_Axorda_Kosten)
+(unset:$Erfolg_Axorda_Kaetzchen)
+
 ::614
-Vorsichtig greifst du in deine Tasche und holst die glänzende Beere heraus. &raquo;Oh, wundervoll&laquo;, freut sich der alte Mann. Er nimmt sie dir aus der Hand und trägt sie in den Garten. Während er sie vorsichtig in den Boden drückt, murmelt er einen Zauberspruch. Fast augenblicklich sprießt eine kleine Pflanze ... und wächst zu einem kraftvollen jungen Axorda-Baum, ähnlich dem, den du im Ewigen Wald gesehen hast. Safrangelbe Kätzchen sprießen, erfüllen die Luft mit Wohlgeruch, und es bilden sich Gruppen roter Beeren. Praioziber pflanzt einige der neuen Beeren, und auch diese beginnen zu sprießen. Dann blickt er zu dir auf. &raquo;Ich muß mich bei dir entschuldigen&laquo;, sagt er, &raquo;aber ich war so glücklich, daß ich dich für einen Augenblick vergessen habe. Ich werde einige dieser Beeren an die Akademie nach Tuzak schicken. Vielleicht können wir dem Axorda wieder zum alten Glanz verhelfen, und dir gebührt dafür die Ehre. Du hast heute eine große Tat vollbracht.&laquo; Er bietet dir einen Zaubertrank (Qualität F) und ein warmes Essen an, und du nimmst dankbar an. Beim Abendessen sprecht ihr über alles mögliche.
+Vorsichtig greifst du in deine Tasche und holst die glänzende Beere heraus. &raquo;Oh, wundervoll&laquo;, freut sich der alte Mann. Er nimmt sie dir aus der Hand und trägt sie in den Garten. Während er sie vorsichtig in den Boden drückt, murmelt er einen Zauberspruch. Fast augenblicklich sprießt eine kleine Pflanze ... und wächst zu einem kraftvollen jungen Axorda-Baum, ähnlich dem, den du im Ewigen Wald gesehen hast. Safrangelbe Kätzchen sprießen, erfüllen die Luft mit Wohlgeruch, und es bilden sich Gruppen roter Beeren. Praioziber pflanzt einige der neuen Beeren, und auch diese beginnen zu sprießen. Dann blickt er zu dir auf. &raquo;Ich muß mich bei dir entschuldigen&laquo;, sagt er, &raquo;aber ich war so glücklich, dass ich dich für einen Augenblick vergessen habe. Ich werde einige dieser Beeren an die Akademie nach Tuzak schicken. Vielleicht können wir dem Axorda wieder zum alten Glanz verhelfen, und dir gebührt dafür die Ehre. Du hast heute eine große Tat vollbracht.&laquo; Er bietet dir einen Zaubertrank (Qualität F) und ein warmes Essen an, und du nimmst dankbar an. Beim Abendessen sprecht ihr über alles mögliche.
 
 Dann kehrst du fröhlich und erfrischt auf die Straßen der Stadt zurück. Weiter bei [[374]].
 
@@ -937,7 +940,7 @@ Weiter bei (if:$Visit_Rashagan>=1)[[45]](else:)[[810]](endif:).
 &raquo;Nun, das ist bedauerlich&laquo;, seufzt er. &raquo;Ich werde wohl jemand anderen finden müssen. Wenn du noch einige meiner Zauberjuwelen übrig hast, kannst du je einen Zaubertrank dafür bekommen.&laquo; Wirst du
 
 - deine übrigen Zauberjuwelen gegen Zaubertränke tauschen? Weiter bei [[589]]
-- erklären, daß du sie alle gebraucht hast? Weiter bei [[590]]
+- erklären, dass du sie alle gebraucht hast? Weiter bei [[590]]
 - Mujiabor angreifen? Weiter bei [[387]]
 - ihm erklären, dass du deine Suche noch nicht aufgeben willst. Weiter bei [[621]]
 
@@ -956,13 +959,13 @@ Du hattest zwar keinen Erfolg bei deinem Auftrag, hast aber sehr viel gelernt, u
 Du verlässt das geheime Versteck der Fren'Chira Marustazzim und kehrst auf die Straßen Sinodas zurück. Weiter bei [[38]].
 
 ::590
-Leider hast du keines der Zauberjuwelen übrig, um es zu tauschen. &raquo;Zu schade&laquo;, sagt er. &raquo;Ich würde dich gerne für deine Mühe entschädigen, aber Zaubertränke sind teuer, und ich habe schon genug bei diesem Unternehmen verloren.&laquo; Wenn du nun fortgehen willst, weiter bei [[1109]]. Wenn du dich so über Mujiabor ärgerst, daß du ihn angreifst, geht es weiter bei [[387]].
+Leider hast du keines der Zauberjuwelen übrig, um es zu tauschen. &raquo;Zu schade&laquo;, sagt er. &raquo;Ich würde dich gerne für deine Mühe entschädigen, aber Zaubertränke sind teuer, und ich habe schon genug bei diesem Unternehmen verloren.&laquo; Wenn du nun fortgehen willst, weiter bei [[1109]]. Wenn du dich so über Mujiabor ärgerst, dass du ihn angreifst, geht es weiter bei [[387]].
 
 ::1109
 Müde und zerschlagen verläßt du das geheime Versteck der Fren'Chira Marustazzim und kehrst auf die Straßen Sinodas zurück. Du hattest keinen Erfolg, aber du bist wenigstens mit dem Leben davongekommen. Vielleicht wirst du eines Tages zurückkehren. Weiter bei [[38]].
 
 ::387
-Nachdem du dein Leben in Mujiabors Auftrag riskiert hast, ist seine lässige Einstellung dir gegenüber mehr als du ertragen kannst. Du verwandelst deinen Stab in ein Flammenschwert und greifst an. Er ist überrascht, weicht deinem ersten Schlag aber sehr geschickt aus. Er reißt sein Tuzakmesser aus der Scheide und verteidigt sich sehr erfolgreich. Bald erkennst du, daß er ein gefährlicher Gegner ist.
+Nachdem du dein Leben in Mujiabors Auftrag riskiert hast, ist seine lässige Einstellung dir gegenüber mehr als du ertragen kannst. Du verwandelst deinen Stab in ein Flammenschwert und greifst an. Er ist überrascht, weicht deinem ersten Schlag aber sehr geschickt aus. Er reißt sein Tuzakmesser aus der Scheide und verteidigt sich sehr erfolgreich. Bald erkennst du, dass er ein gefährlicher Gegner ist.
 
 <i>Mujiabors Werte:</i>
 INI 25, AT 20, TP 1W6+10 (Tuzakmesser)
@@ -982,7 +985,7 @@ Plötzlich fliegt hinter Mujiabor die Türe auf und drei Rebellen stürmen in de
 [[ENDE]]
 
 ::45
-Du grinst über das ganze Gesicht und ziehst ein zusammengerolltes Stück Pergament aus deiner Tasche. Es ist die Karte, die du während deiner Reise sorgfältig immer wieder ergänzt hast. Auf ihr sind deutlich die Pfade eingezeichnet, auf denen du gegangen bist, und die Lichtungen, auf denen du gekämpft hast. Jede Gefahr ist eingezeichnet. Als du sie Mujiabor erklärst, ist er begeistert. Schließlich schlägt er dir freundschaftlich auf die Schulter – und obwohl du stark bist, taumelst du. &raquo;Hamid'za U'schaja!&laquo; sagt er. &raquo;Hervorragend!&laquo; Er greift in eine Schublade und holt einen funkelnden, 100-karätigen, blauen, Topas-Brillanten heraus. &raquo;Nenne es eine Zulage!&laquo; lacht er. &raquo;Meine erster Kampftrupp wird morgen aufbrechen. Sei mein Gast, solange du willst ... und wie ich dir versprochen habe, gehört die Hälfte meines ersten Jahresgewinnes dir.&laquo; Du lächelst und dankst ihm und bist erfreut, daß der geheimnisvolle Anführer der Fren'Chira Marustazzim ein ehrenwerter Mensch ist; vielleicht wirst du ihn eines Tages besser kennen. Aber für den Augenblick hattest du mit deinem Auftrag Erfolg. Damit verabschiedest du dich und verlässt das geheime Versteck der Widerstandskämpfer und kehrst auf die Straßen Sinodas zurück. Weiter bei [[38]].
+Du grinst über das ganze Gesicht und ziehst ein zusammengerolltes Stück Pergament aus deiner Tasche. Es ist die Karte, die du während deiner Reise sorgfältig immer wieder ergänzt hast. Auf ihr sind deutlich die Pfade eingezeichnet, auf denen du gegangen bist, und die Lichtungen, auf denen du gekämpft hast. Jede Gefahr ist eingezeichnet. Als du sie Mujiabor erklärst, ist er begeistert. Schließlich schlägt er dir freundschaftlich auf die Schulter – und obwohl du stark bist, taumelst du. &raquo;Hamid'za U'schaja!&laquo; sagt er. &raquo;Hervorragend!&laquo; Er greift in eine Schublade und holt einen funkelnden, 100-karätigen, blauen, Topas-Brillanten heraus. &raquo;Nenne es eine Zulage!&laquo; lacht er. &raquo;Meine erster Kampftrupp wird morgen aufbrechen. Sei mein Gast, solange du willst ... und wie ich dir versprochen habe, gehört die Hälfte meines ersten Jahresgewinnes dir.&laquo; Du lächelst und dankst ihm und bist erfreut, dass der geheimnisvolle Anführer der Fren'Chira Marustazzim ein ehrenwerter Mensch ist; vielleicht wirst du ihn eines Tages besser kennen. Aber für den Augenblick hattest du mit deinem Auftrag Erfolg. Damit verabschiedest du dich und verlässt das geheime Versteck der Widerstandskämpfer und kehrst auf die Straßen Sinodas zurück. Weiter bei [[38]].
 
 (set:$Auftrag_Frenchira to "gelöst")
 (set:$Erfolg_Topas_Blau to 1)
@@ -3387,7 +3390,7 @@ Der Pfad nach Norden wird allmählich breiter, und der Dschungel ist nicht mehr 
 Während die Häuser des Dorfes allesamt Pfahlbauten sind die den felsigen Untergrund mit hölzernen Platformen und Hängebrücken verbinden, wacht oberhalb des Dorfes eine steinerne Festung im traditionell maraskanischen Oktogon-Stil.
 Du erreichst Rashagan, den Hauptort der Baronie Roab'Opopur, der aufgrund seiner abgeschiedenen Lage von maraskanischen Freiheitskämpfern kontrolliert wird.
 
-(if:$Visit_Rashagan==2)Weiter bei [[1232]].(endif:)(if:$Visit_Rashagan==1)Weiter bei [[591]].(endif:)(if:$Visit_Rashagan==0)Als du den schmalen Pfad zum Dorf hinaufsteigst hörst du menschliche Stimmen und triffst auf eine Gruppe Waldarbeiter. Du gehst mit ihnen mit ins Dorf. Nach deinem Abenteuer willst du nur noch ein Gasthaus finden und in der Nacht gut schlafen. Von den Waldarbeitern erfährst du, daß es drei Gasthäuser in Rashagan gibt.
+(if:$Visit_Rashagan==2)Weiter bei [[1232]].(endif:)(if:$Visit_Rashagan==1)Weiter bei [[591]].(endif:)(if:$Visit_Rashagan==0)Als du den schmalen Pfad zum Dorf hinaufsteigst hörst du menschliche Stimmen und triffst auf eine Gruppe Waldarbeiter. Du gehst mit ihnen mit ins Dorf. Nach deinem Abenteuer willst du nur noch ein Gasthaus finden und in der Nacht gut schlafen. Von den Waldarbeitern erfährst du, dass es drei Gasthäuser in Rashagan gibt.
 
 Weiter bei [[1232]].
 (endif:)
@@ -3572,62 +3575,62 @@ Welchen Gegenstand möchtest du zum Tausch anbieten?
 - Keinen davon? Du verläßt den Laden und siehst dich im Dorf um. Weiter geht es bei [[1232]].
 
 ::142
-Horijin untersucht das Amulett zuerst außerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
+Horijin untersucht das Amulett zuerst äußerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
 (set:$Tausch to "Amulett_Maraske")
 (set:$Kristall_Anzahl to 1)
 (set:$Amulette to $Amulette - 1)
 
 ::461
-Horijin untersucht das Amulett zuerst außerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
+Horijin untersucht das Amulett zuerst äußerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
 (set:$Tausch to "Amulett_Frosch")
 (set:$Kristall_Anzahl to 1)
 (set:$Amulette to $Amulette - 1)
 
 ::1431
-Horijin untersucht das Amulett zuerst außerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
+Horijin untersucht das Amulett zuerst äußerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
 (set:$Tausch to "Amulett_Vogel")
 (set:$Kristall_Anzahl to 1)
 (set:$Amulette to $Amulette - 1)
 
 ::783
-Horijin untersucht das Amulett zuerst außerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
+Horijin untersucht das Amulett zuerst äußerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
 (set:$Tausch to "Amulett_Spinne")
 (set:$Kristall_Anzahl to 1)
 (set:$Amulette to $Amulette - 1)
 
 ::1406
-Horijin untersucht das Amulett zuerst außerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
+Horijin untersucht das Amulett zuerst äußerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
 (set:$Tausch to "Amulett_Schlange")
 (set:$Kristall_Anzahl to 1)
 (set:$Amulette to $Amulette - 1)
 
 ::1088
-Horijin untersucht das Alicorn zuerst außerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
+Horijin untersucht das Alicorn zuerst äußerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
 (set:$Tausch to "Alicorn")
 (set:$Kristall_Anzahl to 1)
 
 ::872
-Horijin untersucht den Topas zuerst außerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
+Horijin untersucht den Topas zuerst äußerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
 (set:$Tausch to "Topas_Violett")
 (set:$Kristall_Anzahl to 1)
 
 ::695
-Horijin untersucht die Goldkette zuerst außerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
+Horijin untersucht die Goldkette zuerst äußerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
 (set:$Tausch to "Goldkette")
 (set:$Kristall_Anzahl to 1)
 
 ::1157
-Horijin untersucht den Anhänger zuerst außerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
+Horijin untersucht den Anhänger zuerst äußerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
 (set:$Tausch to "Anhaenger_Auge")
 (set:$Kristall_Anzahl to 1)
 
 ::1374
-Horijin untersucht die Samenkapseln zuerst außerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
+Horijin untersucht die Samenkapseln zuerst äußerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
 (set:$Tausch to "Disdychonda_Samenkapseln")
 (set:$Kristall_Anzahl to 1)
 
 ::199
-Horijin untersucht die Perlen zuerst außerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
+Horijin untersucht die Perlen zuerst äußerlich und schließlich auch magisch. Er ist bereit dir ein echsisches Zauberjuwel deiner Wahl dafür zu geben. Weiter bei [[715]].
 (set:$Tausch to "Piraten_Perlen")
 (set:$Kristall_Anzahl to 1)
 
@@ -3655,7 +3658,7 @@ $vars['Kristall_Auswahl'] = trim('[[715]]', '[]');
 (endphp:)
 
 ::563
-Du verstaust das Zauberjuwel sicher in deinem Beutel. Möchtest du noch einen anderen Gegenstand zum Tausch anbieten? Weiter bei [[1100]]. Wenn nicht, dann verabschiedest dich von Horijin und verläßt den Laden. Weiter geht es bei [[1232]].
+Du verstaust das Zauberjuwel sicher in deinem Beutel. Möchtest du noch einen anderen Gegenstand zum Tausch anbieten? Weiter bei [[1100]]. Wenn nicht, dann verabschiedest dich von Horijin und verlässt den Laden. Weiter geht es bei [[1232]].
 
 (php:)
 global $vars;
@@ -3667,14 +3670,14 @@ unset($vars['Tausch']);
 (unset:$Kristall_Anzahl)
 
 ::49
-(if:$Erfolg_Anramijian==1)Am Fuße einer Felsklippe am Rande des Dorfes liegt die Schmiede von Anramijian, dem Zwerg. Du grüßt ihn höflich auf Rogolan, der Sprache des Zwergenvolkes, und er erwiedert deinen Gruß auf Maraskanisch.
+(if:$Erfolg_Anramijian==1)Am Fuße einer Felsklippe am Rande des Dorfes liegt die Schmiede von Anramijian, dem Zwerg. Du grüßt ihn höflich auf Rogolan, der Sprache des Zwergenvolkes, und er erwidert deinen Gruß auf Maraskanisch.
 
-Weiter bei [[471]].(else:)Am Fuße einer Felsklippe am Rande des Dorfes liegt die Schmiede von Anramijian, einem Angroschim wie du erstaunt feststellst. Du grüßt ihn höflich auf Rogolan, der Sprache des Zwergenvolkes, und er erwiedert deinen Gruß auf Maraskanisch.
+Weiter bei [[471]].(else:)Am Fuße einer Felsklippe am Rande des Dorfes liegt die Schmiede von Anramijian, einem Angroschim wie du erstaunt feststellst. Du grüßt ihn höflich auf Rogolan, der Sprache des Zwergenvolkes, und er erwidert deinen Gruß auf Maraskanisch.
 
 Weiter bei [[1036]].(endif:)
 
 ::1036
-Du unterhältst dich mit ihm und erfährst, dass er eigentlich Anrambolosch heisst. Er stammt aus einer Zwergenbinge in der Maraskankette, seiner Heimat, wo er geboren wurde. Er und Maranrascha, Tochter der Marurita, waren ein Liebespaar für viele Jahre, doch ihre Eltern wollten der Verbindung nicht zustimmen. Schließlich wurde Maranrascha mit dem Sohn eines reichen Erzhändlers vermählt und Anrambolosch verließ mit gebrochenem Herzen seine Heimatbinge. Aus Schande legte er den Namen seines Vaters ab und zog als "Klanarodosch", als Sippenloser, umher.
+Du unterhältst dich mit ihm und erfährst, dass er eigentlich Anrambolosch heißt. Er stammt aus einer Zwergenbinge in der Maraskankette, seiner Heimat, wo er geboren wurde. Er und Maranrascha, Tochter der Marurita, waren ein Liebespaar für viele Jahre, doch ihre Eltern wollten der Verbindung nicht zustimmen. Schließlich wurde Maranrascha mit dem Sohn eines reichen Erzhändlers vermählt und Anrambolosch verließ mit gebrochenem Herzen seine Heimatbinge. Aus Schande legte er den Namen seines Vaters ab und zog als "Klanarodosch", als Sippenloser, umher.
 Als er wegen einer schweren Krankheit hier in Rashagan bleiben musste pflegten ihn die gutherzigen Dorfleute wieder gesund. Aus Dankbarkeit beschloss er hier zu bleiben, reparierte mit seinem handwerklichen Talent die verwaiste Dorfschmiede, schlug sich eine Wohnhöhle aus dem Fels, und half den Dorfleute wo er nur konnte. Seitdem lebt er hier, inzwischen unter den Enkeln seiner damaligen Retter.
 
 Weiter bei [[471]].
@@ -4789,7 +4792,7 @@ Du kannst nun die Lichtung verlassen. Willst du nach
 (set:$Visit_Lichtung_01 to 1)
 
 ::744
-Als du weitergehst, scheint es lichter zu werden. Durch die Bäume erblickst du plötzlich flüchtig den blauen Himmel über dir! Ein paar Minuten später siehst du eine Öffnung in den Bäumen – und als du hindurchgehst, bemerkst du, daß du den Dschungel hinter dir gelassen hast! Wenn du den Ewigen Wald noch nicht verlassen willst, kannst du umkehren und den Weg zurückgehen, den du gekommen bist, bis du die erste Lichtung erreichst; weiter bei [[814]]. Wenn du nach Jeskajan zurückkehren willst geht es weiter bei [[1093]].
+Als du weitergehst, scheint es lichter zu werden. Durch die Bäume erblickst du plötzlich flüchtig den blauen Himmel über dir! Ein paar Minuten später siehst du eine Öffnung in den Bäumen – und als du hindurchgehst, bemerkst du, dass du den Dschungel hinter dir gelassen hast! Wenn du den Ewigen Wald noch nicht verlassen willst, kannst du umkehren und den Weg zurückgehen, den du gekommen bist, bis du die erste Lichtung erreichst; weiter bei [[814]]. Wenn du nach Jeskajan zurückkehren willst geht es weiter bei [[1093]].
 
 ::260
 Hier ist der Urwald lichter. Zwar bilden die Baumkronen ein grünes Dach, durch das diffuses Licht fällt, aber das Unterholz und die Dornenbüsche, die sonst das Vorwärtskommen erschwerten, fehlen.
@@ -5056,7 +5059,7 @@ Der Weg zwischen den knorrigen Bäumen hindurch führt dich zu einer weiteren Li
 
 <i>Dies ist Lichtung 5</i>.
 
-(if:$Visit_Lichtung_05==1)Weiter bei [[1362]].(else:)Du erkennst augenblicklich, daß hier ein Kampf stattgefunden hat. Der Boden ist aufgewühlt; Blut ist über das feuchte Blätterwerk verspritzt, und zwei Blasrohrpfeile stecken nicht weit von dir entfernt in einem Baum. Wenn du die Lichtung betreten willst, weil du hoffst, vielleicht etwas Nützliches zu finden, geht es weiter bei [[960]]. Entscheidest du dich, sie so schnell wie möglich zu verlassen, weiter bei [[1452]].
+(if:$Visit_Lichtung_05==1)Weiter bei [[1362]].(else:)Du erkennst augenblicklich, dass hier ein Kampf stattgefunden hat. Der Boden ist aufgewühlt; Blut ist über das feuchte Blätterwerk verspritzt, und zwei Blasrohrpfeile stecken nicht weit von dir entfernt in einem Baum. Wenn du die Lichtung betreten willst, weil du hoffst, vielleicht etwas Nützliches zu finden, geht es weiter bei [[960]]. Entscheidest du dich, sie so schnell wie möglich zu verlassen, weiter bei [[1452]].
 (endif:)
 
 ::1362
@@ -5079,7 +5082,7 @@ Weiter bei [[1452]].
 (set:$Erfolg_Anhaenger_Auge to 1)
 
 ::960
-Du siehst dich auf der Lichtung um. Vielleicht ist hier jemand, der deine Hilfe braucht – oder der dir helfen kann? Im selben Augenblick stolperst du über einen toten Maraskan-Achaz. Schnell durchsuchst du den ekelerregenden Kadaver, aber du findest nichts Besonderes. Dann siehst du einen verwundeten Mann an einem Baum lehnen. Du eilst hin, um ihm zu helfen, aber als du ihn erreichst, stellst du fest, daß er schon tot ist; drei Blasrohrpfeile haben seine Brust durchbohrt. Zwei weitere Achaz liegen ihm zu Füßen; sie mußten teuer für sein Leben bezahlen. Du siehst keine Ausrüstung oder Waffen; die überlebenden Echsenmenschen müssen den Schauplatz geplündert haben, ehe sie ihn verließen. Du begräbst den gefallenen Kämpfer so gut wie möglich. Dabei entdeckst du einen goldenen Anhänger in der Form eines echsischen Auges an seinem Hals. Du kannst ihn dort lassen [[1452]] oder ihn deinem Besitz zufügen. Weiter bei [[277]].
+Du siehst dich auf der Lichtung um. Vielleicht ist hier jemand, der deine Hilfe braucht – oder der dir helfen kann? Im selben Augenblick stolperst du über einen toten Maraskan-Achaz. Schnell durchsuchst du den ekelerregenden Kadaver, aber du findest nichts Besonderes. Dann siehst du einen verwundeten Mann an einem Baum lehnen. Du eilst hin, um ihm zu helfen, aber als du ihn erreichst, stellst du fest, dass er schon tot ist; drei Blasrohrpfeile haben seine Brust durchbohrt. Zwei weitere Achaz liegen ihm zu Füßen; sie mußten teuer für sein Leben bezahlen. Du siehst keine Ausrüstung oder Waffen; die überlebenden Echsenmenschen müssen den Schauplatz geplündert haben, ehe sie ihn verließen. Du begräbst den gefallenen Kämpfer so gut wie möglich. Dabei entdeckst du einen goldenen Anhänger in der Form eines echsischen Auges an seinem Hals. Du kannst ihn dort lassen [[1452]] oder ihn deinem Besitz zufügen. Weiter bei [[277]].
 
 
 ::283
@@ -5110,8 +5113,8 @@ Staunend gehst du näher an den mächtigen Baum heran und bewunderst seine Blüt
 Tausende mögen es sein, vielleicht sogar Zehntausende. Die Mehrzahl von ihnen ist klein, braun und unscheinbar, aus der Ferne leicht zu verwechseln mit verwelktem Laub. Eine Minderheit ist bunt, mit Flügeln von Handtellergröße, die aufgeklappt riesige, schillernde Augen vortäuschen oder drohende Rachen mit mörderischen Zähnen. In der Masse ihrer unauffälligen Artgenossen gleichen die größeren Falter Primadonnen in irisierenden Gewändern, Fürsten in metallischem Blau und Gold, Königinnen in Orange und Blutrot, Wesiren im gelbgrün gestreiften Gewand. Sie werden umschwärmt von gedrungenen Gardisten mit silbrigem Zackenmuster auf den feingeschuppten Flügeln und gnadenlosen Vollstreckern in Samtschwarz.
 Gut fünfzig bis sechzig unterschiedliche Arten dieser leichtmütigen Geschöpfe haben sich auf den verdorrten Zweigen niedergelassen. Sie hängen am Stamm mit zusammengeklapptem oder sitzen auf den Spitzen der Äste mit ausgebreitetem Flügelpaar, bilden mancherorts Trauben oder wimmeln wirr durcheinander, bis auch die letzten von ihnen eine freie Stelle finden, wo sie zur Ruhe kommen.
 Wirr? Nein, wiederum nur auf den ersten Blick.
-Denn bis auf wenige Ausnahmen zeigen die zerbrechlichen Fühlerpaare dieses Schwarms von Schwärmen in genau eine Richtung. Gerade so, als warten die tausendfach Geflügelten darauf, daß von dort etwas kommt, daß etwas ganz Bestimmtes eintritt.
-Mit einem Mal ist die Luft erfüllt von Abertausenden von Schmetterlingen. Sie fliegen so dicht, daß du kaum noch die Hand vor Augen sehen kannst.
+Denn bis auf wenige Ausnahmen zeigen die zerbrechlichen Fühlerpaare dieses Schwarms von Schwärmen in genau eine Richtung. Gerade so, als warten die tausendfach Geflügelten darauf, dass von dort etwas kommt, dass etwas ganz Bestimmtes eintritt.
+Mit einem Mal ist die Luft erfüllt von Abertausenden von Schmetterlingen. Sie fliegen so dicht, dass du kaum noch die Hand vor Augen sehen kannst.
 
 Hastig entfernst du dich wieder und suchst nach einem Pfad der durch das Unterholz weiter führt. Weiter bei [[1436]].
 
@@ -5236,7 +5239,7 @@ Du siehst, dass du den Riesen eindeutig verwundet hast und mit seiner gewaltigen
 [[ENDE]]
 
 ::248
-&raquo;Es tut mir leid, Herr Riese&laquo;, sagst du. &raquo;Ich wußte nicht, daß ich hier unbefugt eindringe. Bitte, sagen Sie mir, was los ist.&laquo; Augenblicklich wird er friedlich. Er setzt sich hin und schnieft. Da er nichts findet, um sich die Augen zu wischen, fährt er sich mit der Hand über das Gesicht. Du bemitleidest ihn..., er ist so groß und doch so jämmerlich. &raquo;Jemand hat mir mein Taschentuch gestohlen!&laquo; sagt er. &raquo;Ein guter Freund hat es für mich gemacht, und ich habe es verloren! Ich kann es nirgendwo finden.&laquo; Du fragst ihn, wie es aussieht, und er sagt dir, daß es leuchtend rot und sehr schön war.
+&raquo;Es tut mir leid, Herr Riese&laquo;, sagst du. &raquo;Ich wußte nicht, dass ich hier unbefugt eindringe. Bitte, sagen Sie mir, was los ist.&laquo; Augenblicklich wird er friedlich. Er setzt sich hin und schnieft. Da er nichts findet, um sich die Augen zu wischen, fährt er sich mit der Hand über das Gesicht. Du bemitleidest ihn..., er ist so groß und doch so jämmerlich. &raquo;Jemand hat mir mein Taschentuch gestohlen!&laquo; sagt er. &raquo;Ein guter Freund hat es für mich gemacht, und ich habe es verloren! Ich kann es nirgendwo finden.&laquo; Du fragst ihn, wie es aussieht, und er sagt dir, dass es leuchtend rot und sehr schön war.
 
 Weiter bei (if:$Erfolg_Jerganjanker==1)[[573]](else:)[[310]](endif:).
 
@@ -5334,13 +5337,13 @@ Die Hüterin der Frösche kniet sich auf der Platform hin, beugt sich nach unten
 Weiter bei [[743]].
 
 ::282
-Du erzählst ihr, daß du nur nach Rashagan und zurück willst. Ein erstaunter Ausdruck erscheint auf ihrem jugendlichen Gesicht. &raquo;Rashagan liegt weit im Norden&laquo;, sagt sie. &raquo;Aber du gefällst mir; daher will ich dir etwas sagen. Hüte dich vor dem Irrlicht, oder dein Leben ist verwirkt. Und nun, guten Tag, ich habe zu tun.&laquo; Unvermittelt verschwindet sie in dem Blattwerk das ihr Haus umgibt. Ihre Frösche quaken laut und hopsen davon. Du schaust dich auf der Lichtung um, findest aber rein gar nichts. Der einzige Weg führt zurück nach Westen. Du drehst um und gehst auf die Stelle zu, an der du die Achaz-Krieger getroffen hast. Dabei greifst du vorsorglich nach der Waffe und sprichst vorbereitende Zauber, falls du nochmals kämpfen mußt. Weiter bei [[1179]].
+Du erzählst ihr, dass du nur nach Rashagan und zurück willst. Ein erstaunter Ausdruck erscheint auf ihrem jugendlichen Gesicht. &raquo;Rashagan liegt weit im Norden&laquo;, sagt sie. &raquo;Aber du gefällst mir; daher will ich dir etwas sagen. Hüte dich vor dem Irrlicht, oder dein Leben ist verwirkt. Und nun, guten Tag, ich habe zu tun.&laquo; Unvermittelt verschwindet sie in dem Blattwerk das ihr Haus umgibt. Ihre Frösche quaken laut und hopsen davon. Du schaust dich auf der Lichtung um, findest aber rein gar nichts. Der einzige Weg führt zurück nach Westen. Du drehst um und gehst auf die Stelle zu, an der du die Achaz-Krieger getroffen hast. Dabei greifst du vorsorglich nach der Waffe und sprichst vorbereitende Zauber, falls du nochmals kämpfen mußt. Weiter bei [[1179]].
 
 ::539
 Sie scheint nicht gefährlich zu sein, aber du bist dir nicht sicher, ob du ihr genaue Auskunft über deinen Auftrag geben solltest. Wenn du ihr erzählst, du seist gekommen, um dir die Amulette der Hüterinnen anzueignen, geht es weiter bei [[372]]. Wenn du eine Geschichte erfindest, weiter bei [[63]].
 
 ::63
-Du bezweifelst, daß die Hüterin der Frösche noch genauso freundlich ist, wenn sie deinen wirklichen Auftrag kennt; daher erzählst du ihr folgendes: &raquo;Ich stehe im Dienste von Fürst Herdin von Tuzak. Aus Angst davor, vergiftet zu werden, lässt er im ganzen Land nach Heilmitteln forschen. Er hat mich in das Vimbatja geschickt, um nach unbekannten Pflanzen für Heilmittel und Gegengifte zu suchen. Als ich nach Jeskajan in der Baronie Narmoggyn kam, habe ich über die Hüterinnen reden hören und wollte mehr über sie erfahren. Wer seid ihr, und warum seid ihr hierher gekommen?&laquo;
+Du bezweifelst, dass die Hüterin der Frösche noch genauso freundlich ist, wenn sie deinen wirklichen Auftrag kennt; daher erzählst du ihr folgendes: &raquo;Ich stehe im Dienste von Fürst Herdin von Tuzak. Aus Angst davor, vergiftet zu werden, lässt er im ganzen Land nach Heilmitteln forschen. Er hat mich in das Vimbatja geschickt, um nach unbekannten Pflanzen für Heilmittel und Gegengifte zu suchen. Als ich nach Jeskajan in der Baronie Narmoggyn kam, habe ich über die Hüterinnen reden hören und wollte mehr über sie erfahren. Wer seid ihr, und warum seid ihr hierher gekommen?&laquo;
 
 Würfle eine Probe auf <i>Überreden (Lügen)</i> +10. Wenn du Erfolg hast, geht es weiter bei [[764]]. Misslingt die Probe, weiter bei [[615]].
 
@@ -5348,7 +5351,7 @@ Würfle eine Probe auf <i>Überreden (Lügen)</i> +10. Wenn du Erfolg hast, geht
 Etwas in deiner Stimme verrät dich. Sie lässt ihre Hände vor ihrem Gesicht kreisen und blickt dich auf eigenartige Weise an. Liest sie deine Gedanken? Weiter bei [[372]].
 
 ::764
-Sie glaubt deine Geschichte und plaudert mit dir. Sie erzählt dir, daß die Hüterinnen Töchter Satuarias sind die, einer Prophezeiung folgend, in den Ewigen Wald kamen. Jede von ihnen gehört einer anderen Schwesternschaft an. Einige sind freundlich, andere bösartig, wieder andere stehen Fremden neutral gegenüber, aber ihre Schicksale sind durch die Amulette, die sie tragen, miteinander verknüpft. Sie kämpfen vielleicht gegeneinander, aber keine Hüterin kann eine andere töten, solange diese das Amulett trägt. Weiter erzählt sie dir, daß die Amulette große Macht verleihen, aber nur einer Hexe. Du findest all dies sehr interessant und dankst ihr für ihre Geduld. Dann nimmst du Abschied ... aber du gehst nur zum Anfang des Pfades. Sobald sie dich nicht mehr sehen kann, überlegst du dir den nächsten Schritt. Wirst du
+Sie glaubt deine Geschichte und plaudert mit dir. Sie erzählt dir, dass die Hüterinnen Töchter Satuarias sind die, einer Prophezeiung folgend, in den Ewigen Wald kamen. Jede von ihnen gehört einer anderen Schwesternschaft an. Einige sind freundlich, andere bösartig, wieder andere stehen Fremden neutral gegenüber, aber ihre Schicksale sind durch die Amulette, die sie tragen, miteinander verknüpft. Sie kämpfen vielleicht gegeneinander, aber keine Hüterin kann eine andere töten, solange diese das Amulett trägt. Weiter erzählt sie dir, dass die Amulette große Macht verleihen, aber nur einer Hexe. Du findest all dies sehr interessant und dankst ihr für ihre Geduld. Dann nimmst du Abschied ... aber du gehst nur zum Anfang des Pfades. Sobald sie dich nicht mehr sehen kann, überlegst du dir den nächsten Schritt. Wirst du
 
 - aufgeben und weitergehen? Weiter bei [[743]]
 - mit Hilfe einer Illusion versuchen, das Amulett zu stehlen? (if:$Kristall_Illusion>0)Weiter bei [[481]](endif:)
@@ -5445,7 +5448,7 @@ Beide Frösche greifen dich in jeder Kampfrunde getrennt an, gelingt ein Angriff
 Wenn du siegst, geht es weiter bei [[84]].
 
 ::84
-Du hast die Riesenfrösche getötet, aber ihre Hüterin ist nirgendwo zu sehen. Sie muß tiefer in den Mangrovenwald geflüchtet sein. Sorgfältig wäschst du das Blut und den Schleim von deiner Kleidung, bevor du die Lichtung untersuchst, immer in der Erwartung, daß die Hüterin der Frösche dich unversehens von hinten angreift. Du findest nichts. Weiter geht es bei [[743]].
+Du hast die Riesenfrösche getötet, aber ihre Hüterin ist nirgendwo zu sehen. Sie muß tiefer in den Mangrovenwald geflüchtet sein. Sorgfältig wäschst du das Blut und den Schleim von deiner Kleidung, bevor du die Lichtung untersuchst, immer in der Erwartung, dass die Hüterin der Frösche dich unversehens von hinten angreift. Du findest nichts. Weiter geht es bei [[743]].
 
 (set:$Visit_Lichtung_08 to 2)
 (set:$AP to $AP+10)
@@ -5669,7 +5672,7 @@ Wirst du
 Du folgst dem Pfad und betrittst die Lichtung. Die Banditen sind überrascht, dich zu sehen, und noch überraschter, als du sie nur beiläufig grüßt und weitergehst. &raquo;Halt, Bruderschwester! In welche Richtung glaubst du zu gehen?&laquo; fragen sie dich. &raquo;Norden&laquo;, antwortest du. Sie sind von deiner Kaltblütigkeit beeindruckt. Die Banditen sind es gewohnt, einfaches Volk zu berauben, aber sie sind keine Mörder. Sie könnten dich zwar angreifen, wobei die Chancen fünf zu eins ständen, aber das halten sie nicht für sehr sportlich. Schließlich macht der Anführer einen Vorschlag. Ihr beide werdet miteinander kämpfen. Wer den anderen zuerst verletzt, ist Sieger. Wenn der Anführer der Banditen dich zuerst verwundet, musst du ihm etwas Wertvolles geben. Bringst du ihm die erste Wunde bei, lassen er und seine Männer dich laufen. Magie oder Gift darf keiner von euch beiden anwenden. Stimmst du diesem Vorschlag zu, geht es weiter bei [[255]]. Bist du damit nicht einverstanden, weiter bei [[428]].
 
 ::255
-Du bist auch der Meinung, daß ein Zweikampf bis zur ersten Verwundung ein ehrenvoller Weg ist, diese Frage zu klären. Du und der Anführer der Banditen fechtet die Angelegenheit unter euch aus. Die anderen Männer stehen um euch herum, aber sie scheinen keine Hintergedanken zu hegen; sie sind lediglich aufgeregt.
+Du bist auch der Meinung, dass ein Zweikampf bis zur ersten Verwundung ein ehrenvoller Weg ist, diese Frage zu klären. Du und der Anführer der Banditen fechtet die Angelegenheit unter euch aus. Die anderen Männer stehen um euch herum, aber sie scheinen keine Hintergedanken zu hegen; sie sind lediglich aufgeregt.
 
 <i>Die Werte des Anführers der Banditen:</i>
 MU 14, KL 11, IN 15, CH 11, FF 12, GE 15, KO 13, KK 15
@@ -5727,7 +5730,7 @@ Du überlegst, mit welcher Illusion du die Banditen am besten hereinlegen kannst
 (set:$Visit_Lichtung_10 to 3)
 
 ::1443
-Nachdem dir nun die Banditen wohlgesonnen sind, fragst du sie, wo du bist. Sie erzählen dir, dass Rashagan nicht weit entfernt im Norden liegt, und fügen hinzu, daß von den drei Kneipen in der Stadt der "Gespaltene Diskus" bei weitem die beste ist und dass du dem Wirt trauen kannst. Du sagst den Banditen Lebewohl und gehst. Weiter bei [[1440]].
+Nachdem dir nun die Banditen wohlgesonnen sind, fragst du sie, wo du bist. Sie erzählen dir, dass Rashagan nicht weit entfernt im Norden liegt, und fügen hinzu, dass von den drei Kneipen in der Stadt der "Gespaltene Diskus" bei weitem die beste ist und dass du dem Wirt trauen kannst. Du sagst den Banditen Lebewohl und gehst. Weiter bei [[1440]].
 
 (set:$Erfolg_Banditen to 2)
 (set:$AP to $AP+5)
@@ -5736,7 +5739,7 @@ Nachdem dir nun die Banditen wohlgesonnen sind, fragst du sie, wo du bist. Sie e
 Würfle eine <i>Charisma</i>-Probe +7. Hast du Erfolg, geht es weiter bei [[92]]. Hast du Pech, weiter bei [[381]].
 
 ::381
-Die Banditen springen verängstigt auf, aber sie nehmen sich zusammen und stellen sich dir entgegen. Als sie sehen, daß du alleine bist, werden sie ärgerlich. Sie beschimpfen dich – dann greifen sie ihrerseits an. Du mußt gegen sie kämpfen. Weiter bei [[183]].
+Die Banditen springen verängstigt auf, aber sie nehmen sich zusammen und stellen sich dir entgegen. Als sie sehen, dass du alleine bist, werden sie ärgerlich. Sie beschimpfen dich – dann greifen sie ihrerseits an. Du mußt gegen sie kämpfen. Weiter bei [[183]].
 
 ::183
 Du stehst mit dem Rücken gegen einen Baum, damit dich immer nur ein Bandit angreifen kann. Obwohl es fünf sind, stellen sich nur die drei größten zum Kampf.
@@ -6274,7 +6277,7 @@ Wirst du
 Du ruhst dich für ein paar Minuten aus. Dann hörst du ein schnüffelndes Geräusch, das von einem der Bäume kommt. Wenn du nachsehen willst, wer oder was in den Bäumen ist, geht es weiter bei [[1052]]. Willst du es lieber nicht wissen, weiter bei [[624]].
 
 ::1052
-Vorsichtig gehst du zu dem Baum hinüber. Bevor du ihn erreichst, nimmst du einen typischen Raubtiergeruch wahr – ein untrügliches Zeichen dafür, daß der Baum irgendein wildes Tier beherbergt. Du blickst verdutzt, als der Kopf eines kleinen Raubtieres aus dem hohlen Baum blickt. Offenbar wohnt darin ein Baumschleimer, ein gedrungenes, gelb-schwarz gestreiftes Tier, das aussieht als hätten sich die Götter nicht entscheiden können, ob dieses Geschöpf ein Marder oder ein kleiner Bär werden sollte.
+Vorsichtig gehst du zu dem Baum hinüber. Bevor du ihn erreichst, nimmst du einen typischen Raubtiergeruch wahr – ein untrügliches Zeichen dafür, dass der Baum irgendein wildes Tier beherbergt. Du blickst verdutzt, als der Kopf eines kleinen Raubtieres aus dem hohlen Baum blickt. Offenbar wohnt darin ein Baumschleimer, ein gedrungenes, gelb-schwarz gestreiftes Tier, das aussieht als hätten sich die Götter nicht entscheiden können, ob dieses Geschöpf ein Marder oder ein kleiner Bär werden sollte.
 Wenn du fortrennst, weiter bei [[624]]. Falls du bleiben willst musst du dich wenn nötig gegen das Tier verteidigen. Dann geht es weiter bei [[351]].
 
 (set:$Visit_Lichtung_12 to 1)
@@ -6467,7 +6470,7 @@ Dabei dringt das Lähmungsgift der Tiere in dein Blut (einmalig): Stufe 5, Wirku
 Schließlich verläßt du die Lichtung so vorsichtig wie möglich. Weiter bei [[507]].
 
 ::606
-Du weißt, daß der einzige Matrixkristall, der dir wahrscheinlich gegen die krabbelnde Menge helfen kann, ein Feuer-Kristall ist. Schnell aktivierst du ihn. Ein Feuerkranz lodert im Unterholz um deine Füße herum auf. Er breitet sich für kurze Zeit aus und verlöscht dann, aber die Maraskanfedern sind vertrieben. Du verläßt schnell die Lichtung, bevor sie dich wieder angreifen können. Es geht weiter bei [[507]].
+Du weißt, dass der einzige Matrixkristall, der dir wahrscheinlich gegen die krabbelnde Menge helfen kann, ein Feuer-Kristall ist. Schnell aktivierst du ihn. Ein Feuerkranz lodert im Unterholz um deine Füße herum auf. Er breitet sich für kurze Zeit aus und verlöscht dann, aber die Maraskanfedern sind vertrieben. Du verläßt schnell die Lichtung, bevor sie dich wieder angreifen können. Es geht weiter bei [[507]].
 
 (set:$Kristall_Feuer to $Kristall_Feuer-1)
 
@@ -6506,13 +6509,13 @@ Die Lichtung ist voller bunter Vögel, aber nirgendwo kannst du einen Menschen e
 Der einzige Weg, der von der Lichtung wegführt, ist der, auf dem du gekommen bist. Du wendest dich wieder einmal nach Osten. Bald wirst du an der Lichtung mit den Schwarzen Nachtschatten sein. Weiter bei [[1379]].
 
 ::451
-Aus Angst, daß der gesprächige Vogel Alarm schlagen könnte, ziehst du deine Waffe und schlägst ihm den Kopf ab. Ohne einen Laut fällt er zu Boden. Aus seinem Schwanz ziehst du einige seiner weitleuchtenden Federn. Weiter bei [[900]].
+Aus Angst, dass der gesprächige Vogel Alarm schlagen könnte, ziehst du deine Waffe und schlägst ihm den Kopf ab. Ohne einen Laut fällt er zu Boden. Aus seinem Schwanz ziehst du einige seiner weitleuchtenden Federn. Weiter bei [[900]].
 
 (set:$Erfolg_Papageienfedern to 1)
 (set:$Visit_Lichtung_14 to 2)
 
 ::345
-Der Papagei beobachtet dich aus kleinen runden Augen. &raquo;Gehe nur geradeaus. Sie weiß, daß du kommst.&laquo; Du gelangst auf eine wunderschöne Lichtung, die durch niedrige Palmen vor neugierigen Blicken geschützt wird. Tausende bunter Vögel schwirren in der Luft und zwischen den umstehenden Bäumen herum. Große Reiher und Adler stolzieren umher. Inmitten all dieser Herrlichkeit sitzt auf einem Sockel eine wunderschöne Frau, die die Hüterin der Vögel sein muß. Sie redet dich mit deinem Namen an und fragt dich nach deinem Anliegen. 
+Der Papagei beobachtet dich aus kleinen runden Augen. &raquo;Gehe nur geradeaus. Sie weiß, dass du kommst.&laquo; Du gelangst auf eine wunderschöne Lichtung, die durch niedrige Palmen vor neugierigen Blicken geschützt wird. Tausende bunter Vögel schwirren in der Luft und zwischen den umstehenden Bäumen herum. Große Reiher und Adler stolzieren umher. Inmitten all dieser Herrlichkeit sitzt auf einem Sockel eine wunderschöne Frau, die die Hüterin der Vögel sein muß. Sie redet dich mit deinem Namen an und fragt dich nach deinem Anliegen. 
 
 Weiter bei [[532]].
 
@@ -6527,7 +6530,7 @@ Deine Fragen hängen natürlich von deinem Auftrag ab. Ist es
 Wenn du dich von der Hüterin der Vögel verabschieden möchtest, kannst du dies tun und ihre Lichtung in Richtung Osten wieder verlassen, weiter bei [[1352]].
 
 ::940
-Deine Menschenkenntnis sagt dir, dass die Hüterin der Vögel eine aufrichtige, gute Zauberin ist. Du erzählst von der Lebenden Lichtung und bittest sie um ihre Hilfe. Sie klatscht fröhlich in die Hände, und für einen Augenblick sieht sie aus wie ein junges Mädchen. &raquo;Gibt es diesen Ort wirklich?&laquo; Sie ist überglücklich, denn sie weiß, daß ein Heiligtum des Humus über große Heilkraft verfügt der viel Leid lindern kann. Sie gibt dir einen Zaubertrank, der dir 5W6+6 Astralpunkte zurückgibt wenn du ihn trinkst. Dann bedeutet sie dir, leise zu sein. Sie streckt die Hand aus, und mehrere kleine Vögel fliegen zu ihr. Eine Weile spricht sie mit ihnen. Dann sagt sie: &raquo;Du hast vielleicht recht! Es gibt einen Ort von urtümlicher Naturkraft am Grund eines riesigen, unzugänglichen Tals weit im Osten, jenseits des Flusses Jirbogyn.&laquo;
+Deine Menschenkenntnis sagt dir, dass die Hüterin der Vögel eine aufrichtige, gute Zauberin ist. Du erzählst von der Lebenden Lichtung und bittest sie um ihre Hilfe. Sie klatscht fröhlich in die Hände, und für einen Augenblick sieht sie aus wie ein junges Mädchen. &raquo;Gibt es diesen Ort wirklich?&laquo; Sie ist überglücklich, denn sie weiß, dass ein Heiligtum des Humus über große Heilkraft verfügt der viel Leid lindern kann. Sie gibt dir einen Zaubertrank, der dir 5W6+6 Astralpunkte zurückgibt wenn du ihn trinkst. Dann bedeutet sie dir, leise zu sein. Sie streckt die Hand aus, und mehrere kleine Vögel fliegen zu ihr. Eine Weile spricht sie mit ihnen. Dann sagt sie: &raquo;Du hast vielleicht recht! Es gibt einen Ort von urtümlicher Naturkraft am Grund eines riesigen, unzugänglichen Tals weit im Osten, jenseits des Flusses Jirbogyn.&laquo;
 
 Weiter bei [[532]].
 
@@ -6537,7 +6540,7 @@ Deine Menschenkenntnis sagt dir, dass die Hüterin der Vögel eine aufrichtige, 
 Weiter bei [[625]].
 
 ::1302
-Deine Menschenkenntnis sagt dir, dass die Hüterin der Vögel eine aufrichtige, gute Zauberin ist. Du erklärst ihr deinen Auftrag und bittest sie um ihre Hilfe. Sie klatscht fröhlich in die Hände, und für einen Augenblick sieht sie aus wie ein junges Mädchen. &raquo;Gibt es den Axorda-König wirklich?&laquo; Sie ist überglücklich, denn sie weiß, daß viel Leid durch die Heilkraft des Pflanzenkönigs gemildert werden kann, wenn du deinen Auftrag erfolgreich erledigst. Sie gibt dir einen Zaubertrank, der dir 5W6+6 Astralpunkte zurückgibt wenn du ihn trinkst. Dann bedeutet sie dir, leise zu sein. Sie streckt die Hand aus, und mehrere kleine Vögel fliegen zu ihr. Eine Weile spricht sie mit ihnen. Dann sagt sie: &raquo;Praioziber hat vielleicht recht! Es gibt einen riesigen Axorda-Baum in einem verborgenen Bergtal im Norden. Allerdings scheint es keinen gangbaren Zugang zu geben und die Schwärme von Harpyien die in den Bergen hausen sind eine große Gefahr für geflügelte Wesen. Wenn es einen Weg gibt in dieses Tal zu gelangen muss er unter dem Berg hindurchführen.&laquo;
+Deine Menschenkenntnis sagt dir, dass die Hüterin der Vögel eine aufrichtige, gute Zauberin ist. Du erklärst ihr deinen Auftrag und bittest sie um ihre Hilfe. Sie klatscht fröhlich in die Hände, und für einen Augenblick sieht sie aus wie ein junges Mädchen. &raquo;Gibt es den Axorda-König wirklich?&laquo; Sie ist überglücklich, denn sie weiß, dass viel Leid durch die Heilkraft des Pflanzenkönigs gemildert werden kann, wenn du deinen Auftrag erfolgreich erledigst. Sie gibt dir einen Zaubertrank, der dir 5W6+6 Astralpunkte zurückgibt wenn du ihn trinkst. Dann bedeutet sie dir, leise zu sein. Sie streckt die Hand aus, und mehrere kleine Vögel fliegen zu ihr. Eine Weile spricht sie mit ihnen. Dann sagt sie: &raquo;Praioziber hat vielleicht recht! Es gibt einen riesigen Axorda-Baum in einem verborgenen Bergtal im Norden. Allerdings scheint es keinen gangbaren Zugang zu geben und die Schwärme von Harpyien die in den Bergen hausen sind eine große Gefahr für geflügelte Wesen. Wenn es einen Weg gibt in dieses Tal zu gelangen muss er unter dem Berg hindurchführen.&laquo;
 
 Weiter bei [[532]].
 
@@ -6615,7 +6618,7 @@ Bevor der Zauber seine Wirkung verliert verlässt du Lichtung schnell wieder. We
 (set:$AP to $AP+50)
 
 ::1358
-Mit dem Furcht-Kristall hoffst du, sie so zu ängstigen, daß sie dir das Vogelamulett gibt. Sie sieht dich an und kreischt entsetzt auf. Dann umringen dich Hunderte glitzernder Vögel – nicht, um dich anzugreifen, sondern um ihre Herrin zu schützen. Du kannst nichts sehen. Nach kurzer Zeit fliegen sie wieder fort, aber die Hüterin der Vögel ist verschwunden. Weiter bei [[1352]].
+Mit dem Furcht-Kristall hoffst du, sie so zu ängstigen, dass sie dir das Vogelamulett gibt. Sie sieht dich an und kreischt entsetzt auf. Dann umringen dich Hunderte glitzernder Vögel – nicht, um dich anzugreifen, sondern um ihre Herrin zu schützen. Du kannst nichts sehen. Nach kurzer Zeit fliegen sie wieder fort, aber die Hüterin der Vögel ist verschwunden. Weiter bei [[1352]].
 
 (set:$Kristall_Furcht to $Kristall_Furcht-1)
 (set:$Visit_Lichtung_14 to 1)
@@ -6625,7 +6628,7 @@ Der Pfad führt durch die Mangroven die das seichten Überschwemmungsgebiet eine
 
 <i>Du bist auf Lichtung 15</i>.
 
-Anhand von Einkerbungen in den Stämmen der Bäume erkennst du, dass der Pfad recht geradlinig entlang der Bucht verläuft. Dann entdeckst du im Zwielicht des Dschungels am westlichen Rand der Mangroven das unstete Glühen einer Fackel. Als du dich näherst hörst du das Rascheln von Blättern und das Geräusch knackender Zweige während der Lichtschein sich tiefer ins finstere Unterholz zurückzieht. Es scheint, daß dort, wo der Lichtschein zu sehen war ein weiterer Pfad ist, ziemlich dunkel und überwachsen. 
+Anhand von Einkerbungen in den Stämmen der Bäume erkennst du, dass der Pfad recht geradlinig entlang der Bucht verläuft. Dann entdeckst du im Zwielicht des Dschungels am westlichen Rand der Mangroven das unstete Glühen einer Fackel. Als du dich näherst hörst du das Rascheln von Blättern und das Geräusch knackender Zweige während der Lichtschein sich tiefer ins finstere Unterholz zurückzieht. Es scheint, dass dort, wo der Lichtschein zu sehen war ein weiterer Pfad ist, ziemlich dunkel und überwachsen. 
 Du kannst dem Lichtschein vorsichtig folgen oder weitergehen. Wirst du
 
 - dem Lichtschein nach Westen folgen? Weiter bei [[485]]
@@ -6698,7 +6701,7 @@ Der Adler landet auf einem Ast des Baumes und beobachtet dich grimmig, sein gro�
 Der Adler stößt einen Schrei aus, fliegt einmal im Kreis um die Lichtung herum und dann zu seinem Horst. Du bist froh, die Lichtung kampflos verlassen zu können! Weiter bei [[13]].
 
 ::938
-Der Adler weiß, daß du sein Feind bist, und greift dich an. Du kannst nicht fliehen, da er größer und schneller ist als du, sondern musst dich auf deine Magie und deine Waffe verlassen.
+Der Adler weiß, dass du sein Feind bist, und greift dich an. Du kannst nicht fliehen, da er größer und schneller ist als du, sondern musst dich auf deine Magie und deine Waffe verlassen.
 
 <i>Die Werte des Riesenalken:</i>
 INI 14, AT 16*, TP 2W6+4 (Steine)
@@ -6835,7 +6838,7 @@ In jeder Kampfrunde greift sie mit einem <i>Gezielten Stich</i> an (AT erschwert
 Wenn du sie tötest, geht es weiter bei [[1078]].
 
 ::1078
-Du hast deinen Gegner getötet und atmest erleichtert auf. Aber überall um dich herum lauern Spinnen, sie kommen näher und näher. Du beugst dich nieder und nimmst der Hüterin der Spinnen das Spinnenamulett ab. Dabei löst sich eine Art CUSTODOSIGIL-Zauber aus und sein Funken setzt die Leiche in Brand. Eilig verläßt du den Schauplatz. Hinter dir breiten sich die Flammen aus, und du hoffst, daß sie die restlichen Spinnen vernichten. Weiter bei [[72]].
+Du hast deinen Gegner getötet und atmest erleichtert auf. Aber überall um dich herum lauern Spinnen, sie kommen näher und näher. Du beugst dich nieder und nimmst der Hüterin der Spinnen das Spinnenamulett ab. Dabei löst sich eine Art CUSTODOSIGIL-Zauber aus und sein Funken setzt die Leiche in Brand. Eilig verläßt du den Schauplatz. Hinter dir breiten sich die Flammen aus, und du hoffst, dass sie die restlichen Spinnen vernichten. Weiter bei [[72]].
 
 (set:$Erfolg_Amulett_Spinne to 1)
 (set:$Amulette to $Amulette + 1)
@@ -6876,7 +6879,7 @@ Du kannst nicht fliehen. Wenn du die Riesenspinne tötest, geht es weiter bei [[
 (set:$Kristall_Tod to $Kristall_Tod-1)
 
 ::226
-Es kommt dir so vor, als seien die Spinnweben sehr gut brennbar. Dein Feuer-Kristall entzündet das Gewand des Hüterin der Spinnen. Sie schreit fürchterlich und fällt zu Boden. Die Flammen breiten sich auf der Lichtung aus. Feuergarben jagen die Bäume hinauf und verbrennen die widerlichen Wesen, die dort hausen. Es wird so heiß, daß du jeden Gedanken an Beute aufgibst. Fluchtartig verläßt du die Lichtung. Wegen der Verbrennungen, die du dir dabei zuziehst, verlierst du 3W6 LeP. Weiter bei [[72]].
+Es kommt dir so vor, als seien die Spinnweben sehr gut brennbar. Dein Feuer-Kristall entzündet das Gewand des Hüterin der Spinnen. Sie schreit fürchterlich und fällt zu Boden. Die Flammen breiten sich auf der Lichtung aus. Feuergarben jagen die Bäume hinauf und verbrennen die widerlichen Wesen, die dort hausen. Es wird so heiß, dass du jeden Gedanken an Beute aufgibst. Fluchtartig verläßt du die Lichtung. Wegen der Verbrennungen, die du dir dabei zuziehst, verlierst du 3W6 LeP. Weiter bei [[72]].
 
 (set:$Kristall_Feuer to $Kristall_Feuer-1)
 (set:$AP to $AP+50)
@@ -6914,7 +6917,7 @@ Weiter bei [[393]].
 
 ::393
 Durch den Sturz und die Flammen hast du 2W6 SP hinnehmen müssen, doch nun blickst du dich um. Die Hüterin der Spinnen ist nirgendwo zu sehen, doch deine Ausrüstung liegt in ihrem Pavillon.
-Während die Flammen mit denen du den Kokon in Brand gesteckt hast auf die anderen Spinnennetze übergreifen packst du schnell deine Ausrüstung und verlässt die Lichtung fluchtartig. Hinter dir breiten sich die Flammen aus, und du hoffst, daß sie die restlichen Spinnen vernichten. Weiter bei [[72]].
+Während die Flammen mit denen du den Kokon in Brand gesteckt hast auf die anderen Spinnennetze übergreifen packst du schnell deine Ausrüstung und verlässt die Lichtung fluchtartig. Hinter dir breiten sich die Flammen aus, und du hoffst, dass sie die restlichen Spinnen vernichten. Weiter bei [[72]].
 
 ::746
 Welchen Zauber auch immer du anwendest, du wirst es ohne Gesten schaffen müssen. Sprichst du
@@ -6945,7 +6948,7 @@ Weiter bei [[393]].
 
 
 ::794
-Der Pfad verengt sich bedrohlich. Du befürchtest eine Zeitlang, daß du in eine Sackgasse geraten bist. Dann wird er wieder breiter und mündet in eine sehr kleine Lichtung.
+Der Pfad verengt sich bedrohlich. Du befürchtest eine Zeitlang, dass du in eine Sackgasse geraten bist. Dann wird er wieder breiter und mündet in eine sehr kleine Lichtung.
 
 <i>Dies ist Lichtung 18</i>.
 
@@ -7026,18 +7029,18 @@ Die Disdychonden krümmen sich unter dem Feuer-Zauber, der ihre Blätter verseng
 (set:$Kristall_Feuer to $Kristall_Feuer-1)
 
 ::91
-Du bist sicher, daß der Welken-Zauber genau für solch eine Situation gedacht ist. Zu deiner Erleichterung werden die Disdychonden sofort braun und stürzen zusammen. Du siehst dich auf der Lichtung um, findest aber nur ein paar klebrigen Samenkapseln, die von den Disdychonden stammen könnten. Du steckst sie ein und gehst weiter. Weiter bei [[391]].
+Du bist sicher, dass der Welken-Zauber genau für solch eine Situation gedacht ist. Zu deiner Erleichterung werden die Disdychonden sofort braun und stürzen zusammen. Du siehst dich auf der Lichtung um, findest aber nur ein paar klebrigen Samenkapseln, die von den Disdychonden stammen könnten. Du steckst sie ein und gehst weiter. Weiter bei [[391]].
 
 (set:$Kristall_Welken to $Kristall_Welken-1)
 (set:$Erfolg_Disdychonda_Samenkapseln to 1)
 
 ::826
-Du hoffst, daß die Disdychonden durch den Wachstums-Zauber so groß werden, daß sie dich nicht mehr erreichen können. Aber bald erkennst du deinen Irrtum; die Disdychonden bilden mehr Blätter aus und greifen weiter an. Lies weiter bei [[229]]. Du mußt gegen sie kämpfen, wirst aber jede Runde von 1W6 Blättern angegriffen anstatt von 1W3.
+Du hoffst, dass die Disdychonden durch den Wachstums-Zauber so groß werden, dass sie dich nicht mehr erreichen können. Aber bald erkennst du deinen Irrtum; die Disdychonden bilden mehr Blätter aus und greifen weiter an. Lies weiter bei [[229]]. Du mußt gegen sie kämpfen, wirst aber jede Runde von 1W6 Blättern angegriffen anstatt von 1W3.
 
 (set:$Kristall_Wachstum to $Kristall_Wachstum-1)
 
 ::671
-Der Pfad ist hier schmal und windet sich um einige riesige Felsblöcke. Es ist nebelig; du kannst nicht weit sehen. Plötzlich steigt der Nebel, und du entdeckst, daß du eine weitere Lichtung betreten hast.
+Der Pfad ist hier schmal und windet sich um einige riesige Felsblöcke. Es ist nebelig; du kannst nicht weit sehen. Plötzlich steigt der Nebel, und du entdeckst, dass du eine weitere Lichtung betreten hast.
 
 <i>Das ist Lichtung 19</i>.
 
@@ -7065,7 +7068,7 @@ Deine Menschenkenntnis verrät dir, dass der Jäger ein ehrlicher Mann ist und z
 Weiter bei (if:$Erfolg_Axorda==1)[[709]](else:)[[668]](endif:).
 
 ::668
-&raquo;Ich interessiere mich für die Pflanzen, die Rur in seiner grenzenlosen Weisheit in großer Vielfalt für Gror erschaffen hat&laquo;, antwortet der Jäger. &raquo;Gehört habe ich schon von dem König der Axorda-Bäume, aber ich wußte nicht, daß er hier wächst. Wenn du nach Osten gehst, kommst du zu einer guten Hexe, genannt die Hüterin der Schlangen. Ihre Weisheit ist groß und mit ihrer Magie kann sie dir bestimmt helfen. Wenn jemand weiß, wo der Baumkönig wächst, dann sie.&laquo; Du dankst ihm und gehst. Weiter bei [[1038]].
+&raquo;Ich interessiere mich für die Pflanzen, die Rur in seiner grenzenlosen Weisheit in großer Vielfalt für Gror erschaffen hat&laquo;, antwortet der Jäger. &raquo;Gehört habe ich schon von dem König der Axorda-Bäume, aber ich wußte nicht, dass er hier wächst. Wenn du nach Osten gehst, kommst du zu einer guten Hexe, genannt die Hüterin der Schlangen. Ihre Weisheit ist groß und mit ihrer Magie kann sie dir bestimmt helfen. Wenn jemand weiß, wo der Baumkönig wächst, dann sie.&laquo; Du dankst ihm und gehst. Weiter bei [[1038]].
 
 ::26
 &raquo;Ich arbeite für den Widerstand in Sinoda&laquo;, antwortest du. &raquo;Ich soll eine Wegekarte des Ewigen Waldes anfertigen.&laquo;
@@ -7078,7 +7081,7 @@ Der Jäger lacht; er schätzt dich wegen deiner Ehrlichkeit. &raquo;Nun, dann mu
 Der Jäger schätzt dich wegen deiner Tapferkeit. &raquo;Nun mußt du nur noch aus dem Vimbatja herausfinden. Viel Glück! Gehe von hier aus soweit es geht nach Westen, wende dich dann nach Süden. Folge dem Pfad bis du zum Adlerhorst kommst. Von dort aus gehst du nach Süden bis du zum südlichen Rand des Waldes kommst.&laquo; Du dankst ihm für seine Hilfe, notierst dir die angegebenen Richtungen und machst dich auf den Weg. Weiter bei [[1038]].
 
 ::520
-Es wäre töricht, diesem Mann etwas davon zu erzählen, daß du einem bösen Zauberer dienst. &raquo;Ich diene den Mächten des Guten&laquo;, antwortest du, &raquo;aber zur Zeit will ich lediglich einen Weg aus dem Dschungel finden. Ich suche eine von den Zauberinnen, die sich "die Hüterinnen" nennen.&laquo; Würfle eine Probe auf <i>Überreden (Lügen)</i> +7. Wenn du Erfolg hast, geht es weiter bei [[190]]. Hast du Pech, weiter bei [[726]].
+Es wäre töricht, diesem Mann etwas davon zu erzählen, dass du einem bösen Zauberer dienst. &raquo;Ich diene den Mächten des Guten&laquo;, antwortest du, &raquo;aber zur Zeit will ich lediglich einen Weg aus dem Dschungel finden. Ich suche eine von den Zauberinnen, die sich "die Hüterinnen" nennen.&laquo; Würfle eine Probe auf <i>Überreden (Lügen)</i> +7. Wenn du Erfolg hast, geht es weiter bei [[190]]. Hast du Pech, weiter bei [[726]].
 
 ::190
 Zum Glück glaubt er dir die Geschichte. &raquo;Gut, du gehst in die richtige Richtung&laquo;, sagt er. &raquo;Genau im Osten wohnt die Hüterin der Schlangen, die eine gute und weise Hexe ist und eine sehr mächtige noch dazu.&laquo; Du dankst ihm für seine Auskünfte und gehst weiter. Weiter bei [[1038]].
@@ -7411,7 +7414,7 @@ Die Lichtung hat drei Ausgänge. Wohin wirst du dich wenden? Nach
 
 ::1345
 Du befindest dich an der Stelle, an der du vom Jagdgras angegriffen worden bist. 
-Du eilst über die Lichtung und hoffst, daß das Jagdgras nicht schnell genug reagiert. Doch dieses Mal wächst es noch schneller und bewegt sich von allen Seiten auf dich zu. Die grünen Grasbüschel strecken hungrig ihre feingliedrigen Wurzeln nach dir. Wenn du zaubern willst oder mit der Waffe nach ihnen schlägst, geht es weiter bei [[894]]. Wenn du einen Matrixkristall gebrauchst, weiter bei [[887]].
+Du eilst über die Lichtung und hoffst, dass das Jagdgras nicht schnell genug reagiert. Doch dieses Mal wächst es noch schneller und bewegt sich von allen Seiten auf dich zu. Die grünen Grasbüschel strecken hungrig ihre feingliedrigen Wurzeln nach dir. Wenn du zaubern willst oder mit der Waffe nach ihnen schlägst, geht es weiter bei [[894]]. Wenn du einen Matrixkristall gebrauchst, weiter bei [[887]].
 
 ::894
 Du schlägst mit der Waffe auf das Jagdgras ein. Die Büschel sind zwar leicht zu treffen, aber immer mehr wachsen nach. Kämpfe gegen das Djadurzak wie gegen einen einzigen Feind.
@@ -7547,7 +7550,7 @@ Der Todes-Kristall lässt das Wesen erbeben bevor es schließlich leblos in sich
 
 
 ::253
-An einigen Zeichen erkennst du, daß der Pfad vor kurzer Zeit von anderen benutzt wurde. Vor dir liegt eine weitere Lichtung.
+An einigen Zeichen erkennst du, dass der Pfad vor kurzer Zeit von anderen benutzt wurde. Vor dir liegt eine weitere Lichtung.
 
 <i>Dies ist Lichtung 26</i>.
 
@@ -7579,7 +7582,7 @@ Du hast die Wahl zwischen drei Pfaden, die von der Lichtung wegführen. Wohin wi
 - Süden? Weiter bei [[231]]
 
 ::165
-Du greifst die Echsenmenschen an. Sie sind von deinem Mut überrascht, aber sie lassen ihre Blasrohre fallen und greifen nach ihren Äxten. Du hast Glück, daß sie keine gewandten Kämpfer sind, denn sie greifen dich alle gleichzeitig an.
+Du greifst die Echsenmenschen an. Sie sind von deinem Mut überrascht, aber sie lassen ihre Blasrohre fallen und greifen nach ihren Äxten. Du hast Glück, dass sie keine gewandten Kämpfer sind, denn sie greifen dich alle gleichzeitig an.
 
 <i>Die Werte der Achaz-Krieger:</i>
 MU 14, KL 12, IN 13, CH 10, FF 10, GE 15, KO 14, KK 14
@@ -7592,7 +7595,7 @@ Die Achaz-Krieger greifen in jeder Kampfrunde einmal mit einem <i>Wuchtschlag</i
 Wenn du siegst, geht es weiter bei [[382]].
 
 ::382
-Du durchsuchst die Leichen der echsischen Stammeskrieger. Ihre Waffen sind schlecht, und ihr Proviant sieht so widerwärtig aus, daß du ihn nicht einmal anfaßt. Einer jedoch hat einen Beutel mit grünen, ungeschliffenen Achaten im Wert von etwa 10 Dukaten, die du deinen hinzufügst, und ein anderer hat eine grobe Karte! Als du sie mit deiner eigenen vergleichst, findest du bald deinen gegenwärtigen Standort, aber du erfährst wenig Neues. Direkt im Osten ist jedoch ein Bild eines Frosches mit einer Krone auf dem Kopf. Weiter bei [[1336]].
+Du durchsuchst die Leichen der echsischen Stammeskrieger. Ihre Waffen sind schlecht, und ihr Proviant sieht so widerwärtig aus, dass du ihn nicht einmal anfaßt. Einer jedoch hat einen Beutel mit grünen, ungeschliffenen Achaten im Wert von etwa 10 Dukaten, die du deinen hinzufügst, und ein anderer hat eine grobe Karte! Als du sie mit deiner eigenen vergleichst, findest du bald deinen gegenwärtigen Standort, aber du erfährst wenig Neues. Direkt im Osten ist jedoch ein Bild eines Frosches mit einer Krone auf dem Kopf. Weiter bei [[1336]].
 
 (set:$Visit_Lichtung_26 to 2)
 (set:$Erfolg_Achaz_Krieger to 1)
@@ -7609,14 +7612,14 @@ Du springst zur Seite. Ein Blasrohrpfeile verfehlt dich; der andere trifft eine 
 Würfle einen W20. Ist die Zahl gerade, geht es weiter bei [[856]]. Ist sie ungerade, weiter bei [[506]].
 
 ::856
-Auch diese beiden Blasrohrpfeile sind schlecht gezielt ... aber sie beschreiben eine Kurve und bohren sich in ungerüstete Stellen. Du nimmst durch jeden Blasrohrpfeil 7 SP. Wenn du noch lebst, erkennst du, daß der goldene Anhänger in der Form eines echsischen Auges, den du dem toten Kämpfer abgenommen hast, verflucht ist, denn er zieht Geschoße an. Er war das Verderben seines letzten Besitzers und hat auch beinahe dich das Leben gekostet. Die Achaz-Krieger greifen schon wieder nach ihren Blasrohrpfeilen. Wirst du
+Auch diese beiden Blasrohrpfeile sind schlecht gezielt ... aber sie beschreiben eine Kurve und bohren sich in ungerüstete Stellen. Du nimmst durch jeden Blasrohrpfeil 7 SP. Wenn du noch lebst, erkennst du, dass der goldene Anhänger in der Form eines echsischen Auges, den du dem toten Kämpfer abgenommen hast, verflucht ist, denn er zieht Geschoße an. Er war das Verderben seines letzten Besitzers und hat auch beinahe dich das Leben gekostet. Die Achaz-Krieger greifen schon wieder nach ihren Blasrohrpfeilen. Wirst du
 
 - mit einem Zauber oder mit der Waffe angreifen? Weiter bei [[165]]
 - einen Matrixkristall benutzen? Weiter bei [[593]]
 - um dein Leben rennen? Weiter bei [[1336]]
 
 ::506
-Auch diese beiden Blasrohrpfeile sind schlecht gezielt ... aber sie beschreiben einen Bogen und treffen deinen Rucksack! Einer dringt hindurch, richtet aber nur geringen Schaden an. Du nimmst 1 SP. Dir wird klar, daß der goldene Anhänger in der Form eines echsischen Auges verflucht ist und Geschoße anzieht ... Du hattest Glück, daß du ihn in den Rucksack gesteckt und nicht am Körper getragen hast. Wirst du
+Auch diese beiden Blasrohrpfeile sind schlecht gezielt ... aber sie beschreiben einen Bogen und treffen deinen Rucksack! Einer dringt hindurch, richtet aber nur geringen Schaden an. Du nimmst 1 SP. Dir wird klar, dass der goldene Anhänger in der Form eines echsischen Auges verflucht ist und Geschoße anzieht ... Du hattest Glück, dass du ihn in den Rucksack gesteckt und nicht am Körper getragen hast. Wirst du
 
 - mit einem Zauber oder mit der Waffe angreifen? Weiter bei [[165]]
 - einen Matrixkristall anwenden? Weiter bei [[593]]
@@ -7635,7 +7638,7 @@ Der Furcht-Kristall gegen die Achaz-Krieger schlägt einen von ihnen in die Fluc
 (set:$Kristall_Furcht to $Kristall_Furcht-1)
 
 ::55
-Mit dem Illusions-Kristall erzeugst du das Bild einer giftigen Schlange zwischen dir und den Achaz-Kriegern. Aber sie scheinen nicht beunruhigt zu sein, sondern kommen immer näher ... und als einer der Echsenmenschen sich über die Schlange beugt, sich die Lippen leckt und sie zu fangen versucht, weißt du, daß du die falsche Illusion gewählt hast. Du mußt mit ihnen kämpfen, weiter bei [[165]].
+Mit dem Illusions-Kristall erzeugst du das Bild einer giftigen Schlange zwischen dir und den Achaz-Kriegern. Aber sie scheinen nicht beunruhigt zu sein, sondern kommen immer näher ... und als einer der Echsenmenschen sich über die Schlange beugt, sich die Lippen leckt und sie zu fangen versucht, weißt du, dass du die falsche Illusion gewählt hast. Du mußt mit ihnen kämpfen, weiter bei [[165]].
 
 (set:$Kristall_Illusion to $Kristall_Illusion-1)
 
@@ -7867,7 +7870,7 @@ Du benutzt den Welken-Kristall. Der Schleim ändert seine Farbe von grün zu bra
 (set:$Kristall_Welken to $Kristall_Welken-1)
 
 ::47
-Du wendest den Eis-Kristall gegen den Schleim an. Sofort merkst du, daß du die richtige Wahl getroffen hast; der Schleim besteht größtenteils aus Wasser, und der Kristall läßt ihn zu Eis erstarren. Der Schleim ist tot. Weiter bei [[60]].
+Du wendest den Eis-Kristall gegen den Schleim an. Sofort merkst du, dass du die richtige Wahl getroffen hast; der Schleim besteht größtenteils aus Wasser, und der Kristall läßt ihn zu Eis erstarren. Der Schleim ist tot. Weiter bei [[60]].
 
 (set:$Kristall_Eis to $Kristall_Eis-1)
 
@@ -7925,7 +7928,7 @@ Der Pfad führt leicht abwärts und der Dschungel wird immer feuchter. Eine bunt
 
 <i>Dies ist Lichtung 29</i>.
 
-(if:$Visit_Lichtung_29==1)Weiter bei [[1054]].(else:)In der Mitte der Lichtung liegt ein weißes Tier. Zuerst denkst du, es sei ein Pferd, aber als es sich dir zuwendet, erkennst du, daß es ein Einhorn ist. Es scheint verwundet zu sein; große Klauen haben seine Flanke aufgerissen und ein rot gefiederter Blasrohrpfeil steckt in seinem Hinterlauf. Aber es kommt auf die Beine, senkt sein Horn und schnaubt herausfordernd.
+(if:$Visit_Lichtung_29==1)Weiter bei [[1054]].(else:)In der Mitte der Lichtung liegt ein weißes Tier. Zuerst denkst du, es sei ein Pferd, aber als es sich dir zuwendet, erkennst du, dass es ein Einhorn ist. Es scheint verwundet zu sein; große Klauen haben seine Flanke aufgerissen und ein rot gefiederter Blasrohrpfeil steckt in seinem Hinterlauf. Aber es kommt auf die Beine, senkt sein Horn und schnaubt herausfordernd.
 
 Weiter bei [[1260]].
 
@@ -7962,7 +7965,7 @@ Du wendest den Furcht-Zauber gegen das Einhorn an. Es wiehert und galoppiert dav
 (set:$Kristall_Furcht to $Kristall_Furcht-1)
 
 ::307
-Du willst das verletzte Einhorn nicht angreifen, da du immer gehört hast, daß es gute Tiere sind. Statt dessen aktivierst du einen Lebens-Kristall. Das Tier erzittert, dann wiehert es voller Freude auf. Die Wunden an seiner Flanke sind fast geheilt, und das Einhorn ist jetzt viel kräftiger. Es widerstrebt ihm immer noch, sich einem Menschen zu nähern, aber es läuft an den Rand der Lichtung und gräbt mit dem Horn im Boden. Dann blickt es dich an und läuft fort. Als du die Stelle betrachtest, an der es gegraben hat, findest du drei kristallomantische Zauberjuwelen. Du erkennst einen als Freundschafts-Kristall, einen Illusions-Kristall und den Dritten als einen zur Wiederherstellung von Astralkraft. Du bedankst dich bei dem Einhorn und bist sicher, dass es dich versteht. Dann setzt du deinen Weg fort. Weiter bei [[916]].
+Du willst das verletzte Einhorn nicht angreifen, da du immer gehört hast, dass es gute Tiere sind. Statt dessen aktivierst du einen Lebens-Kristall. Das Tier erzittert, dann wiehert es voller Freude auf. Die Wunden an seiner Flanke sind fast geheilt, und das Einhorn ist jetzt viel kräftiger. Es widerstrebt ihm immer noch, sich einem Menschen zu nähern, aber es läuft an den Rand der Lichtung und gräbt mit dem Horn im Boden. Dann blickt es dich an und läuft fort. Als du die Stelle betrachtest, an der es gegraben hat, findest du drei kristallomantische Zauberjuwelen. Du erkennst einen als Freundschafts-Kristall, einen Illusions-Kristall und den Dritten als einen zur Wiederherstellung von Astralkraft. Du bedankst dich bei dem Einhorn und bist sicher, dass es dich versteht. Dann setzt du deinen Weg fort. Weiter bei [[916]].
 
 (set:$Kristall_Leben to $Kristall_Leben-1)
 (set:$Kristall_Freundschaft to $Kristall_Freundschaft+1)
@@ -7992,7 +7995,7 @@ Das Einhorn greift Gegner die vor ihm stehen mit dem Horn an. Da es sich um eine
 Zu deinem Glück ist es schon schwer verwundet. Du mußt zwei Runden lang gegen das Einhorn kämpfen, dann kannst du fliehen, wodurch das Einhorn aber einen Passierschlag ausführen kann; gelingt es dir zu fliehen, weiter bei [[916]]. Wenn du das Einhorn jedoch tötest, geht es weiter bei [[286]].
 
 ::286
-Das Einhorn ist tot. Da du weißt, daß das Horn eines Einhorns große magische Kräfte hat, schneidest du es ab und steckst es in dein Gepäck. Wenn du nun fortgehen willst, geht es weiter bei [[916]]. Ziehst du es vor zu bleiben und die Lichtung zu untersuchen, weiter bei [[301]].
+Das Einhorn ist tot. Da du weißt, dass das Horn eines Einhorns große magische Kräfte hat, schneidest du es ab und steckst es in dein Gepäck. Wenn du nun fortgehen willst, geht es weiter bei [[916]]. Ziehst du es vor zu bleiben und die Lichtung zu untersuchen, weiter bei [[301]].
 
 (set:$Erfolg_Alicorn to 1)
 (set:$AP to $AP+25)
@@ -8368,7 +8371,7 @@ Misslingt die Probe, so geht dir die Kraft aus und du stürzt in den Fluss. Weit
 Der Fluß ist warm, und deine Eisscholle schmilzt unter dir weg. Viel zu früh fällt sie auseinander. Du ergreifst deine Ausrüstung und springst ins Wasser. Weiter bei [[1082]].
 
 ::1082
-Du beginnst zu schwimmen, bemerkst jedoch bald, daß deine Bewegungen eine sich im Wasser bewegende "Turbulenz" anlocken. Werden deine Kraft und Gewandtheit ausreichen? Würfle eine <i>Schwimmen</i>-Probe +0. Bleiben dir mehr als 3 TaP*, dann bist du der Ansicht, es schaffen zu können, und schwimmst mit kräftigen Stößen auf das Nordufer zu. Weiter bei [[637]]. Schaffst du die Probe nicht oder bleiben dir nicht genug Talentpunkte übrig, dann holen dich die Wasserbewegungen schnell ein. Weiter bei [[1012]].
+Du beginnst zu schwimmen, bemerkst jedoch bald, dass deine Bewegungen eine sich im Wasser bewegende "Turbulenz" anlocken. Werden deine Kraft und Gewandtheit ausreichen? Würfle eine <i>Schwimmen</i>-Probe +0. Bleiben dir mehr als 3 TaP*, dann bist du der Ansicht, es schaffen zu können, und schwimmst mit kräftigen Stößen auf das Nordufer zu. Weiter bei [[637]]. Schaffst du die Probe nicht oder bleiben dir nicht genug Talentpunkte übrig, dann holen dich die Wasserbewegungen schnell ein. Weiter bei [[1012]].
 
 ::1012
 Das Wasser ringsum wirbelt und sprudelt, als würde eine unsichtbare Hand unsichtbare Kieselsteine hineinwerfen. Du reißt den Mund vor Entsetzen auf – Flussfetzer! – und spürst auch schon, wie sich ihre nadelspitzen Zähne in dein Fleisch bohren. Du schlägst mit Armen und Beinen um dich und teilst Hiebe aus, um dir die gierigen Blutfische vom Leib zu halten. Es wird ein harter Kampf.
@@ -8546,7 +8549,7 @@ Mit Leichtigkeit erreichst du das andere Ufer.
 Weiter bei (if:$Richtung=="Osten")[[1309]](else:)[[1288]](endif:).
 
 ::714
-Beim Hinüberwaten wirst du nicht angegriffen, aber als du das andere Ufer erreichst, stellst du angeekelt fest, daß sich $Anzahl große Blutegel an deinen Beinen festgesaugt haben. Wirst du
+Beim Hinüberwaten wirst du nicht angegriffen, aber als du das andere Ufer erreichst, stellst du angeekelt fest, dass sich $Anzahl große Blutegel an deinen Beinen festgesaugt haben. Wirst du
 
 - die Egel mit einer WELLE DER REINIGUNG töten? Weiter bei [[24]]
 - die Egel vorsichtig einzeln mit einem scharfen Messer entfernen? Weiter bei [[1168]]
@@ -9239,7 +9242,7 @@ Du drehst um und verlässt die Lichtung mit den Kakteen in Richtung Norden. Weit
 
 
 ::1035
-Der Pfad, auf dem du dich vorwärtsarbeitest, ist nach oben so dicht zugewachsen, daß du das Gefühl hast, dich in einem Tunnel zu befindest.
+Der Pfad, auf dem du dich vorwärtsarbeitest, ist nach oben so dicht zugewachsen, dass du das Gefühl hast, dich in einem Tunnel zu befindest.
 An einer Stelle hängen große, im Dämmerlicht violett schimmernde Früchte herab, die entfernt an Feigen erinnern.
 
 <i>Dies ist Lichtung 41.</i> 
@@ -9297,7 +9300,7 @@ Weiter bei Abschnitt [[640]].
 (set:$Erfolg_Rauschgurke to 3)
 
 ::46
-Der Pfad führt nach Westen durch den dichten Dschungel und beständig aufwärts. Der Boden um dich herum ist etwas trockener, und hier und da erblickst du die schroffen Felswände der engen Bergibgsschlucht durch die du wanderst. Schließlich verengt sich die Schlucht auf eine Breite von nur etwa zehn Schritt. Der Boden ist hier von Moos und Farnen bewachsen zwischen denen du ganze Anhäufungen Eitriger Krötenschemeln erkennen kannst.
+Der Pfad führt nach Westen durch den dichten Dschungel und beständig aufwärts. Der Boden um dich herum ist etwas trockener, und hier und da erblickst du die schroffen Felswände der engen Gebirgsschlucht durch die du wanderst. Schließlich verengt sich die Schlucht auf eine Breite von nur etwa zehn Schritt. Der Boden ist hier von Moos und Farnen bewachsen zwischen denen du ganze Anhäufungen Eitriger Krötenschemeln erkennen kannst.
 
 <i>Dies ist Lichtung 42</i>.
 
@@ -9310,10 +9313,10 @@ Weiter bei [[469]].
 Du betrittst wieder die Lichtung, auf der du der schwarz gepunkteten Maraske begegnet bist. Es ist ruhig, und du blickst dich suchen um. Weiter bei [[469]].
 
 ::966
-Du betrittst wieder die Lichtung, auf der du der schwarz gepunkteten Maraske besiegt hast. Es ist ruhig, und du blickst dich suchen um. Da du nichts weiter bemerkst überquest du leise die Lichtung. Weiter bei [[392]].
+Du betrittst wieder die Lichtung, auf der du der schwarz gepunkteten Maraske besiegt hast. Es ist ruhig, und du blickst dich suchen um. Da du nichts weiter bemerkst überquerst du leise die Lichtung. Weiter bei [[392]].
 
 ::759
-Du betrittst wieder die Lichtung, auf der du der schwarz gepunkteten Maraske begegnet bist. Es ist ruhig, und du bemerkst, dass sie immer noch auf der Lichtung verweilt, gerade so als bewache sie diesen Ort. Da dir von ihr keine Gefahr mehr droht überquest du leise die Lichtung. Weiter bei [[392]].
+Du betrittst wieder die Lichtung, auf der du der schwarz gepunkteten Maraske begegnet bist. Es ist ruhig, und du bemerkst, dass sie immer noch auf der Lichtung verweilt, gerade so als bewache sie diesen Ort. Da dir von ihr keine Gefahr mehr droht überquerst du leise die Lichtung. Weiter bei [[392]].
 
 ::469
 Plötzlich bemerkst du eine riesige graue Maraske mit schwarzen Punkten, die dich beobachtet. Dies ist bemerkenswert da Maraskantaranteln ausnahmslos grellrote und gelbe Tupfen auf ihrem Körper tragen. Von Exemplaren mit <i>schwarzen</i> Tupfen hast du noch nie gehört. Zudem ist es die mit Abstand größte Maraske, die du je gesehen hast.
@@ -9326,7 +9329,7 @@ Plötzlich bemerkst du eine riesige graue Maraske mit schwarzen Punkten, die dic
 <img src="[@ModuleUrl]/maraske.png" width="100%">
 
 ::1384
-Da das Tier sich dir gegenüber nicht aggressiv verhält, dannst du es in Ruhe studieren. Es ist wirklich ein Prachtexemplar, das weit über das normale Alter seiner Spezies hinaus gewachsen ist.
+Da das Tier sich dir gegenüber nicht aggressiv verhält, kannst du es in Ruhe studieren. Es ist wirklich ein Prachtexemplar, das weit über das normale Alter seiner Spezies hinaus gewachsen ist.
 
 <i>Die Werte der schwarz gepunkteten Maraske (entspricht einem Alter von 18 Jahren):</i>
 INI 18+1W6, AT 15, TP 1W6+9* (Stachel)
@@ -9358,7 +9361,7 @@ Du holst die Salbe hervor die dir die Hüterin der Marasken geschenkt hat und re
 Weiter bei [[1384]].
 
 ::230
-Die schwarz gepunktete Maraske gibt ein wütendes Fauchen und angriffslustiges Schnarren von sich. Du hörst das grauenerregende Geräusch ihrer acht langen Beinen, die sich mit unglaublicher Geschwindigkeit nähern als sie wild auf dich zutrampelt, den Schwanz mit dem tödlichen Stachel hoch erhoben.
+Die schwarz gepunktete Maraske gibt ein wütendes Fauchen und angriffslustiges Schnarren von sich. Du hörst das grauenerregende Geräusch ihrer acht langen Beinen, die sich mit unglaublicher Geschwindigkeit nähern als sie wild auf dich zu trampelt, den Schwanz mit dem tödlichen Stachel hoch erhoben.
 
 <i>Die Werte der schwarz gepunkteten Maraske:</i>
 INI 24, AT 19, TP 1W6+9* (Stachel)
@@ -9367,7 +9370,7 @@ GS 9, MR 36, WS 10
 Besondere Kampfregeln und -manöver: Großer Gegner, Gezielter Angriff (würfelt die Maraske eine 1 auf eine Attacke - egal ob diese bestätigt wird - so verursacht der Angriff SP statt TP), Finte, Gezielter Stich, Meisterparade, Gegenhalten, Aufmerksamkeit, Kampfreflexe
 
 Die schwarz gepunktete Maraske greift in jeder Kampfrunde mit einem <i>Gezielten Stich</i> an. Da sie ein großer Gegner ist kann ihrem Angriff nur ausgewichen werden.
-Du kannst während des Kampfes auch versuchen zu fiehen, weiter bei [[653]], wobei die Maraske dadurch einen Passierschlag erhält, dich aber nicht verfolgt.
+Du kannst während des Kampfes auch versuchen zu fliehen, weiter bei [[653]], wobei die Maraske dadurch einen Passierschlag erhält, dich aber nicht verfolgt.
 
 Wenn du sie besiegst, geht es weiter bei [[315]].
 
@@ -9429,7 +9432,7 @@ Du folgst einem verwucherten Trampelpfad, der dich zu einer kleinen Bucht führt
 
 <i>Dies ist Lichtung 43</i>.
 
-(if:$Visit_Lichtung_43==1)Weiter bei [[1340]].(else:)Hier muß früher ein Dorf gewesen sein. Deutlich sind Reste von Grundmauem und die Ruine eines Gebäudes mit Bogengängen auszumachen, deren Überbleibsel wie die abgenagten Rippen eines großen Tieres wirken. Der einstige Marktplatz in der Dorfmitte ist gerade noch zu erahnen. Moose, Farne und Sträucher mit beeindruckend großen Blättern überwuchern den Kadaver dieser einstigen Ortschaft.
+(if:$Visit_Lichtung_43==1)Weiter bei [[1340]].(else:)Hier muß früher ein Dorf gewesen sein. Deutlich sind Reste von Grundmauern und die Ruine eines Gebäudes mit Bogengängen auszumachen, deren Überbleibsel wie die abgenagten Rippen eines großen Tieres wirken. Der einstige Marktplatz in der Dorfmitte ist gerade noch zu erahnen. Moose, Farne und Sträucher mit beeindruckend großen Blättern überwuchern den Kadaver dieser einstigen Ortschaft.
 
 Weiter bei [[401]].
 (endif:)
@@ -9452,7 +9455,7 @@ Wirst du
 
 - die Bucht mit dem verfallenen Dorf verlassen? Weiter bei [[1067]]
 - dich den Ruinen nähern um sie genauer zu untersuchen? Weiter bei [[350]]
-- in einem weiten Bogen um die Dorfruine herungehen und die Bucht genauer in Augenschein nehmen? Weiter bei [[1372]]
+- in einem weiten Bogen um die Dorfruine herumgehen und die Bucht genauer in Augenschein nehmen? Weiter bei [[1372]]
 
 ::1372
 Du hältst dich am Rande des Dschungels und wanderst, mit einem gewissen Respektabstand, um die Dorfruine herum. Da hier am Waldrand mehr Licht auf die unteren Bereiche des Urwaldes fällt, wuchert das Unterholz hier besonders üppig.
@@ -9490,7 +9493,7 @@ Andernfalls musst du bei [[407]] eine neue Wahl treffen.
 
 ::1063
 Du erkennst eine reine, magische Aura deren Intensität auf der Gildenmagischen Entsprechung der Khadil-Okharim Skala wohl als <i>sehr viel</i> einzustufen wäre. Starke Kraftfäden breiten sich wie baumartige Verästelungen in alle Richtungen aus, bilden Dolden und verlockend leuchtende Blüten, während sich ihre Wurzeln tief in die Astralebene erstrecken.
-Deine profunde Kenntnis in der Magiekunde lässt dich vermuten, dass der Zauber etwas herbeizurufen vermag, etwas anlockt. Anhand der beeindruckenden Länge der Dendriten des Astralkonstrukts kanns du einschätzen, dass der Wirkungsradius sicherlich weit über die Bucht hinausgeht.
+Deine profunde Kenntnis in der Magiekunde lässt dich vermuten, dass der Zauber etwas herbeizurufen vermag, etwas anlockt. Anhand der beeindruckenden Länge der Dendriten des Astralkonstrukts kannst du einschätzen, dass der Wirkungsradius sicherlich weit über die Bucht hinausgeht.
 
 Weiter bei [[407]].
 
@@ -9504,7 +9507,7 @@ Weiter bei [[1067]].
 Vorsichtig näherst du dich der Platzmitte und entdeckst dort ein steinernes Becken, vermutlich einst eine Zisterne um Regenwasser zu sammeln und nutzbar zu machen. Du streichst die Blattwedel der Dajinsmäntel zur Seite um es genauer betrachten zu können.
 In den Stein wurde etwas eingeritzt, eine komplexe Arkanoglyphe, echsischen Ursprungs. Die echsischen Symbole sind teils verwittert, doch unverkennbar zeigt die Kernglyphe das unheimliche Symbol des Srf'Srf, des insektengestaltigen H'Ranga aus dem Zeitalter der Insektoiden Rassen.
 Mit weit aufgerissenen Augen realisierst du, dass das Zeichen aktiviert wurde und mit Sicherheit den <i>Krabbelnden Schrecken</i> des Dschungels entfesselt.
-Weniger rätselhaft ist das folgende brummende Geräusch, das du plötzlich über deinem Kopf vernimmst. Ehe du dich zur Flucht wenden kannst, schwebt unmittelbar über dir und umd dich herum ein Schwarm wütender Tarschoggyn-Wespen. Diese grünschillernde, daumengroße Wespenart ist für ihr gefährliches Gift bekannt, dass selbst Menschen die einem Schwarm zum Opfer fallen schnell töten kann.
+Weniger rätselhaft ist das folgende brummende Geräusch, das du plötzlich über deinem Kopf vernimmst. Ehe du dich zur Flucht wenden kannst, schwebt unmittelbar über dir und um dich herum ein Schwarm wütender Tarschoggyn-Wespen. Diese grünschillernde, daumengroße Wespenart ist für ihr gefährliches Gift bekannt, dass selbst Menschen die einem Schwarm zum Opfer fallen schnell töten kann.
 
 Weiter bei [[1240]].
 
@@ -9635,7 +9638,7 @@ Weiter bei (if:$Hinterhalt==1)[[1310]](else:)[[174]](endif:).
 (set:$Visit_Lichtung_44 to 1)
 
 ::174
-Gerade erkennst du vier kleine Bewegungen in dem von Pflanzen überwuchersten Wasser unter dir, da schießen auch schon einige Blasrohrpfeile auf dich zu.
+Gerade erkennst du vier kleine Bewegungen in dem von Pflanzen überwucherten Wasser unter dir, da schießen auch schon einige Blasrohrpfeile auf dich zu.
 
 <i>Die Werte der vier Achaz-Jäger:</i>
 INI 19, FK 23, TP 1W6-1* SP (Blasrohr)
@@ -9654,7 +9657,7 @@ Sobald einer der Achaz-Jäger getötet oder Kampfunfähig (LeP 5 oder kleiner) w
 Kommst du lebend davon, geht es weiter bei [[404]].
 
 ::1310
-Dein Instinkt hat dich nicht getrügt und du erkennst vier kleine Bewegungen in dem von Pflanzen überwuchersten Wasser unter dir. Vier Achaz-Jäger zielen bereits mit ihren Blasrohren auf dich.
+Dein Instinkt hat dich nicht getrügt und du erkennst vier kleine Bewegungen in dem von Pflanzen überwucherten Wasser unter dir. Vier Achaz-Jäger zielen bereits mit ihren Blasrohren auf dich.
 
 <i>Die Werte der vier Achaz-Jäger:</i>
 INI 19, FK 23, TP 1W6-1* SP (Blasrohr)
@@ -9665,7 +9668,7 @@ Besondere Kampfregeln: Hinterhalt (10), Gezielter Schuss, Scharfschütze
 
 Die Achaz-Jäger schießen in jeder Kampfrunde einmal auf Reichweite <i>Weit</i> (AT +8) mit <i>Gezielten Schüssen</i> auf ungerüstete Stellen (AT +7), im Falle eines Treffers richten sie daher direkt SP an, wodurch das Waffengift auf den Pfeilen zum Einsatz kommt. Die Wirkung des Waffengiftes ist kumulativ, bei jedem Treffer muss erneut eine <i>Konstitutions</i>-Probe +5 gegen das Gift bestanden werden.
 
-Die achaz-Jäger schießen jede Runde einmal auf dich. Du kannst ihren Schüssen um 8 erschwert ausweichen, da du die Köpfe der Jäger zwischen den Schlingpflanzen im Wasser erkennen kannst.
+Die Achaz-Jäger schießen jede Runde einmal auf dich. Du kannst ihren Schüssen um 8 erschwert ausweichen, da du die Köpfe der Jäger zwischen den Schlingpflanzen im Wasser erkennen kannst.
 
 Sobald einer der Achaz-Jäger getötet oder Kampfunfähig (LeP 5 oder kleiner) wird, tauchen sie ab und verschwinden im dichten Mangrovenwald. Du kannst auch versuchen zu flüchten, dabei dürfen die Achaz-Jäger jedoch jeder einen Schuss auf dich abgeben, dem du nicht ausweichen kannst.
 
@@ -10059,7 +10062,7 @@ Weiter bei [[292]].
 
 
 ::779
-Das sumpfige Dickicht durch das dein Weg führt scheint kein Ende nehmen zu wollen. Hier und da erkennst du Spuren von Maraskan-Achaz die diesen Weg regelmäßig zu nutzen scheinen. Immer wieder musst du feststellen, dass der trügerische Boden unter dem dichten grünen Bewuchs von Sumpflöchern übersäät ist in denen du schnell versinken könntest wenn du dich nicht vorsichtig vorantastest.
+Das sumpfige Dickicht durch das dein Weg führt scheint kein Ende nehmen zu wollen. Hier und da erkennst du Spuren von Maraskan-Achaz die diesen Weg regelmäßig zu nutzen scheinen. Immer wieder musst du feststellen, dass der trügerische Boden unter dem dichten grünen Bewuchs von Sumpflöchern übersät ist in denen du schnell versinken könntest wenn du dich nicht vorsichtig voran tastest.
 Du kämpfst dich durch ein Gewirr aus in vollem Saft stehendem Astwerk der hier überall dicht wuchernden Brettwurzelbäume. Ihre hellgrünen Blättern mit elfenbeinfarbenem Rand scheinen sich wie Wände vor dir aufzubauen und dir den Weg versperren zu wollen.
 An einer Stelle erkennst du eine größere Zahl von Achaz-Fußspuren im Unterholz die zu einer von Brettwurzelbäumen gesäumten Lichtung führen.
 
@@ -10172,7 +10175,7 @@ Du folgst dem breiten Band aus Mangroven und erreichst eine Stelle an der Baumst
 
 <i>Dies ist Lichtung 49</i>.
 
-(if:$Visit_Lichtung_49==2)Weiter bei [[1094]].(endif:)(if:$Visit_Lichtung_49==1)Weiter bei [[544]].(endif:)(if:$Visit_Lichtung_49==0)Bislang scheinen die Echsenmenschen dich nicht entdeckt zu haben, wenn du dich jedoch in den freien Bereich zwischen den Mangroven hinauswagst, werden sie dich ohne Zweifel bemerken. Als der Wind dreht weht er vom Wasser einen übelen Geruch herüber. Du blickst genauer hin und kannst einen dunkelgraugrünen Algenteppich erkennen der sich zwischen dir und den Echsen im Wasser ersteckt.
+(if:$Visit_Lichtung_49==2)Weiter bei [[1094]].(endif:)(if:$Visit_Lichtung_49==1)Weiter bei [[544]].(endif:)(if:$Visit_Lichtung_49==0)Bislang scheinen die Echsenmenschen dich nicht entdeckt zu haben, wenn du dich jedoch in den freien Bereich zwischen den Mangroven hinauswagst, werden sie dich ohne Zweifel bemerken. Als der Wind dreht weht er vom Wasser einen üblen Geruch herüber. Du blickst genauer hin und kannst einen dunkelgraugrünen Algenteppich erkennen der sich zwischen dir und den Echsen im Wasser erstreckt.
 
 Weiter bei [[1139]].
 (endif:)
@@ -10194,7 +10197,7 @@ Wirst du
 - offen auf die Echsenmenschen zugehen? Weiter bei [[879]]
 
 ::879
-Als du dich auf den offnen Bereich hinauswagst und durch den übelrichenden Algenteppich watest, blicken die Echsenmenschen verwundert in deine Richtung. Du hörst zischelnde Rufe und erkennst, dass sie ihre Waffen ziehen.
+Als du dich auf den offenen Bereich hinauswagst und durch den übelriechenden Algenteppich watest, blicken die Echsenmenschen verwundert in deine Richtung. Du hörst zischelnde Rufe und erkennst, dass sie ihre Waffen ziehen.
 
 Plötzlich brodelt es um dich herum und ein Strang des Algenteppichs erhebt sich zielstrebig wie ein Arm aus dem Wasser. Du zögerst und blickst dich um, da siehst du auch schon drei weitere solche Fangarme die wie lange Tentakel nach dir greifen. Die Algen scheinen zu einem einzigen dämonischen Wesen zu gehören, dass dich zu packen versucht.
 
@@ -10255,7 +10258,7 @@ Wenn du noch einen Furcht-Kristall besitzt kannst du versuchen mit ihm die Marus
 Wenn du siegst, geht es weiter bei [[554]].
 
 ::549
-Der Furcht-Kristall läßt die Marus vor Entsetzen erstarren. Sie lassen ihre Waffen fallen und fliehen brüllend in den Mangrovenwald. Die Kristallomanten scheinen von der Wirkung des Kristalls jedoch nicht betroffen zu sein.
+Der Furcht-Kristall lässt die Marus vor Entsetzen erstarren. Sie lassen ihre Waffen fallen und fliehen brüllend in den Mangrovenwald. Die Kristallomanten scheinen von der Wirkung des Kristalls jedoch nicht betroffen zu sein.
 
 Weiter bei [[763]].
 
@@ -10320,7 +10323,7 @@ GS 7, MR 8, WS 7
 Besondere Kampfregeln und -manöver: Finte, Wuchtschlag, Aufmerksamkeit, Kampfreflexe
 Die Achaz-Krieger greifen in jeder Kampfrunde einmal mit einem <i>Wuchtschlag</i>+4 an.
 
-Wenn du gewinnst, weiter bei [[729]]. Geht es dir an den Kragen, kannst du fliehen. Weiter bei [[1042]] – aber vergiß nicht, die Passierschläge für die Flucht auszuwürfeln.
+Wenn du gewinnst, weiter bei [[729]]. Geht es dir an den Kragen, kannst du fliehen. Weiter bei [[1042]] – aber vergiss nicht, die Passierschläge für die Flucht auszuwürfeln.
 
 (set:$Visit_Achaz_Sklaven to 2)
 
@@ -10391,8 +10394,8 @@ Du wanderst leise den Höhlengang zurück der dich in den gewaltigen Höhlendom 
 Du flüchtest zurück durch den Höhlengang der dich in den gewaltigen Höhlendom geführt hat. Weiter bei [[167]].
 
 ::98
-Würfle eine <i>Falschspiel</i>-Probe +3, oder eine <i>Fingerfertigkeit</i>-Probe +10. Wenn du Erfolg hast, merken sie nicht, daß du betrügst und du kommst damit durch. Würfle mit zwei Würfeln, um zu sehen, wieviele Dukaten du gewinnst. Schließlich bedankst du dich bei ihnen und verlässt ihre Höhle. Weiter bei [[1042]].
-Wenn du die Probe jedoch nicht schaffst, entdecken die Achaz, daß du beim Austeilen die Karten von der Unterseite des Stapels wegnimmst. Sie greifen nach den hinter ihnen an der Wand lehnenden Äxten und bedrohen dich. Weiter bei [[745]].
+Würfle eine <i>Falschspiel</i>-Probe +3, oder eine <i>Fingerfertigkeit</i>-Probe +10. Wenn du Erfolg hast, merken sie nicht, dass du betrügst und du kommst damit durch. Würfle mit zwei Würfeln, um zu sehen, wieviele Dukaten du gewinnst. Schließlich bedankst du dich bei ihnen und verlässt ihre Höhle. Weiter bei [[1042]].
+Wenn du die Probe jedoch nicht schaffst, entdecken die Achaz, dass du beim Austeilen die Karten von der Unterseite des Stapels wegnimmst. Sie greifen nach den hinter ihnen an der Wand lehnenden Äxten und bedrohen dich. Weiter bei [[745]].
 
 ::241
 Du folgst dem Höhlengang, der in Richtung Süden verläuft und sich dann nach Westen wendet. Nach einiger Zeit stößt er auf einen anderen, querverlaufenden Gang. Du kannst auf dem Weg entweder nach Geheimgängen Ausschau halten (weiter bei [[352]]) oder geradewegs auf den Quergang zugehen (weiter bei [[592]]).
@@ -10414,8 +10417,8 @@ Du befindest dich in einer Ost-West-Passage. Willst du nach Osten gehen, weiter 
 Der Höhlengang fuhrt nach Osten, dann ein Stück weiter nach Süden, dann wieder nach Osten und hört schließlich ganz auf. Willst du das tote Ende genauer untersuchen (weiter bei [[952]]) oder zur Kreuzung zurückkehren (weiter bei [[958]])?
 
 ::158
-Du redest über dies und das und sie legen ein durchaus freundschaftliches Gebaren an den Tag. Sie fühlen sich in dieser Höhle und in dieser kalten Umgebung einsam und sind glücklich, sich mit jemandem zu unterhalten, der ihre Sprache spricht und noch einen Sinn für Gerechtigkeit hat. Sie sagen dir, daß du dich in den Höhlen von Damasgorra befindest, einer mächtigen Drachin, die sie mit einem Zauberbann beherrscht.
-Der Weg durch dieses Höhlensystem, das ein verborgenes Bergtal mit der Außenwelt verbindet, führt zunächst noch tiefer hinein. Um den Weg in dieses Bergtal zu finden, mußt du diese Höhle verlassen, dich nach rechts wenden, dann wieder rechts abbiegen, das nächste Mal links, dann gerade weiter gehen … und dann wird ihre Wegbeschreibung etwas unklar. Sie sind nicht ganz sicher, daß sie richtig ist.
+Du redest über dies und das und sie legen ein durchaus freundschaftliches Gebaren an den Tag. Sie fühlen sich in dieser Höhle und in dieser kalten Umgebung einsam und sind glücklich, sich mit jemandem zu unterhalten, der ihre Sprache spricht und noch einen Sinn für Gerechtigkeit hat. Sie sagen dir, dass du dich in den Höhlen von Damasgorra befindest, einer mächtigen Drachin, die sie mit einem Zauberbann beherrscht.
+Der Weg durch dieses Höhlensystem, das ein verborgenes Bergtal mit der Außenwelt verbindet, führt zunächst noch tiefer hinein. Um den Weg in dieses Bergtal zu finden, musst du diese Höhle verlassen, dich nach rechts wenden, dann wieder rechts abbiegen, das nächste Mal links, dann gerade weiter gehen … und dann wird ihre Wegbeschreibung etwas unklar. Sie sind nicht ganz sicher, dass sie richtig ist.
 Wenn du möchtest, kannst du sie fragen, ob du mitspielen darfst: Weiter bei [[1126]]. Oder du dankst ihnen und verlässt ihre Höhle. Weiter bei [[1042]].
 
 (set:$Visit_Achaz_Sklaven to 1)
@@ -10571,7 +10574,7 @@ Du stehst an der Ecke einer Gangbiegung. Im Norden scheint der Weg nicht weiterz
 Du bist in einem schmalen Nord-Süd-Gang, der im Norden bald aufhört. Du kannst das tote Gangende inspizieren (weiter bei [[200]]) oder zur Kreuzung zurückkehren (weiter bei [[958]]).
 
 ::1333
-Er faucht und versteckt sich hinter seinem Steinbecken. Dein drohendes Gebaren erschreckt ihn. Mit leisem Zischeln erklärt er dir, dass er der Drachin Damasgorra dient. Du redest auf ihn ein und versicherst ihm, daß du keinerlei böse Absichten hast, so daß er schließlich wieder hinter seinem Steinbecken hervorkommt und sich hinsetzt. Als er sein Selbstvertrauen wiedergefunden hat, geschieht etwas Seltsames. Plötzlich wird sein Verhalten bestimmt und selbstsicher. Er greift in seinen Schuppenbeutel und holt einen Kristall heraus. Du schließt daraus, daß er ein Kristallomant ist, der über magische Kräfte verfügt. Willst du
+Er faucht und versteckt sich hinter seinem Steinbecken. Dein drohendes Gebaren erschreckt ihn. Mit leisem Zischeln erklärt er dir, dass er der Drachin Damasgorra dient. Du redest auf ihn ein und versicherst ihm, dass du keinerlei böse Absichten hast, so dass er schließlich wieder hinter seinem Steinbecken hervorkommt und sich hinsetzt. Als er sein Selbstvertrauen wiedergefunden hat, geschieht etwas Seltsames. Plötzlich wird sein Verhalten bestimmt und selbstsicher. Er greift in seinen Schuppenbeutel und holt einen Kristall heraus. Du schließt daraus, dass er ein Kristallomant ist, der über magische Kräfte verfügt. Willst du
 
 - ihn fragen wie es kommt, dass er Damasgorra dient? Weiter bei [[553]]
 - ihn nach dem Weg aus dem Höhlensystem fragen? Weiter bei [[395]]
@@ -10582,18 +10585,18 @@ Er faucht und versteckt sich hinter seinem Steinbecken. Dein drohendes Gebaren e
 (set:$Erfolg_Achaz_Meister to 2)
 
 ::395
-Du fragst ihn nach dem Weg aus dem Höhlensystem. Er sagt, du sollst diese Höhle in Richtung Süden verlassen, bei der Kreuzung geradeaus gehen, bis es nicht mehr weiter geht, und dich dann links halten. Die nächste Kreuzung mußt du überqueren und bei der übernächsten rechts abbiegen.
+Du fragst ihn nach dem Weg aus dem Höhlensystem. Er sagt, du sollst diese Höhle in Richtung Süden verlassen, bei der Kreuzung geradeaus gehen, bis es nicht mehr weiter geht, und dich dann links halten. Die nächste Kreuzung musst du überqueren und bei der übernächsten rechts abbiegen.
 
 - Wenn du seinen Rat befolgst, die Höhle nach Süden verlässt und dann geradeaus weiter gehst bis zur zweiten Kreuzung: Weiter bei [[921]]
 - Wenn du die Höhle nach Süden verlässt, dann aber deinen Weg selbst bestimmst: Weiter bei [[1204]]
-- Wenn du die Höhle durch den Gang in der Westwand verläßt: Weiter bei [[1158]]
+- Wenn du die Höhle durch den Gang in der Westwand verlässt: Weiter bei [[1158]]
 
 ::871
 Du befragst ihn wie du zu Damasgorra gelangen kannst um dem edlen Geschöpf deine Ehrerbietung zu erweisen. Er sagt, du sollst diese Höhle in Richtung Süden verlassen, bei der Kreuzung geradeaus gehen, bis es nicht mehr weiter geht, und dich dann links halten. Die nächste Kreuzung mußt du überqueren und bei der übernächsten nach Norden gehen.
 
 - Wenn du seinen Rat befolgst, die Höhle nach Süden verlässt und dann geradeaus weiter gehst bis zur zweiten Kreuzung: Weiter bei [[921]]
 - Wenn du die Höhle nach Süden verlässt, dann aber deinen Weg selbst bestimmst: Weiter bei [[1204]]
-- Wenn du die Höhle durch den Gang in der Westwand verläßt: Weiter bei [[1158]]
+- Wenn du die Höhle durch den Gang in der Westwand verlässt: Weiter bei [[1158]]
 
 ::553
 Er berichtet dir davon, dass die alte Drachin ihm während seiner Jugend in Träumen erschien. Sie zeigte ihm verborgene Wege der Kristallomantie die ihn über die "schamanische" Magie seines Lehrmeisters hinauswachsen ließen. Ob seiner Erfolge stieg er schnell zu einer angesehenen Position seines Stammes auf, doch die Drachin forderte seine Untergebenheit und drohte ihm die gegebene Macht wieder zu entziehen. Auf ihr Geheiß verließ er also sein heimatliches Dorf auf einer Maraskan vorgelagerten Insel und wagte sich auf einem kleinen Boot über das feindlichen Meer. Auf Maraskan angelangt zeigte sie ihm viel von den Wurzeln seines Volkes und welche Macht sie einst besaßen, denn hier im Ewigen Wald und auch tief in den Bergen gibt es noch Stämme die das Erbe der glänzenden Hochkultur des Ewigen Volkes bis heute bewahrt haben.
@@ -10630,7 +10633,7 @@ Du findest die Höhle nun leer vor. Da es hier sonst nichts weiter gibt machst d
 Weiter bei [[745]].
 (endif:)(if:$Visit_Achaz_Sklaven==1)Als sie dich bemerken begrüßen sie dich fröhlich und fragen dich ob du dich nicht auf ein Spiel zu ihnen gesellen willst. Weiter bei [[1126]]. Oder du lehnst freundlich ab und verlässt ihre Höhle. Weiter bei [[1042]].
 
-(endif:)(if:$Visit_Achaz_Sklaven==0)Als sie dich bemerken, ist es mit ihrer Fröhlichkeit schlagartig vorbei. Sie sind mißtrauisch, scheinen jedoch nicht allzu gefährlich zu sein. Einer steht auf und meint zischend, daß die Tatsache, daß du dich anschleichst, schlechte Manieren verrät. Die anderen nicken zustimmend. Wie wirst du reagieren?
+(endif:)(if:$Visit_Achaz_Sklaven==0)Als sie dich bemerken, ist es mit ihrer Fröhlichkeit schlagartig vorbei. Sie sind misstrauisch, scheinen jedoch nicht allzu gefährlich zu sein. Einer steht auf und meint zischend, dass die Tatsache, dass du dich anschleichst, schlechte Manieren verrät. Die anderen nicken zustimmend. Wie wirst du reagieren?
 
 - Du plauderst in der Absicht, dich mit ihnen anzufreunden: Weiter bei [[158]]
 - Du entschuldigst dich, und machst auf dem Absatz kehrt: Weiter bei [[1042]]
@@ -10680,7 +10683,7 @@ Du gelangst an eine Kreuzung. Welchen Weg willst du einschlagen?
 (if:$Erfolg_Zwerg_Licht==2)Du beobachtest das <i>Licht des verborgenen Pfades</i> eine Weile während sein glitzerndes Leuchten sich in Richtung Süden einpendelt.(endif:)
 
 ::1233
-&raquo;Du schon wieder?&laquo;, zischt der alte Achaz, sichtlich verärgert über die Störung. &raquo;Du störst meine Konzentration. Verschwinde!&laquo; Du willst ihm erklären, daß du nur aus Versehen zurückgekommen bist, doch sobald du den Mund öffnest, bringt dich ein eisiger Blick des alten Echsenmenschen zum Schweigen.
+&raquo;Du schon wieder?&laquo;, zischt der alte Achaz, sichtlich verärgert über die Störung. &raquo;Du störst meine Konzentration. Verschwinde!&laquo; Du willst ihm erklären, dass du nur aus Versehen zurückgekommen bist, doch sobald du den Mund öffnest, bringt dich ein eisiger Blick des alten Echsenmenschen zum Schweigen.
 
 Du kannst dich entschließen, nichts weiter zu unternehmen, und die Höhle entweder durch den Ausgang in der Westwand (weiter bei [[1158]]) oder in der Südwand (weiter bei [[1204]]) verlassen. Außerdem kannst du dennoch versuchen, mit dem alten Echsenmenschen zu reden (weiter bei [[1040]]), oder ihn mit der Waffe bedrohen und dazu auffordern, deine Fragen zu beantworten (weiter bei [[701]]).
 
@@ -10720,7 +10723,7 @@ Am toten Ende entdeckst du keine weiterführende Felsnischen, aber du kannst dic
 Plötzlich hört der Weg auf. Du kannst entweder zur Kreuzung zurückkehren (weiter bei [[167]]) oder nach einer verborgenen Abzweigung suchen (weiter bei [[1347]]).
 
 ::592
-Du machst dich auf den Weg und stellst fest, daß du dich in der Mitte einer Kreuzung zweier Höhlengänge befindest. In Richtung Norden kannst du in einiger Entfernung eine größere Höhle erahnen. Im Süden kannst du eine Wegkreuzung erkennen. Du entscheidest dich für
+Du machst dich auf den Weg und stellst fest, dass du dich in der Mitte einer Kreuzung zweier Höhlengänge befindest. In Richtung Norden kannst du in einiger Entfernung eine größere Höhle erahnen. Im Süden kannst du eine Wegkreuzung erkennen. Du entscheidest dich für
 
 - Westen: Weiter bei [[571]]
 - Norden: Weiter bei [[1204]]
@@ -10733,7 +10736,7 @@ Du machst dich auf den Weg und stellst fest, daß du dich in der Mitte einer Kre
 Du findest weder Felsnischen noch unscheinbare Abzweigungen. Als du jedoch die Felswände abtastest, berührst du plötzlich etwas weiches, schwammiges. Eine Wolke von Pilzsporen hüllt dich ein, dir wird schwindelig und du sinkst zu Boden. Als du wieder zu dir kommst, hat sich deine Umgebung seltsam verändert. Weiter bei [[94]].
 
 ::423
-Der alte Achaz starrt dich fragend an, als du das Höhlengewölbe betrittst. Du kannst dich entweder entschuldigen, ihm erklären, daß du dich verirrt hast, und die Höhle entweder durch den Ausgang in der Westwand (weiter bei [[1158]]) oder in der Südwand (weiter bei [[1204]]) verlassen, oder du kannst versuchen, mit dem alten Echsenmenschen zu reden. Willst du mit ihm sprechen, kannst du entweder höflich sein (weiter bei [[1040]]) oder ihn bedrohen und dazu auffordern, deine Fragen zu beantworten (weiter bei [[701]]).
+Der alte Achaz starrt dich fragend an, als du das Höhlengewölbe betrittst. Du kannst dich entweder entschuldigen, ihm erklären, dass du dich verirrt hast, und die Höhle entweder durch den Ausgang in der Westwand (weiter bei [[1158]]) oder in der Südwand (weiter bei [[1204]]) verlassen, oder du kannst versuchen, mit dem alten Echsenmenschen zu reden. Willst du mit ihm sprechen, kannst du entweder höflich sein (weiter bei [[1040]]) oder ihn bedrohen und dazu auffordern, deine Fragen zu beantworten (weiter bei [[701]]).
 
 (set:$Erfolg_Achaz_Meister to 1)
 
@@ -10744,7 +10747,7 @@ Würfle eine <i>Überreden (Einschüchtern)</i>-Probe +7. Wenn sie dir gelingt, 
 Vielleicht hast du Glück, vielleicht aber auch Pech. Du hast zwei Wahlmöglichkeiten:
 
 1. Du kannst dein Schicksal den Karten überlassen. Würfle mit zwei Würfeln. Ist die Summe gerade, verlierst du diese Anzahl von Dukaten oder dein restliches Geld, wenn du nicht mehr so viel hast. Ist die Summe ungerade, gewinnst du die geworfene Anzahl Dukaten.
-2. Du kannst versuchen, ob dir das Schicksal beim Gewinnen hilft. Verwende einen Schicksalspunkt. Dann würfle mit zwei Würfeln, um zu sehen, wieviele Dukaten du gewinnst. Außerdem erhältst du den Vorteil Glück, solange du dich in den Höhlen Damasgorras befindest.
+2. Du kannst versuchen, ob dir das Schicksal beim Gewinnen hilft. Verwende einen Schicksalspunkt. Dann würfle mit zwei Würfeln, um zu sehen, wie viele Dukaten du gewinnst. Außerdem erhältst du den Vorteil Glück, solange du dich in den Höhlen Damasgorras befindest.
 
 Danach dankst du ihnen und verlässt ihre Höhle. Weiter bei [[1042]].
 
@@ -10752,7 +10755,7 @@ Danach dankst du ihnen und verlässt ihre Höhle. Weiter bei [[1042]].
 Du folgst dem Höhlengang ein paar Schritt und kommst dann an ein totes Ende. Du kannst entweder an die Kreuzung zurückkehren (weiter bei [[94]]) oder das Gangende genau inspizieren (weiter bei [[1391]]).
 
 ::367
-Du befindest dich an einem Punkt, an dem der Weg einen Knick macht, so daß du entweder nach Westen oder nach Süden gehen kannst.
+Du befindest dich an einem Punkt, an dem der Weg einen Knick macht, so dass du entweder nach Westen oder nach Süden gehen kannst.
 
 - Du gehst nach Westen: Weiter bei [[921]]
 - Du gehst nach Süden: Weiter bei [[472]]
@@ -10788,7 +10791,7 @@ Weiter bei [[1042]].
 Du gehst ein paar Schritte nach Westen, dann macht die Höhle eine Biegung nach Norden. Nach einiger Zeit kommst du an eine Wegkreuzung. Du kannst dich entweder nach Süden (weiter bei [[957]]) oder nach Westen wenden (weiter bei [[690]]). Der Weg nach Norden mündet in ein totes Gangende. Willst du ihn trotzdem einschlagen, weiter bei [[457]].
 
 ::503
-Du bist am südlichen Ende eines Höhlenganges der in Nord-Süd-Richtung verläuft. Wenn du nach Norden blickst, kannst du sehen, daß an der Ostwand ein Gang abzweigt. Nach Süden endet die Höhle an einer senkrecht abfallenden Felswand. In fünf Schritt Tiefe scheint der Gang weiter nach süden zu führen. (if:$Erfolg_Zwerg_Licht==2)
+Du bist am südlichen Ende eines Höhlenganges der in Nord-Süd-Richtung verläuft. Wenn du nach Norden blickst, kannst du sehen, dass an der Ostwand ein Gang abzweigt. Nach Süden endet die Höhle an einer senkrecht abfallenden Felswand. In fünf Schritt Tiefe scheint der Gang weiter nach Süden zu führen. (if:$Erfolg_Zwerg_Licht==2)
 
 Aufmerksam beobachtest du das <i>Licht des verborgenen Pfades</i> und erkennst wie es mitten im Höhlengang plötzlich in westliche Richtung an die Höhlenwand leuchtet.
 
@@ -10882,7 +10885,7 @@ GS 12/3 (fliegend / laufend), MR 30*
 Besondere Kampfregeln: Feuerodem (2 SP pro KR auf 10 Schritt, 1 SP pro KR auf 15 Schritt), gezielter Flammenstrahl, Immunität gegen Feuer, sehr großer Gegner, Flugangriff, Trampeln, Gezielter Angriff (Beißen) / Verbeißen, Gezielter Angriff (Prankenhieb) / Niederwerfen (9) / Umklammern (12, der Drache drückt einen niedergeworfenen Gegner mit der Klaue zu Boden), Niederwerfen (Prankenhieb aus dem Flug)
 * Bei Zaubern mit den Merkmalen <i>Form</i> und <i>Eigenschaften</i> die auf den Purpurwurm gerichtet sind steigen die AsP-Grundkosten auf ein Zehnfaches des angegebenen Wertes.
 
-Wie eine Lawine trifft dich in deinem Kopf eine telepatische Botschaft des Drachen, der Drachin, die sich selbst <i>Damasgorra</i> nennt. Es sind zugleich Worte, Gedanken und Bilder, Drachengebrüll, Sturmwind und Aschenhauch. Dein Leib und dein Geist erbeben unter dem Ansturm der Eindrücke die mit Gewalt über dich hereinbechen. Jeder ihrer Gedanken ist so scharf wie das Messer eines Feldschers, das in das offene Fleisch deines Geistes dringt. Den Inhalt zu verstehen heißt nur ihn aufzunehmen, wo seine Schärfe sich am wenigsten schmerzhaft in deinen begrenzten Verstand fügt. Dich treffen Folgerungen, die zu ziehen du außerstande bist, doch der Kern den alle Gedanken aus dem Nayrakis, der Essenz allen Möglichen, herausschneiden ist so klar und kalt wie klirrendes Eis: &raquo;Verlasse meine Höhle ohne meinen Hort anzurühren, oder dein Geist wird zu Asche zerfallen!&laquo;
+Wie eine Lawine trifft dich in deinem Kopf eine telepathische Botschaft des Drachen, der Drachin, die sich selbst <i>Damasgorra</i> nennt. Es sind zugleich Worte, Gedanken und Bilder, Drachengebrüll, Sturmwind und Aschenhauch. Dein Leib und dein Geist erbeben unter dem Ansturm der Eindrücke die mit Gewalt über dich hereinbechen. Jeder ihrer Gedanken ist so scharf wie das Messer eines Feldschers, das in das offene Fleisch deines Geistes dringt. Den Inhalt zu verstehen heißt nur ihn aufzunehmen, wo seine Schärfe sich am wenigsten schmerzhaft in deinen begrenzten Verstand fügt. Dich treffen Folgerungen, die zu ziehen du außerstande bist, doch der Kern den alle Gedanken aus dem Nayrakis, der Essenz allen Möglichen, herausschneiden ist so klar und kalt wie klirrendes Eis: &raquo;Verlasse meine Höhle ohne meinen Hort anzurühren, oder dein Geist wird zu Asche zerfallen!&laquo;
 
 Damasgorra lässt dir drei Kampfrunden Zeit es dir anders zu überlegen und zu fliehen, weiter bei [[458]]. Andernfalls trifft dich ein mit Freizauberei gewirkter drachischer Zauberzwang (Letzte Warnung) der wohl mit einem bösartigen Fluch verbunden ist.
 Jede aggressive Handlung, jeder Versuch einen Zauber zu wirken oder dich der Drachin zu nähern beantwortet Damasgorra mit einem gezielter Flammenstrahl. Sofern noch keine zwei Kampfrunden seit dem letzten Flammenstrahl vergangen sind zaubert sie stattdessen einen IGNIFAXIUS (ZfW 14) mit 10W6.
@@ -10896,7 +10899,7 @@ Damasgorra rückt ob deiner Unnachgiebigkeit näher und ihr glosender Feuerodem 
 (if:$Erfolg_Damasgorra_Geschenk==0)
 - Du holst einen magischen oder wertvollen Gegenstand als Geschenkt hervor und legst ihn auf den Höhenboden. Weiter bei [[353]](endif:)
 - Du sprichst sie laut und deutlich auf Rssahh an und versucht mit ihr ins Gespräch zu kommen? Weiter bei [[252]]
-- Du versucht eine telepatische Verbindung mittels GEDANKENBILDER aufzubauen? Weiter bei [[192]]
+- Du versucht eine telepathische Verbindung mittels GEDANKENBILDER aufzubauen? Weiter bei [[192]]
 - Du ziehst dich vorsichtig zurück und flüchtest bei der ersten Gelegenheit zum Ausgang? Weiter bei [[458]]
 
 ::252
@@ -10947,8 +10950,8 @@ Welche gedankliche Botschaft wirst du übermitteln:
 Würfle die Zauberprobe auf den GEDANKENBILDER und zieh dir die entsprechenden Astralkosten ab. Wenn dir die Probe gelingt, kannst du bei [[213]] eine Botschaft formulieren. Andernfalls bleibt dir nur eine schnelle Flucht, bevor du im Drachenodem vergehst oder aufgefressen wirst. Weiter bei [[458]].
 
 ::213
-Es gelingt dir deine Gedanken telepatisch zu übermitteln. (if:$Erfolg_Damasgorra_Geschenk==1)Du erinnerst dich aus den Werken Pher Drodonts gelesen zu haben, dass dein Geist so stark sein muss wie der eines Drachen und deine Gedankenbilder so kristallklar sein müssen wie die eines Erzmagus, um dich als würdiger Gesprächspartner zu behaupten. Weiter bei [[403]].
-(else:)Damasgorra senkt ihr riesiges Drachenhaupt zu dir hinab und einen Augenblich glaubst du die Drachin würde dich nun mit Haut und Haaren fressen, doch sie richtet nur ihren BLICK IN DIE GEDANKEN die deinem Geist entspringen und antwortet schließlich mit einem erneuten Sturm an Sinneseindrücken. Die Botschaft die du ihm entnimmst ist: &raquo;Wie kannst du kleine Made es dir anmaßen meine Pracht nicht zu würdigen! Flieh bevor ich doch in glühendem Zorn zu Asche verbrenne!&laquo;
+Es gelingt dir deine Gedanken telepathisch zu übermitteln. (if:$Erfolg_Damasgorra_Geschenk==1)Du erinnerst dich aus den Werken Pher Drodonts gelesen zu haben, dass dein Geist so stark sein muss wie der eines Drachen und deine Gedankenbilder so kristallklar sein müssen wie die eines Erzmagus, um dich als würdiger Gesprächspartner zu behaupten. Weiter bei [[403]].
+(else:)Damasgorra senkt ihr riesiges Drachenhaupt zu dir hinab und einen Augenblick lang glaubst du die Drachin würde dich nun mit Haut und Haaren fressen, doch sie richtet nur ihren BLICK IN DIE GEDANKEN die deinem Geist entspringen und antwortet schließlich mit einem erneuten Sturm an Sinneseindrücken. Die Botschaft die du ihm entnimmst ist: &raquo;Wie kannst du kleine Made es dir anmaßen meine Pracht nicht zu würdigen! Flieh bevor ich doch in glühendem Zorn zu Asche verbrenne!&laquo;
 
 Was wirst du tun?
 
@@ -10958,24 +10961,24 @@ Was wirst du tun?
 (endif:)
 
 ::303
-Damasgorra senkt ihr riesiges Drachenhaupt zu dir hinab und einen Augenblich glaubst du die Drachin würde dich nun mit Haut und Haaren fressen, doch sie richtet nur ihren BLICK IN DIE GEDANKEN die deinem Geist entspringen und antwortet schließlich mit einem erneuten Sturm an Sinneseindrücken. Die Botschaft die du ihm entnimmst ist: &raquo;Geh und finde den Kristallomanten. Was du suchst findest du westlich von seiner Höhle.&laquo;
+Damasgorra senkt ihr riesiges Drachenhaupt zu dir hinab und einen Augenblick lang glaubst du die Drachin würde dich nun mit Haut und Haaren fressen, doch sie richtet nur ihren BLICK IN DIE GEDANKEN die deinem Geist entspringen und antwortet schließlich mit einem erneuten Sturm an Sinneseindrücken. Die Botschaft die du ihm entnimmst ist: &raquo;Geh und finde den Kristallomanten. Was du suchst findest du westlich von seiner Höhle.&laquo;
 
 Weiter bei [[1010]].
 
 (set:$Erfolg_Damasgorra_Ausgang to 1)
 
 ::662
-Damasgorra senkt ihr riesiges Drachenhaupt zu dir hinab und einen Augenblich glaubst du die Drachin würde dich nun mit Haut und Haaren fressen, doch sie richtet nur ihren BLICK IN DIE GEDANKEN die deinem Geist entspringen und antwortet schließlich mit einem erneuten Sturm an Sinneseindrücken. Die Botschaft die du ihm entnimmst ist: &raquo;Töte die Hüterinnen rasch, sie sind wehrhafter als sie aussehen. Du findest sie am Ostrand und am Westrand des südlichen Dschungels. Eine von ihnen versteckt sich nahe der Ruinen der Achaz weit im Nordosten des nördlichen Dschungels.&laquo;
+Damasgorra senkt ihr riesiges Drachenhaupt zu dir hinab und einen Augenblick lang glaubst du die Drachin würde dich nun mit Haut und Haaren fressen, doch sie richtet nur ihren BLICK IN DIE GEDANKEN die deinem Geist entspringen und antwortet schließlich mit einem erneuten Sturm an Sinneseindrücken. Die Botschaft die du ihm entnimmst ist: &raquo;Töte die Hüterinnen rasch, sie sind wehrhafter als sie aussehen. Du findest sie am Ostrand und am Westrand des südlichen Dschungels. Eine von ihnen versteckt sich nahe der Ruinen der Achaz weit im Nordosten des nördlichen Dschungels.&laquo;
 
 Weiter bei [[1010]].
 
 ::577
-Damasgorra senkt ihr riesiges Drachenhaupt zu dir hinab und einen Augenblich glaubst du die Drachin würde dich nun mit Haut und Haaren fressen, doch sie richtet nur ihren BLICK IN DIE GEDANKEN die deinem Geist entspringen und antwortet schließlich mit einem erneuten Sturm an Sinneseindrücken. Die Botschaft die du ihm entnimmst ist: &raquo;Geh vom Adlerhorst erst nach Osten um auf die Felsklippe zu gelangen. Von dort aus halte dich immer nach Norden um das Dorf Rashagan zu erreichen&laquo;
+Damasgorra senkt ihr riesiges Drachenhaupt zu dir hinab und einen Augenblick lang glaubst du die Drachin würde dich nun mit Haut und Haaren fressen, doch sie richtet nur ihren BLICK IN DIE GEDANKEN die deinem Geist entspringen und antwortet schließlich mit einem erneuten Sturm an Sinneseindrücken. Die Botschaft die du ihm entnimmst ist: &raquo;Geh vom Adlerhorst erst nach Osten um auf die Felsklippe zu gelangen. Von dort aus halte dich immer nach Norden um das Dorf Rashagan zu erreichen&laquo;
 
 Weiter bei [[1010]].
 
 ::356
-Damasgorra senkt ihr riesiges Drachenhaupt zu dir hinab und einen Augenblich glaubst du die Drachin würde dich nun mit Haut und Haaren fressen, doch sie richtet nur ihren BLICK IN DIE GEDANKEN die deinem Geist entspringen und antwortet schließlich mit einem erneuten Sturm an Sinneseindrücken. Die Botschaft die du ihm entnimmst ist: &raquo;Fliege über den Dschungel und suche nach dem verborgenen Tal. Auf seinem Grund wirst du finden wonach du suchst.&laquo;
+Damasgorra senkt ihr riesiges Drachenhaupt zu dir hinab und einen Augenblick lang glaubst du die Drachin würde dich nun mit Haut und Haaren fressen, doch sie richtet nur ihren BLICK IN DIE GEDANKEN die deinem Geist entspringen und antwortet schließlich mit einem erneuten Sturm an Sinneseindrücken. Die Botschaft die du ihm entnimmst ist: &raquo;Fliege über den Dschungel und suche nach dem verborgenen Tal. Auf seinem Grund wirst du finden wonach du suchst.&laquo;
 
 Weiter bei [[1010]].
 
@@ -11044,7 +11047,7 @@ Andernfalls kannst du bei [[1344]] eine andere Wahl treffen.
 Du schlägst deine Flügel und hebst vorsichtig ab. In fliegender Gestalt gelangst du problemlos an dein Ziel. Weiter bei [[99]].
 
 ::1370
-Ohne Hilfmittel ist die recht glatte Felswand ausgesprochen schwer zu erklettern. Es muss dir eine <i>Klettern</i>-Probe +12 gelingen um nach oben zu gelangen.
+Ohne Hilfsmittel ist die recht glatte Felswand ausgesprochen schwer zu erklettern. Es muss dir eine <i>Klettern</i>-Probe +12 gelingen um nach oben zu gelangen.
 
 Gelingen es dir so erkletterst du die Felswand und kannst dich bei [[99]] umsehen.
 Andernfalls rutscht du vorher wieder hinab und musst bei [[1344]] eine andere Wahl treffen.
@@ -11070,13 +11073,13 @@ Willst du:
 - in die fünf Schritt tiefer gelegene Höhle hinabsteigen, weiter bei [[1120]]
 
 ::1267
-Du erreichst ein Höhlengewölbe voller großer Tropfsteine. Dahinter hört der Boden plötzlich auf. Dies ist die Stelle an der du aus der tiefergelegenen Höhle hinaufgeklettert bist. Willst du:
+Du erreichst ein Höhlengewölbe voller großer Tropfsteine. Dahinter hört der Boden plötzlich auf. Dies ist die Stelle an der du aus der tiefer gelegenen Höhle hinaufgeklettert bist. Willst du:
 
 - dem Höhlengang zurück nach Westen folgen, weiter bei [[995]]
 - in die fünf Schritt tiefer gelegene Höhle hinabsteigen, weiter bei [[1120]]
 
 ::1120
-Der Abstieg fällt dir außerordentlich leicht und du erreichst ohne Umschweife den tiefergelegenen Höhlenabschnitt. Weiter bei [[1334]].
+Der Abstieg fällt dir außerordentlich leicht und du erreichst ohne Umschweife den tiefer gelegenen Höhlenabschnitt. Weiter bei [[1334]].
 
 ::995
 Der Höhlengang nach Westen ist voller Stalgmiten und Stalagtiten. Er macht eine Biegung nach Norden, dann eine nach Westen, dann schlängelt er sich eine ganze Zeit lang nach Westen dahin, bis du schließlich Tageslicht vor dir erkennen kannst. Du gehst
@@ -11105,7 +11108,7 @@ Du erreichst einen großen Höhleneingang. Im Schatten gewaltiger Urwaldriesen f
 ::653
 Du erreichst das östliche Ende der Gebirgsschlucht. Im Schatten gewaltiger Urwaldriesen führt eine Geröllhalde etwa ein dutzend Schritt hinauf zu einem riesigen Höhleneingang. Willst du:
 
-- die Gerällhalde hinaufsteigen und in die Höhle marschieren, weiter bei [[1203]]
+- die Geröllhalde hinaufsteigen und in die Höhle marschieren, weiter bei [[1203]]
 - in den Urwald zurückkehren, weiter bei [[46]]
 
 ::627
@@ -11129,7 +11132,7 @@ Würfle 2W6. Welche ist die Summe des Wurfes:
 - 12, weiter bei [[1446]]
 
 ::186
-Tatsächlich hast du einen echsischen Schuppenbeutel gestohlen, der sieben rotblitzende Granatsteine enthält, die im Rosettenschliff geschnitten wurden. Alle bis auf einen sind 30 katärige Juwelen, der siebte jedoch, ist ganze 100 Karat groß und in ein filigranes Mondsilber eingefasst, das stilisierte Blätter und Sterne darstellt.
+Tatsächlich hast du einen echsischen Schuppenbeutel gestohlen, der sieben rotblitzende Granatsteine enthält, die im Rosettenschliff geschnitten wurden. Alle bis auf einen sind 30 karätige Juwelen, der siebte jedoch, ist ganze 100 Karat groß und in ein filigranes Mondsilber eingefasst, das stilisierte Blätter und Sterne darstellt.
 
 In der <i>Ringkunde</i> von Gandolf von Gareth hast du bereits von den <i>Gemmen der Gedankenbilder</i> gelesen und tatsächlich bestätigt ein ANALYS, dass es sich um ein solches Artefakt der Verständigungsmagie handelt.
 
@@ -11207,7 +11210,7 @@ Weiter bei [[216]].
 ::434
 Tatsächlich hast du einen kunstvoll geschmiedeten, echsischen Stirnreif aus Amulettmetall gestohlen, in den eine Arkanoglyphe eingraviert ist.
 
-Du deutest das Zauberzeichen als ein inaktives Schutzzeichen gegen Zauberei, das den Gegestand vor Ver- oder Entzauberung schützen soll.
+Du deutest das Zauberzeichen als ein inaktives Schutzzeichen gegen Zauberei, das den Gegenstand vor Ver- oder Entzauberung schützen soll.
 
 Weiter bei [[216]].
 
@@ -11215,7 +11218,7 @@ Weiter bei [[216]].
 (set:$Erfolg_Damasgorra_Gegenstand to "Stirnreif aus Amulettmetall")
 
 ::1446
-Tatsächlich hast du eine kunstvolle, tulamidische Phiole aus geschliffenem Bergkristal gestohlen, deren Boden und Stopfen aus Mondsilber geformt sind. Auf der Seite der Phiole ist Satinavs Siegel eingraviert.
+Tatsächlich hast du eine kunstvolle, tulamidische Phiole aus geschliffenem Bergkristall gestohlen, deren Boden und Stopfen aus Mondsilber geformt sind. Auf der Seite der Phiole ist Satinavs Siegel eingraviert.
 
 An der Drachenei-Akademie in Khunchom hast du bereits von der <i>Phiole der Wahrung</i> gehört und tatsächlich bestätigt ein ANALYS, dass es sich um ein solches Artefakt der Temporalmagie handelt.
 
@@ -11293,14 +11296,14 @@ Vorsichtig kletterst du zurück. Gänzlich außer Atem erreichst du den Höhlene
 Weiter bei [[1224]].
 
 ::1417
-Der Sims ist schmal, manchmal nur einen Fuß breit. Auf der einen Seite geht es fast hundert Meter senkrecht in die Tiefe, auf der anderen Seite steigt die Wand steil in die Höhe. Bist du überhaupt schwindelfrei und in der Lage, solch gewagte Kletterpartien zu unternehmen? Eine <i>Klettern</i>-Probe +2 muß darüber Auskunft geben. Gelingt die Probe, geht es weiter bei [[1381]]. Mißlingt die Probe, musst du umkehren. Weiter bei [[1153]].
+Der Sims ist schmal, manchmal nur einen Fuß breit. Auf der einen Seite geht es fast hundert Meter senkrecht in die Tiefe, auf der anderen Seite steigt die Wand steil in die Höhe. Bist du überhaupt schwindelfrei und in der Lage, solch gewagte Kletterpartien zu unternehmen? Eine <i>Klettern</i>-Probe +2 muss darüber Auskunft geben. Gelingt die Probe, geht es weiter bei [[1381]]. Misslingt die Probe, musst du umkehren. Weiter bei [[1153]].
 
 ::1381
 Es geht immer steiler bergauf. Tief unter dir siehst du den Urwald, der den Boden der Schlucht bedeckt. Da du bei der Kletterei beide Hände brauchst, musst du dir deine Waffen und Ausrüstungsgegenstände auf den Rücken schnallen. Wenn du lieber umkehren willst, kannst du zu [[1153]] zurückkehren.
 Wenn du weiterkraxeln willst, geht es bei [[321]] noch höher hinauf.
 
 ::321
-Plötzlich ist der Sims zu Ende. Hier geht es auch für den besten Kletterer nicht mehr weiter. Inzwischen hast du wohl auch die Erkenntnis gewonnen, daß das, was in der Tiefe zu suchen ist — nämlich die Geheimnisse des Vimbatja –, nicht in schwindelnder Höhe zu finden sein kann. Bei dem Versuch umzukehren lösen sich unter deinem linken Fuß Gesteinsbrocken – Du bist im Begriff abzustürzen! Der dürre Ast, nach dem du greifst, bricht! Schaffst du es, dich an dem Sims festzuklammern? Eine <i>Klettern</i>-Probe +3 ist notwendig. Mißlingt die Probe, dann stürzt du in die Tiefe, weiter bei [[430]]. Gelingt die Probe, dann hast du zunächst einen Halt gefunden. Deine Hände krallen sich in den Fels. Ob deine Kraft ausreicht, um dich auf den rettenden Sims hochzuziehen, musst du mit einer <i>Klettern</i>-Probe +5 nachweisen. Mißlingt diese, stürzt du ab, weiter bei [[430]]. Gelingt auch diese Probe, kannst du dich hochziehen und vorsichtig zurückklettern, weiter bei [[1153]].
+Plötzlich ist der Sims zu Ende. Hier geht es auch für den besten Kletterer nicht mehr weiter. Inzwischen hast du wohl auch die Erkenntnis gewonnen, dass das, was in der Tiefe zu suchen ist — nämlich die Geheimnisse des Vimbatja –, nicht in schwindelnder Höhe zu finden sein kann. Bei dem Versuch umzukehren lösen sich unter deinem linken Fuß Gesteinsbrocken – Du bist im Begriff abzustürzen! Der dürre Ast, nach dem du greifst, bricht! Schaffst du es, dich an dem Sims festzuklammern? Eine <i>Klettern</i>-Probe +3 ist notwendig. Misslingt die Probe, dann stürzt du in die Tiefe, weiter bei [[430]]. Gelingt die Probe, dann hast du zunächst einen Halt gefunden. Deine Hände krallen sich in den Fels. Ob deine Kraft ausreicht, um dich auf den rettenden Sims hochzuziehen, musst du mit einer <i>Klettern</i>-Probe +5 nachweisen. Misslingt diese, stürzt du ab, weiter bei [[430]]. Gelingt auch diese Probe, kannst du dich hochziehen und vorsichtig zurückklettern, weiter bei [[1153]].
 
 ::430
 Während du deinem sicheren Ende entgegenstürzt, zieht noch einmal dein Heldenleben — deine Taten, deine Kämpfe, deine Siege und Niederlagen — an deinem geistigen Auge vorbei. Es hat sich gelohnt! 
@@ -11335,10 +11338,10 @@ Willst du
 - erst verschnaufen und etwas Kraft sammeln? Weiter bei [[1151]]
 
 ::741
-Würfle eine <i>Klettern</i>-Probe +3 um die Felskante zu erklimmen. Vergiss nicht deine dopplete BE und die Überanstrengung zu addieren. Gelingt die Probe, weiter bei [[1398]]. Andernfalls musst du wohl erst einmal verschnaufen, weiter bei [[1151]].
+Würfle eine <i>Klettern</i>-Probe +3 um die Felskante zu erklimmen. Vergiss nicht deine doppelte BE und die Überanstrengung zu addieren. Gelingt die Probe, weiter bei [[1398]]. Andernfalls musst du wohl erst einmal verschnaufen, weiter bei [[1151]].
 
 ::1151
-Was auch immer sich dort oben gerührt hat, es muss warten. Du setzt dich hin, holst ersteinmal ein genig Luft und benetzt Stirn und Nacken mit etwas Wasser aus deinem Wasserschlauch.
+Was auch immer sich dort oben gerührt hat, es muss warten. Du setzt dich hin, holst erst einmal ein wenig Luft und benetzt Stirn und Nacken mit etwas Wasser aus deinem Wasserschlauch.
 
 Weiter bei [[522]].
 
@@ -11430,7 +11433,7 @@ Weiter bei (if:$Hinterhalt==1)[[557]](else:)[[1001]](endif:).
 Begleitet von einem kurzen Rascheln der Blätter auf den Ästen über deinem Kopf bemerkst du eine schnelle Bewegung. Ein großer, schwarz-geschuppter Leib stößt von dort herab und begräbt seine spitzen Zähne in deinem Nacken. Du nimmst 7 TP (Trefferzone Kopf). Gerade noch rechtzeitig kannst du versuchen dich dagegen zu wehren von der Riesenschlange auf den Baum gezogen zu werden. Erschrocken stellst du fest, dass es sich um eine Boronsotter handelt, die giftigste Schlange Maraskans.
 
 Während sich das lähmende Gift, dass die große Schlange in deinen Leib gespritzt hat, rasch ausbreitet, versucht die Schlange dich auf den Baum zu ziehen und zu erwürgen.
-Deine AT/PA/AW/GE/FF/KO und KK sinken in jeder Kamprunde um 1 und du nimmst in jeder Kampfrunde (if:$Resistenz==1)1(else:)2(endif:) SP.
+Deine AT/PA/AW/GE/FF/KO und KK sinken in jeder Kampfrunde um 1 und du nimmst in jeder Kampfrunde (if:$Resistenz==1)1(else:)2(endif:) SP.
 
 <i>Die Werte der Boronsotter:</i>
 INI 15, AT 16, TP 1W3+1 SP(A) (Würgen)
@@ -11542,7 +11545,7 @@ Da sie nur kurze Zeit genießbar sind musst du dich entscheiden ob du sie nun es
 (if:$Anzahl>0)- eine Wurzel herausziehen und sie essen? Weiter bei [[1343]].(endif:)
 
 ::1343
-Du ziehst den Arganstrauch vorsichtig aus dem verrottenden Stamm des Alveranspfeilers. Die Arganwurzel hat die richtige Größe und Reife und so putzt du sie ab und beisst hinein. Sie schmeckt gut und du fühlst schon nach kurzer Zeit die heilkräftige Wirkung. Deine Lebensenergie steigt während der nächsten Regeneration um 1W6+10 Punkte. Weiter bei [[247]].
+Du ziehst den Arganstrauch vorsichtig aus dem verrottenden Stamm des Alveranspfeilers. Die Arganwurzel hat die richtige Größe und Reife und so putzt du sie ab und beißt hinein. Sie schmeckt gut und du fühlst schon nach kurzer Zeit die heilkräftige Wirkung. Deine Lebensenergie steigt während der nächsten Regeneration um 1W6+10 Punkte. Weiter bei [[247]].
 
 (set:$Anzahl to $Anzahl-1)
 (set:$Erfolg_Argan_Wurzeln to $Erfolg_Argan_Wurzeln+1)
