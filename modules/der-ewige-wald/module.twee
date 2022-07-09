@@ -26,7 +26,7 @@ Du verabschiedest dich auf dem Marktplatz von ihr. &raquo;Ich danke dir für dei
 &raquo;Gib gut darauf acht, er hat mir immer gute Dienste geleistet.&laquo; erklärt sie dir. &raquo;Wenn du in gefährlichen Landen wandelt, streue Sand hinter dich und du verirrst dich nicht. Trage ihn mit meinem Segen.&laquo;
 Eine Stunde später, als du wieder auf der Landstraße marschierst, quält dich deine Neugier und du untersuchst das Geschenk.
 Die alte Frau muss eine mächtige Zauberin gewesen sein, denn der Beutel ist tatsächlich mit starker, fremdartiger Magie durchwoben. Auf der Unterseite des Beutels findest du zwei kleine Zeichen, die in das Leder eingearbeitet wurden und die du als alte echsische Yash'Hualay-Glyphen erkennst. Aufgrund ihres Alters sind sie nur schwer zu entziffern aber Dank deiner Kenntnisse des Chuchas, der Schrift der alten Echsen, kannst du sie als <i>Beutel des Zauberpfades</i> identifizieren.
-Erstaunt stellst du fest, dass das echsische Artefakt in deinen Händen tatsächlich seinen Zweck erfüllt. Streust du eine Spur aus Sand hinter dir hier so leuchtet dieser, jedoch nur für deine Augen, womit du den Weg zurück ganz einfach finden kannst. Außerdem lässt seine Zauberkraft dich auf dem leuchtenden Pfad sicher wandeln. Gefährliches Dornicht oder tückischer Sumpfboden, die auf dem Hinweg schwer zu bezwingen waren, sind auf dem Rückweg kein Hindernis mehr. Solange du den Lederbeutel verwendest, weißt du zudem jederzeit intuitiv wo Norden ist und findest immer sicher den Weg zurück. Selbst im tiefsten Wald oder in den verwinkeltsten Höhlen verirrst du dich niemals. Das Geschenk der alten Frau ist unbezahlbar für einen Abenteurer wie dich!
+Erstaunt stellst du fest, dass das echsische Artefakt in deinen Händen tatsächlich seinen Zweck erfüllt. Streust du eine Spur aus Sand hinter dir her so leuchtet dieser, jedoch nur für deine Augen, womit du den Weg zurück ganz einfach finden kannst. Außerdem lässt seine Zauberkraft dich auf dem leuchtenden Pfad sicher wandeln. Gefährliches Dornicht oder tückischer Sumpfboden, die auf dem Hinweg schwer zu bezwingen waren, sind auf dem Rückweg kein Hindernis mehr. Solange du den Lederbeutel verwendest, weißt du zudem jederzeit intuitiv wo Norden ist und findest immer sicher den Weg zurück. Selbst im tiefsten Wald oder in den verwinkeltsten Höhlen verirrst du dich niemals. Das Geschenk der alten Frau ist unbezahlbar für einen Abenteurer wie dich!
 Und nun entschließt du dich, den Beutel des Zauberpfades seinen Möglichkeiten entsprechend zu nutzen. Das Vimbatja - Der Ewige Wald - mit seinem Gewirr unbekannter Wege könnte die ideale Aufgabe sein!
 Du erinnerst dich an das <a href="http://www.dalijna.de/rpg_sonne_wiki/doku.php?id=dsa:vom_wesen_der_elfischen_kampfkunst" target="_blank">Librum de natura artis combattiva feyaria</a>, ein altes Buch über die Kampfkunst der Elfen, über das die Lotosdschinni El'danariel wacht. In diesem arkanen Werk hast du einige Hinweise entdeckt, dass sich sich tief im Ewigen Wald, die Lebende Lichtung, ein elementares Heiligtum des Humus, befinden soll.
 
@@ -154,7 +154,7 @@ Bevor du in das Vimbatja aufbrichst willst du hier deine Vorräte auffrischen, d
 
 Du wanderst zwischen den Feldern, Obst- und Tabakplantagen die letzten Meilen zur Küste hinab. Schließlich kannst du in einiger Entfernung auch schon die alabasternen Stadtmauern und die höheren Gebäude der Stadt erkennen. Untypischerweise für maraskanische Städte sind die Häuser Sinodas keine hölzernen Türme, sondern Würfel und aus Alabaster erbaut oder damit verkleidet, um der Gefahr des Aldec-Käfers zu begegnen.
 Schiffe ankern im Hafen, und aus den Kaminen steigt Rauch empor. Die Stadt bietet einen friedlichen, geradezu idyllischen Anblick.
-Während du der staubigen Straße folgst, die nach Süden auf das Stadttor zu führt, erblickst du eine Vielzahl fremdländische Sklaven die auf den Plantagen arbeiten, schwer bewaffnete, mittelreichische Soldaten und eingige Kriegsschiffe der Perlenmeerflotte die in der Bucht vor Anker liegen. Von der weißen Stadtmauer hängt die Fahne der Markgrafschaft Sinoda.
+Während du der staubigen Straße folgst, die nach Süden auf das Stadttor zu führt, erblickst du eine Vielzahl fremdländischer Sklaven die auf den Plantagen arbeiten, schwer bewaffnete, mittelreichische Soldaten und eingige Kriegsschiffe der Perlenmeerflotte die in der Bucht vor Anker liegen. Von der weißen Stadtmauer hängt die Fahne der Markgrafschaft Sinoda.
 Unbehelligt passierst du das Stadttor an dem zwei baumlange Wächter in Kettenhemden und eisernen Helmen ihren Dienst versehen.
 
 Du kennst die Stadt Sinoda noch aus deiner Jugend und erinnerst dich an so manche Bekanntschaft die dir während deiner Zeit hier ans Herz gewachsen ist. Jedoch sind so einige Jahre ins Land gezogen seit du Sinoda verlassen hast und vieles hat sich verändert. Weiter bei [[1014]].
@@ -652,7 +652,7 @@ Weiter bei [[1364]].
 (set:$Auftrag_Frenchira to "bekannt")
 
 ::18
-Die <i>Waffenschmiede Garalors</i> befindet sich im Stadtzentrum und als du sie erreichst kommt dir der alte Meister bereits lachend entgegen. &raquo;Bruderschwester! Wie sehr freut es mein Herz dich wiederzusehen!&laquo; Bald schon sitzt ihr bei einem Tee in seinem Haus und erzählt euch gegenseitig was sich in den vergangenen Jahren zugetragen hat. Du berichtest von deinen Abenteuern und Garalor erzählt dir, dass seine Nichte Mahabjida, die du zusammen mit deinen Freunden, vor einigen Jahren gerettet habt, nun als reisende Geschichtenerzählerin oder Laienpredigerin durch das Land zieht um die Menschen an die Schönheit der Welt zu erinnern.
+Die <i>Waffenschmiede Garalors</i> befindet sich im Stadtzentrum und als du sie erreichst kommt dir der alte Meister bereits lachend entgegen. &raquo;Bruderschwester! Wie sehr freut es mein Herz dich wiederzusehen!&laquo; Bald schon sitzt ihr bei einem Tee in seinem Haus und erzählt euch gegenseitig was sich in den vergangenen Jahren zugetragen hat. Du berichtest von deinen Abenteuern und Garalor erzählt dir, dass seine Nichte Mahabjida, die du zusammen mit deinen Freunden, vor einigen Jahren gerettet hast, nun als reisende Geschichtenerzählerin und Laienpredigerin durch das Land zieht um die Menschen an die Schönheit der Welt zu erinnern.
 Garalor selbst ist jedoch alt geworden und arbeitet nun weniger, nur hier und da nimmt er noch vereinzelt Aufträge an wenn die Bezahlung außerordentlich gut und der Auftraggeber von edler Gesinnung ist. (if:$Erfolg_Tuzakmesser==1)Wenn du möchtest kannst du ihm die Klinge des untoten Buskurs zeigen (weiter bei [[576]]).(endif:)
 Nachdem du mit ihm bis in die Abendstunden geplaudert hast verabschiedet ihr euch von einander. Du verlässt die Schmiede und wanderst weiter durch das <i>Abudijianak</i>. Weiter bei [[1364]].
 
@@ -866,7 +866,7 @@ Die beiden Kämpfer stecken ihre Waffen weg. An der fließenden Art ihrer Bewegu
 Er öffnet einen Geheimgang in einem der Waffenschränke und führt dich in ein angrenzendes Zimmer das eingerichtet ist wie eine Bibliothek.
 Auf einem Schreibtisch liegen Seekarten sowie gesiegelte Briefe und verschiedene andere Unterlagen.
 
-An einem Fenster steht ein merkwürdiger Mann, 190 Halbfinger groß mit dünnem, rotbraunem Haar und blassblauen Augen. Er trägt die einfache Kleidung eines Fischers doch seine Hand ruht auf dem Knauf seines Tuzakmessers, des kunstvollsten, das du jemals gesehen hast. Geistesgegenwärtig schließt du, dass du vor Mujiabor stehst, dem für seine Grausamkeit berühmten Anführers der Fren'Chira Marustazzim. Gerüchten zufolge lässt er seine Feinde lebendig eingraben und anschließend Maraskanfedern oder anderes Giftgetier anlocken.
+An einem Fenster steht ein merkwürdiger Mann, 190 Halbfinger groß mit dünnem, rotbraunem Haar und blassblauen Augen. Er trägt die einfache Kleidung eines Fischers doch seine Hand ruht auf dem Knauf seines Tuzakmessers, des kunstvollsten, das du jemals gesehen hast. Geistesgegenwärtig schließt du, dass du vor Mujiabor stehst, dem für seine Grausamkeit berühmten Anführer der Fren'Chira Marustazzim. Gerüchten zufolge lässt er seine Feinde lebendig eingraben und anschließend Maraskanfedern oder anderes Giftgetier anlocken.
 
 Du erzählst ihm deine Geschichte und fragst ihn, ob er nicht jemanden wie dich sucht. &raquo;Ja, natürlich&laquo;, poltert er. Und mit theatralischem Gebaren fügt er hinzu, &raquo;aber warum glaubst du, im Vimbatja überleben zu können, wenn so viele andere darin gestorben sind?&laquo;
 
@@ -985,7 +985,7 @@ Plötzlich fliegt hinter Mujiabor die Türe auf und drei Rebellen stürmen in de
 [[ENDE]]
 
 ::45
-Du grinst über das ganze Gesicht und ziehst ein zusammengerolltes Stück Pergament aus deiner Tasche. Es ist die Karte, die du während deiner Reise sorgfältig immer wieder ergänzt hast. Auf ihr sind deutlich die Pfade eingezeichnet, auf denen du gegangen bist, und die Lichtungen, auf denen du gekämpft hast. Jede Gefahr ist eingezeichnet. Als du sie Mujiabor erklärst, ist er begeistert. Schließlich schlägt er dir freundschaftlich auf die Schulter – und obwohl du stark bist, taumelst du. &raquo;Hamid'za U'schaja!&laquo; sagt er. &raquo;Hervorragend!&laquo; Er greift in eine Schublade und holt einen funkelnden, 100-karätigen, blauen, Topas-Brillanten heraus. &raquo;Nenne es eine Zulage!&laquo; lacht er. &raquo;Meine erster Kampftrupp wird morgen aufbrechen. Sei mein Gast, solange du willst ... und wie ich dir versprochen habe, gehört die Hälfte meines ersten Jahresgewinnes dir.&laquo; Du lächelst und dankst ihm und bist erfreut, dass der geheimnisvolle Anführer der Fren'Chira Marustazzim ein ehrenwerter Mensch ist; vielleicht wirst du ihn eines Tages besser kennen. Aber für den Augenblick hattest du mit deinem Auftrag Erfolg. Damit verabschiedest du dich und verlässt das geheime Versteck der Widerstandskämpfer und kehrst auf die Straßen Sinodas zurück. Weiter bei [[38]].
+Du grinst über das ganze Gesicht und ziehst ein zusammengerolltes Stück Pergament aus deiner Tasche. Es ist die Karte, die du während deiner Reise sorgfältig immer wieder ergänzt hast. Auf ihr sind deutlich die Pfade eingezeichnet, auf denen du gegangen bist, und die Lichtungen, auf denen du gekämpft hast. Jede Gefahr ist eingezeichnet. Als du sie Mujiabor erklärst, ist er begeistert. Schließlich schlägt er dir freundschaftlich auf die Schulter – und obwohl du stark bist, taumelst du. &raquo;Hamid'za U'schaja!&laquo; sagt er. &raquo;Hervorragend!&laquo; Er greift in eine Schublade und holt einen funkelnden, 100-karätigen, blauen, Topas-Brillanten heraus. &raquo;Nenne es eine Zulage!&laquo; lacht er. &raquo;Mein erster Kampftrupp wird morgen aufbrechen. Sei mein Gast, solange du willst ... und wie ich dir versprochen habe, gehört die Hälfte meines ersten Jahresgewinnes dir.&laquo; Du lächelst und dankst ihm und bist erfreut, dass der geheimnisvolle Anführer der Fren'Chira Marustazzim ein ehrenwerter Mensch ist; vielleicht wirst du ihn eines Tages besser kennen. Aber für den Augenblick hattest du mit deinem Auftrag Erfolg. Damit verabschiedest du dich und verlässt das geheime Versteck der Widerstandskämpfer und kehrst auf die Straßen Sinodas zurück. Weiter bei [[38]].
 
 (set:$Auftrag_Frenchira to "gelöst")
 (set:$Erfolg_Topas_Blau to 1)
@@ -3236,8 +3236,8 @@ Nachdem du deine Einkäufe erledigt hast verlässt du das Geschäft wieder. Weit
 ::219
 Gemessenen Schrittes überschreitest du die hölzerne Brücke die sich über den träge dahinfließenden Nura spannt. Du folgst einem schmalen Pfad nach Norden und erreichst den südlichen Rand des Ewigen Waldes. Dank des Beutels des Zauberpfades weißt du immer intuitiv, wo Norden ist ... aber du musst dennoch eine Karte zeichnen! Du beschließt, jeden Pfad, dem du folgst, und jede Lichtung, die du betrittst, aufzuzeichnen, damit du weißt, welchen Weg du nehmen musst, falls du zu einer Lichtung zurückkehrst.
 
-Nebem dem Weg entdeckst du ein abschreckendes Gebilde. Dutzende menschliche Totenköpfe wurden von allen Seiten an den Stamm einer uralten, unheimlichen Boronsweide genagelt. Auf einem Felsen daneben hat jemand in riesigen Buchstaben mit greller Farbe "HALT! VIMBATJA! KEHR UM!" gemalt.
-Mutig schreitest du daran vorbei und betrittst den wuchernden Dschungel. Es wäre verrückt, den Weg zu verlassen und dich durch das von Hakendorn überwucherte Dickicht zu arbeiten; daher folgst du dem Pfad. Alleine und mit nur knapp bemessener Ausrüstung, wäre es verrückt im Vimbatja zu übernachten, doch wenn du nach Jeskajan zurückkehrst, kannst du jederzeit in der Dorfschenke übernachten.
+Neben dem Weg entdeckst du ein abschreckendes Gebilde. Dutzende menschliche Totenköpfe wurden von allen Seiten an den Stamm einer uralten, unheimlichen Boronsweide genagelt. Auf einem Felsen daneben hat jemand in riesigen Buchstaben mit greller Farbe "HALT! VIMBATJA! KEHR UM!" gemalt.
+Mutig schreitest du daran vorbei und betrittst den wuchernden Dschungel. Es wäre verrückt, den Weg zu verlassen und dich durch das von Hakendorn überwucherte Dickicht zu arbeiten; daher folgst du dem Pfad. Alleine und mit nur knapp bemessener Ausrüstung, wäre es nicht ratsam im Vimbatja zu übernachten, doch wenn du nach Jeskajan zurückkehrst, kannst du dich jederzeit in der Dorfschenke wieder erholen.
 
 Weiter bei [[814]].
 
@@ -4978,7 +4978,7 @@ In der Hütte findest du eine Tonflasche mit Argansud der dir 3W6+3 LeP zurückg
 
 - in der Hütte rasten? Weiter bei [[105]]
 - dich in eine astrale Meditation versenken? Weiter bei [[189]]
-- die Lichtung wieder verlassen? Weiter bei [[288]]
+- die Lichtung wieder verlassen? Weiter bei [[2288]]
 
 ::105
 Du lässt dich auf ein Strohlager nieder, dass im hinteren Eck der Hütte liegt. Aufgrund der Hitze und der Mückenplage fällt es dir schwer länger hier zu verweilen.
@@ -5029,7 +5029,7 @@ Dann verabschiedest du dich höflich von ihr und verlässt ihre Hütte. Weiter b
 (set:$Erfolg_Salbe_Marasken to 1)
 
 ::496
-Du aktivierst den Todes-Kristall und er beginnt unheilvoll zu leuchten. Die Hüterin der Marasken greift sich mit schmerzverzerrtem Gesicht an den Hals, hebt aber dennoch ihren Nachtwind. Bevor sie jedoch zu einem Angriff ansetzen kann wird sie von schrecklichen Krämpfen am ganzen Leib in die Knie gezwungen. Sie windet sich unter qualen und bekommt offenbar keine Luft mehr. Dann fühlst du den Rückschlag. Würfle mit einem W20; so viele Lebenspunkte verlierst du. Wenn du noch lebst, kannst du die Hüterin der Marasken mit Leichtigkeit überwinden. Ihre Schoßtiere fliehen panisch in den Dschungel. Weiter bei [[528]].
+Du aktivierst den Todes-Kristall und er beginnt unheilvoll zu leuchten. Die Hüterin der Marasken greift sich mit schmerzverzerrtem Gesicht an den Hals, hebt aber dennoch ihren Nachtwind. Bevor sie jedoch zu einem Angriff ansetzen kann wird sie von schrecklichen Krämpfen am ganzen Leib in die Knie gezwungen. Sie windet sich unter Qualen und bekommt offenbar keine Luft mehr. Dann fühlst du den Rückschlag. Würfle mit einem W20; so viele Lebenspunkte verlierst du. Wenn du noch lebst, kannst du die Hüterin der Marasken mit Leichtigkeit überwinden. Ihre Schoßtiere fliehen panisch in den Dschungel. Weiter bei [[528]].
 
 (set:$Kristall_Tod to $Kristall_Tod-1)
 
@@ -5091,7 +5091,7 @@ Der Dschungel wird lichter und du erreichst ein flache Senke in deren Mitte ein 
 <i>Dies ist Lichtung 6.</i>
 
 (if:$Visit_Lichtung_06==1)Weiter bei [[880]].(else:)Am Rand der Lichtung wächst ein Unterholz aus hüfthohen Sträuchern. Sie tragen silbergraue Blätter, kaum größer als Daumennägel, die metallisch schimmern und träge flüstern, wenn der spärliche Lufthauch sie bewegt.
-Obwohl der Baum schon lange abgestorben ist, blüht er. Vor Jahren hat ihm ein Blitz die Seite aufgerissen und dem Baum eine klaffende Wunde beschert, aus der sein zähes Harz quillt wie dickes Blut. Der bereits alte Kurinbaum wird sich wohl nie mehr von dieser Verletzung erholen, und eine Schar gefräßiger Käfer gibt ihm den Rest.
+Obwohl der Baum, der sich in der Mitte der Lichtung erhebt, schon lange abgestorben ist, blüht er. Vor Jahren hat ihm ein Blitz die Seite aufgerissen und dem Baum eine klaffende Wunde beschert, aus der sein zähes Harz quillt wie dickes Blut. Der bereits alte Kurinbaum wird sich wohl nie mehr von dieser Verletzung erholen, und eine Schar gefräßiger Käfer gibt ihm den Rest.
 Und dennoch steht der Baum scheinbar in voller Blüte.
 
 Du kannst stehenbleiben und diesen Baum bei [[121]] genauer ansehen, oder deinen Weg bei [[1436]] fortsetzen.
@@ -5296,7 +5296,7 @@ Als du dem Pfad nach Osten folgst, dringst du in den Mangrovengürtel vor. Groß
 <i>Dies ist Lichtung 8</i>.
 
 (if:$Visit_Lichtung_08==2)Weiter bei [[930]].(endif:)(if:$Visit_Lichtung_08==1)Weiter bei [[1177]].(endif:)(if:$Visit_Lichtung_08==0)Die Vielfalt in der Rur die Welt erschaffen hat zeigt sich in der prächtigen Pflanzenwelt dieses Ortes nur all zu deutlich. Dein Blick schweift über die wunderschönen Blumen bis du einen hölzernen Pfahlbau erblickst, der von Blattwedeln und Brettwurzeln verdeckt wird. Von der Platform vor der Hütte aus zwinkert dich eine maraskanische Frau mit leuchtenden grünen Augen an. Ihre grün gefärbten langen Haare trägt sie in einer Vielzahl kleiner Filzlocken.
-Um ihren Hals hängt sie ein silbernes Amulett in der Form eines Frosches. Rechts und links von ihr hocken zwei riesige grüne Frösche. &raquo;Ich bin die Hüterin der Frösche, Kröten und Unken&laquo;, begrüßt sie dich. &raquo;Was führt dich zu mir?&laquo;
+Um ihren Hals hängt ein silbernes Amulett in der Form eines Frosches. Rechts und links von ihr hocken zwei riesige grüne Frösche. &raquo;Ich bin die Hüterin der Frösche, Kröten und Unken&laquo;, begrüßt sie dich. &raquo;Was führt dich zu mir?&laquo;
 
 Weiter bei [[609]].
 (endif:)
@@ -5398,7 +5398,7 @@ Einen kristallomantischen Matrixkristall gegen die Hexe anzuwenden, ist riskant.
 - Keinen davon? Weiter bei [[1187]]. Dort kannst du wieder deine Wahl treffen.
 
 ::946
-Du aktivierst den Todes-Kristall und er beginnt unheilvoll zu leuchten. Die Hüterin der Frösche greift sich mit schmerzverzerrtem Gesicht an die Brust. Sie sinkt auf die Knie und fällt dann der Länge nach ins Wasser wo sie von schrecklichen Krämpfen am ganzen Leib gerüttelt wird. Sie windet sich unter qualen und bekommt offenbar keine Luft mehr. Dann fühlst du den Rückschlag. Würfle mit einem W20; so viele Lebenspunkte verlierst du. Wenn du noch lebst, kannst du die Hüterin der Frösche mit Leichtigkeit überwinden. Weiter bei [[1423]].
+Du aktivierst den Todes-Kristall und er beginnt unheilvoll zu leuchten. Die Hüterin der Frösche greift sich mit schmerzverzerrtem Gesicht an die Brust. Sie sinkt auf die Knie und fällt dann der Länge nach ins Wasser wo sie von schrecklichen Krämpfen am ganzen Leib gerüttelt wird. Sie windet sich unter Qualen und bekommt offenbar keine Luft mehr. Dann fühlst du den Rückschlag. Würfle mit einem W20; so viele Lebenspunkte verlierst du. Wenn du noch lebst, kannst du die Hüterin der Frösche mit Leichtigkeit überwinden. Weiter bei [[1423]].
 
 (set:$Kristall_Tod to $Kristall_Tod-1)
 
@@ -7336,7 +7336,7 @@ Der Pfad wird allmählich breiter, und du siehst hier und da Blumen wachsen.
 
 <i>Dies ist Lichtung 23</i>.
 
-(if:$Visit_Lichtung_23==2)Weiter bei [[421]].(endif:)(if:$Visit_Lichtung_23==1)Weiter bei [[1230]].(endif:)(if:$Visit_Lichtung_23==0)Deine Nackenhaare sträuben sich. Irgend etwas stimmt nicht! Dein Instinkt warnt dich. Du schaust dich um, siehst aber nichts außer den schwarzen Blüten, die am Wegesrand in großer Menge wachsen. Dann erinnerst du dich der alten Geschichten über den Schwarzen Nachtschatten. Die Blüten selbst flößen dir die Furcht ein; die Pollen verursachen das Entsetzen. Du zitterst und dein Mut sinkt bis zum nächsten Morgen um 2 Punkte.
+(if:$Visit_Lichtung_23==2)Weiter bei [[421]].(endif:)(if:$Visit_Lichtung_23==1)Weiter bei [[1230]].(endif:)(if:$Visit_Lichtung_23==0)Deine Nackenhaare sträuben sich. Irgend etwas stimmt nicht! Dein Instinkt warnt dich. Du schaust dich um, siehst aber nichts außer den schwarzen Blüten, die am Wegesrand in großer Menge wachsen. Dann erinnerst du dich an die alten Geschichten über den Schwarzen Nachtschatten. Die Blüten selbst flößen dir die Furcht ein; die Pollen verursachen das Entsetzen. Du zitterst und dein Mut sinkt bis zum nächsten Morgen um 2 Punkte.
 
 Weiter bei [[1080]].
 (endif:)
@@ -7648,7 +7648,7 @@ Der Pfad nach Osten führt durch die brüchigen Überreste eines einstigen Echse
 
 <i>Dies ist Lichtung 27</i>.
 
-(if:$Visit_Lichtung_27==2)Weiter bei [[287]].(endif:)(if:$Visit_Lichtung_27==1)Weiter bei [[285]].(endif:)(if:$Visit_Lichtung_27==0)Überall um die Ruinen wachsen Schlingpflanzen und Lianen ... einige Pflanzen blühen und verbreiten einen betörenden Duft. Die ganze Lichtung wirkt auf dich wie ein Monument der elementaren Urgewalt des Dschungels. Als du dich umschaust, bemerkst du, dass sich dir eine junge Maraskanerin nähert. Sie ist groß und sehr schlank, hat schmale Schultern und trägt ein weites, grünes, durchscheinendes Kleid. Dann entdeckst du die Bewegungen zwischen den Schlingpflanzen und Lianen: überall um dich liegen, fast gänzlich regungslos, hunderte von Schlangen in allen Größen. Du erkennst sofort das silberne Schlangenamulett um den Hals der Frau, sie muss die Hüterin der Schlangen sein. Trotz der bedrohlichen Anzahl an Schlangen um dich herum, verrät dir deine Menschenkenntnis, dass die Hüterin der Schlangen dir freundlich gesinnt ist. &raquo;Preise die Schönheit, Bruderschwester!&laquo;, grüßt sie dich. &raquo;Welches Schicksal hat dich ins das Vimbatja verschlagen?&laquo;
+(if:$Visit_Lichtung_27==2)Weiter bei [[287]].(endif:)(if:$Visit_Lichtung_27==1)Weiter bei [[285]].(endif:)(if:$Visit_Lichtung_27==0)Überall um die Ruinen wachsen Schlingpflanzen und Lianen ... einige Pflanzen blühen und verbreiten einen betörenden Duft. Die ganze Lichtung wirkt auf dich wie ein Monument der elementaren Urgewalt des Dschungels. Als du dich umschaust, bemerkst du, dass sich dir eine junge Maraskanerin nähert. Sie ist groß und sehr schlank, hat schmale Schultern und trägt ein weites, grünes, durchscheinendes Kleid. Dann entdeckst du die Bewegungen zwischen den Schlingpflanzen und Lianen: überall um dich liegen, fast gänzlich regungslos, hunderte von Schlangen in allen Größen. Du erkennst sofort das silberne Schlangenamulett um den Hals der Frau, sie muss die Hüterin der Schlangen sein. Trotz der bedrohlichen Anzahl an Schlangen um dich herum, verrät dir deine Menschenkenntnis, dass die Hüterin der Schlangen dir freundlich gesinnt ist. &raquo;Preise die Schönheit, Bruderschwester!&laquo;, grüßt sie dich. &raquo;Welches Schicksal hat dich in das Vimbatja verschlagen?&laquo;
 
 Weiter bei [[1403]].
 (endif:)
@@ -7749,7 +7749,7 @@ Welchen Matrixkristall willst du gegen die Hüterin der Schlangen anwenden:
 - Keinen davon? Weiter bei [[254]]
 
 ::85
-Du aktivierst den Todes-Kristall und er beginnt unheilvoll zu leuchten. Die Hüterin der Schlangen greift sich mit schmerzverzerrtem Gesicht an die Brust. Sie sinkt auf die Knie und fällt dann der Länge nach auf den Dschungelboden wo sie von schrecklichen Krämpfen am ganzen Leib gerüttelt wird. Sie windet sich unter qualen und bekommt offenbar keine Luft mehr. Dann fühlst du den Rückschlag. Würfle mit einem W20; so viele Lebenspunkte verlierst du. Wenn du noch lebst, kannst du die Hüterin der Schlangen mit Leichtigkeit überwinden. Ihre Schlangen fliehen in den Dschungel. Weiter bei [[474]].
+Du aktivierst den Todes-Kristall und er beginnt unheilvoll zu leuchten. Die Hüterin der Schlangen greift sich mit schmerzverzerrtem Gesicht an die Brust. Sie sinkt auf die Knie und fällt dann der Länge nach auf den Dschungelboden wo sie von schrecklichen Krämpfen am ganzen Leib gerüttelt wird. Sie windet sich unter Qualen und bekommt offenbar keine Luft mehr. Dann fühlst du den Rückschlag. Würfle mit einem W20; so viele Lebenspunkte verlierst du. Wenn du noch lebst, kannst du die Hüterin der Schlangen mit Leichtigkeit überwinden. Ihre Schlangen fliehen in den Dschungel. Weiter bei [[474]].
 
 (set:$Kristall_Tod to $Kristall_Tod-1)
 
@@ -9466,7 +9466,7 @@ Weiter bei [[401]].
 
 ::350
 Du gehst vorsichtig in Richtung der Ruinen, wobei du dir den Weg durch hohe Farne und großblättrige Dajinsmäntel bahnst. Ihre dunkelgrünen, herzförmigen Blätter und rötlichen Blütenkolben wuchern hier in einer Üppigkeit, wie man sie nur höchst selten auf Maraskan findet.
-Hier und da erblickst du die Überreste von dicken Pfählen die aus der Erde stehen, großteils überwachsen von den allgegenwärtigen Kletterpflanzen. Da untersuchst die Pfähle und den Boden um sie herum und bemerkst, dass der feuchte Humus mit kalter Asche und Ruß vermischt ist.
+Hier und da erblickst du die Überreste von dicken Pfählen die aus der Erde stehen, großteils überwachsen von den allgegenwärtigen Kletterpflanzen. Du untersuchst die Pfähle und den Boden um sie herum und bemerkst, dass der feuchte Humus mit kalter Asche und Ruß vermischt ist.
 Die Überreste der steinernen Mauern und Bögen, dürften wohl zu einem klassisch maraskanischen Turmbau gehört haben. Da er sich in der Dorfmitte befand, vermutlich der Rur- und Gror-Schrein des Ortes.
 Als du den freien Platz im Zentrum der Ruinen betrittst bemerkst du ein schwaches Leuchten das unter dem Blätterwerk in der Platzmitte aufleuchtet und wieder verschwindet.
 
@@ -11570,3 +11570,7 @@ Es führen zwei Pfade von dem umgestürzten Urwaldriesen in das Unterholz. Wirst
 
 (unset:$Anzahl)
 
+::2288
+Du hast zwei Möglichkeiten. Wenn du nach Osten gehst, weiter bei [[794]]. Wendest du dich lieber nach Westen, geht es weiter bei [[327]].
+
+(set:$Visit_Lichtung_04 to 2)
