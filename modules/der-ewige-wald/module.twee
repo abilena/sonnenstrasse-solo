@@ -57,7 +57,7 @@ $AP AP
 <div class="achievements"><!--
 	--><div data-achieved="(if:$Auftrag_Praioziber==="gelöst")true(else:)false(endif:)" data-name="Praioziber und der Axorda-König"></div><!--
 	--><div data-achieved="(if:$Auftrag_Frenchira==="gelöst")true(else:)false(endif:)" data-name="Mujiabor und die Fren'Chira Marustazzim"></div><!--
-	--><div data-achieved="(if:$Auftrag_Amateragoran==="gelöst" || $Auftrag_Amateragoran=="terminiert")true(else:)false(endif:)" data-name="Amateragoran und die Amulette"></div><!--
+	--><div data-achieved="(if:$Auftrag_Amateragoran==="gelöst" || $Auftrag_Amateragoran==="terminiert")true(else:)false(endif:)" data-name="Amateragoran und die Amulette"></div><!--
 	--><div data-achieved="(if:$Auftrag_Lebende_Lichtung==="gelöst")true(else:)false(endif:)" data-name="El'danariel und die Lebende Lichtung"></div><!--
 --></div>
 
@@ -237,8 +237,8 @@ In unmittelbarer Nachbarschaft steht der Kontor des Tuzaker Handelshauses Morell
 Wohin wendest du dich:
 - Zur Alabasterresidenz? Weiter bei [[1321]]
 - Zum Kontor Morello? Weiter bei [[644]]
-- Zum Rur und Gror Tempel? Weiter bei [[1338]](if:$Auftrag_Praioziber=="bekannt")
-- Zu Praioziber Pagode? Weiter bei [[721]](endif:)(if:$Auftrag_Praioziber=="angenommen")
+- Zum Rur und Gror Tempel? Weiter bei [[1338]](if:$Auftrag_Praioziber==="bekannt")
+- Zu Praioziber Pagode? Weiter bei [[721]](endif:)(if:$Auftrag_Praioziber==="angenommen")
 - Zu Praioziber Pagode? Weiter bei [[76]](endif:)
 - Keines davon? Bei [[38]] zum Stadtzentrum zurückkehren.
 
@@ -497,7 +497,7 @@ Schlussendlich schaltet sich dann das Publikum ein, übernimmt Teile der Handlun
 
 Mit dem Ende des Stückes kommen alle Schauspieler wieder auf die Bühne und es beginnt der Epilog in dem der grauhaarige Weidener, ein gealterter Mann namens Benningstein und ein wahrer Künstler und Poet, die Zusammenhänge und versteckten Bedeutungen erklärt. Er weist auf die Verkörperungen verschiedene sozialer Gruppierungen und die zugrunde liegende Sozialkritik hin, bringt zudem den einen oder anderen Kommentar zur maraskanischen Tagespolitik in humorvoller Weise ein und eröffnet einen Dialog zwischen dem Publikum und den Darstellern.
 
-(if:$Auftrag_Frenchira=="verfehlt")Nach diesem spannenden und in vielerlei Hinsicht bildenden Theaterstück verlässt du das  Abudijian-Theater wieder. Weiter bei [[541]].(else:)Nach diesem spannenden und in vielerlei Hinsicht bildenden Theaterstück verlässt du das  Abudijian-Theater wieder. Weiter bei [[1364]].(endif:)
+(if:$Auftrag_Frenchira==="verfehlt")Nach diesem spannenden und in vielerlei Hinsicht bildenden Theaterstück verlässt du das  Abudijian-Theater wieder. Weiter bei [[541]].(else:)Nach diesem spannenden und in vielerlei Hinsicht bildenden Theaterstück verlässt du das  Abudijian-Theater wieder. Weiter bei [[1364]].(endif:)
 
 (set:$Erfolg_Theater to 1)
 
@@ -506,7 +506,7 @@ In der <i>Theaterschenke 'Zur Wandelbaren'</i> kehren vielerlei Einheimische ein
 Du setzt dich an die Bar und überlegst was du tun willst.
 
 Willst du:
-- Etwas zu trinken bestellen? Weiter bei [[928]](if:$Auftrag_Frenchira=="bekannt")
+- Etwas zu trinken bestellen? Weiter bei [[928]](if:$Auftrag_Frenchira==="bekannt")
 - Den Wirt unauffällig auf die Freischärler ansprechen? Weiter bei [[678]](endif:)
 - Dich mit den Schauspielern unterhalten? Weiter bei [[44]]
 - Nach einem guten Wein und ein wenig Kladj die Schenke wieder verlassen und weiter durch das <i>Abudijianak</i> wandern? Weiter bei [[1364]]
@@ -533,7 +533,7 @@ Du erfährst, dass die Theatergruppe um Benningstein und Madahajida die Insel be
 Schließlich verabschiedest du dich und trittst wieder an die Bar um deine Zeche zu bezahlen. 
 
 Willst du:
-- Etwas zu trinken bestellen? Weiter bei [[928]](if:$Auftrag_Frenchira=="bekannt")
+- Etwas zu trinken bestellen? Weiter bei [[928]](if:$Auftrag_Frenchira==="bekannt")
 - Den Wirt unauffällig auf die Freischärler ansprechen? Weiter bei [[678]](endif:)
 - Die Schenke wieder verlassen und weiter durch das <i>Abudijianak</i> wandern? Weiter bei [[1364]]
 
@@ -674,7 +674,7 @@ Da sich seit deiner Zeit in der Stadt viel verändert hat, musst auch du dir ein
 - &raquo;Djuldigsta! Wo finnza Maraskanijisch chira ein gutsteres Tavern'uuzak madjiun?&laquo; Weiter bei [[1351]]
 - &raquo;Bruderschwester, wo finnza den Uuz'Beit von Sinoda?&laquo; Weiter bei [[711]]
 - &raquo;Habiberistera! Kannzabahürzelhabiberlichster!&laquo; Weiter bei [[620]]
-- &raquo;Schauszahiaja, Benisaba! Kannzszeigsteren einen gutsteren Bazarganji?&laquo; Weiter bei [[543]](if:$Auftrag_Frenchira=="gesucht" || $Auftrag_Frenchira=="angenommen")
+- &raquo;Schauszahiaja, Benisaba! Kannzszeigsteren einen gutsteren Bazarganji?&laquo; Weiter bei [[543]](if:$Auftrag_Frenchira==="gesucht" || $Auftrag_Frenchira==="angenommen")
 - Du fragst nach dem Laden des Kerzenziehers Majidan? Weiter bei [[1237]](endif:)(if:$Geruecht_Achaz==="bekannt")
 - Du lässt dir den Weg in die Feuerbuschgasse beschreiben? Weiter bei [[176]](endif:)(if:$Geruecht_Neunaugenplatz==="bekannt")
 - Du suchst jemanden der dir Beschreiben kann wie du zum Neunaugenplatz gelangst? Weiter bei [[705]](endif:)
@@ -777,7 +777,7 @@ Ohne ihre Hilfe hättest du den Laden vermutlich nicht gefunden.
 Weiter bei [[1319]].
 
 ::1319
-Du stehst vor dem Laden des Kerzenziehers Majidan. Das Schaufenster wird von verschiedenfarbigen, brennenden Kerzen hell erleuchtet. Möchtest du eintreten, geht es weiter bei [[610]]. (if:$Auftrag_Frenchira=="gesucht")Willst du dich in dieser Gasse genauer umsehen, weiter bei [[751]].(endif:)(if:$Auftrag_Frenchira=="angenommen")Willst du durch den Hinterhof zu Chakijian's Waffenladen gehen, weiter bei [[54]].(endif:) Kehrst du lieber wieder in den dir bekannten Teil der Stadt zurück, weiter bei [[38]].
+Du stehst vor dem Laden des Kerzenziehers Majidan. Das Schaufenster wird von verschiedenfarbigen, brennenden Kerzen hell erleuchtet. Möchtest du eintreten, geht es weiter bei [[610]]. (if:$Auftrag_Frenchira==="gesucht")Willst du dich in dieser Gasse genauer umsehen, weiter bei [[751]].(endif:)(if:$Auftrag_Frenchira==="angenommen")Willst du durch den Hinterhof zu Chakijian's Waffenladen gehen, weiter bei [[54]].(endif:) Kehrst du lieber wieder in den dir bekannten Teil der Stadt zurück, weiter bei [[38]].
 
 ::610
 Drinnen im Laden ist ein großer, hagerer Maraskaner mit spitz zulaufenden Ohren und schütterem Haar damit beschäftigt, aus einem Eisengefäss heißes Wachs in eine Modell zu gießen. Als sich der Kerzenzieher zu dir umdreht, bemerkst du seine mandelförmigen, eisblauen Augen, die dir verraten, dass du einen Halbelf vor dir hast. Seine Augen allerdings kommen dir besonders kalt vor. Er sagt, dass alle seine farbigen Kerzen jeweils einen Heller kosten. Du kannst so viele kaufen, wie du möchtest. Dann fragt er dich, ob du dir eine seiner Zauberkerzen im Hinterzimmer anschauen möchtest. Wenn ja, geht es weiter bei [[1437]]. Verlässt du das Geschäft lieber wieder, um dich draußen umzusehen, weiter bei [[1319]].
@@ -1591,8 +1591,8 @@ Die Strömung scheint hier Treibgut und Pflanzenreste angeschwemmt zu haben, von
 Als du den Ausgang der Grotte erreichst erkennst du, dass du dich außerhalb der Mauern der Stadt, in einer zwischen schroffen Felsen versteckten schmalen Bucht befindest. Du kletterst über die Felsen weiter bis du einen Strand erreichst und durch das Unterholz in das Landesinnere zurückkehrst.
 
 Willst du:
-(if:$Auftrag_Amateragoran=="bekannt")- Es riskieren, den Mächten des Bösen zu dienen, wenn die Bezahlung stimmt? Dann kannst du versuchen den Turm des unheimlichen Amateragoran zu finden. Weiter bei [[1316]].
-(endif:)(if:$Auftrag_Amateragoran=="angenommen")- Zum Turm des unheimlichen Amateragoran zurückkehren um deine Bezahlung einzufordern. Weiter bei [[1019]].
+(if:$Auftrag_Amateragoran==="bekannt")- Es riskieren, den Mächten des Bösen zu dienen, wenn die Bezahlung stimmt? Dann kannst du versuchen den Turm des unheimlichen Amateragoran zu finden. Weiter bei [[1316]].
+(endif:)(if:$Auftrag_Amateragoran==="angenommen")- Zum Turm des unheimlichen Amateragoran zurückkehren um deine Bezahlung einzufordern. Weiter bei [[1019]].
 (endif:)(if:$Erfolg_Beutel_des_Zauberpfades==1)- In den Ewigen Wald aufbrechen? Dann nimmst du bei [[1125]] die Straße nach Zinobab um dann von dort nach Nordosten in die Baronie Narmoggyn zu reisen.
 (endif:)- Nach Sinoda zurückkehren? Weiter bei [[38]].
 
@@ -2451,7 +2451,7 @@ Hier kannst du:
 Nachdem du deine Geschäfte erledigt hast, verlässt du das Kontor wieder. Weiter bei [[556]]
 
 <sup>1</sup>) Der Maraskankontor bietet folgende Arten von Darlehen an:
-(if:$Auftrag_Frenchira=="angenommen" || $Auftrag_Frenchira=="gelöst")- Beteiligungsdarlehen über 250 Dukaten, bei Abtritt der Gewinnbeteiligung am ersten Jahresgewinn auf der Handelsroute Boran-Sinoda.
+(if:$Auftrag_Frenchira==="angenommen" || $Auftrag_Frenchira==="gelöst")- Beteiligungsdarlehen über 250 Dukaten, bei Abtritt der Gewinnbeteiligung am ersten Jahresgewinn auf der Handelsroute Boran-Sinoda.
 (endif:)- Endfälliges Darlehen über 500 Dukaten, rückzahlbar innerhalb eines Jahres (550 Dukaten).
 - Annuitätendarlehen über 1000 Dukaten, rückzahlbar in drei Jahren (400 Dukaten pro Jahr).
 
@@ -2649,8 +2649,8 @@ Du verlässt Sinoda durch das Alabastertor gen Norden.
 Im Norden befindet sich das Umland der Stadt Sinoda mit vereinzelte Dörfern, Feldern, Obst- und Tabakplantagen. Im Süden erstrecken sich die glitzernden Wasser des Perlenmeers.
 
 Möchtest du:
-(if:$Auftrag_Amateragoran=="bekannt")- Es riskieren, den Mächten des Bösen zu dienen, wenn die Bezahlung stimmt? Dann kannst du versuchen den Turm des unheimlichen Amateragoran zu finden. Weiter bei [[1316]].
-(endif:)(if:$Auftrag_Amateragoran=="angenommen")- Zum Turm des unheimlichen Amateragoran zurückkehren um deine Bezahlung einzufordern. Weiter bei [[1019]].
+(if:$Auftrag_Amateragoran==="bekannt")- Es riskieren, den Mächten des Bösen zu dienen, wenn die Bezahlung stimmt? Dann kannst du versuchen den Turm des unheimlichen Amateragoran zu finden. Weiter bei [[1316]].
+(endif:)(if:$Auftrag_Amateragoran==="angenommen")- Zum Turm des unheimlichen Amateragoran zurückkehren um deine Bezahlung einzufordern. Weiter bei [[1019]].
 (endif:)(if:$Erfolg_Beutel_des_Zauberpfades==1)- In den Ewigen Wald aufbrechen? Dann nimmst du bei [[1125]] die Straße nach Zinobab um dann von dort nach Nordosten in die Baronie Narmoggyn zu reisen.
 (endif:)- Zum Stadtzentrum zurückkehren? Weiter bei [[38]].
 
@@ -3188,9 +3188,9 @@ Wohin willst du gehen:
 ::607
 In der Dorfschenke "Yasyscha's Dadja" sitzen Fischer, Bauern und andere Dorfleute. Sie betrachten dich misstrauisch, wagen es jedoch nicht dich anzusprechen. Während du bei einem Teller frischem Fisch und einer Tasse Grüntee die Beine unter dem Tisch ausstreckst überlegst du welche Herausforderungen der Ewige Wald wohl für dich bereithält.
 
-(if:$Auftrag_Praioziber=="angenommen")Dem Zauberer Praioziber hast du zugesichert für ihn nach dem Axorda-König zu suchen. Dieser Pflanzenkönig ist vermutlich ein gewaltiger Urwaldriese, hat eine breite Krone, dunkle, tief zerklüftete Rinde, harte grüne Blätter mit gelbem Rand, auffällige safrangelbe Kätzchen und rote Beeren. Eine dieser Beeren sollte Praioziber genügen.
-(endif:)(if:$Auftrag_Amateragoran=="angenommen")Für den finsteren Magier Amateragoran sollst du nach den Hüterinnen suchen, finsteren Zauberinnen die mittels ihrer magischen Mindoriumamulette Macht über die Tiere des Waldes erlangen. Amateragoran will diese Amulette, je mehr davon desto besser.
-(endif:)(if:$Auftrag_Frenchira=="angenommen")Mujiabor, der Anführer der Fren'Chira Marustazzim, einer südmaraskanische Rebellengruppe, hat dich damit beauftragt eine Karte des Ewigen Waldes anzufertigen. Darauf soll der Weg von Jeskajan bis nach Rashagan eingezeichnet sein.
+(if:$Auftrag_Praioziber==="angenommen")Dem Zauberer Praioziber hast du zugesichert für ihn nach dem Axorda-König zu suchen. Dieser Pflanzenkönig ist vermutlich ein gewaltiger Urwaldriese, hat eine breite Krone, dunkle, tief zerklüftete Rinde, harte grüne Blätter mit gelbem Rand, auffällige safrangelbe Kätzchen und rote Beeren. Eine dieser Beeren sollte Praioziber genügen.
+(endif:)(if:$Auftrag_Amateragoran==="angenommen")Für den finsteren Magier Amateragoran sollst du nach den Hüterinnen suchen, finsteren Zauberinnen die mittels ihrer magischen Mindoriumamulette Macht über die Tiere des Waldes erlangen. Amateragoran will diese Amulette, je mehr davon desto besser.
+(endif:)(if:$Auftrag_Frenchira==="angenommen")Mujiabor, der Anführer der Fren'Chira Marustazzim, einer südmaraskanische Rebellengruppe, hat dich damit beauftragt eine Karte des Ewigen Waldes anzufertigen. Darauf soll der Weg von Jeskajan bis nach Rashagan eingezeichnet sein.
 (endif:)(if:$Erfolg_Thorga==1)Die Piratenkapitänin Thorga berichtet von einem echsischen Unheiligtum, das sich in den östlichen Mangrovenwäldern befinden soll. Wenn etwas an dieser Geschichte dran ist solltest du diesen Teil des Ewigen Waldes lieber meiden.
 (endif:)Einem alten von einer Lotosdjinni gehüteten Buch hast du Hinweise entnommen, dass sich tief im Ewigen Wald die Lebende Lichtung, ein elementares Heiligtum des Humus, befinden soll.
 
@@ -3249,7 +3249,7 @@ Weiter bei [[647]].
 ::1450
 Am nächsten morgen verlässt du die Bucht von Jeskajan und begibst dich gut erholt auf die Weiterreise nach Süden. Der Pfad dem du folgst führt dich durch eine hügelige Landschaft die sich über ein weites Grasland erhebt. Abends erreichst du schließlich das Dörfchen Zinobab von wo aus du am nächsten Tag nach Süden weiterreist. Die Straße führt von den sanften Hügeln, an deren Hängen Bauernhöfe und Plantagen mit weitläufigen Feldern, Obst- und Weingärten liegen, hinab zur Küste zur Hafenstadt Sinoda, deren weiße, alabasterne Mauern vor den glitzernden Wassern des Meeres wie eine Perle schimmern.
 
-(if:$Auftrag_Amateragoran=="angenommen")Wirst du:
+(if:$Auftrag_Amateragoran==="angenommen")Wirst du:
 - Gleich zum Turm des Zauberers Amateragoran zurückkehren um deine Bezahlung einzufordern? Weiter bei [[1019]]. 
 - Zuerst die Stadt durch das bewachte Stadttor betreten? Weiter bei [[38]].
 (else:)Du betrittst die Stadt durch das bewachte Stadttor und erreichst das Stadtzentrum von Sinoda.
@@ -5261,9 +5261,9 @@ Weiter bei [[906]].
 ::906
 Der Riese schaut dich neugierig an. &raquo;Warum bist du hergekommen?&laquo; fragt er. &raquo;Kann ich dir irgendwie helfen?&laquo; Du erzählst ihm von deiner Suche. Ist es
 
-- die Suche nach dem Axorda-König? (if:$Auftrag_Praioziber=="angenommen")Weiter bei [[867]](endif:)
-- die Suche nach den Amuletten der Hüterinnen? (if:$Auftrag_Amateragoran=="angenommen")Weiter bei [[420]](endif:)
-- die Suche nach einem Weg durch das Vimbatja? (if:$Auftrag_Frenchira=="angenommen")Weiter bei [[1299]](endif:)
+- die Suche nach dem Axorda-König? (if:$Auftrag_Praioziber==="angenommen")Weiter bei [[867]](endif:)
+- die Suche nach den Amuletten der Hüterinnen? (if:$Auftrag_Amateragoran==="angenommen")Weiter bei [[420]](endif:)
+- die Suche nach einem Weg durch das Vimbatja? (if:$Auftrag_Frenchira==="angenommen")Weiter bei [[1299]](endif:)
 - die Suche nach der Lebenden Lichtung? Weiter bei [[732]]
 - keines davon? Dann bedankst du dich bei ihm und wünschst ihm einen guten Tag. Weiter bei [[225]].
 
@@ -5326,9 +5326,9 @@ Die einzige Richtung die nicht tiefer in das Wasser führt ist die aus der du ge
 ::1428
 &raquo;Die Welt ist schön, Bruderschwester!&laquo;, antwortest du. Deine Intuition und Menschenkenntnis sagen dir, dass die Hüterin der Frösche eine friedliebende Hexe ist, daher fühlst du dich sicher und kannst, ohne Angst haben zu müssen, mit ihr reden. Was suchst du im Vimbatja? Ist es
 
-- die Suche nach dem Axorda-König? (if:$Auftrag_Praioziber=="angenommen")Weiter bei [[1187]](endif:)
-- die Amulette der Hüterinnen? (if:$Auftrag_Amateragoran=="angenommen")Weiter bei [[539]](endif:)
-- die Suche nach einem Weg von Jeskajan nach Rashagan? (if:$Auftrag_Frenchira=="angenommen")Weiter bei [[282]](endif:)
+- die Suche nach dem Axorda-König? (if:$Auftrag_Praioziber==="angenommen")Weiter bei [[1187]](endif:)
+- die Amulette der Hüterinnen? (if:$Auftrag_Amateragoran==="angenommen")Weiter bei [[539]](endif:)
+- die Suche nach einem Weg von Jeskajan nach Rashagan? (if:$Auftrag_Frenchira==="angenommen")Weiter bei [[282]](endif:)
 - die Suche nach der Lebenden Lichtung? Weiter bei [[1079]]
 
 Wenn du dich von der Hüterin der Frösche verabschieden möchtest, kannst du dies tun und ihre Lichtung in Richtung Westen wieder verlassen, weiter bei [[743]].
@@ -6524,9 +6524,9 @@ Weiter bei [[532]].
 ::532
 Deine Fragen hängen natürlich von deinem Auftrag ab. Ist es
 
-- die Suche nach dem Axorda-König? (if:$Auftrag_Praioziber=="angenommen")Weiter bei [[1302]](endif:)
-- die Amulette der Hüterinnen? (if:$Auftrag_Amateragoran=="angenommen")Weiter bei [[710]](endif:)
-- die Suche nach einem Weg von Jeskajan nach Rashagan? (if:$Auftrag_Frenchira=="angenommen")Weiter bei [[574]](endif:)
+- die Suche nach dem Axorda-König? (if:$Auftrag_Praioziber==="angenommen")Weiter bei [[1302]](endif:)
+- die Amulette der Hüterinnen? (if:$Auftrag_Amateragoran==="angenommen")Weiter bei [[710]](endif:)
+- die Suche nach einem Weg von Jeskajan nach Rashagan? (if:$Auftrag_Frenchira==="angenommen")Weiter bei [[574]](endif:)
 - die Suche nach der Lebenden Lichtung? Weiter bei [[940]]
 
 Wenn du dich von der Hüterin der Vögel verabschieden möchtest, kannst du dies tun und ihre Lichtung in Richtung Osten wieder verlassen, weiter bei [[1352]].
@@ -6800,7 +6800,7 @@ Weiter bei [[56]].
 ::8
 Als du dich der Stelle näherst, an der du die Hüterin der Spinnen vernichtet hast, schlägt dir plötzlich Hitze entgegen. Die Lichtung ist ein tosendes Flammenmeer, an dem du nicht vorbei kannst; wegen des beißenden Rauches verlierst du 1 LeP. Dir bleibt nichts anderes übrig als die Lichtung auf dem selben Weg zu verlassen auf dem du gekommen bist.
 
-Weiter bei (if:$Richtung=="Westen")[[486]](else:)[[1103]](endif:).
+Weiter bei (if:$Richtung==="Westen")[[486]](else:)[[1103]](endif:).
 
 ::486
 Du kehrst um und folgst dem Pfad zurück nach Süden. Weiter bei [[650]].
@@ -7054,9 +7054,9 @@ Weiter bei [[39]].
 ::39
 Was führt dich in das Vimbatja? Ist es
 
-- die Suche nach dem Axorda-König? (if:$Auftrag_Praioziber=="angenommen")Weiter bei [[317]](endif:)
-- die Amulette der Hüterinnen? (if:$Auftrag_Amateragoran=="angenommen")Weiter bei [[520]](endif:)
-- die Suche nach einem Weg von Jeskajan nach Rashagan? (if:$Auftrag_Frenchira=="angenommen")Weiter bei [[26]](endif:)
+- die Suche nach dem Axorda-König? (if:$Auftrag_Praioziber==="angenommen")Weiter bei [[317]](endif:)
+- die Amulette der Hüterinnen? (if:$Auftrag_Amateragoran==="angenommen")Weiter bei [[520]](endif:)
+- die Suche nach einem Weg von Jeskajan nach Rashagan? (if:$Auftrag_Frenchira==="angenommen")Weiter bei [[26]](endif:)
 - die Suche nach der Lebenden Lichtung? Weiter bei [[646]]
 
 (set:$Visit_Lichtung_19 to 3)
@@ -7666,9 +7666,9 @@ Du bist auf der Lichtung der Hüterin der Schlangen. Die überwucherten Ruinen s
 ::1403
 Was führt dich in das Vimbatja? Ist es
 
-- die Suche nach dem Axorda-König? (if:$Auftrag_Praioziber=="angenommen")Weiter bei [[1176]](endif:)
-- die Amulette der Hüterinnen? (if:$Auftrag_Amateragoran=="angenommen")Weiter bei [[254]](endif:)
-- die Suche nach einem Weg von Jeskajan nach Rashagan? (if:$Auftrag_Frenchira=="angenommen")Weiter bei [[586]](endif:)
+- die Suche nach dem Axorda-König? (if:$Auftrag_Praioziber==="angenommen")Weiter bei [[1176]](endif:)
+- die Amulette der Hüterinnen? (if:$Auftrag_Amateragoran==="angenommen")Weiter bei [[254]](endif:)
+- die Suche nach einem Weg von Jeskajan nach Rashagan? (if:$Auftrag_Frenchira==="angenommen")Weiter bei [[586]](endif:)
 - die Suche nach der Lebenden Lichtung? Weiter bei [[1096]]
 
 Wenn du dich von der Hüterin der Schlangen verabschieden möchtest, kannst du dies tun und ihre Lichtung in Richtung Westen wieder verlassen, weiter bei [[671]].
@@ -7846,7 +7846,7 @@ Weiter bei [[1032]].
 ::1032
 Wirst du
 
-- fortrennen? Weiter bei (if:$Richtung=="Norden")[[669]](else:)[[524]](endif:)
+- fortrennen? Weiter bei (if:$Richtung==="Norden")[[669]](else:)[[524]](endif:)
 - versuchen, dich an den Ästen der Bäume darüberzuschwingen? Weiter bei [[566]]
 - mit der Waffe angreifen? Weiter bei [[1402]]
 - einen kristallomantischen Matrixkristall benutzen? Weiter bei [[673]]
@@ -7877,7 +7877,7 @@ Du wendest den Eis-Kristall gegen den Schleim an. Sofort merkst du, dass du die 
 (set:$Kristall_Eis to $Kristall_Eis-1)
 
 ::566
-Würfle eine <i>Körperbeherrschungs</i>-Probe +3. Falls du über Seil und Wurfhaken verfügst ist die Probe stattdessen um 2 erleichtert. Gelingt sie, bist du von einem Ast zum nächsten geschwungen und über den ekligen Schleim gesprungen. Weiter bei (if:$Richtung=="Norden")[[524]](else:)[[669]](endif:). Ist die Probe misslungen, bist du abgerutscht und auf dem Schleim gelandet. Weiter geht es bei [[491]].
+Würfle eine <i>Körperbeherrschungs</i>-Probe +3. Falls du über Seil und Wurfhaken verfügst ist die Probe stattdessen um 2 erleichtert. Gelingt sie, bist du von einem Ast zum nächsten geschwungen und über den ekligen Schleim gesprungen. Weiter bei (if:$Richtung==="Norden")[[524]](else:)[[669]](endif:). Ist die Probe misslungen, bist du abgerutscht und auf dem Schleim gelandet. Weiter geht es bei [[491]].
 
 ::491
 Als du auf dem Schleim landest umklammern dich die Scheinarme der gallertartigen Masse. 
@@ -7895,7 +7895,7 @@ Besondere Kampfregeln: Großer Gegner, Umklammern (0)
 * Riesenamöben lassen sich effizient nur mit Wafen bekämpfen, die eine scharfe Schneide besitzen. Alle anderen Waffen richten keinen Schaden an.
 ** Gelingt es der Riesenamöbe, einen Gegner zu treffen, versucht sie ihn vollständig zu <i>Umklammern</i> (ihn quasi zu verschlucken). Aus der Umklammerung kann man sich mit einer <i>Ringen</i>-Attacke +0 befreien, die für jeden misslungenen Versuch um 1 erschwert ist. Übersteigt die Erschwernis den kleineren der Werte GE oder KK, so ist das Opfer vollständig umschlossen und kann sich ohne fremde Hilfe nicht mehr befreien. Angriffe des Opfers auf die Amöbe, sowie Talent- und Zauberproben sind um obigen Probenzuschlag erschwert. Zauber sind in der Umklammerung außerdem nur ohne Gesten möglich.
 
-Du kannst jederzeit fliehen; dann geht es weiter bei (if:$Richtung=="Norden")[[524]](else:)[[669]](endif:). Wenn du die alte Riesenamöbe tötest, weiter bei [[60]].
+Du kannst jederzeit fliehen; dann geht es weiter bei (if:$Richtung==="Norden")[[524]](else:)[[669]](endif:). Wenn du die alte Riesenamöbe tötest, weiter bei [[60]].
 
 ::60
 Der Schleim ist tot. Seine Überreste zerfließen und verfaulen vor deinen Augen. Der Gestank ist unerträglich. Weiter geht es bei [[358]].
@@ -8047,7 +8047,7 @@ Weiter bei [[1006]].
 ::52
 Dies ist die Lichtung auf der du die Trichterwurzel vernichtet hast. Nur eine modrige Erdmulde erinnert noch an die gefährliche, fleischfressende Pflanze. Du kannst die Mulde gefahrlos überqueren und deinen Weg fortsetzen.
 
-Weiter bei (if:$Richtung=="Norden")[[389]](else:)[[846]](endif:).
+Weiter bei (if:$Richtung==="Norden")[[389]](else:)[[846]](endif:).
 
 ::1242
 Dies ist die Lichtung mit der riesigen Trichterwurzel. Wirst du
@@ -8066,10 +8066,10 @@ Dies ist die Lichtung mit der riesigen, getarnten Erdgrube. Wirst du
 - einen Wachstums-Kristall anwenden um die Blätter so groß wachsen zu lassen, dass du hinüberklettern kannst. (if:$Kristall_Wachstum>0)Weiter bei [[278]].(endif:)
 
 ::119
-Du hast es geschafft die andere Seite zu erreichen und setzt deinen Weg nach $Richtung fort. Weiter bei (if:$Richtung=="Norden")[[389]](else:)[[846]](endif:).
+Du hast es geschafft die andere Seite zu erreichen und setzt deinen Weg nach $Richtung fort. Weiter bei (if:$Richtung==="Norden")[[389]](else:)[[846]](endif:).
 
 ::1303
-Du kehrst um und gehst den Weg zurück den du gekommen bist. Weiter bei (if:$Richtung=="Norden")[[846]](else:)[[389]](endif:).
+Du kehrst um und gehst den Weg zurück den du gekommen bist. Weiter bei (if:$Richtung==="Norden")[[846]](else:)[[389]](endif:).
 
 ::389
 Weiter bei [[1367]].
@@ -8507,7 +8507,7 @@ Weiter bei [[134]].
 ::827
 Irgend etwas bewegt sich unten im Wasser, und du weißt nicht, ob du es wagen sollst, hindurchzuwaten. Wirst du
 
-- umkehren? Weiter bei (if:$Richtung=="Osten")[[1288]](else:)[[1309]](endif:).
+- umkehren? Weiter bei (if:$Richtung==="Osten")[[1288]](else:)[[1309]](endif:).
 - einen Eis-Kristall anwenden? (if:$Kristall_Eis>0)Weiter bei [[322]](endif:)
 - einen Welken-Kristall versuchen? (if:$Kristall_Welken>0)Weiter bei [[1144]](endif:)
 - einen Zauber anwenden? Weiter bei [[612]]
@@ -8517,14 +8517,14 @@ Irgend etwas bewegt sich unten im Wasser, und du weißt nicht, ob du es wagen so
 
 ::322
 Der Eis-Kristall errichtet eine feste Brücke, die du leicht überqueren kannst.
-Weiter bei (if:$Richtung=="Osten")[[1309]](else:)[[1288]](endif:).
+Weiter bei (if:$Richtung==="Osten")[[1309]](else:)[[1288]](endif:).
 
 (set:$Kristall_Eis to $Kristall_Eis - 1)
 
 ::1144
 Du versuchst den Welken-Kristall an einem riesigen Baum am Ufer. Er stürzt nieder und bildet eine Brücke, die du schnell überschreitest. Als du die andere Seite erreichst, fällt der Baum in sich zusammen und stürzt in den Fluß.
 
-Weiter bei (if:$Richtung=="Osten")[[1309]](else:)[[1288]](endif:).
+Weiter bei (if:$Richtung==="Osten")[[1309]](else:)[[1288]](endif:).
 
 (set:$Kristall_Welken to $Kristall_Welken - 1)
 
@@ -8548,7 +8548,7 @@ Andernfalls musst du bei [[827]] eine neue Wahl treffen.
 ::774
 Mit Leichtigkeit erreichst du das andere Ufer.
 
-Weiter bei (if:$Richtung=="Osten")[[1309]](else:)[[1288]](endif:).
+Weiter bei (if:$Richtung==="Osten")[[1309]](else:)[[1288]](endif:).
 
 ::714
 Beim Hinüberwaten wirst du nicht angegriffen, aber als du das andere Ufer erreichst, stellst du angeekelt fest, dass sich $Anzahl große Blutegel an deinen Beinen festgesaugt haben. Wirst du
@@ -8566,17 +8566,17 @@ Andernfalls musst du bei [[827]] eine neue Wahl treffen.
 Eine Welle der Kraft geht explosionsartig von dir aus und tötet die Blutegel sowie eine große Zahl an Krabbeltieren um dich herum.
 Du kannst die Egel mit Leichtigkeit abstreifen und die Bisswunden verarzten.
 
-Weiter bei (if:$Richtung=="Osten")[[1309]](else:)[[1288]](endif:).
+Weiter bei (if:$Richtung==="Osten")[[1309]](else:)[[1288]](endif:).
 
 ::1168
 Du zückst dein Messer und entfernst die Blutegel sorgfältig. Durch die entstandenen Verletzungen verlierst du $Anzahl Lebenspunkte.
 
-Weiter bei (if:$Richtung=="Osten")[[1309]](else:)[[1288]](endif:).
+Weiter bei (if:$Richtung==="Osten")[[1309]](else:)[[1288]](endif:).
 
 ::1225
 Du hast bereits Erfahrung mit den Blutsaugenden Wasserbewohnern, lässt zu, dass sie sich vollsaugen und wartest ab bis sie sich von selber von dir lösen. Durch den Blutverlust verlierst du $Anzahl Lebenspunkte.
 
-Weiter bei (if:$Richtung=="Osten")[[1309]](else:)[[1288]](endif:).
+Weiter bei (if:$Richtung==="Osten")[[1309]](else:)[[1288]](endif:).
 
 
 ::822
@@ -8942,7 +8942,7 @@ Du erinnerst dich daran, dass der Zwerg Amranijian dir erzählt hat, dass du die
 
 Wirst du
 
-(if:$Geruecht_Hoehle=="bekannt")- versuchen Väterchen Angrosch zu bitten dich zu dem verborgenen Bergtal zu führen in dem der Axorda-König stehen soll? Weiter bei [[194]].
+(if:$Geruecht_Hoehle==="bekannt")- versuchen Väterchen Angrosch zu bitten dich zu dem verborgenen Bergtal zu führen in dem der Axorda-König stehen soll? Weiter bei [[194]].
 (endif:)- zur Lichtung zurückzukehren und den Rückweg in Richtung Osten einschlagen, da du keine genaue Vorstellung davon hast wohin du genau gelangen willst und die Phiole sich wohl nur ein einziges Mal einsetzen lässt? Weiter bei [[73]].
 
 ::194
@@ -9136,7 +9136,7 @@ Ganz langsam und vorsichtig passierst du die geschlagene Schneise und setzt dein
 Willst du
 
 - die Kakteen genauer untersuchen? Weiter bei [[477]]
-- umkehren und die Lichtung wieder verlassen? Weiter bei (if:$Richtung=="Norden")[[1172]](else:)[[106]](endif:).
+- umkehren und die Lichtung wieder verlassen? Weiter bei (if:$Richtung==="Norden")[[1172]](else:)[[106]](endif:).
 
 (set:$Visit_Lichtung_40 to 1)
 
@@ -9157,7 +9157,7 @@ Willst du
 
 - versuchen ob du dir eine Schneise durch die Kakteen schlagen kannst? Weiter bei [[962]]
 - einen Matrixkristall anwenden? Weiter bei [[959]]
-- umkehren und die Lichtung wieder verlassen? Weiter bei (if:$Richtung=="Norden")[[1172]](else:)[[106]](endif:).
+- umkehren und die Lichtung wieder verlassen? Weiter bei (if:$Richtung==="Norden")[[1172]](else:)[[106]](endif:).
 
 ::959
 Du beschließt, das gefährliche Dornicht mit Magie zu vernichten. Welchen Matrixkristall wendest du an:
@@ -9202,7 +9202,7 @@ Andernfalls kannst du bei [[752]] weiterlesen.
 Du stutzt einige der Kakteen zurecht, doch der dabei verspritzte Pflanzensaft verbennt dir die Haut und hinterlässt tief rote Wunden. Du nimmst 2W6 SP. Willst du
 
 - weiter versuchen dir einen Weg durch die Kakteen zu bahnen? Weiter bei [[962]].
-- umkehren und die Lichtung wieder verlassen? Weiter bei (if:$Richtung=="Norden")[[1172]](else:)[[106]](endif:).
+- umkehren und die Lichtung wieder verlassen? Weiter bei (if:$Richtung==="Norden")[[1172]](else:)[[106]](endif:).
 
 ::752
 Würfle eine <i>Gewandheits</i>-Probe die um deine BE erschwert ist. Wenn du ein Haumesser besitzt erleichtert dies die Probe um 3. Wenn sie gelingt geht es bei [[1162]] weiter. Andernfalls bei [[50]].
@@ -9215,7 +9215,7 @@ Das Gift der Stacheln dringt dabei in deinen Körper (auch mehrmalig): Stufe 7, 
 Willst du
 
 - weiter versuchen dir einen Weg durch die Kakteen zu bahnen? Weiter bei [[962]].
-- umkehren und die Lichtung wieder verlassen? Weiter bei (if:$Richtung=="Norden")[[1172]](else:)[[106]](endif:).
+- umkehren und die Lichtung wieder verlassen? Weiter bei (if:$Richtung==="Norden")[[1172]](else:)[[106]](endif:).
 
 ::1162
 Mit sehr viel Kraft und Geschick schaffst du es die Kakteen soweit zu stutzen, dass du eine Bresche geschlagen hast die breit genug ist das Areal gefahrlos zu durchqueren.
@@ -10943,9 +10943,9 @@ Wähle einen Gegenstand aus deinem Inventar der mindestens 50 Dukaten wert ist u
 ::403
 Welche gedankliche Botschaft wirst du übermitteln:
 
-- Ich suche den Axorda-König? (if:$Auftrag_Praioziber=="angenommen")Weiter bei [[303]](endif:)
-- Ich will die Amulette der Hüterinnen? (if:$Auftrag_Amateragoran=="angenommen")Weiter bei [[662]](endif:)
-- Ich reise quer durch das Vimbatja? (if:$Auftrag_Frenchira=="angenommen")Weiter bei [[577]](endif:)
+- Ich suche den Axorda-König? (if:$Auftrag_Praioziber==="angenommen")Weiter bei [[303]](endif:)
+- Ich will die Amulette der Hüterinnen? (if:$Auftrag_Amateragoran==="angenommen")Weiter bei [[662]](endif:)
+- Ich reise quer durch das Vimbatja? (if:$Auftrag_Frenchira==="angenommen")Weiter bei [[577]](endif:)
 - Ich suche die Lebenden Lichtung? Weiter bei [[356]]
 
 ::192
@@ -11245,7 +11245,7 @@ Weiter bei [[793]].
 (endif:)
 
 ::793
-(if:$Ausgang_Hoehle=="Westen")Wenn du möchtest kannst du weiter zum Waldboden hinabsteigen, weiter bei [[627]], oder in die Höhle marschieren, weiter bei [[1203]].
+(if:$Ausgang_Hoehle==="Westen")Wenn du möchtest kannst du weiter zum Waldboden hinabsteigen, weiter bei [[627]], oder in die Höhle marschieren, weiter bei [[1203]].
 (else:)Du kannst nun auf dem Pfad den du durch das Dornicht zur Höhle geschlagen hast zur Lichtung zurückkehren. Weiter bei [[652]].
 (endif:)
 
