@@ -4990,7 +4990,9 @@ Nachdem du deine astralen Kräfte etwas erholt hast kannst du bei [[100]] erneut
 
 ::1360
 Du bist auf der Lichtung der Hüterin der Marasken. Wenn du willst kannst du ihre Hütte betreten. Weiter bei [[100]].
-Andernfalls kannst du auch deinen Weg weiter fortsetzen. Weiter bei [[288]].
+Andernfalls kannst du auch deinen Weg weiter fortsetzen.
+
+(if:$Visit_Lichtung_04==3)Weiter bei [[135]].(endif:)(if:$Visit_Lichtung_04==2)Weiter bei [[2288]].(endif:)(if:$Visit_Lichtung_04<=1)Weiter bei [[288]].(endif:)
 
 ::1282
 Du wendest den Furcht-Kristall auf die Hüterin der Marasken an. Sie dreht sich um und flieht – aber die beiden Maraskantaranteln greifen dich an. Du mußt gegen sie kämpfen.
